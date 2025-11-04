@@ -1,0 +1,30 @@
+/* .flow {
+    animation: flow 1s linear
+}
+
+@keyframes flow {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(95px);
+
+    }
+}
+
+.flow2  {
+    animation-delay: 2s;
+    animation: flow2 1s linear;
+}
+
+@keyframes flow2 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(95px);
+
+    }
+} */
