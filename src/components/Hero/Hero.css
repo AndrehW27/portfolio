@@ -1,0 +1,52 @@
+.typing {
+  width: 19ch; /* number of characters */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #7C3AED; /* cursor */
+  animation: typing 3s steps(19) infinite alternate, blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.glowing {
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px #7C3AED, 0 0 10px #7C3AED;
+    }
+
+    50% {
+        box-shadow: 0 0 10px #7C3AED, 0 0 20px #7C3AED;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

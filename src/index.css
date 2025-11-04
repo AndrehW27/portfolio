@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: InterVariable, sans-serif;
+  --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+
+  /* Add your custom color palette here 👇 */
+  --color-background: #0a0c1f;
+  --color-surface: #1A1625;
+  --color-accent: #7C3AED;
+  --color-text: #E0E0E6;
+  --color-text-muted: #A3A3B3;
+
+  
+}
+
+html {
+    scroll-behavior: smooth;
+    /* transition: ease-in-out 2s; */
+}
+
