@@ -46,7 +46,7 @@ function Hero() {
           {/* <Menu className="w-5 h-5 cursor-pointer fixed right-4 hover:text-accent transition duration-300 ease-in-out" /> */}
 
           <div className={`${theme === 'dark' ? 'dark' : ''}`}>
-            <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-3 right-2'>
+            <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-2 right-2'>
 
               {theme === '' &&
                 <button
@@ -64,7 +64,7 @@ function Hero() {
               }
 
             </div>
-            <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-3 right-11'>
+            <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-2 right-11'>
 
               {language === '' &&
                 <button
