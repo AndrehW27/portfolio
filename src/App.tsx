@@ -8,7 +8,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className='text-sm md:text-lg'>
+    <div className=''>
       {/* <Navbar/> */}
       <Hero/>
       <About/>

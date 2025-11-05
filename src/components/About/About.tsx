@@ -142,43 +142,43 @@ function About() {
 
           <div className='text-text w-20 sm:w-50 h-dvh  border-red-500 flex flex-col justify-start items-center'>
             <div className='w-50 h-50 border-orange-500 flex flex-col justify-start items-center'>
-              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center z-1 transition duration-300 ease-in-out'>
-                <School className='z-2' />
+              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center 1 transition duration-300 ease-in-out'>
+                <School className='2' />
               </div>
               <div data-aos="fade-up" className='w-1 h-40 bg-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] transition duration-300 ease-in-out'>
               </div>
             </div>
             <div className='w-50 h-50 border-orange-500 flex flex-col justify-start items-center'>
-              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center z-1 transition duration-300 ease-in-out'>
-                <GraduationCap className='z-2' />
+              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center 1 transition duration-300 ease-in-out'>
+                <GraduationCap className='2' />
               </div>
               <div data-aos="fade-up" className='w-1 h-40 bg-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] transition duration-300 ease-in-out'>
               </div>
             </div>
             <div className='w-50 h-50 border-orange-500 flex flex-col justify-start items-center'>
-              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center z-1 transition duration-300 ease-in-out'>
-                <University className='z-2' />
+              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center 1 transition duration-300 ease-in-out'>
+                <University className='2' />
               </div>
               <div data-aos="fade-up" className='w-1 h-40 bg-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] transition duration-300 ease-in-out'>
               </div>
             </div>
             <div className='w-50 h-50 border-orange-500 flex flex-col justify-start items-center'>
-              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center z-1 transition duration-300 ease-in-out'>
-                <Factory className='z-2' />
+              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center 1 transition duration-300 ease-in-out'>
+                <Factory className='2' />
               </div>
               <div data-aos="fade-up" className='w-1 h-40 bg-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] transition duration-300 ease-in-out'>
               </div>
             </div>
             <div className='w-50 h-50 border-orange-500 flex flex-col justify-start items-center'>
-              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center z-1 transition duration-300 ease-in-out'>
-                <Landmark className='z-2' />
+              <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center 1 transition duration-300 ease-in-out'>
+                <Landmark className='2' />
               </div>
               <div data-aos="fade-up" className='w-1 h-40 bg-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] transition duration-300 ease-in-out'>
               </div>
             </div>
             <div className='w-50 h-50 border-orange-500 flex flex-col justify-start items-center'>
-              <div data-aos="fade-up-right" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center z-1 transition duration-300 ease-in-out'>
-                <Rocket className='z-2' />
+              <div data-aos="fade-up-right" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center 1 transition duration-300 ease-in-out'>
+                <Rocket className='2' />
               </div>
             </div>
 
