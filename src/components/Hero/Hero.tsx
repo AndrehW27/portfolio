@@ -49,17 +49,35 @@ function Hero() {
       <section className="relative bg-cover bg-center h-screen bg-[url('./assets/darkwave-bg3.png')] text-text flex flex-col items-center justify-center">
         <h1 className="text-5xl font-bold mt-3 text-text">André Willian</h1>
         <h3 className="typing text-1xl font-bold mt-3 text-accent">Fullstack Developer</h3>
-        <div className='fadeIn flex w-70 justify-around mt-2'>
+
+        {/* <div className='fadeIn flex w-70 justify-around mt-2'>
           <Waypoints className=' text-accent' />
           <SquareDashedBottomCode className='text-accent' />
           <ServerCog className='text-accent' />
           <Database className='text-accent' />
           <ShieldCheck className='text-accent' />
           <Rocket className='text-accent' />
+        </div> */}
 
-
-
+         <div className='carousel border-accent'>
+          <div className='group'>
+            <div className="card-carousel"><Waypoints className='text-accent' /></div>
+            <div className="card-carousel"><SquareDashedBottomCode className='text-accent' /></div>
+            <div className="card-carousel"><ServerCog className='text-accent' /></div>
+            <div className="card-carousel"><Database className='text-accent' /></div>
+            <div className="card-carousel"><ShieldCheck className='text-accent' /></div>
+            <div className="card-carousel"><Rocket className='text-accent' /></div>
+          </div>
+          <div aria-hidden className='group'>
+            <div className="card-carousel"><Waypoints className='text-accent' /></div>
+            <div className="card-carousel"><SquareDashedBottomCode className='text-accent' /></div>
+            <div className="card-carousel"><ServerCog className='text-accent' /></div>
+            <div className="card-carousel"><Database className='text-accent' /></div>
+            <div className="card-carousel"><ShieldCheck className='text-accent' /></div>
+            <div className="card-carousel"><Rocket className='text-accent' /></div>
+          </div>
         </div>
+
         <h5 className="text-sm font-bold  text-text mt-12">Bringing creativity and code together.</h5>
         {/* <button className='bg-accent mt-3 px-3 py-1 rounded-sm '>Projetos</button> */}
 

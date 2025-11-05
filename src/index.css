@@ -14,8 +14,25 @@
   
 }
 
-html {
-    scroll-behavior: smooth;
-    /* transition: ease-in-out 2s; */
+/* 🧱 Global Reset & Defaults */
+* {
+  box-sizing: border-box;
 }
+
+/* 🌍 HTML & Body Setup */
+html, body {
+
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  scroll-behavior: smooth; /* Smooth scrolling for anchors */
+
+}
+
+/* 🚫 Prevent unwanted vertical overflow on fixed layouts */
+/* #root {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+
+
 
