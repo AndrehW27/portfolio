@@ -39,6 +39,7 @@ function Contact() {
               }}
               className='m-2 border-gray-800 p-2 rounded-2xl hover:bg-gray-100 hover:dark:bg-gray-700 transition duration-300 ease-in-out cursor-pointe'><LiaFlagUsaSolid className='h-10 w-10 text-gray-800 dark:text-gray-200' /></button>
           </div>
+          
           {language === 'english' && <div className='font-bold mt-2 text-gray-800 dark:text-gray-200'>Hello World!</div>}
           {language === 'portuguese' && <div className='font-bold mt-2 text-gray-800 dark:text-gray-200'>Olá Mundo!</div>}
         </div>

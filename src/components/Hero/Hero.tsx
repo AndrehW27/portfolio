@@ -13,12 +13,16 @@ import { Database } from "lucide-react";
 // import { CloudCheck } from "lucide-react";
 import aw from '../../assets/aw-final.png';
 // import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import { IoSunnyOutline } from "react-icons/io5";
-
-
-
+import { IoMoonOutline } from "react-icons/io5";
+import { GoSun } from "react-icons/go";
+import { GiBrazilFlag } from "react-icons/gi";
+import { LiaFlagUsaSolid } from "react-icons/lia";
+import { useState } from 'react';
 
 function Hero() {
+
+  const [theme, setTheme] = useState('');
+  const [language, setLanguage] = useState('english');
 
   return (
     <>
@@ -39,8 +43,29 @@ function Hero() {
             <li ><a href="#contact" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>Contact</a></li>
           </ul>
           {/* <Menu className="w-5 h-5 cursor-pointer fixed right-4 hover:text-accent transition duration-300 ease-in-out" /> */}
-          <div className=" cursor-pointer fixed top-2 right-2 hover:text-accent transition duration-300 ease-in-out" >
-            <IoSunnyOutline />
+          <div className='p-1 dark bg-gray-200 dark:bg-background w-fit h-fit p-sm rounded-2xl fixed top-3 right-2'>
+            <button
+              onClick={() => {
+                setTheme('');
+              }}
+              className='p-1 rounded-2xl hover:bg-gray-100 hover:dark:bg-gray-700 transition duration-300 ease-in-out cursor-pointer'><GoSun className='h-5 w-5 text-gray-800 dark:text-gray-200' /></button>
+            <button
+              onClick={() => {
+                setTheme('dark');
+              }}
+              className='p-1 rounded-2xl hover:bg-gray-100 hover:dark:bg-gray-700 transition duration-300 ease-in-out cursor-pointe'><IoMoonOutline className='h-5 w-5 text-gray-800 dark:text-gray-200' /></button>
+          </div>
+          <div className='p-1 dark bg-gray-200 dark:bg-background w-fit h-fit p-sm rounded-2xl fixed top-14 right-2'>
+            <button
+              onClick={() => {
+                setTheme('');
+              }}
+              className='p-1 rounded-2xl hover:bg-gray-100 hover:dark:bg-gray-700 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-5 w-5 text-gray-800 dark:text-gray-200' /></button>
+            <button
+              onClick={() => {
+                setTheme('dark');
+              }}
+              className='p-1 rounded-2xl hover:bg-gray-100 hover:dark:bg-gray-700 transition duration-300 ease-in-out cursor-pointe'><LiaFlagUsaSolid className='h-5 w-5 text-gray-800 dark:text-gray-200' /></button>
           </div>
           {/* <div className=" cursor-pointer fixed top-2 right-15 hover:text-accent transition duration-300 ease-in-out" >
             <ThemeToggle />
