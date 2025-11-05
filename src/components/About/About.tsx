@@ -38,9 +38,9 @@ function About() {
 
   return (
     <>
-      <section id="about" className='bg-background border-accent w-screen flex flex-col items-center justify-start pb-20'>
+      <section id="about" className='bg-background border-accent w-dvw flex flex-col items-center justify-start pb-20'>
 
-        <div className='flex justify-center items-end h-screen w-full border-red-500 text-sm sm:text-base'>
+        <div className='flex justify-center items-end h-dvh w-dvw border-red-500 text-sm sm:text-base'>
           <div className='flex flex-col justify-end items-start h-160 w-70 sm:w-160 border-blue-500 pl-8'>
             <div data-aos="fade-right" className='text-text flex mr-5 mb-5'>
               <div className='text-accent w-10 h-10 mr-2'>
@@ -73,11 +73,11 @@ function About() {
           </div>
         </div>
 
-        <h1 className='text-text mt-30 text-3xl font-bold'>My Jorney</h1>
+        <h1 className='text-text mt-30 text-2xl sm:text-2xl font-bold'>My Jorney</h1>
 
-        <div className='border-yellow-300 w-[70vw] h-full flex items-center justify-center mt-20'>
+        <div className='border-yellow-300 w-[70vw] h-dvh flex items-center justify-center mt-20'>
 
-          <div className='w-40 sm:w-100 h-full border-red-500 flex flex-col justify-start items-center'>
+          <div className='w-40 sm:w-100 h-dvh border-red-500 flex flex-col justify-start items-center'>
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
               <div>
                 <img data-aos="fade-right" className='h-11 w-11 sm:h-15 sm:w-15 border border-text-muted p-2 rounded-md shadow-[0_0_20px_#3594d2] hover:shadow-[0_0_40px_#3594d2] transition duration-300 ease-in-out' src={logic} />
@@ -140,7 +140,7 @@ function About() {
             </div>
           </div>
 
-          <div className='text-text w-20 sm:w-50 h-full  border-red-500 flex flex-col justify-start items-center'>
+          <div className='text-text w-20 sm:w-50 h-dvh  border-red-500 flex flex-col justify-start items-center'>
             <div className='w-50 h-50 border-orange-500 flex flex-col justify-start items-center'>
               <div data-aos="fade-up" className='h-10 w-10 sm:h-12 sm:w-12 border-3 border-accent shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] rounded-full flex justify-center items-center z-1 transition duration-300 ease-in-out'>
                 <School className='z-2' />
@@ -184,7 +184,7 @@ function About() {
 
           </div>
 
-          <div className='text-text w-40 px-3 text-sm sm:text-base sm:w-100 h-full  border-red-500 flex flex-col justify-start items-center'>
+          <div className='text-text w-40 px-3 text-sm sm:text-base sm:w-100 h-dvh  border-red-500 flex flex-col justify-start items-center'>
             <div className='w-40 px-3 sm:w-100 h-50 border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-left">
                 <h1 className='text-accent font-bold'>University Federal of ABC - 2012</h1>

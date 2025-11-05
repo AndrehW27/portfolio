@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className='bg-background  text-text fixed w-full z-1 top-0 left-0'>
+      <nav className='bg-background  text-text fixed w-dvw z-1 top-0 left-0'>
         <div className='max-w-7xl mx-auto px-6 py-4 flex justify-between items-center'>
           <a href="#" className='flex items-center hover:text-blue-600'>
             <Laptop className="w-5 h-5" />

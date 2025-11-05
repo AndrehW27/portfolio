@@ -55,7 +55,7 @@ const icons: IconItem[] = [
 
 const InfiniteCarousel: React.FC = () => {
   return (
-    <div className="w-full overflow-hidden bg-[#0f172a] py-6">
+    <div className="w-dvw overflow-hidden bg-[#0f172a] py-6">
       <div className="flex animate-scroll whitespace-nowrap gap-4 hover:[animation-play-state:paused]">
         {[...icons, ...icons].map((icon, i) => (
           <div

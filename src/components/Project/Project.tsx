@@ -6,7 +6,7 @@ function Project() {
 
   return (
     <>
-      <section id="projects" className='bg-background h-screen w-screen flex flex-col items-center justify-center'>
+      <section id="projects" className='bg-background h-dvh w-dvw flex flex-col items-center justify-center'>
         <h1 className='text-text'>projects</h1>
         <div className="card-container">
           <div className="card">
