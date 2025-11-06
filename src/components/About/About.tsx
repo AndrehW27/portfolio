@@ -48,15 +48,15 @@ function About() {
               </div>
               <h1>High-availability and low-latency API development.</h1>
             </div>
-            <div data-aos="fade-right" className='flex mr-5 mb-15'>
+            <div data-aos="fade-right" className='flex mr-5 mb-12'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <DatabaseBackup  />
               </div>
               <h1>Full lifecycle management and value-driven feature implementation.</h1>
             </div>
-            <img data-aos="fade-right" data-aos-offset="275"  className='h-80 image-blur-edges ml-5 sm:ml-60' src={perfil} alt="A cool image" />
+            <img data-aos="fade-right" data-aos-offset="275"  className='h-75 image-blur-edges ml-5 sm:ml-60' src={perfil} alt="A cool image" />
           </div>
-          <div data-aos="fade-left" className='h-160 sm:h-140 w-70 sm:w-100 border-blue-500 pr-8'>
+          <div data-aos="fade-left" className='h-150 sm:h-140 w-70 sm:w-100 border-blue-500 pr-8'>
             <h1 className='border-accent white:border-light-blue'>
               I’m a driven <span className='text-accent white:text-light-blue font-bold'>Full-Stack Developer</span> with  <span className='text-accent white:text-light-blue font-bold'>over five years</span> of experience developing and improving <span className='text-accent white:text-light-blue font-bold'>web systems</span> for the <span className='text-accent white:text-light-blue font-bold'>largest bank</span> in Latin America, <span className='text-accent white:text-light-blue font-bold'>gaining a broad</span> and strategic <span className='text-accent white:text-light-blue font-bold'>understanding of technology</span> along the way.
               <br />
@@ -67,7 +67,7 @@ function About() {
           </div>
         </div>
 
-        <h1 data-aos="fade-in" className='mt-30 text-2xl sm:text-2xl font-bold'>My Jorney</h1>
+        <h1 data-aos="fade-in" className='white:text-dark-blue mt-30 text-2xl sm:text-2xl font-bold'>My Jorney</h1>
 
         <div className='border-yellow-300 w-[70vw] flex items-center justify-center mt-20'>
 
