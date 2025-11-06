@@ -44,7 +44,7 @@ function Hero() {
           </ul>
         </div>
       </nav>
-      <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/darkwave-bg3.png')] white:bg-[url('./assets/white-bg.png')] text-text white:text-text-dark flex flex-col items-center justify-center">
+      <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/bg_purple_dark.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-text-dark flex flex-col items-center justify-center">
         <h1 className="text-3xl sm:text-5 xl font-bold mt-3">André Willian</h1>
         <h3 className="typing text-1xl font-bold mt-3 text-accent">Fullstack Developer</h3>
 
