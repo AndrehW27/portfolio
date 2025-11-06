@@ -15,8 +15,13 @@
   --color-surface: #1A1625;
   --color-accent: #7C3AED;
   --color-text: #e8e9e9;
-  --color-text-dark: #1f1f1f;
   --color-text-muted: #A3A3B3;
+  
+  /* WHITE */
+  --color-dark-blue: #1c47a6;
+  --color-light-blue: #6594fc;
+  --color-text-dark: #1f1f1f;
+
   
 }
 

@@ -11,7 +11,7 @@ import { ServerCog } from "lucide-react";
 import { Database } from "lucide-react";
 // import { Bug } from "lucide-react";
 // import { CloudCheck } from "lucide-react";
-import aw from '../../assets/aw-final.png';
+
 // import ThemeToggle from "../ThemeToggle/ThemeToggle";
 // import { IoMoonOutline } from "react-icons/io5";
 // import { GoSun } from "react-icons/go";
@@ -27,10 +27,14 @@ function Hero() {
   return (
     <>
       <nav className='text-text font-bold fixed w-dvw z-1 top-0 left-0'>
-        <div className='w-dvw mx-auto px-6 py-4 flex justify-center items-center bg-background white:bg-text text-text white:text-text-dark'>
+        <div className='w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-blue'>
 
-          <a className='w-9 h-9 fixed left-4' href="#">
-            <img src={aw} alt="" />
+          <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw-blue.png')]">
+
+          </div>
+
+          <a className='w-9 h-9 fixed left-4 ' href="#">
+            {/* <img src={aw} alt="" /> */}
           </a>
 
           <ul className='text-sm'>
@@ -44,33 +48,33 @@ function Hero() {
           </ul>
         </div>
       </nav>
-      <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/bg_purple_dark.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-text-dark flex flex-col items-center justify-center">
+      <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/darkwave-bg3.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-dark-blue flex flex-col items-center justify-center">
         <h1 className="text-3xl sm:text-5 xl font-bold mt-3">André Willian</h1>
-        <h3 className="typing text-1xl font-bold mt-3 text-accent">Fullstack Developer</h3>
+        <h3 className="typing text-1xl font-bold mt-3 text-accent white:text-light-blue">Fullstack Developer</h3>
 
-        <div className='carousel border-accent'>
+        <div className='carousel border-accent text-accent white:text-light-blue'>
           <div className='group'>
-            <div className="card-carousel"><Waypoints className='text-accent' /></div>
-            <div className="card-carousel"><SquareDashedBottomCode className='text-accent' /></div>
-            <div className="card-carousel"><ServerCog className='text-accent' /></div>
-            <div className="card-carousel"><Database className='text-accent' /></div>
-            <div className="card-carousel"><ShieldCheck className='text-accent' /></div>
-            <div className="card-carousel"><Rocket className='text-accent' /></div>
+            <div className="card-carousel"><Waypoints className=''/></div>
+            <div className="card-carousel"><SquareDashedBottomCode className=''/></div>
+            <div className="card-carousel"><ServerCog className=''/></div>
+            <div className="card-carousel"><Database className=''/></div>
+            <div className="card-carousel"><ShieldCheck className=''/></div>
+            <div className="card-carousel"><Rocket className=''/></div>
           </div>
           <div aria-hidden className='group'>
-            <div className="card-carousel"><Waypoints className='text-accent' /></div>
-            <div className="card-carousel"><SquareDashedBottomCode className='text-accent' /></div>
-            <div className="card-carousel"><ServerCog className='text-accent' /></div>
-            <div className="card-carousel"><Database className='text-accent' /></div>
-            <div className="card-carousel"><ShieldCheck className='text-accent' /></div>
-            <div className="card-carousel"><Rocket className='text-accent' /></div>
+            <div className="card-carousel"><Waypoints className=''/></div>
+            <div className="card-carousel"><SquareDashedBottomCode className=''/></div>
+            <div className="card-carousel"><ServerCog className=''/></div>
+            <div className="card-carousel"><Database className=''/></div>
+            <div className="card-carousel"><ShieldCheck className=''/></div>
+            <div className="card-carousel"><Rocket className=''/></div>
           </div>
         </div>
 
         <h5 className="text-sm font-bold mt-12">Bringing creativity and code together.</h5>
 
         <a href="#about">
-          <button className="shadow-[0_0_20px_#7C3AED] hover:shadow-[0_0_40px_#7C3AED] bg-linear-to-r from-accent to-surface text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
+          <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-blue text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
             About Me
           </button>
         </a>
