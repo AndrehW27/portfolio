@@ -2,7 +2,7 @@
 import Hero from './components/Home/Home.tsx'
 import Project from './components/Project/Project.tsx'
 import About from './components/About/About.tsx'
-import Contact from './components/Contact/Contact.tsx'
+// import Contact from './components/Contact/Contact.tsx'
 import './App.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
