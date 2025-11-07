@@ -26,7 +26,7 @@ function App() {
   const [language, setLanguage] = useState('english');
 
 
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
     const newLang = i18n.language === "en" ? "pt" : "en";
