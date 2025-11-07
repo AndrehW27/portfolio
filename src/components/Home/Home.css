@@ -1,8 +1,8 @@
 .typing {
-  width: 20ch; /* number of characters */
+  width: 16ch; /* number of characters */
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(20) infinite alternate, blink 0.5s step-end infinite alternate;
+  animation: typing 3s steps(16) infinite alternate, blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -10,7 +10,7 @@
     width: 0;
   }
   to {
-    width: 20ch;
+    width: 16ch;
   }
 }
 
