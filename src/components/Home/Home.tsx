@@ -50,7 +50,7 @@ function Hero() {
       </nav>
       <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/darkwave-bg3.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-dark-blue flex flex-col items-center justify-center">
         <h1 className="text-3xl sm:text-5 xl font-bold mt-3">André Willian</h1>
-        <h3 className="typing text-1xl font-bold mt-3 text-accent white:text-light-blue">Fullstack Developer</h3>
+        <h3 className="typing border-r-3 border-accent white:border-light-blue text-1xl font-bold mt-3 text-accent white:text-light-blue">Fullstack Developer</h3>
 
         <div className='carousel border-accent text-accent white:text-light-blue'>
           <div className='group'>

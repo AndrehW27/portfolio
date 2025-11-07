@@ -6,7 +6,7 @@ import { University } from "lucide-react";
 import { GraduationCap } from "lucide-react";
 import { Factory } from "lucide-react";
 import { Landmark } from "lucide-react";
-import { DatabaseBackup  } from "lucide-react";
+import { DatabaseBackup } from "lucide-react";
 import { Wallpaper } from "lucide-react";
 import { Gauge } from "lucide-react";
 // import { ChevronDown } from "lucide-react";
@@ -40,7 +40,7 @@ function About() {
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <Wallpaper />
               </div>
-              <h1>Building clean, modern, and highly performant user interfaces.</h1>
+              <h1>Modern, and highly performant user interfaces.</h1>
             </div>
             <div data-aos="fade-right" className='flex mr-5 mb-5'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
@@ -50,15 +50,16 @@ function About() {
             </div>
             <div data-aos="fade-right" className='flex mr-5 mb-12'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                <DatabaseBackup  />
+                <DatabaseBackup />
               </div>
-              <h1>Full lifecycle management and value-driven feature implementation.</h1>
+              <h1>Full lifecycle management and value-driven.</h1>
             </div>
-            <img data-aos="fade-right" data-aos-offset="275"  className='h-75 image-blur-edges ml-5 sm:ml-60' src={perfil} alt="A cool image" />
+            <img data-aos="fade-right" data-aos-offset="275" className='h-75 image-blur-edges ml-10 sm:ml-60' src={perfil} alt="A cool image" />
           </div>
-          <div data-aos="fade-left" className='h-150 sm:h-140 w-70 sm:w-100 border-blue-500 pr-8'>
+          <div data-aos="fade-left" className='h-130 sm:h-140 w-70 sm:w-100 border-blue-500 pr-8'>
             <h1 className='border-accent white:border-light-blue'>
-              I’m a driven <span className='text-accent white:text-light-blue font-bold'>Full-Stack Developer</span> with  <span className='text-accent white:text-light-blue font-bold'>over five years</span> of experience developing and improving <span className='text-accent white:text-light-blue font-bold'>web systems</span> for the <span className='text-accent white:text-light-blue font-bold'>largest bank</span> in Latin America, <span className='text-accent white:text-light-blue font-bold'>gaining a broad</span> and strategic <span className='text-accent white:text-light-blue font-bold'>understanding of technology</span> along the way.
+              I’m a driven <span className='text-accent white:text-light-blue font-bold'>Full-Stack Developer</span> with  <span className='text-accent white:text-light-blue font-bold'>over five years</span> of experience developing and improving <span className='text-accent white:text-light-blue font-bold'>web systems</span> for the <span className='text-accent white:text-light-blue font-bold'>largest bank</span> in Latin America.
+               {/* <span className='text-accent white:text-light-blue font-bold'>gaining a broad</span> and strategic <span className='text-accent white:text-light-blue font-bold'>understanding of technology</span> along the way. */}
               <br />
               <br />
               {/* I’ve worked with a <span className='text-accent white:text-light-blue font-bold'>wide range of tools</span> and technologies, including Angular, React, Node, AWS, LWC, APEX, among others. Constantly <span className='text-accent white:text-light-blue font-bold'>seeking growth</span>, I strive to build efficient, intuitive, and impactful solutions that <span className='text-accent white:text-light-blue font-bold'>deliver real value.</span> */}
@@ -71,41 +72,35 @@ function About() {
 
         <div className='border-yellow-300 w-[70vw] flex items-center justify-center mt-20'>
 
-          <div className='w-40 sm:w-100 border-red-500 flex flex-col justify-start items-center'>
+          <div className='w-40 text-sm sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
             <div className='w-40 sm:w-100 h-50 border-blue-500 flex justify-end items-start'>
               <div>
-                <img data-aos="fade-right" className=' h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#3594d2] white:shadow-[0_0_10px_#3594d2] transition duration-300 ease-in-out' src={logic} />
+                <img data-aos="fade-left" className=' h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#3594d2] white:shadow-[0_0_10px_#3594d2] transition duration-300 ease-in-out' src={logic} />
               </div>
             </div>
-            <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
-              <div data-aos="fade-right" className='flex align-center justify-center gap-1 sm:gap-4'>
-                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition duration-300 ease-in-out' src={settings} />
-                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition duration-300 ease-in-out' src={english} />
+            <div className='w-40 pl-6 sm:w-100 h-50 border-orange-500 text-center flex justify-center items-start'>
+              <div data-aos="fade-left">
+                <h1 className='text-accent white:text-light-blue font-bold'>WSU - 2014</h1>
+                <p>Studied abroad in USA, took computer science and english classes.</p>
               </div>
             </div>
+
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
-              <div data-aos="fade-right" className='flex align-center justify-center gap-1 sm:gap-4'>
+              <div data-aos="fade-left" className='flex align-center justify-center gap-1 sm:gap-4'>
                 <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                 <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                 <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
               </div>
             </div>
-            <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
-              <div data-aos="fade-right" >
-                <div className='flex align-center justify-center gap-1 sm:gap-4'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                </div>
-                <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#6762a6] white:shadow-[0_0_10px_#6762a6] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#4f982e] white:shadow-[0_0_10px_#4f982e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#8e13fd] white:shadow-[0_0_10px_#8e13fd]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-                </div>
+            <div className='w-40 pl-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+              <div data-aos="fade-left">
+                <h1 className='text-accent white:text-light-blue font-bold'>GEN-BR - 2020</h1>
+                <p>Extensive bootcamp, multiple tech stacks and real-world projects.</p>
               </div>
             </div>
+
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
-              <div data-aos="fade-right">
+              <div data-aos="fade-left">
                 <div className='flex align-center justify-center gap-1 sm:gap-4'>
                   <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
                   <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
@@ -118,20 +113,13 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
-              <div data-aos="fade-right">
-                <div className='flex align-center justify-center gap-1 sm:gap-4'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                  <img className='white:border border-text-dark h-11 w-11 sm:h-15 sm:w-15 bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-                </div>
-                <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                </div>
+            <div className='w-40 pl-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+              <div data-aos="fade-left">
+                <h1 className='text-accent white:text-light-blue font-bold'>PUCRS - 2025</h1>
+                <p>Full-Stack postgraduate, advanced technology concepts.</p>
               </div>
             </div>
+
           </div>
 
           <div className='w-20 sm:w-50 border-red-500 flex flex-col justify-start items-center'>
@@ -178,41 +166,60 @@ function About() {
 
           </div>
 
-          <div className='w-40 px-3 text-sm sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
-            <div className='w-40 px-3 sm:w-100 h-50 border-orange-500 flex justify-center items-start'>
-              <div data-aos="fade-left">
+          <div className='w-40 px-6 text-sm sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
+            <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+              <div data-aos="fade-right">
                 <h1 className='text-accent white:text-light-blue font-bold'>UFABC - 2012</h1>
-                <p>Bachelor’s in Science and Tech, introduced to programming logic and foundational computer concepts.</p>
+                <p>Bachelor’s in Science and Tech, introduced to programming logic concepts.</p>
               </div>
             </div>
-            <div className='w-40 px-3 sm:w-100 h-50 border-orange-500 flex justify-center items-start'>
-              <div data-aos="fade-left">
-                <h1 className='text-accent white:text-light-blue font-bold'>WSU - 2014</h1>
-                <p>Studied abroad in the United States, taking computer science, and english courses.</p>
+
+            <div className='w-40 sm:w-100 h-50 text-center border-orange-500 flex justify-start items-start'>
+              <div data-aos="fade-right" className='flex align-center justify-center gap-1 sm:gap-4'>
+                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition duration-300 ease-in-out' src={settings} />
+                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition duration-300 ease-in-out' src={english} />
               </div>
             </div>
-            <div className='w-40 px-3 sm:w-100 h-50 border-orange-500 flex justify-center items-start'>
-              <div data-aos="fade-left">
+            <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+              <div data-aos="fade-right">
                 <h1 className='text-accent white:text-light-blue font-bold'>GM - 2019</h1>
-                <p>Experience working with Excel and VBA, alongside initial studies in web development.</p>
+                <p>Experience with Excel and VBA, initial studies in web development.</p>
               </div>
             </div>
-            <div className='w-40 px-3 sm:w-100 h-50 border-orange-500 flex justify-center items-start'>
-              <div data-aos="fade-left">
-                <h1 className='text-accent white:text-light-blue font-bold'>Gen. BR - 2020</h1>
-                <p>Completed an extensive bootcamp, gaining hands-on experience with multiple tech stacks and real-world projects.</p>
+            <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-start items-start'>
+              <div data-aos="fade-right" >
+                <div className='flex align-center justify-center gap-1 sm:gap-4'>
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                </div>
+                <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#6762a6] white:shadow-[0_0_10px_#6762a6] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#4f982e] white:shadow-[0_0_10px_#4f982e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#8e13fd] white:shadow-[0_0_10px_#8e13fd]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                </div>
               </div>
             </div>
-            <div className='w-40 px-3 sm:w-100 h-50 border-orange-500 flex justify-center items-start'>
-              <div data-aos="fade-left">
+
+            <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+              <div data-aos="fade-right">
                 <h1 className='text-accent white:text-light-blue font-bold'>Itaú - 2020</h1>
-                <p>Worked on many systems, gaining valuable experience over the past 5 years.</p>
+                <p>Worked on many systems, a lot of experience over 5 years.</p>
               </div>
             </div>
-            <div className='w-40 px-3 sm:w-100 h-50 border-orange-500 flex justify-center items-start'>
-              <div data-aos="fade-left">
-                <h1 className='text-accent white:text-light-blue font-bold'>PUCRS - 2025</h1>
-                <p>Postgraduate studies in Full-Stack Development, enhancing my knowledge of advanced technology concepts.</p>
+
+            <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-start items-start'>
+              <div data-aos="fade-right">
+                <div className='flex align-center justify-center gap-1 sm:gap-4'>
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                  <img className='white:border border-text-dark h-11 w-11 sm:h-15 sm:w-15 bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </div>
+                <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                </div>
               </div>
             </div>
 
