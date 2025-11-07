@@ -33,7 +33,7 @@ function Hero() {
       <nav className='text-text font-bold fixed w-dvw z-1 top-0 left-0'>
         <div className='w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-blue'>
 
-          <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw-blue.png')]">
+          <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw_light.png')]">
 
           </div>
 

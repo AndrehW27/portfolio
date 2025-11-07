@@ -36,14 +36,14 @@ function App() {
             onClick={() => {
               setTheme('');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GoSun className='h-5 w-5 text-accent white:text-dark-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GoSun className='h-5 w-5 text-accent white:text-light-blue' /></button>
         }
         {theme === '' &&
           <button
             onClick={() => {
               setTheme('white');
             }}
-            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-5 w-5 text-accent white:text-dark-blue'/></button>
+            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-5 w-5 text-accent white:text-light-blue'/></button>
         }
 
       </div>
@@ -54,14 +54,14 @@ function App() {
             onClick={() => {
               setLanguage('english');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-5 w-5 text-accent white:text-dark-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-5 w-5 text-accent white:text-light-blue' /></button>
         }
         {language === 'english' &&
           <button
             onClick={() => {
               setLanguage('');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><LiaFlagUsaSolid className='h-5 w-5 text-accent white:text-dark-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><LiaFlagUsaSolid className='h-5 w-5 text-accent white:text-light-blue' /></button>
         }
 
       </div>
