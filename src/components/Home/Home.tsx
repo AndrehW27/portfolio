@@ -9,6 +9,7 @@ import { ShieldCheck } from "lucide-react";
 import { ServerCog } from "lucide-react";
 // import { Router } from "lucide-react";
 import { Database } from "lucide-react";
+import { useTranslation } from "react-i18next";
 // import { Bug } from "lucide-react";
 // import { CloudCheck } from "lucide-react";
 
@@ -24,6 +25,10 @@ import { Database } from "lucide-react";
 
 
 function Hero() {
+
+  const { t } = useTranslation();
+
+
 
   // const [theme, setTheme] = useState('dark');
   // const [language, setLanguage] = useState('english');
@@ -42,13 +47,13 @@ function Hero() {
           </a>
 
           <ul className='text-sm'>
-            <li ><a href="#about" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>About</a></li>
+            <li ><a href="#about" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>{t("navbar.about")}</a></li>
           </ul>
           <ul className='text-sm'>
-            <li ><a href="#projects" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>Projects</a></li>
+            <li ><a href="#projects" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>{t("navbar.projects")}</a></li>
           </ul>
           <ul className='text-sm'>
-            <li ><a href="#contact" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>Contact</a></li>
+            <li ><a href="#contact" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>{t("navbar.contact")}</a></li>
           </ul>
         </div>
       </nav>
@@ -68,9 +73,9 @@ function Hero() {
           </video> */}
 
 
-        <h1 className="text-1xl sm:text-2xl font-bold mt-4">Hello there, welcome!</h1>
-        <h1 className="text-3xl sm:text-5xl font-bold mt-4">I'm André Willian</h1>
-        <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-1xl font-bold mt-4 text-accent white:text-light-blue">A Fullstack Developer</h3>
+        <h1 className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
+        <h1 className="text-3xl sm:text-5xl font-bold mt-4">{t("home.title")}</h1>
+        <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-1xl font-bold mt-4 text-accent white:text-light-blue">{t("home.subtitle")}</h3>
 
 
         {/* <h1 className="text-2xl sm:text-3xl font-bold mt-3">Fullstack Developer</h1> */}
@@ -94,11 +99,11 @@ function Hero() {
           </div>
         </div>
 
-        <h5 className="text-sm font-bold mt-12">Bringing creativity and code together.</h5>
+        <h5 className="text-sm font-bold mt-12">{t("home.text")}</h5>
 
         <a href="#about">
           <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-blue text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
-            About Me
+            {t("home.button")}
           </button>
         </a>
 

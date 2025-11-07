@@ -16,6 +16,7 @@ import logic from '../../assets/logic.png';
 import settings from '../../assets/settings.png';
 import english from '../../assets/eng.png';
 import perfil from '../../assets/perfil_art_far.png';
+import { useTranslation } from "react-i18next";
 
 
 
@@ -30,6 +31,8 @@ import perfil from '../../assets/perfil_art_far.png';
 
 function About() {
 
+  const { t } = useTranslation();
+
   return (
     <>
       <section id="about" className='bg-background font-bold white:bg-text text-text white:text-text-dark flexborder-accent white:border-light-blue w-dvw flex flex-col items-center justify-start pb-20'>
@@ -40,30 +43,29 @@ function About() {
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <Wallpaper />
               </div>
-              <h1 className='white:text-dark-blue'>Modern, and highly performant user interfaces.</h1>
+              <h1 className='white:text-dark-blue'>{t("about.interface")}</h1>
             </div>
             <div data-aos="fade-right" className='flex mr-5 mb-5'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <Gauge />
               </div>
-              <h1 className='white:text-dark-blue'>High-availability and low-latency API development.</h1>
+              <h1 className='white:text-dark-blue'>{t("about.api")}</h1>
             </div>
             <div data-aos="fade-right" className='flex mr-5 mb-12'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <DatabaseBackup />
               </div>
-              <h1 className='white:text-dark-blue'>Full lifecycle management and value-driven.</h1>
+              <h1 className='white:text-dark-blue'>{t("about.cycle")}</h1>
             </div>
             <img data-aos="fade-right" data-aos-offset="275" className='h-75 image-blur-edges ml-10 sm:ml-60' src={perfil} alt="A cool image" />
           </div>
           <div data-aos="fade-left" className='h-130 sm:h-140 w-70 sm:w-100 border-blue-500 pr-8'>
             <h1 className='border-accent white:border-light-blue'>
-              I’m a driven <span className='text-accent white:text-light-blue font-bold'>Full-Stack Developer</span> with  <span className='text-accent white:text-light-blue font-bold'>over five years</span> of experience developing and improving <span className='text-accent white:text-light-blue font-bold'>web systems</span> for the <span className='text-accent white:text-light-blue font-bold'>largest bank</span> in Latin America.
-               {/* <span className='text-accent white:text-light-blue font-bold'>gaining a broad</span> and strategic <span className='text-accent white:text-light-blue font-bold'>understanding of technology</span> along the way. */}
-              <br />
-              <br />
-              {/* I’ve worked with a <span className='text-accent white:text-light-blue font-bold'>wide range of tools</span> and technologies, including Angular, React, Node, AWS, LWC, APEX, among others. Constantly <span className='text-accent white:text-light-blue font-bold'>seeking growth</span>, I strive to build efficient, intuitive, and impactful solutions that <span className='text-accent white:text-light-blue font-bold'>deliver real value.</span> */}
-              Constantly <span className='text-accent white:text-light-blue font-bold'>seeking growth</span>, I strive to build efficient, intuitive, and impactful solutions that <span className='text-accent white:text-light-blue font-bold'>deliver real value.</span>
+            {t("about.driven")}
+            </h1>
+            <br />
+            <h1 className='border-accent white:border-light-blue'>
+            {t("about.strive")}
             </h1>
           </div>
         </div>
@@ -80,8 +82,8 @@ function About() {
             </div>
             <div className='w-40 pl-6 sm:w-100 h-50 border-orange-500 text-center flex justify-center items-start'>
               <div data-aos="fade-left">
-                <h1 className='text-accent white:text-light-blue font-bold'>WSU - 2014</h1>
-                <p>Studied abroad in USA, took computer science and english classes.</p>
+                <h1 className='text-accent white:text-light-blue font-bold'>{t("about.wsu")}</h1>
+                <p>{t("about.wsu.text")}</p>
               </div>
             </div>
 
@@ -94,8 +96,8 @@ function About() {
             </div>
             <div className='w-40 pl-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-left">
-                <h1 className='text-accent white:text-light-blue font-bold'>GEN-BR - 2020</h1>
-                <p>Extensive bootcamp, multiple tech stacks and real-world projects.</p>
+                <h1 className='text-accent white:text-light-blue font-bold'>{t("about.gen")}</h1>
+                <p>{t("about.gen.text")}</p>
               </div>
             </div>
 
@@ -115,8 +117,8 @@ function About() {
             </div>
             <div className='w-40 pl-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-left">
-                <h1 className='text-accent white:text-light-blue font-bold'>PUCRS - 2025</h1>
-                <p>Full-Stack postgraduate, advanced technology concepts.</p>
+                <h1 className='text-accent white:text-light-blue font-bold'>{t("about.puc")}</h1>
+                <p>{t("about.puc.text")}</p>
               </div>
             </div>
 
@@ -169,8 +171,8 @@ function About() {
           <div className='w-40 px-6 text-sm sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
             <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-right">
-                <h1 className='text-accent white:text-light-blue font-bold'>UFABC - 2012</h1>
-                <p>Bachelor’s in Science and Tech, introduced to programming logic concepts.</p>
+                <h1 className='text-accent white:text-light-blue font-bold'>{t("about.ufabc")}</h1>
+                <p>{t("about.ufabc.text")}</p>
               </div>
             </div>
 
@@ -182,8 +184,8 @@ function About() {
             </div>
             <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-right">
-                <h1 className='text-accent white:text-light-blue font-bold'>GM - 2019</h1>
-                <p>Experience with Excel and VBA, initial studies in web development.</p>
+                <h1 className='text-accent white:text-light-blue font-bold'>{t("about.gm")}</h1>
+                <p>{t("about.gm.text")}</p>
               </div>
             </div>
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-start items-start'>
@@ -203,8 +205,8 @@ function About() {
 
             <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-right">
-                <h1 className='text-accent white:text-light-blue font-bold'>Itaú - 2020</h1>
-                <p>Worked on many systems, a lot of experience over 5 years.</p>
+                <h1 className='text-accent white:text-light-blue font-bold'>{t("about.itau")}</h1>
+                <p>{t("about.itau.text")}</p>
               </div>
             </div>
 

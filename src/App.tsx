@@ -2,7 +2,7 @@
 import Hero from './components/Home/Home.tsx'
 import Project from './components/Project/Project.tsx'
 import About from './components/About/About.tsx'
-// import Contact from './components/Contact/Contact.tsx'
+import Contact from './components/Contact/Contact.tsx'
 import './App.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,6 +13,7 @@ import { GoSun } from "react-icons/go";
 import { GiBrazilFlag } from "react-icons/gi";
 import { LiaFlagUsaSolid } from "react-icons/lia";
 import { useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 function App() {
 
@@ -23,6 +24,14 @@ function App() {
 
   const [theme, setTheme] = useState('');
   const [language, setLanguage] = useState('english');
+
+
+  const { i18n, t } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "en" ? "pt" : "en";
+    i18n.changeLanguage(newLang);
+  };
 
 
   return (
@@ -43,7 +52,7 @@ function App() {
             onClick={() => {
               setTheme('white');
             }}
-            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-5 w-5 text-accent white:text-light-blue'/></button>
+            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-5 w-5 text-accent white:text-light-blue' /></button>
         }
 
       </div>
@@ -52,6 +61,7 @@ function App() {
         {language === '' &&
           <button
             onClick={() => {
+              toggleLanguage();
               setLanguage('english');
             }}
             className='p-1 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-5 w-5 text-accent white:text-light-blue' /></button>
@@ -59,6 +69,7 @@ function App() {
         {language === 'english' &&
           <button
             onClick={() => {
+              toggleLanguage();
               setLanguage('');
             }}
             className='p-1 transition duration-300 ease-in-out cursor-pointer'><LiaFlagUsaSolid className='h-5 w-5 text-accent white:text-light-blue' /></button>
@@ -69,7 +80,7 @@ function App() {
       <Hero />
       <About />
       <Project />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   )
 }
