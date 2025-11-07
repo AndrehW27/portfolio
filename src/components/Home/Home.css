@@ -54,7 +54,7 @@
     margin: 20px auto;
     width: 250px;
     /* border: 1px solid red; */
-    height: 2rem;
+    height: 3rem;
     display: flex;
     overflow-x: auto;
 }
