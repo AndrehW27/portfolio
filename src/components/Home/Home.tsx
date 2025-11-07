@@ -35,8 +35,8 @@ function Hero() {
 
   return (
     <>
-      <nav className='text-text font-bold fixed w-dvw z-1 top-0 left-0'>
-        <div className='w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-blue'>
+      <nav className='text-text font-bold fixed w-dvw z-1 top-0 left-0 bg-background white:bg-white-bg'>
+        <div className='w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray'>
 
           <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw_light.png')]">
 
@@ -57,7 +57,7 @@ function Hero() {
           </ul>
         </div>
       </nav>
-      <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/darkwave-bg3.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-dark-blue flex flex-col items-center justify-center">
+      <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/darkwave-bg3.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-dark-gray flex flex-col items-center justify-center">
 
 
 
@@ -102,7 +102,7 @@ function Hero() {
         <h5 className="text-sm font-bold mt-12">{t("home.text")}</h5>
 
         <a href="#about">
-          <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-blue text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
+          <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-gray text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
             {t("home.button")}
           </button>
         </a>

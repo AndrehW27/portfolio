@@ -19,7 +19,7 @@ function Project() {
 
   return (
     <>
-      <section id="projects" className='bg-background white:bg-text h-dvh w-dvw flex items-center justify-center'>
+      <section id="projects" className='bg-background white:bg-white-bg h-dvh w-dvw flex items-center justify-center'>
         <div className="relative m-3 h-dvh w-dvw bg-cover bg-center bg-[url('./assets/dark-bg.png')] rounded-4xl">
           <div className="absolute bottom-5 right-15 bg-cover bg-center bg-[url('./assets/bg_purple.png')] h-70 w-40 bg-text rounded-3xl"></div>
           <div className="absolute bottom-5 left-95 bg-cover bg-center bg-[url('./assets/bg-blue-gray.png')] h-70 w-40 bg-surface rounded-3xl"></div>

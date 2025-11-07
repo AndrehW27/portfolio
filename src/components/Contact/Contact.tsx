@@ -13,7 +13,7 @@ function Contact() {
 
   return (
     <>
-      <section id="contact" className='bg-background h-dvh w-dvw flex flex-col items-center justify-center'>
+      <section id="contact" className='bg-background white:bg-white-bg h-dvh w-dvw flex flex-col items-center justify-center'>
 
         <h1 className='text-text'>Contacts</h1>
         {/* <div className='w-[90dvw] h-[80dvh] border border-red-500 flex flex-col items-center justify-center'>

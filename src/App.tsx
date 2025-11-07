@@ -38,25 +38,25 @@ function App() {
     // Apply the 'white' class here to wrap the entire application
     <div className={`${theme === 'white' ? 'white' : ''}`}>
 
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-2 right-2 z-9999'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-2 z-9999'>
 
         {theme === 'white' &&
           <button
             onClick={() => {
               setTheme('');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GoSun className='h-5 w-5 text-accent white:text-light-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GoSun className='h-6 w-6 text-accent white:text-light-blue' /></button>
         }
         {theme === '' &&
           <button
             onClick={() => {
               setTheme('white');
             }}
-            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-5 w-5 text-accent white:text-light-blue' /></button>
+            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-6 w-6 text-accent white:text-light-blue' /></button>
         }
 
       </div>
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-2 right-12 z-9999'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-11 z-9999'>
 
         {language === '' &&
           <button
@@ -64,7 +64,7 @@ function App() {
               toggleLanguage();
               setLanguage('english');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-5 w-5 text-accent white:text-light-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-7 w-7 text-accent white:text-light-blue' /></button>
         }
         {language === 'english' &&
           <button
@@ -72,7 +72,7 @@ function App() {
               toggleLanguage();
               setLanguage('');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><LiaFlagUsaSolid className='h-5 w-5 text-accent white:text-light-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><LiaFlagUsaSolid className='h-7 w-7 text-accent white:text-light-blue' /></button>
         }
 
       </div>
