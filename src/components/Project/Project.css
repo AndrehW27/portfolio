@@ -42,3 +42,38 @@
         0 25px 50px rgba(0, 0, 0, 0.5), /* Stronger shadow for depth */
         /* 0 0 15px rgba(124, 58, 237, 0.7);  */
 }
+
+/* 1. Define the Zoom Keyframes */
+/* The element will scale down from 1.2x to 1x as it enters the view */
+@keyframes zoom-in {
+    from {
+        transform: scale(1.2); /* Start zoomed in */
+    }
+    to {
+        transform: scale(1); /* End at normal size */
+    }
+}
+
+/* 2. Define the Parallax Keyframes */
+/* The element will move slower than the scroll, e.g., only 50px of movement */
+@keyframes parallax-shift {
+    from {
+        transform: translateY(-50px); /* Start slightly above its final position */
+    }
+    to {
+        transform: translateY(0); /* End in its final position */
+    }
+}
+
+.parallax-zoom-element {
+    /* Apply both animations simultaneously */
+    animation-name: zoom-in, parallax-shift;
+    animation-timing-function: linear;
+    animation-duration: 1s; /* Duration maps to the scroll range */
+    
+    /* Set the timeline to the viewport scroll */
+    animation-timeline: view();
+    
+    /* Optional: Adjust range if needed */
+    /* animation-range: entry 0% cover 50%; */
+}

@@ -32,7 +32,7 @@ function About() {
 
   return (
     <>
-      <section id="about" className='bg-background white:bg-text text-text white:text-text-dark flexborder-accent white:border-light-blue w-dvw flex flex-col items-center justify-start pb-20'>
+      <section id="about" className='bg-background font-bold white:bg-text text-text white:text-text-dark flexborder-accent white:border-light-blue w-dvw flex flex-col items-center justify-start pb-20'>
 
         <div className='flex justify-center items-end h-dvh w-dvw border-red-500 text-sm sm:text-base'>
           <div className='flex flex-col justify-end items-start h-160 w-70 sm:w-160 border-blue-500 pl-8'>
@@ -40,19 +40,19 @@ function About() {
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <Wallpaper />
               </div>
-              <h1>Modern, and highly performant user interfaces.</h1>
+              <h1 className='white:text-dark-blue'>Modern, and highly performant user interfaces.</h1>
             </div>
             <div data-aos="fade-right" className='flex mr-5 mb-5'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <Gauge />
               </div>
-              <h1>High-availability and low-latency API development.</h1>
+              <h1 className='white:text-dark-blue'>High-availability and low-latency API development.</h1>
             </div>
             <div data-aos="fade-right" className='flex mr-5 mb-12'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                 <DatabaseBackup />
               </div>
-              <h1>Full lifecycle management and value-driven.</h1>
+              <h1 className='white:text-dark-blue'>Full lifecycle management and value-driven.</h1>
             </div>
             <img data-aos="fade-right" data-aos-offset="275" className='h-75 image-blur-edges ml-10 sm:ml-60' src={perfil} alt="A cool image" />
           </div>
@@ -70,7 +70,7 @@ function About() {
 
         <h1 data-aos="fade-in" className='white:text-dark-blue mt-30 text-2xl sm:text-2xl font-bold'>My Jorney</h1>
 
-        <div className='border-yellow-300 w-[70vw] flex items-center justify-center mt-20'>
+        <div className='white:text-dark-blue border-yellow-300 w-[70vw] flex items-center justify-center mt-20'>
 
           <div className='w-40 text-sm sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
             <div className='w-40 sm:w-100 h-50 border-blue-500 flex justify-end items-start'>

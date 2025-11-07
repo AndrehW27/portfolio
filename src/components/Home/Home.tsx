@@ -19,6 +19,10 @@ import { Database } from "lucide-react";
 // import { LiaFlagUsaSolid } from "react-icons/lia";
 // import { useState } from 'react';
 
+// import videobg from '../../assets/video-bg.mp4';
+
+
+
 function Hero() {
 
   // const [theme, setTheme] = useState('dark');
@@ -49,25 +53,44 @@ function Hero() {
         </div>
       </nav>
       <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/darkwave-bg3.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-dark-blue flex flex-col items-center justify-center">
-        <h1 className="text-3xl sm:text-5 xl font-bold mt-3">André Willian</h1>
-        <h3 className="typing border-r-3 border-accent white:border-light-blue text-1xl font-bold mt-3 text-accent white:text-light-blue">Fullstack Developer</h3>
+
+
+
+        {/* <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className=" z-0 w-auto h-screen min-w-full min-h-full max-w-none"
+          >
+            <source src={videobg} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video> */}
+
+
+        <h1 className="text-1xl sm:text-2xl font-bold mt-4">Hello there, welcome!</h1>
+        <h1 className="text-3xl sm:text-5xl font-bold mt-4">I'm André Willian</h1>
+        <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-1xl font-bold mt-4 text-accent white:text-light-blue">A Fullstack Developer</h3>
+
+
+        {/* <h1 className="text-2xl sm:text-3xl font-bold mt-3">Fullstack Developer</h1> */}
 
         <div className='carousel border-accent text-accent white:text-light-blue'>
           <div className='group'>
-            <div className="card-carousel"><Waypoints className=''/></div>
-            <div className="card-carousel"><SquareDashedBottomCode className=''/></div>
-            <div className="card-carousel"><ServerCog className=''/></div>
-            <div className="card-carousel"><Database className=''/></div>
-            <div className="card-carousel"><ShieldCheck className=''/></div>
-            <div className="card-carousel"><Rocket className=''/></div>
+            <div className="card-carousel"><Waypoints className='' /></div>
+            <div className="card-carousel"><SquareDashedBottomCode className='' /></div>
+            <div className="card-carousel"><ServerCog className='' /></div>
+            <div className="card-carousel"><Database className='' /></div>
+            <div className="card-carousel"><ShieldCheck className='' /></div>
+            <div className="card-carousel"><Rocket className='' /></div>
           </div>
           <div aria-hidden className='group'>
-            <div className="card-carousel"><Waypoints className=''/></div>
-            <div className="card-carousel"><SquareDashedBottomCode className=''/></div>
-            <div className="card-carousel"><ServerCog className=''/></div>
-            <div className="card-carousel"><Database className=''/></div>
-            <div className="card-carousel"><ShieldCheck className=''/></div>
-            <div className="card-carousel"><Rocket className=''/></div>
+            <div className="card-carousel"><Waypoints className='' /></div>
+            <div className="card-carousel"><SquareDashedBottomCode className='' /></div>
+            <div className="card-carousel"><ServerCog className='' /></div>
+            <div className="card-carousel"><Database className='' /></div>
+            <div className="card-carousel"><ShieldCheck className='' /></div>
+            <div className="card-carousel"><Rocket className='' /></div>
           </div>
         </div>
 
