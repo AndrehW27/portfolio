@@ -1,6 +1,6 @@
 import './Navbar.css'
-import { Laptop } from "lucide-react";
-import { Menu } from "lucide-react";
+// import { Laptop } from "lucide-react";
+// import { Menu } from "lucide-react";
 
 function Navbar() {
 
