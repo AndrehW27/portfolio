@@ -3,7 +3,7 @@
   /* border: 1px solid #7C3AED; */
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(14) infinite alternate, blink 0.5s step-end infinite alternate;
+  animation: typing 2s steps(14) infinite alternate, blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -54,7 +54,7 @@
 .carousel {
     /* margin: 20px auto; */
     /* margin-bottom: 24px; */
-    width: 100dvw;
+    /* width: 100dvw; */
     /* border: 1px solid red; */
     height: 3rem;
     display: flex;

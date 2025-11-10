@@ -110,15 +110,15 @@ function Hero({ theme }: HeroProps) {
           >
 
             <h1 className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
-            <h1 className="text-3xl sm:text-5xl font-bold mt-4">{t("home.title")}</h1>
+            <h1 className="text-3xl sm:text-5xl font-bold mt-6 py-3 px-6 rounded-2xl bg-linear-to-r from-surface to-accent white:from-text-dark white:to-light-blue  white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
 
-            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mt-4 mb-10">
+            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mt-6 mb-10">
               {t("home.subtitle")}
             </h3>
 
             <h5 className="text-sm font-bold mb-2">{t("home.text")}</h5>
 
-            <div className="carousel border-accent text-accent white:text-light-blue mb-30">
+            <div className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mb-30">
               <div className="group">
                 <div className="card-carousel"><Waypoints /></div>
                 <div className="card-carousel"><SquareDashedBottomCode /></div>
@@ -140,7 +140,7 @@ function Hero({ theme }: HeroProps) {
 
 
             <a href="#about">
-              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-gray text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
+              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
                 {t("home.button")}
               </button>
             </a>

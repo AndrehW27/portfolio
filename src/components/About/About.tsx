@@ -80,7 +80,7 @@ function About() {
                 <img data-aos="fade-left" className=' h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#3594d2] white:shadow-[0_0_10px_#3594d2] transition duration-300 ease-in-out' src={logic} />
               </div>
             </div>
-            <div className='w-40 pl-6 sm:w-100 h-50 border-orange-500 text-center flex justify-center items-start'>
+            <div className='w-40 pl-6 sm:w-100 h-50 border-orange-500  flex justify-center items-start'>
               <div data-aos="fade-left">
                 <h1 className='text-accent white:text-light-blue font-bold'>{t("about.wsu")}</h1>
                 <p>{t("about.wsu.text")}</p>
@@ -94,7 +94,7 @@ function About() {
                 <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
               </div>
             </div>
-            <div className='w-40 pl-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+            <div className='w-40 pl-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-left">
                 <h1 className='text-accent white:text-light-blue font-bold'>{t("about.gen")}</h1>
                 <p>{t("about.gen.text")}</p>
@@ -115,7 +115,7 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className='w-40 pl-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+            <div className='w-40 pl-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-left">
                 <h1 className='text-accent white:text-light-blue font-bold'>{t("about.puc")}</h1>
                 <p>{t("about.puc.text")}</p>
@@ -169,20 +169,20 @@ function About() {
           </div>
 
           <div className='w-40 px-6 text-sm sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
-            <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+            <div className='w-40 pr-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-right">
                 <h1 className='text-accent white:text-light-blue font-bold'>{t("about.ufabc")}</h1>
                 <p>{t("about.ufabc.text")}</p>
               </div>
             </div>
 
-            <div className='w-40 sm:w-100 h-50 text-center border-orange-500 flex justify-start items-start'>
+            <div className='w-40 sm:w-100 h-50  border-orange-500 flex justify-start items-start'>
               <div data-aos="fade-right" className='flex align-center justify-center gap-1 sm:gap-4'>
                 <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition duration-300 ease-in-out' src={settings} />
                 <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition duration-300 ease-in-out' src={english} />
               </div>
             </div>
-            <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+            <div className='w-40 pr-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-right">
                 <h1 className='text-accent white:text-light-blue font-bold'>{t("about.gm")}</h1>
                 <p>{t("about.gm.text")}</p>
@@ -203,7 +203,7 @@ function About() {
               </div>
             </div>
 
-            <div className='w-40 pr-6 sm:w-100 h-50 text-center border-orange-500 flex justify-center items-start'>
+            <div className='w-40 pr-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
               <div data-aos="fade-right">
                 <h1 className='text-accent white:text-light-blue font-bold'>{t("about.itau")}</h1>
                 <p>{t("about.itau.text")}</p>
