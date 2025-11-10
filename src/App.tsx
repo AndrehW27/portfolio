@@ -79,7 +79,7 @@ function App() {
 
       </div>
 
-      <Hero />
+      <Hero theme={theme} />
       <About />
       <Project />
       <Test />

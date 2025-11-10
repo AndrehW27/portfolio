@@ -52,7 +52,8 @@
 }
 
 .carousel {
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    /* margin-bottom: 24px; */
     width: 100dvw;
     /* border: 1px solid red; */
     height: 3rem;

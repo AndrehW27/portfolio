@@ -1,23 +1,25 @@
 import './Home.css'
-import { ChevronDown, Waypoints, SquareDashedBottomCode, Rocket, ShieldCheck, ServerCog, Database } from "lucide-react";
+import { ChevronDown, Database, Rocket, ServerCog, ShieldCheck, SquareDashedBottomCode, Waypoints } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { useTheme } from "next-themes";
-
 import wavesDark from '../../assets/waves-video.mp4';
 import wavesLight from '../../assets/white-video.mp4';
 
-function Hero() {
+type HeroProps = {
+  theme: string;
+};
+
+function Hero({ theme }: HeroProps) {
 
   const { t } = useTranslation();
-  const { theme } = useTheme();
 
   // Decide which video to use
   const videoSrc = theme === "white" ? wavesLight : wavesDark;
+
   // const videoSrc = theme === "white" ? wavesDarkLight;
 
   // Animate ONLY the video
@@ -39,7 +41,7 @@ function Hero() {
         markers: false
       }
     });
-  }, [theme]);  
+  }, [theme]);
   // IMPORTANT: re-run when theme switches (so GSAP resets)
 
   // Fade content slightly
@@ -83,14 +85,14 @@ function Hero() {
         </div>
       </nav>
 
-      <section className="bg-background">
+      <section className="bg-background white:bg-text">
 
         {/* HERO SECTION */}
         <section className="video-wrapper relative w-dvw h-dvh overflow-hidden">
 
           {/* ✅ Dynamic theme-based video */}
           <video
-            key={videoSrc} 
+            key={videoSrc}
             // forcing React to reload video smoothly when theme changes
             ref={videoRef}
             className="absolute top-0 left-0 w-full h-full object-cover"
@@ -102,19 +104,21 @@ function Hero() {
           />
 
           {/* ✅ Content scrolls normally */}
-          <div 
-            ref={ContentFade} 
-            className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white"
+          <div
+            ref={ContentFade}
+            className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white white:text-dark-gray"
           >
 
             <h1 className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
             <h1 className="text-3xl sm:text-5xl font-bold mt-4">{t("home.title")}</h1>
 
-            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mt-4">
+            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mt-4 mb-10">
               {t("home.subtitle")}
             </h3>
 
-            <div className="carousel border-accent text-accent white:text-light-blue mt-6">
+            <h5 className="text-sm font-bold mb-2">{t("home.text")}</h5>
+
+            <div className="carousel border-accent text-accent white:text-light-blue mb-30">
               <div className="group">
                 <div className="card-carousel"><Waypoints /></div>
                 <div className="card-carousel"><SquareDashedBottomCode /></div>
@@ -133,7 +137,7 @@ function Hero() {
               </div>
             </div>
 
-            <h5 className="text-sm font-bold mt-12">{t("home.text")}</h5>
+
 
             <a href="#about">
               <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-gray text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
