@@ -1,8 +1,9 @@
 .typing {
-  width: 16ch; /* number of characters */
+  width: 14ch; /* number of characters */
+  /* border: 1px solid #7C3AED; */
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(16) infinite alternate, blink 0.5s step-end infinite alternate;
+  animation: typing 3s steps(14) infinite alternate, blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -10,7 +11,7 @@
     width: 0;
   }
   to {
-    width: 16ch;
+    width: 14ch;
   }
 }
 
@@ -52,7 +53,7 @@
 
 .carousel {
     margin: 20px auto;
-    width: 250px;
+    width: 100dvw;
     /* border: 1px solid red; */
     height: 3rem;
     display: flex;
@@ -68,12 +69,12 @@
     align-items: center;
     justify-content: center;
     /* gap: 1rem; */
-    animation: spin 10s linear infinite;
+    animation: spin 8s linear infinite;
     /* padding-right: 1rem; */
 }
 
 .card-carousel {
-    flex: 0 0 3rem;
+    flex: 0 0 4rem;
     align-items: center;
     justify-content: center;
     height: 3rem;

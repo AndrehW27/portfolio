@@ -1,120 +1,155 @@
 import './Home.css'
-// import { Laptop } from "lucide-react";
-// import { Menu } from "lucide-react";
-import { ChevronDown } from "lucide-react";
-import { Waypoints } from "lucide-react";
-import { SquareDashedBottomCode } from "lucide-react";
-import { Rocket } from "lucide-react";
-import { ShieldCheck } from "lucide-react";
-import { ServerCog } from "lucide-react";
-// import { Router } from "lucide-react";
-import { Database } from "lucide-react";
+import { ChevronDown, Waypoints, SquareDashedBottomCode, Rocket, ShieldCheck, ServerCog, Database } from "lucide-react";
 import { useTranslation } from "react-i18next";
-// import { Bug } from "lucide-react";
-// import { CloudCheck } from "lucide-react";
 
-// import ThemeToggle from "../ThemeToggle/ThemeToggle";
-// import { IoMoonOutline } from "react-icons/io5";
-// import { GoSun } from "react-icons/go";
-// import { GiBrazilFlag } from "react-icons/gi";
-// import { LiaFlagUsaSolid } from "react-icons/lia";
-// import { useState } from 'react';
+import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// import videobg from '../../assets/video-bg.mp4';
+import { useTheme } from "next-themes";
 
-
+import wavesDark from '../../assets/waves-video.mp4';
+import wavesLight from '../../assets/white-video.mp4';
 
 function Hero() {
 
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
+  // Decide which video to use
+  const videoSrc = theme === "white" ? wavesLight : wavesDark;
+  // const videoSrc = theme === "white" ? wavesDarkLight;
 
+  // Animate ONLY the video
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-  // const [theme, setTheme] = useState('dark');
-  // const [language, setLanguage] = useState('english');
+  useLayoutEffect(() => {
+    if (!videoRef.current) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(videoRef.current, {
+      scale: 2,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: videoRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+        markers: false
+      }
+    });
+  }, [theme]);  
+  // IMPORTANT: re-run when theme switches (so GSAP resets)
+
+  // Fade content slightly
+  const ContentFade = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (!ContentFade.current) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(ContentFade.current, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ContentFade.current,
+        start: "top 5%",
+        end: "bottom top",
+        scrub: true,
+        markers: false
+      }
+    });
+  }, []);
 
   return (
     <>
-      <nav className='text-text font-bold fixed w-dvw z-1 top-0 left-0 bg-background white:bg-white-bg'>
-        <div className='w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray'>
+      <nav className="text-text font-bold fixed w-dvw z-1 top-0 left-0 bg-background white:bg-white-bg z-9998">
+        <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
-          <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw_light.png')]">
+          <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw_light.png')]"></div>
 
-          </div>
+          <a className="w-9 h-9 fixed left-4" href="#"></a>
 
-          <a className='w-9 h-9 fixed left-4 ' href="#">
-            {/* <img src={aw} alt="" /> */}
-          </a>
-
-          <ul className='text-sm'>
-            <li ><a href="#about" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>{t("navbar.about")}</a></li>
+          <ul className="text-sm">
+            <li><a href="#about" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
           </ul>
-          <ul className='text-sm'>
-            <li ><a href="#projects" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>{t("navbar.projects")}</a></li>
+          <ul className="text-sm">
+            <li><a href="#projects" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
           </ul>
-          <ul className='text-sm'>
-            <li ><a href="#contact" className='hover:text-accent mr-4 transition duration-300 ease-in-out'>{t("navbar.contact")}</a></li>
+          <ul className="text-sm">
+            <li><a href="#contact" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
           </ul>
         </div>
       </nav>
-      <section className="relative bg-cover bg-center h-dvh bg-[url('./assets/darkwave-bg3.png')] white:bg-[url('./assets/white-bg-blue.png')] text-text white:text-dark-gray flex flex-col items-center justify-center">
 
+      <section className="bg-background">
 
+        {/* HERO SECTION */}
+        <section className="video-wrapper relative w-dvw h-dvh overflow-hidden">
 
-        {/* <video
+          {/* ✅ Dynamic theme-based video */}
+          <video
+            key={videoSrc} 
+            // forcing React to reload video smoothly when theme changes
+            ref={videoRef}
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={videoSrc}
             autoPlay
-            loop
             muted
+            loop
             playsInline
-            className=" z-0 w-auto h-screen min-w-full min-h-full max-w-none"
+          />
+
+          {/* ✅ Content scrolls normally */}
+          <div 
+            ref={ContentFade} 
+            className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white"
           >
-            <source src={videobg} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> */}
 
+            <h1 className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
+            <h1 className="text-3xl sm:text-5xl font-bold mt-4">{t("home.title")}</h1>
 
-        <h1 className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
-        <h1 className="text-3xl sm:text-5xl font-bold mt-4">{t("home.title")}</h1>
-        <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-1xl font-bold mt-4 text-accent white:text-light-blue">{t("home.subtitle")}</h3>
+            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mt-4">
+              {t("home.subtitle")}
+            </h3>
 
+            <div className="carousel border-accent text-accent white:text-light-blue mt-6">
+              <div className="group">
+                <div className="card-carousel"><Waypoints /></div>
+                <div className="card-carousel"><SquareDashedBottomCode /></div>
+                <div className="card-carousel"><ServerCog /></div>
+                <div className="card-carousel"><Database /></div>
+                <div className="card-carousel"><ShieldCheck /></div>
+                <div className="card-carousel"><Rocket /></div>
+              </div>
+              <div aria-hidden className="group">
+                <div className="card-carousel"><Waypoints /></div>
+                <div className="card-carousel"><SquareDashedBottomCode /></div>
+                <div className="card-carousel"><ServerCog /></div>
+                <div className="card-carousel"><Database /></div>
+                <div className="card-carousel"><ShieldCheck /></div>
+                <div className="card-carousel"><Rocket /></div>
+              </div>
+            </div>
 
-        {/* <h1 className="text-2xl sm:text-3xl font-bold mt-3">Fullstack Developer</h1> */}
+            <h5 className="text-sm font-bold mt-12">{t("home.text")}</h5>
 
-        <div className='carousel border-accent text-accent white:text-light-blue'>
-          <div className='group'>
-            <div className="card-carousel"><Waypoints className='' /></div>
-            <div className="card-carousel"><SquareDashedBottomCode className='' /></div>
-            <div className="card-carousel"><ServerCog className='' /></div>
-            <div className="card-carousel"><Database className='' /></div>
-            <div className="card-carousel"><ShieldCheck className='' /></div>
-            <div className="card-carousel"><Rocket className='' /></div>
+            <a href="#about">
+              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-gray text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
+                {t("home.button")}
+              </button>
+            </a>
+
+            <div className="up-and-down absolute bottom-10">
+              <ChevronDown />
+            </div>
+
           </div>
-          <div aria-hidden className='group'>
-            <div className="card-carousel"><Waypoints className='' /></div>
-            <div className="card-carousel"><SquareDashedBottomCode className='' /></div>
-            <div className="card-carousel"><ServerCog className='' /></div>
-            <div className="card-carousel"><Database className='' /></div>
-            <div className="card-carousel"><ShieldCheck className='' /></div>
-            <div className="card-carousel"><Rocket className='' /></div>
-          </div>
-        </div>
-
-        <h5 className="text-sm font-bold mt-12">{t("home.text")}</h5>
-
-        <a href="#about">
-          <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-linear-to-r from-accent to-surface white:from-light-blue to-dark-gray text-text font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
-            {t("home.button")}
-          </button>
-        </a>
-
-        <div className='up-and-down absolute bottom-10'>
-          <ChevronDown />
-        </div>
-
-
+        </section>
       </section>
     </>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
