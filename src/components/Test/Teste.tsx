@@ -1,7 +1,7 @@
-import "./Test.css";
+import "./Teste.css";
 import bg from "../../assets/about-me-4.png";
 
-export default function Test() {
+export default function Teste() {
 
   return (
     <>

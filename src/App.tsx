@@ -3,7 +3,7 @@ import Hero from './components/Home/Home.tsx'
 import Project from './components/Project/Project.tsx'
 import About from './components/About/About.tsx'
 import Contact from './components/Contact/Contact.tsx'
-import Test from './components/Test/test.tsx'
+import Teste from './components/Test/Teste.tsx'
 
 import './App.css'
 import AOS from "aos";
@@ -82,7 +82,7 @@ function App() {
       <Hero theme={theme} />
       <About />
       <Project />
-      <Test />
+      <Teste />
       <Contact />
     </div>
   )
