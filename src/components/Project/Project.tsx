@@ -116,7 +116,7 @@ export default function ProjectsCarousel() {
             // If you prefer exact viewport-width slides replace w-[90dvw] with w-screen
             >
               {/* TOP: Title + Icons */}
-              <div className="borderborder-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-accent mt-6">
+              <div className="borderborder-red-500 h-[35dvw] w-full flex flex-col items-center justify-center text-accent mt-8 ">
                 <h1 className="text-2xl sm:text-5xl">{s.title}</h1>
                 <div className='flex align-center justify-center gap-1 sm:gap-4 mt-2'>
                   <img className='h-9 w-9 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
@@ -127,7 +127,7 @@ export default function ProjectsCarousel() {
 
               {/* CENTER: main image (click to open modal) */}
               <div
-                className="border-orange-500 h-[60dvw] w-[90dvw] bg-cover bg-top rounded-2xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-8"
+                className="relative border-orange-500 h-[60dvw] w-[90dvw] bg-cover bg-top rounded-2xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-4"
                 style={{
                   backgroundImage: `url(${s.images[0]})`,
                 }}
@@ -135,7 +135,23 @@ export default function ProjectsCarousel() {
                   setModalImage(s.images[1]);
                   setShowModal(true);
                 }}
-              />
+              >
+                {/* Left / Right controls */}
+                <button
+                  aria-label="Previous slide"
+                  onClick={prev}
+                  className="absolute top-1/2 translate-y-[-50%] left-2 bg-white/30 w-10 h-10 border-accent rounded-full flex justify-center items-center shadow-[0_0_10px_#7C3AED] z-20"
+                >
+                  ‹
+                </button>
+                <button
+                  aria-label="Next slide"
+                  onClick={next}
+                  className="absolute top-1/2 translate-y-[-50%] right-2 bg-white/30 w-10 h-10 border-accent rounded-full flex justify-center items-center shadow-[0_0_10px_#7C3AED] z-20"
+                >
+                  ›
+                </button>
+              </div>
 
               {/* BOTTOM: description + buttons */}
               <div className="border-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-center p-6">
@@ -162,21 +178,7 @@ export default function ProjectsCarousel() {
           ))}
         </div>
 
-        {/* Left / Right controls */}
-        <button
-          aria-label="Previous slide"
-          onClick={prev}
-          className="absolute top-1/2 translate-y-[-50%] left-2 bg-white/30 w-10 h-10 border-accent rounded-full flex justify-center items-center shadow-[0_0_10px_#7C3AED] z-20"
-        >
-          ‹
-        </button>
-        <button
-          aria-label="Next slide"
-          onClick={next}
-          className="absolute top-1/2 translate-y-[-50%] right-2 bg-white/30 w-10 h-10 border-accent rounded-full flex justify-center items-center shadow-[0_0_10px_#7C3AED] z-20"
-        >
-          ›
-        </button>
+
 
         {/* Indicators */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
