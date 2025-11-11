@@ -1,4 +1,3 @@
-// ProjectsCarousel.tsx
 import React, { useEffect, useRef, useState } from "react";
 
 import zerameta1 from "../../assets/zerameta1.png";
@@ -9,9 +8,8 @@ import netflix1 from "../../assets/netflix1.jpg";
 import netflix2 from "../../assets/netflix2.jpg";
 import netflix3 from "../../assets/netflix3.jpg";
 
-import project2_1 from "../../assets/port-desktop.png";
-import project2_2 from "../../assets/port-mobile.png";
-import project2_3 from "../../assets/netflix3.jpg";
+import portfolio1 from "../../assets/port-desktop.png";
+import portfolio2 from "../../assets/port-mobile.png";
 
 const slidesData = [
   {
@@ -21,58 +19,61 @@ const slidesData = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
     ],
-    images: [
-      zerameta1,
-      zerameta2,
-      zerameta3,
+    images: [zerameta1, zerameta2, zerameta3],
+    links: [
+      "https://github.com/AndrehW27/ZeraMetaBackEnd/",
+      "https://zera-meta.vercel.app/boas-vindas",
     ],
     description:
-      "Aplicação criada para simular o site da netflix, essa foi muito importante para aprender conceitos de experiacia do usuário.",
+      "Aplicação fullstack completa, com banco de dados, autenticação criptografada e IA (ChatGPT) integrada.",
   },
   {
-    title: "Another Project",
+    title: "Portfolio",
     icons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
     ],
-    images: [
-      project2_1,
-      project2_2,
-      project2_3,
+    images: [portfolio1, portfolio2],
+    links: [
+      "https://github.com/AndrehW27/portfolio",
+      "https://portfolio-teal-ten-48.vercel.app/",
     ],
     description:
-      "Segundo projeto de exemplo para demonstrar como várias 'slides' ficam navegáveis.",
+      "Portfolio criado com modernas ferramentas, para ter um site estetico, com animações e fluido.",
   },
   {
     title: "NetflixClone",
     icons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
     ],
-    images: [
-      netflix1,
-      netflix2,
-      netflix3,
+    links: [
+      "https://github.com/AndrehW27/NetflixClone",
+      "https://",
     ],
+    images: [netflix1, netflix2, netflix3],
     description:
-      "Aplicação criada para simular o site da netflix, essa foi muito importante para aprender conceitos de experiacia do usuário.",
+      "Aplicação criada para simular o site da netflix, muito importante para aprender conceitos de experiacia do usuário.",
   },
-
 ];
 
-export default function ProjectsCarousel() {
+export default function Projects() {
   const [index, setIndex] = useState(0);
+
+  // Modal state
   const [showModal, setShowModal] = useState(false);
-  const [modalImage, setModalImage] = useState<string | null>(null);
+  const [modalImages, setModalImages] = useState<string[]>([]);
+  const [modalIndex, setModalIndex] = useState(0);
+
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // Touch/swipe state
+  // Swipe state
   const touchStartX = useRef<number | null>(null);
   const touchCurrentX = useRef<number | null>(null);
 
-  // Prevent body scroll when modal open
+  // Lock body when modal open
   useEffect(() => {
     document.body.style.overflow = showModal ? "hidden" : "";
     return () => {
@@ -86,16 +87,29 @@ export default function ProjectsCarousel() {
       if (e.key === "ArrowLeft") prev();
       if (e.key === "ArrowRight") next();
       if (e.key === "Escape" && showModal) setShowModal(false);
+
+      if (showModal) {
+        if (e.key === "ArrowLeft") prevModal();
+        if (e.key === "ArrowRight") nextModal();
+      }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [index, showModal]);
+  }, [index, showModal, modalIndex]);
 
-  const prev = () => setIndex((i) => (i - 1 + slidesData.length) % slidesData.length);
+  // Carousel navigation
+  const prev = () =>
+    setIndex((i) => (i - 1 + slidesData.length) % slidesData.length);
   const next = () => setIndex((i) => (i + 1) % slidesData.length);
   const goTo = (i: number) => setIndex(i);
 
-  // Touch handlers for swipe
+  // Modal navigation
+  const nextModal = () =>
+    setModalIndex((i) => (i + 1) % modalImages.length);
+  const prevModal = () =>
+    setModalIndex((i) => (i - 1 + modalImages.length) % modalImages.length);
+
+  // Swipe handlers
   function handleTouchStart(e: React.TouchEvent) {
     touchStartX.current = e.touches[0].clientX;
     touchCurrentX.current = e.touches[0].clientX;
@@ -106,9 +120,10 @@ export default function ProjectsCarousel() {
   function handleTouchEnd() {
     if (touchStartX.current == null || touchCurrentX.current == null) return;
     const dx = touchCurrentX.current - touchStartX.current;
-    const threshold = 50; // px
-    if (dx > threshold) prev();
-    else if (dx < -threshold) next();
+
+    if (dx > 50) prev();
+    else if (dx < -50) next();
+
     touchStartX.current = null;
     touchCurrentX.current = null;
   }
@@ -116,33 +131,31 @@ export default function ProjectsCarousel() {
   return (
     <section
       id="projects"
-      className="relative border-blue-500 bg-background white:bg-white-bg h-dvh w-dvw flex items-center justify-center text-text font-bold"
+      className="relative bg-background h-dvh w-dvw flex items-center justify-center text-text font-bold"
     >
-      {/* Carousel wrapper */}
-      <div className="borderborder-orange-500 relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
-        {/* slides container */}
+      <div className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         <div
           ref={containerRef}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
-          className="h-full flex transition-transform duration-500 ease-in-out borderborder-green-500"
+          className="h-full flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="w-full flex-shrink-0 h-full  border-red-500 flex flex-col items-center justify-start "
-            // If you prefer exact viewport-width slides replace w-[90dvw] with w-screen
+              className="w-full flex-shrink-0 h-full flex flex-col items-center"
             >
-              {/* TOP: Title + Icons */}
-              <div className="borderborder-red-500 h-[35dvw] w-full flex flex-col items-center justify-center text-accent mt-8 ">
-                <h1 className="text-2xl sm:text-5xl">{s.title}</h1>
-                <div className="flex items-center justify-center gap-1 sm:gap-4 mt-5">
+              {/* Title + Icons */}
+              <div className="h-[35dvw] w-full flex flex-col items-center justify-center mt-8 text-accent">
+                <h1 data-aos="zoom-in-up" data-aos-offset="200" className="text-2xl sm:text-5xl">{s.title}</h1>
+                <div className="flex gap-4 mt-5">
                   {s.icons.map((src, i) => (
                     <img
+                      data-aos="zoom-in-up" data-aos-offset="200"
                       key={i}
-                      className="h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#7C3AED] transition duration-300 ease-in-out"
+                      className="h-12 w-12 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#7C3AED]"
                       src={src}
                       alt=""
                     />
@@ -150,40 +163,39 @@ export default function ProjectsCarousel() {
                 </div>
               </div>
 
-
-              {/* CENTER: main image (click to open modal) */}
+              {/* Main image */}
               <div
-                className="border-orange-500 h-fit min-h-[60dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer"
-                style={{
-                  backgroundImage: `url(${s.images[0]})`,
-                }}
+                data-aos="flip-up" data-aos-offset="350"
+                className="h-fit min-h-[60dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_20px_#7C3AED] cursor-pointer"
+                style={{ backgroundImage: `url(${s.images[0]})` }}
                 onClick={() => {
-                  setModalImage(s.images[1]);
+                  setModalImages(s.images);
+                  setModalIndex(0);
                   setShowModal(true);
                 }}
               />
 
-              {/* BOTTOM: description + buttons */}
-              <div className="border-red-500 h-fit w-full flex flex-col items-center justify-center text-center mt-4">
-
+              {/* Bottom section */}
+              <div data-aos="zoom-in-up" data-aos-offset="200" className="w-full flex flex-col items-center mt-4 text-center">
                 {/* Indicators */}
                 <div className="flex gap-2 z-20">
                   {slidesData.map((_, i) => (
                     <button
                       key={i}
                       onClick={() => goTo(i)}
-                      aria-label={`Go to slide ${i + 1}`}
-                      className={`w-3 h-3 rounded-full ${i === index ? "bg-accent" : "bg-white/40"}`}
+                      className={`w-3 h-3 rounded-full ${i === index ? "bg-accent" : "bg-white/40"
+                        }`}
                     />
                   ))}
                 </div>
 
                 <button
                   onClick={() => {
-                    setModalImage(s.images[0]);
+                    setModalImages(s.images);
+                    setModalIndex(0);
                     setShowModal(true);
                   }}
-                  className="m-3 text-accent mr-3 rounded-full"
+                  className="m-3 text-accent rounded-full"
                 >
                   see more
                 </button>
@@ -191,13 +203,15 @@ export default function ProjectsCarousel() {
                 <h1 className="w-80">{s.description}</h1>
 
                 <div className="mt-6">
-                  <a href="https://github.com/AndrehW27/ZeraMetaBackEnd/tree/master" target="_blank">
-                    <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
+                  <a href={s.links[0]} target="_blank">
+                    <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED]">
                       Coding
                     </button>
                   </a>
-                  <a href="https://zera-meta.vercel.app/" target="_blank">
-                    <button className="bg-accent px-6 py-3 ml-3 rounded-full" >Demo</button>
+                  <a href={s.links[1]} target="_blank">
+                    <button className="bg-accent px-6 py-3 ml-3 rounded-full">
+                      Demo
+                    </button>
                   </a>
                 </div>
               </div>
@@ -205,47 +219,63 @@ export default function ProjectsCarousel() {
           ))}
         </div>
 
-        {/* Left / Right controls */}
+        {/* Controls */}
         <button
-          aria-label="Previous slide"
+          data-aos="fade-right" data-aos-offset="200"
           onClick={prev}
-          className="absolute top-1/2 translate-y-[-230%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center z-20"
+          className="absolute top-1/2 translate-y-[-230%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
         >
           ‹
         </button>
         <button
-          aria-label="Next slide"
+          data-aos="fade-left" data-aos-offset="200"
           onClick={next}
-          className="absolute top-1/2 translate-y-[-230%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center z-20"
+          className="absolute top-1/2 translate-y-[-230%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
         >
           ›
         </button>
-
       </div>
 
       {/* Modal */}
       {showModal && (
         <div className="absolute inset-0 flex items-center justify-center z-[9999]">
           <div
-            className="absolute inset-0 bg-black/40 backdrop-blur-sm animate-fadeIn"
+            className="absolute inset-0 bg-black/10 backdrop-blur-sm animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
-          <div className="relative rounded-2xl h-[90vh] w-[90vw] max-w-[900px] bg-background white:bg-white border border-accent flex flex-col items-center justify-center p-3 animate-zoomIn overflow-hidden shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
+
+          <div className="relative rounded-2xl h-[80vh] w-[90vw] max-w-[900px] border border-text bg-background flex flex-col items-center p-6 overflow-hidden animate-zoomIn">
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-[2%] right-[4%] bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text"
+              className="absolute top-4 right-4 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text"
             >
               X
             </button>
 
-            {modalImage ? (
-              <img
-                src={modalImage}
-                alt="preview"
-                className="h-full border border-text object-cover rounded-2xl"
-              />
-            ) : (
-              <p>No image</p>
+            {/* Modal image */}
+            <img
+              src={modalImages[modalIndex]}
+              alt="modal"
+              className="h-full object-contain rounded-xl shadow-[0_0_20px_#7C3AED]"
+            />
+
+            {/* Pagination arrows */}
+            {modalImages.length > 1 && (
+              <>
+                <button
+                  onClick={prevModal}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
+                >
+                  ‹
+                </button>
+
+                <button
+                  onClick={nextModal}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
+                >
+                  ›
+                </button>
+              </>
             )}
           </div>
         </div>
