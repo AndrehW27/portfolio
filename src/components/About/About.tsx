@@ -15,19 +15,8 @@ import { Gauge } from "lucide-react";
 import logic from '../../assets/logic.png';
 import settings from '../../assets/settings.png';
 import english from '../../assets/eng.png';
-import perfil from '../../assets/perfil_art_far.png';
+import perfil from '../../assets/me_art_modern.png';
 import { useTranslation } from "react-i18next";
-
-
-
-// import { ShieldCheck } from "lucide-react";
-// import { ServerCog } from "lucide-react";
-// import { Router } from "lucide-react";
-// import { Database } from "lucide-react";
-// import { Bug } from "lucide-react";
-// import { CloudCheck } from "lucide-react";
-
-// import InfiniteCarousel from "../../components/Carousel/InfiniteCarousel";
 
 function About() {
 
@@ -35,7 +24,7 @@ function About() {
 
   return (
     <>
-      <section id="about" className='bg-background font-bold white:bg-white-bg text-text white:text-text-dark flexborder-accent white:border-light-blue w-dvw flex flex-col items-center justify-start pb-20'>
+      <section id="about" className='bg-background font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start pb-20'>
 
         <div className='flex justify-center items-end gap-3 h-dvh w-dvw border-red-500 text-sm sm:text-base'>
           <div className='flex flex-col justify-end items-start h-160 w-70 sm:w-160 border-blue-500 ml-5'>
@@ -57,7 +46,7 @@ function About() {
               </div>
               <h1 className='white:text-dark-gray'>{t("about.cycle")}</h1>
             </div>
-            <img data-aos="fade-right" data-aos-offset="275" className='h-75 image-blur-edges ml-10 sm:ml-60' src={perfil} alt="A cool image" />
+            <img data-aos="fade-right" data-aos-offset="275" className='w-75 image-blur-edges ml-10 sm:ml-60' src={perfil} alt="A cool image" />
           </div>
           <div data-aos="fade-left" className='h-130 sm:h-140 w-70 sm:w-100 white:text-dark-gray border-blue-500 mr-5'>
             <h1 className='border-accent white:border-light-blue'>

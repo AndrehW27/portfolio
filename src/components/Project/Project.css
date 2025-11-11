@@ -1,79 +1,23 @@
-/* 1. Define the depth/perspective on the PARENT element */
-.card-container {
-    /* Required for 3D depth effect */
-    perspective: 1000px;
-    /* Optional: Sets the maximum size for the card */
-    max-width: 300px;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
-/* 2. Set the transition for smooth animation on the CHILD element */
-.card {
-    /* Ensures 3D transformations look correct */
-    transform-style: preserve-3d; 
-    /* The key to a smooth effect */
-    transition: all 0.5s ease-out;
-    
-    /* Basic styling for the card */
-    height: 400px;
-    /* background-color: #ffffff; */
-    /* border-radius: 12px; */
-    overflow: hidden; /* Important for containing the image */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-/* Optional: Make the image fill the card */
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease forwards;
 }
 
-.card-container:hover .card {
-    /* 1. 3D Tilt based on mouse movement (simulated) */
-    /* rotateX(-5deg): Slightly tilts the top edge "away" from the user. */
-    /* rotateY(5deg): Slightly tilts the right edge "away" from the user. */
-    transform: perspective(1100px) 
-               rotateX(-10deg) 
-               rotateY(10deg) 
-               scale(1.15); /* 3. Adds a slight zoom */
-
-    /* 2. Dynamic Shadow Effect */
-    /* This makes the card "pop" further out of the screen */
-    box-shadow: 
-        0 25px 50px rgba(0, 0, 0, 0.5), /* Stronger shadow for depth */
-        /* 0 0 15px rgba(124, 58, 237, 0.7);  */
-}
-
-/* 1. Define the Zoom Keyframes */
-/* The element will scale down from 1.2x to 1x as it enters the view */
-@keyframes zoom-in {
-    from {
-        transform: scale(1.2); /* Start zoomed in */
-    }
-    to {
-        transform: scale(1); /* End at normal size */
-    }
-}
-
-/* 2. Define the Parallax Keyframes */
-/* The element will move slower than the scroll, e.g., only 50px of movement */
-@keyframes parallax-shift {
-    from {
-        transform: translateY(-50px); /* Start slightly above its final position */
-    }
-    to {
-        transform: translateY(0); /* End in its final position */
-    }
-}
-
-.parallax-zoom-element {
-    /* Apply both animations simultaneously */
-    animation-name: zoom-in, parallax-shift;
-    animation-timing-function: linear;
-    animation-duration: 1s; /* Duration maps to the scroll range */
-    
-    /* Set the timeline to the viewport scroll */
-    animation-timeline: view();
-    
-    /* Optional: Adjust range if needed */
-    /* animation-range: entry 0% cover 50%; */
+.animate-zoomIn {
+  animation: zoomIn 0.3s ease forwards;
 }
