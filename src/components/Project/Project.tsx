@@ -99,35 +99,35 @@ export default function ProjectsCarousel() {
       className="relative border-blue-500 bg-background white:bg-white-bg h-dvh w-dvw flex items-center justify-center text-text font-bold"
     >
       {/* Carousel wrapper */}
-      <div className="borderborder-red-500 relative w-full h-[90dvh] max-w-[1200px] overflow-hidden">
+      <div className="borderborder-orange-500 relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         {/* slides container */}
         <div
           ref={containerRef}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
-          className="flex transition-transform duration-500 ease-in-out border-green-500"
+          className="h-full flex transition-transform duration-500 ease-in-out borderborder-green-500"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="w-full flex-shrink-0 flex flex-col items-center justify-center "
+              className="w-full flex-shrink-0 h-full  border-red-500 flex flex-col items-center justify-start "
             // If you prefer exact viewport-width slides replace w-[90dvw] with w-screen
             >
               {/* TOP: Title + Icons */}
-              <div className="border-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-accent">
-                <h1 className="text-3xl sm:text-5xl">{s.title}</h1>
-                <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+              <div className="borderborder-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-accent mt-6">
+                <h1 className="text-2xl sm:text-5xl">{s.title}</h1>
+                <div className='flex align-center justify-center gap-1 sm:gap-4 mt-2'>
+                  <img className='h-9 w-9 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                  <img className='h-9 w-9 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                  <img className='h-9 w-9 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                 </div>
               </div>
 
               {/* CENTER: main image (click to open modal) */}
               <div
-                className="border-orange-500 h-[90dvw] w-[90dvw] bg-cover bg-top rounded-4xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer"
+                className="border-orange-500 h-[60dvw] w-[90dvw] bg-cover bg-top rounded-2xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-8"
                 style={{
                   backgroundImage: `url(${s.images[0]})`,
                 }}
@@ -138,7 +138,7 @@ export default function ProjectsCarousel() {
               />
 
               {/* BOTTOM: description + buttons */}
-              <div className="border-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-center p-6 mt-4">
+              <div className="border-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-center p-6">
                 <button
                   onClick={() => {
                     setModalImage(s.images[0]);
@@ -149,7 +149,7 @@ export default function ProjectsCarousel() {
                   see more
                 </button>
 
-                <h1>{s.description}</h1>
+                <h1 >{s.description}</h1>
 
                 <div className="mt-6">
                   <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
