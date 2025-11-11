@@ -110,10 +110,10 @@ function Hero({ theme }: HeroProps) {
           >
 
             <h1 className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
-            {/* <h1 className="text-2xl sm:text-5xl font-bold mt-6 py-3 px-6 rounded-2xl bg-linear-to-r from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1> */}
-            <h1 className="text-3xl sm:text-5xl font-bold mt-6 py-3 px-6 rounded-2xl text-accent white:text-light-blue">{t("home.title")}</h1>
+            <h1 className="text-2xl sm:text-5xl font-bold mt-6 py-3 px-6 rounded-2xl bg-linear-to-r from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
+            {/* <h1 className="text-3xl sm:text-5xl font-bold py-3 px-6 rounded-2xl text-accent white:text-light-blue">{t("home.title")}</h1> */}
 
-            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mt-6 mb-10">
+            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mb-10 mt-6">
               {t("home.subtitle")}
             </h3>
 

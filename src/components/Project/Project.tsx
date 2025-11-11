@@ -1,6 +1,10 @@
 // ProjectsCarousel.tsx
 import React, { useEffect, useRef, useState } from "react";
 
+import zerameta1 from "../../assets/zerameta1.png";
+import zerameta2 from "../../assets/zerameta2.png";
+import zerameta3 from "../../assets/zerameta3.png";
+
 import netflix1 from "../../assets/netflix1.jpg";
 import netflix2 from "../../assets/netflix2.jpg";
 import netflix3 from "../../assets/netflix3.jpg";
@@ -11,16 +15,16 @@ import project2_3 from "../../assets/netflix3.jpg";
 
 const slidesData = [
   {
-    title: "NetflixClone",
+    title: "ZeraMeta",
     icons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
     ],
     images: [
-      netflix1,
-      netflix2,
-      netflix3,
+      zerameta1,
+      zerameta2,
+      zerameta3,
     ],
     description:
       "Aplicação criada para simular o site da netflix, essa foi muito importante para aprender conceitos de experiacia do usuário.",
@@ -40,6 +44,22 @@ const slidesData = [
     description:
       "Segundo projeto de exemplo para demonstrar como várias 'slides' ficam navegáveis.",
   },
+  {
+    title: "NetflixClone",
+    icons: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    ],
+    images: [
+      netflix1,
+      netflix2,
+      netflix3,
+    ],
+    description:
+      "Aplicação criada para simular o site da netflix, essa foi muito importante para aprender conceitos de experiacia do usuário.",
+  },
+
 ];
 
 export default function ProjectsCarousel() {
@@ -118,16 +138,22 @@ export default function ProjectsCarousel() {
               {/* TOP: Title + Icons */}
               <div className="borderborder-red-500 h-[35dvw] w-full flex flex-col items-center justify-center text-accent mt-8 ">
                 <h1 className="text-2xl sm:text-5xl">{s.title}</h1>
-                <div className='flex align-center justify-center gap-1 sm:gap-4 mt-2'>
-                  <img className='h-9 w-9 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                  <img className='h-9 w-9 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                  <img className='h-9 w-9 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <div className="flex items-center justify-center gap-1 sm:gap-4 mt-5">
+                  {s.icons.map((src, i) => (
+                    <img
+                      key={i}
+                      className="h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#7C3AED] transition duration-300 ease-in-out"
+                      src={src}
+                      alt=""
+                    />
+                  ))}
                 </div>
               </div>
 
+
               {/* CENTER: main image (click to open modal) */}
               <div
-                className="border-orange-500 h-[60dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-4"
+                className="border-orange-500 h-fit min-h-[60dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer"
                 style={{
                   backgroundImage: `url(${s.images[0]})`,
                 }}
@@ -138,7 +164,7 @@ export default function ProjectsCarousel() {
               />
 
               {/* BOTTOM: description + buttons */}
-              <div className="border-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-center p-6">
+              <div className="border-red-500 h-fit w-full flex flex-col items-center justify-center text-center mt-4">
 
                 {/* Indicators */}
                 <div className="flex gap-2 z-20">
@@ -157,7 +183,7 @@ export default function ProjectsCarousel() {
                     setModalImage(s.images[0]);
                     setShowModal(true);
                   }}
-                  className="mb-4 text-accent"
+                  className="m-3 text-accent px-3 py-1 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]"
                 >
                   see more
                 </button>
@@ -165,10 +191,14 @@ export default function ProjectsCarousel() {
                 <h1 >{s.description}</h1>
 
                 <div className="mt-6">
-                  <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
-                    Coding
-                  </button>
-                  <button className="bg-accent px-6 py-3 ml-3 rounded-full">Demo</button>
+                  <a href="https://github.com/AndrehW27/ZeraMetaBackEnd/tree/master" target="_blank">
+                    <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
+                      Coding
+                    </button>
+                  </a>
+                  <a href="https://zera-meta.vercel.app/" target="_blank">
+                    <button className="bg-accent px-6 py-3 ml-3 rounded-full" >Demo</button>
+                  </a>
                 </div>
               </div>
             </article>
