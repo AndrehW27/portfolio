@@ -127,7 +127,7 @@ export default function ProjectsCarousel() {
 
               {/* CENTER: main image (click to open modal) */}
               <div
-                className="border-orange-500 h-[70dvw] w-[90dvw] bg-cover bg-top rounded-2xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-4"
+                className="border-orange-500 h-[70dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-4"
                 style={{
                   backgroundImage: `url(${s.images[0]})`,
                 }}
