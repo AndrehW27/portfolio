@@ -183,12 +183,12 @@ export default function ProjectsCarousel() {
                     setModalImage(s.images[0]);
                     setShowModal(true);
                   }}
-                  className="m-3 text-accent px-3 py-1 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]"
+                  className="m-3 text-accent mr-3 rounded-full"
                 >
                   see more
                 </button>
 
-                <h1 >{s.description}</h1>
+                <h1 className="w-80">{s.description}</h1>
 
                 <div className="mt-6">
                   <a href="https://github.com/AndrehW27/ZeraMetaBackEnd/tree/master" target="_blank">
@@ -209,14 +209,14 @@ export default function ProjectsCarousel() {
         <button
           aria-label="Previous slide"
           onClick={prev}
-          className="absolute top-1/2 translate-y-[-230%] left-2 bg-white/30 w-10 h-10 border-accent rounded-full flex justify-center items-center shadow-[0_0_10px_#7C3AED] z-20"
+          className="absolute top-1/2 translate-y-[-230%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center z-20"
         >
           ‹
         </button>
         <button
           aria-label="Next slide"
           onClick={next}
-          className="absolute top-1/2 translate-y-[-230%] right-2 bg-white/30 w-10 h-10 border-accent rounded-full flex justify-center items-center shadow-[0_0_10px_#7C3AED] z-20"
+          className="absolute top-1/2 translate-y-[-230%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center z-20"
         >
           ›
         </button>
@@ -230,10 +230,10 @@ export default function ProjectsCarousel() {
             className="absolute inset-0 bg-black/40 backdrop-blur-sm animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
-          <div className="relative rounded-3xl h-[80vh] w-[90vw] max-w-[900px] bg-background white:bg-white border-accent flex flex-col items-center justify-center p-4 animate-zoomIn overflow-hidden">
+          <div className="relative rounded-2xl h-[90vh] w-[90vw] max-w-[900px] bg-background white:bg-white border border-accent flex flex-col items-center justify-center p-3 animate-zoomIn overflow-hidden shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-[2%] right-[4%] bg-white/30 w-10 h-10 border-accent rounded-full flex justify-center items-center shadow-[0_0_10px_#7C3AED]"
+              className="absolute top-[2%] right-[4%] bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text"
             >
               X
             </button>
@@ -242,7 +242,7 @@ export default function ProjectsCarousel() {
               <img
                 src={modalImage}
                 alt="preview"
-                className="max-h-[70vh] object-contain rounded-lg"
+                className="h-full border border-text object-cover rounded-2xl"
               />
             ) : (
               <p>No image</p>
