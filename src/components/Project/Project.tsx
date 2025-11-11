@@ -127,7 +127,7 @@ export default function ProjectsCarousel() {
 
               {/* CENTER: main image (click to open modal) */}
               <div
-                className="border-orange-500 h-[70dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-4"
+                className="border-orange-500 h-[60dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer mb-4"
                 style={{
                   backgroundImage: `url(${s.images[0]})`,
                 }}
@@ -139,6 +139,19 @@ export default function ProjectsCarousel() {
 
               {/* BOTTOM: description + buttons */}
               <div className="border-red-500 h-[45dvw] w-full flex flex-col items-center justify-center text-center p-6">
+
+                {/* Indicators */}
+                <div className="flex gap-2 z-20">
+                  {slidesData.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => goTo(i)}
+                      aria-label={`Go to slide ${i + 1}`}
+                      className={`w-3 h-3 rounded-full ${i === index ? "bg-accent" : "bg-white/40"}`}
+                    />
+                  ))}
+                </div>
+
                 <button
                   onClick={() => {
                     setModalImage(s.images[0]);
@@ -178,17 +191,6 @@ export default function ProjectsCarousel() {
           ›
         </button>
 
-        {/* Indicators */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-          {slidesData.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goTo(i)}
-              aria-label={`Go to slide ${i + 1}`}
-              className={`w-3 h-3 rounded-full ${i === index ? "bg-accent" : "bg-white/40"}`}
-            />
-          ))}
-        </div>
       </div>
 
       {/* Modal */}
