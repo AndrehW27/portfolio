@@ -15,13 +15,16 @@ import zerameta8 from "../../assets/projects/zerameta8.png";
 
 
 import netflix1desktop from "../../assets/projects/netflix1.jpg";
-import netflix1 from "../../assets/netflix1.jpg";
-import netflix2 from "../../assets/netflix2.jpg";
-import netflix3 from "../../assets/netflix3.jpg";
+import netflix1 from "../../assets/projects/netflix2.jpg";
+import netflix2 from "../../assets/projects/net-lands.png";
+
 
 import portfolio1desktop from "../../assets/projects/port-desktop.png";
-import portfolio1 from "../../assets/projects/port-desktop.png";
-import portfolio2 from "../../assets/port-mobile.png";
+import portfolio1 from "../../assets/projects/port1.png";
+import portfolio2 from "../../assets/projects/port2.png";
+import portfolio3 from "../../assets/projects/port3.png";
+import portfolio4 from "../../assets/projects/port4.png";
+
 
 
 
@@ -32,9 +35,19 @@ export default function Projects() {
     {
       title: "ZeraMeta",
       icons: [
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+          color: "#ea23a4"
+        },
+
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+          color: "#5fa04e"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
+          color: "#4faa41"
+        }
       ],
       images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
       desktop: zerameta1desktop,
@@ -47,11 +60,20 @@ export default function Projects() {
     {
       title: "Portfolio",
       icons: [
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-        "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#29acdb"
+        },
+        {
+          icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
+          color: "#4faa41"
+        },
       ],
-      images: [portfolio1, portfolio2],
+      images: [portfolio1, portfolio2, portfolio3, portfolio4],
       desktop: portfolio1desktop,
       links: [
         "https://github.com/AndrehW27/portfolio",
@@ -62,15 +84,24 @@ export default function Projects() {
     {
       title: "NetflixClone",
       icons: [
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+          color: "#007acc"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+          color: "#31a5d9"
+        },
       ],
       links: [
         "https://github.com/AndrehW27/NetflixClone",
         "https://",
       ],
-      images: [netflix1, netflix2, netflix3],
+      images: [netflix1, netflix2],
       desktop: netflix1desktop,
       description: t("project.net.description"),
     },
@@ -172,8 +203,9 @@ export default function Projects() {
                     <img
                       data-aos="zoom-in-up" data-aos-offset="200"
                       key={i}
-                      className="h-12 w-12  p-2 rounded-md shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]"
-                      src={src}
+                      className="h-12 w-12 p-2 rounded-md shadow-[0_0_10px_var(--shadow-color)]"
+                      src={src.icon}
+                      style={{ '--shadow-color': src.color } as React.CSSProperties}
                       alt=""
                     />
                   ))}
@@ -183,7 +215,7 @@ export default function Projects() {
               {/* Main image */}
               <div
                 data-aos="flip-up" data-aos-offset="350"
-                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer"
+                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);

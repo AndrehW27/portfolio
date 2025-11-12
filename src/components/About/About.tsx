@@ -215,8 +215,11 @@ function About() {
             </div>
 
           </div>
+          
 
         </div>
+        <h1 data-aos="fade-in" className='white:text-dark-gray mt-30 text-2xl sm:text-2xl font-bold'>{t("about.projects")}</h1>
+
 
       </section>
     </>

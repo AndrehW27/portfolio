@@ -82,7 +82,7 @@ function App() {
       <Hero theme={theme} />
       <About />
       <Project />
-      <Teste />
+      {/* <Teste /> */}
       <Contact />
     </div>
   )
