@@ -32,5 +32,11 @@
   "project.net.description": "An application built to replicate the Netflix website, essential for learning user experience concepts.",
   "project.show": "show more",
   "project.code": "Code",
-  "project.demo": "Demo"
+  "project.demo": "Demo",
+  "contact.title": "Contact",
+  "contact.subtitle": "Get in touch",
+  "contact.send": "Send",
+  "contact.footer1": "Designed & coded by André Willian",
+  "contact.footer2": "✦ Turning ideas into experiences.",
+  "contact.footer3": "© 2025 All rights reserved."
 }

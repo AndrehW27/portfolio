@@ -1,9 +1,9 @@
 .typing {
-  width: 20ch; /* number of characters */
+  width: 17ch; /* number of characters */
   /* border: 1px solid #7C3AED; */
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(20) infinite alternate, blink 0.5s step-end infinite alternate;
+  animation: typing 2s steps(17) infinite alternate, blink 0.5s step-end infinite alternate;
   animation-delay: 2s;
 }
 
@@ -12,7 +12,7 @@
     width: 0;
   }
   to {
-    width: 20ch;
+    width: 17ch;
   }
 }
 

@@ -32,5 +32,11 @@
     "project.net.description": "Aplicação desenvolvida para replicar o site da Netflix, essencial para aprender conceitos de experiência do usuário.",
     "project.show": "ver mais",
     "project.code": "Código",
-    "project.demo": "App"
+    "project.demo": "App",
+    "contact.title": "Contato",
+    "contact.subtitle": "Envie uma mensagem",
+    "contact.send": "Enviar",
+    "contact.footer1": "Projetado & desenvolvido por André Willian",
+    "contact.footer2": "✦ Transfromando ideias em experiências.",
+    "contact.footer3": "© 2025 Todos os direitos reservados."
 }
