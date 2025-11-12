@@ -249,13 +249,33 @@ export default function Projects() {
             onClick={() => setShowModal(false)}
           />
 
-          <div className="relative rounded-2xl h-[74vh] w-[70vw] max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
-            <button
-              onClick={() => setShowModal(false)}
-              className="absolute top-0 right-0 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text"
-            >
-              X
-            </button>
+          <button
+            onClick={() => setShowModal(false)}
+            className="absolute top-11 right-7 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text z-100"
+          >
+            X
+          </button>
+          {/* Pagination arrows */}
+          {modalImages.length > 1 && (
+            <>
+              <button
+                onClick={prevModal}
+                className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center z-100"
+              >
+                ‹
+              </button>
+
+              <button
+                onClick={nextModal}
+                className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center z-100"
+              >
+                ›
+              </button>
+            </>
+          )}
+
+          <div className="relative rounded-2xl h-[85vh] w-[80vw] max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
+
 
             {/* Modal image */}
             <img
@@ -264,24 +284,7 @@ export default function Projects() {
               className="object-cover rounded-2xl "
             />
 
-            {/* Pagination arrows */}
-            {modalImages.length > 1 && (
-              <>
-                <button
-                  onClick={prevModal}
-                  className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
-                >
-                  ‹
-                </button>
 
-                <button
-                  onClick={nextModal}
-                  className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
-                >
-                  ›
-                </button>
-              </>
-            )}
           </div>
         </div>
       )}
