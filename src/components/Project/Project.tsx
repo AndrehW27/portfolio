@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
+import zerameta1desktop from "../../assets/projects/zera-desktop1.png";
 import zerameta1 from "../../assets/projects/zerameta1.png";
 import zerameta2 from "../../assets/projects/zerameta2.png";
 import zerameta3 from "../../assets/projects/zerameta3.png";
@@ -9,11 +10,14 @@ import zerameta6 from "../../assets/projects/zerameta6.png";
 import zerameta7 from "../../assets/projects/zerameta7.png";
 import zerameta8 from "../../assets/projects/zerameta8.png";
 
+
+import netflix1desktop from "../../assets/projects/netflix1.jpg";
 import netflix1 from "../../assets/netflix1.jpg";
 import netflix2 from "../../assets/netflix2.jpg";
 import netflix3 from "../../assets/netflix3.jpg";
 
-import portfolio1 from "../../assets/port-desktop.png";
+import portfolio1desktop from "../../assets/projects/port-desktop.png";
+import portfolio1 from "../../assets/projects/port-desktop.png";
 import portfolio2 from "../../assets/port-mobile.png";
 
 const slidesData = [
@@ -25,6 +29,7 @@ const slidesData = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
     ],
     images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
+    desktop: zerameta1desktop,
     links: [
       "https://github.com/AndrehW27/ZeraMetaBackEnd/",
       "https://zera-meta.vercel.app/boas-vindas",
@@ -40,6 +45,7 @@ const slidesData = [
       "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
     ],
     images: [portfolio1, portfolio2],
+    desktop: portfolio1desktop,
     links: [
       "https://github.com/AndrehW27/portfolio",
       "https://portfolio-teal-ten-48.vercel.app/",
@@ -59,6 +65,7 @@ const slidesData = [
       "https://",
     ],
     images: [netflix1, netflix2, netflix3],
+    desktop: netflix1desktop,
     description:
       "Aplicação criada para simular o site da netflix, muito importante para aprender conceitos de experiacia do usuário.",
   },
@@ -171,8 +178,8 @@ export default function Projects() {
               {/* Main image */}
               <div
                 data-aos="flip-up" data-aos-offset="350"
-                className="h-fit min-h-[60dvw] w-[90dvw] bg-cover bg-top rounded-xl shadow-[0_0_20px_#7C3AED] cursor-pointer"
-                style={{ backgroundImage: `url(${s.images[0]})` }}
+                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top  shadow-[0_0_20px_#7C3AED] cursor-pointer"
+                style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);
                   setModalIndex(0);
@@ -251,7 +258,7 @@ export default function Projects() {
 
           <button
             onClick={() => setShowModal(false)}
-            className="absolute top-11 right-7 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text z-100"
+            className="absolute top-11 right-6 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text z-100"
           >
             X
           </button>
@@ -274,14 +281,14 @@ export default function Projects() {
             </>
           )}
 
-          <div className="relative rounded-2xl h-[85vh] w-[80vw] max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
+          <div className="relative rounded-2xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
 
 
             {/* Modal image */}
             <img
               src={modalImages[modalIndex]}
               alt="modal"
-              className="object-cover rounded-2xl "
+              className="h-[85vh] w-[80vw] object-cover rounded-2xl "
             />
 
 
