@@ -178,7 +178,7 @@ export default function Projects() {
               {/* Main image */}
               <div
                 data-aos="flip-up" data-aos-offset="350"
-                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top  shadow-[0_0_20px_#7C3AED] cursor-pointer"
+                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top glowing cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);
@@ -235,14 +235,14 @@ export default function Projects() {
         <button
           data-aos="fade-right" data-aos-offset="200"
           onClick={prev}
-          className="absolute top-1/2 translate-y-[-230%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+          className="absolute top-1/2 translate-y-[-260%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
         >
           ‹
         </button>
         <button
           data-aos="fade-left" data-aos-offset="200"
           onClick={next}
-          className="absolute top-1/2 translate-y-[-230%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+          className="absolute top-1/2 translate-y-[-260%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
         >
           ›
         </button>
