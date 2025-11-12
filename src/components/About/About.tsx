@@ -66,7 +66,7 @@ function About() {
           <div className='w-40 text-sm sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
             <div className='w-40 sm:w-100 h-50 border-blue-500 flex justify-end items-start'>
               <div>
-                <img data-aos="fade-left" className=' h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#3594d2] white:shadow-[0_0_10px_#3594d2] transition duration-300 ease-in-out' src={logic} />
+                <img data-aos="fade-left" className=' h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#3594d2] white:shadow-[0_0_10px_#3594d2] transition duration-300 ease-in-out' src={logic} />
               </div>
             </div>
             <div className='w-40 pl-6 sm:w-100 h-50 border-orange-500  flex justify-center items-start'>
@@ -78,9 +78,9 @@ function About() {
 
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
               <div data-aos="fade-left" className='flex align-center justify-center gap-1 sm:gap-4'>
-                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
               </div>
             </div>
             <div className='w-40 pl-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
@@ -93,14 +93,14 @@ function About() {
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-end items-start'>
               <div data-aos="fade-left">
                 <div className='flex align-center justify-center gap-1 sm:gap-4'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#5b00d1] white:shadow-[0_0_10px_#5b00d1] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#5b00d1] white:shadow-[0_0_10px_#5b00d1] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
                 </div>
                 <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
-                  <img className='white:border border-text-dark h-11 w-11 sm:h-15 sm:w-15 bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#007acc] white:shadow-[0_0_10px_#007acc] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#f24e1e] white:shadow-[0_0_10px_#f24e1e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                  <img className='border border-text-dark white: h-11 w-11 sm:h-15 sm:w-15 bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#007acc] white:shadow-[0_0_10px_#007acc] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#f24e1e] white:shadow-[0_0_10px_#f24e1e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
                 </div>
               </div>
             </div>
@@ -167,8 +167,8 @@ function About() {
 
             <div className='w-40 sm:w-100 h-50  border-orange-500 flex justify-start items-start'>
               <div data-aos="fade-right" className='flex align-center justify-center gap-1 sm:gap-4'>
-                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition duration-300 ease-in-out' src={settings} />
-                <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition duration-300 ease-in-out' src={english} />
+                <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition duration-300 ease-in-out' src={settings} />
+                <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition duration-300 ease-in-out' src={english} />
               </div>
             </div>
             <div className='w-40 pr-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
@@ -180,14 +180,14 @@ function About() {
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-start items-start'>
               <div data-aos="fade-right" >
                 <div className='flex align-center justify-center gap-1 sm:gap-4'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
                 </div>
                 <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#6762a6] white:shadow-[0_0_10px_#6762a6] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#4f982e] white:shadow-[0_0_10px_#4f982e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#8e13fd] white:shadow-[0_0_10px_#8e13fd]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#6762a6] white:shadow-[0_0_10px_#6762a6] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#4f982e] white:shadow-[0_0_10px_#4f982e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#8e13fd] white:shadow-[0_0_10px_#8e13fd]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
                 </div>
               </div>
             </div>
@@ -202,14 +202,14 @@ function About() {
             <div className='w-40 sm:w-100 h-50 border-orange-500 flex justify-start items-start'>
               <div data-aos="fade-right">
                 <div className='flex align-center justify-center gap-1 sm:gap-4'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                  <img className='white:border border-text-dark h-11 w-11 sm:h-15 sm:w-15 bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                  <img className='border border-text-dark white: h-11 w-11 sm:h-15 sm:w-15 bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
                 </div>
                 <div className='flex align-center justify-center gap-1 sm:gap-4 mt-5'>
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
-                  <img className='h-11 w-11 sm:h-15 sm:w-15 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                  <img className='h-11 w-11 sm:h-15 sm:w-15  p-2 rounded-md shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition duration-300 ease-in-out' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
                 </div>
               </div>
             </div>

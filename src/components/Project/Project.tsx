@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { GiClick } from "react-icons/gi";
 
 import zerameta1desktop from "../../assets/projects/zera-desktop1.png";
 import zerameta1 from "../../assets/projects/zerameta1.png";
@@ -143,7 +144,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative bg-background h-dvh w-dvw flex items-center justify-center text-text font-bold"
+      className="relative bg-background white:bg-white-bg h-dvh w-dvw flex items-center justify-center text-text white:text-text-dark font-bold"
     >
       <div className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         <div
@@ -160,14 +161,14 @@ export default function Projects() {
               className="w-full flex-shrink-0 h-full flex flex-col items-center"
             >
               {/* Title + Icons */}
-              <div className="h-[35dvw] w-full flex flex-col items-center justify-center mt-8 text-accent">
+              <div className="h-[35dvw] w-full flex flex-col items-center justify-center mt-10 text-accent white:text-light-blue">
                 <h1 data-aos="zoom-in-up" data-aos-offset="200" className="text-2xl sm:text-5xl">{s.title}</h1>
                 <div className="flex gap-4 mt-5">
                   {s.icons.map((src, i) => (
                     <img
                       data-aos="zoom-in-up" data-aos-offset="200"
                       key={i}
-                      className="h-12 w-12 border border-text-dark p-2 rounded-md shadow-[0_0_10px_#7C3AED]"
+                      className="h-12 w-12  p-2 rounded-md shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]"
                       src={src}
                       alt=""
                     />
@@ -178,7 +179,7 @@ export default function Projects() {
               {/* Main image */}
               <div
                 data-aos="flip-up" data-aos-offset="350"
-                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top glowing cursor-pointer"
+                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);
@@ -195,7 +196,7 @@ export default function Projects() {
                     <button
                       key={i}
                       onClick={() => goTo(i)}
-                      className={`w-3 h-3 rounded-full ${i === index ? "bg-accent" : "bg-white/40"
+                      className={`w-3 h-3 rounded-full ${i === index ? "bg-accent white:bg-light-blue" : "bg-white/40 white:bg-white/90"
                         }`}
                     />
                   ))}
@@ -207,21 +208,21 @@ export default function Projects() {
                     setModalIndex(0);
                     setShowModal(true);
                   }}
-                  className="m-3 text-accent rounded-full"
+                  className="m-3 text-accent white:text-light-blue rounded-full"
                 >
-                  see more
+                  show more
                 </button>
 
                 <h1 className="w-80">{s.description}</h1>
 
                 <div className="mt-6">
                   <a href={s.links[0]} target="_blank">
-                    <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED]">
+                    <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
                       Coding
                     </button>
                   </a>
                   <a href={s.links[1]} target="_blank">
-                    <button className="bg-accent px-6 py-3 ml-3 rounded-full">
+                    <button className="bg-accent white:bg-light-blue px-6 py-3 ml-3 rounded-full">
                       Demo
                     </button>
                   </a>
@@ -232,6 +233,13 @@ export default function Projects() {
         </div>
 
         {/* Controls */}
+        <button
+          data-aos="fade-right" data-aos-offset="200"
+          onClick={prev}
+          className="absolute top-1/2 translate-y-[-460%] text-accent white:text-light-blue right-2 bg-text/30 w-10 h-10 border border-accent white:border-light-blue rounded-full flex justify-center items-center"
+        >
+        <GiClick />
+        </button>
         <button
           data-aos="fade-right" data-aos-offset="200"
           onClick={prev}
@@ -281,7 +289,7 @@ export default function Projects() {
             </>
           )}
 
-          <div className="relative rounded-2xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
+          <div className="relative rounded-2xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] ">
 
 
             {/* Modal image */}
