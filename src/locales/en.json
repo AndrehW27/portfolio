@@ -24,5 +24,11 @@
   "about.itau": "Itaú - 2020",
   "about.itau.text": "Worked on many systems, a lot of experience over 5 years.",
   "about.puc": "PUCRS - 2025",
-  "about.puc.text": "Full-Stack postgraduate, advanced technology concepts."
+  "about.puc.text": "Full-Stack postgraduate, advanced technology concepts.",
+  "project.zera.description": "Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.",
+  "project.port.description": "Portfolio built with modern technologies to deliver an aesthetic, animated, and smooth experience.",
+  "project.net.description": "An application built to replicate the Netflix website, essential for learning user experience concepts.",
+  "project.show": "show more",
+  "project.code": "Code",
+  "project.demo": "Demo"
 }

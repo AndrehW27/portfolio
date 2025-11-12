@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GiClick } from "react-icons/gi";
+import { useTranslation } from "react-i18next";
+
 
 import zerameta1desktop from "../../assets/projects/zera-desktop1.png";
 import zerameta1 from "../../assets/projects/zerameta1.png";
@@ -21,58 +23,60 @@ import portfolio1desktop from "../../assets/projects/port-desktop.png";
 import portfolio1 from "../../assets/projects/port-desktop.png";
 import portfolio2 from "../../assets/port-mobile.png";
 
-const slidesData = [
-  {
-    title: "ZeraMeta",
-    icons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
-    ],
-    images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
-    desktop: zerameta1desktop,
-    links: [
-      "https://github.com/AndrehW27/ZeraMetaBackEnd/",
-      "https://zera-meta.vercel.app/boas-vindas",
-    ],
-    description:
-      "Aplicação fullstack completa, com banco de dados, autenticação criptografada e IA (ChatGPT) integrada.",
-  },
-  {
-    title: "Portfolio",
-    icons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
-    ],
-    images: [portfolio1, portfolio2],
-    desktop: portfolio1desktop,
-    links: [
-      "https://github.com/AndrehW27/portfolio",
-      "https://portfolio-teal-ten-48.vercel.app/",
-    ],
-    description:
-      "Portfolio criado com modernas ferramentas, para ter um site estetico, com animações e fluido.",
-  },
-  {
-    title: "NetflixClone",
-    icons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-    ],
-    links: [
-      "https://github.com/AndrehW27/NetflixClone",
-      "https://",
-    ],
-    images: [netflix1, netflix2, netflix3],
-    desktop: netflix1desktop,
-    description:
-      "Aplicação criada para simular o site da netflix, muito importante para aprender conceitos de experiacia do usuário.",
-  },
-];
+
 
 export default function Projects() {
+  const { t } = useTranslation();
+
+  const slidesData = [
+    {
+      title: "ZeraMeta",
+      icons: [
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
+      ],
+      images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
+      desktop: zerameta1desktop,
+      links: [
+        "https://github.com/AndrehW27/ZeraMetaBackEnd/",
+        "https://zera-meta.vercel.app/boas-vindas",
+      ],
+      description: t("project.zera.description"),
+    },
+    {
+      title: "Portfolio",
+      icons: [
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
+      ],
+      images: [portfolio1, portfolio2],
+      desktop: portfolio1desktop,
+      links: [
+        "https://github.com/AndrehW27/portfolio",
+        "https://portfolio-teal-ten-48.vercel.app/",
+      ],
+      description: t("project.port.description"),
+    },
+    {
+      title: "NetflixClone",
+      icons: [
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      ],
+      links: [
+        "https://github.com/AndrehW27/NetflixClone",
+        "https://",
+      ],
+      images: [netflix1, netflix2, netflix3],
+      desktop: netflix1desktop,
+      description: t("project.net.description"),
+    },
+  ];
+
+
   const [index, setIndex] = useState(0);
 
   // Modal state
@@ -210,7 +214,7 @@ export default function Projects() {
                   }}
                   className="m-3 text-accent white:text-light-blue rounded-full"
                 >
-                  show more
+                  {t("project.show")}
                 </button>
 
                 <h1 className="w-80">{s.description}</h1>
@@ -218,12 +222,12 @@ export default function Projects() {
                 <div className="mt-6">
                   <a href={s.links[0]} target="_blank">
                     <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
-                      Coding
+                      {t("project.code")}
                     </button>
                   </a>
                   <a href={s.links[1]} target="_blank">
                     <button className="bg-accent white:bg-light-blue px-6 py-3 ml-3 rounded-full">
-                      Demo
+                      {t("project.demo")}
                     </button>
                   </a>
                 </div>
@@ -238,7 +242,7 @@ export default function Projects() {
           onClick={prev}
           className="absolute top-1/2 translate-y-[-460%] text-accent white:text-light-blue right-2 bg-text/30 w-10 h-10 border border-accent white:border-light-blue rounded-full flex justify-center items-center"
         >
-        <GiClick />
+          <GiClick />
         </button>
         <button
           data-aos="fade-right" data-aos-offset="200"
