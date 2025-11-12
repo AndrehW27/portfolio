@@ -201,7 +201,7 @@ export default function Projects() {
                 <div className="flex gap-4 mt-5">
                   {s.icons.map((src, i) => (
                     <img
-                      data-aos="zoom-in-up" data-aos-offset="200"
+                      data-aos="zoom-in" data-aos-offset="200"
                       key={i}
                       className="h-12 w-12 p-2 rounded-md shadow-[0_0_10px_var(--shadow-color)]"
                       src={src.icon}
@@ -270,7 +270,7 @@ export default function Projects() {
 
         {/* Controls */}
         <button
-          data-aos="fade-right" data-aos-offset="200"
+          data-aos="fade-left" data-aos-offset="200"
           onClick={prev}
           className="absolute top-1/2 translate-y-[-460%] text-accent white:text-light-blue right-2 bg-text/30 w-10 h-10 border border-accent white:border-light-blue rounded-full flex justify-center items-center"
         >

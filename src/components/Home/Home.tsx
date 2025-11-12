@@ -109,17 +109,17 @@ function Hero({ theme }: HeroProps) {
             className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white white:text-dark-gray"
           >
 
-            <h1 className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
-            <h1 className="text-2xl sm:text-4xl font-bold mt-6 py-3 px-6 rounded-2xl bg-linear-to-r from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400" className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-2xl sm:text-4xl font-bold mt-6 py-3 px-6 rounded-2xl bg-linear-to-r from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
             {/* <h1 className="text-3xl sm:text-5xl font-bold py-3 px-6 rounded-2xl text-accent white:text-light-blue">{t("home.title")}</h1> */}
 
-            <h3 className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mb-10 mt-6">
+            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mb-10 mt-6">
               {t("home.subtitle")}
             </h3>
 
-            <h5 className="text-sm font-bold mb-2">{t("home.text")}</h5>
+            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className="text-sm font-bold mb-2">{t("home.text")}</h5>
 
-            <div className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mb-30">
+            <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2800" className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mb-30">
               <div className="group">
                 <div className="card-carousel"><Waypoints /></div>
                 <div className="card-carousel"><SquareDashedBottomCode /></div>
@@ -140,13 +140,13 @@ function Hero({ theme }: HeroProps) {
 
 
 
-            <a href="#about">
+            <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" href="#about">
               <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
                 {t("home.button")}
               </button>
             </a>
 
-            <div className="up-and-down absolute bottom-10">
+            <div data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="up-and-down absolute bottom-10">
               <ChevronDown />
             </div>
 
