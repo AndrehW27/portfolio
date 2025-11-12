@@ -244,10 +244,10 @@ export default function Projects() {
             onClick={() => setShowModal(false)}
           />
 
-          <div className="relative rounded-2xl h-[80vh] w-[90vw] max-w-[900px] border border-text bg-background flex flex-col items-center p-6 overflow-hidden animate-zoomIn">
+          <div className="relative rounded-2xl h-[90vh] w-[90vw] max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-4 right-4 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text"
+              className="absolute top-0 right-0 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text"
             >
               X
             </button>
@@ -256,7 +256,7 @@ export default function Projects() {
             <img
               src={modalImages[modalIndex]}
               alt="modal"
-              className="h-full object-contain rounded-xl shadow-[0_0_20px_#7C3AED]"
+              className="w-full object-cover rounded-2xl "
             />
 
             {/* Pagination arrows */}
@@ -264,14 +264,14 @@ export default function Projects() {
               <>
                 <button
                   onClick={prevModal}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
+                  className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
                 >
                   ‹
                 </button>
 
                 <button
                   onClick={nextModal}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
+                  className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center"
                 >
                   ›
                 </button>
