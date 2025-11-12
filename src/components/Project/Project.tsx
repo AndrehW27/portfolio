@@ -1,8 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import zerameta1 from "../../assets/zerameta1.png";
-import zerameta2 from "../../assets/zerameta2.png";
-import zerameta3 from "../../assets/zerameta3.png";
+import zerameta1 from "../../assets/projects/zerameta1.png";
+import zerameta2 from "../../assets/projects/zerameta2.png";
+import zerameta3 from "../../assets/projects/zerameta3.png";
+import zerameta4 from "../../assets/projects/zerameta4.png";
+import zerameta5 from "../../assets/projects/zerameta5.png";
+import zerameta6 from "../../assets/projects/zerameta6.png";
+import zerameta7 from "../../assets/projects/zerameta7.png";
+import zerameta8 from "../../assets/projects/zerameta8.png";
 
 import netflix1 from "../../assets/netflix1.jpg";
 import netflix2 from "../../assets/netflix2.jpg";
@@ -19,7 +24,7 @@ const slidesData = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
     ],
-    images: [zerameta1, zerameta2, zerameta3],
+    images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
     links: [
       "https://github.com/AndrehW27/ZeraMetaBackEnd/",
       "https://zera-meta.vercel.app/boas-vindas",
@@ -244,7 +249,7 @@ export default function Projects() {
             onClick={() => setShowModal(false)}
           />
 
-          <div className="relative rounded-2xl h-[90vh] w-[90vw] max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
+          <div className="relative rounded-2xl h-[74vh] w-[70vw] max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED]">
             <button
               onClick={() => setShowModal(false)}
               className="absolute top-0 right-0 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text"
@@ -256,7 +261,7 @@ export default function Projects() {
             <img
               src={modalImages[modalIndex]}
               alt="modal"
-              className="w-full object-cover rounded-2xl "
+              className="object-cover rounded-2xl "
             />
 
             {/* Pagination arrows */}
