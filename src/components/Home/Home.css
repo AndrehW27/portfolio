@@ -1,25 +1,27 @@
 .typing {
-  width: 17ch; /* number of characters */
-  /* border: 1px solid #7C3AED; */
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 2s steps(17) infinite alternate, blink 0.5s step-end infinite alternate;
-  animation-delay: 2s;
+    width: 17ch;
+    /* number of characters */
+    /* border: 1px solid #7C3AED; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(17) infinite alternate, blink 0.5s step-end infinite alternate;
+    animation-delay: 2s;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 17ch;
-  }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 17ch;
+    }
 }
 
 @keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+    50% {
+        border-color: transparent;
+    }
 }
 
 .glowing {
@@ -71,15 +73,23 @@
 /* Add this rule to ensure opacity is 10% after AOS completes */
 /* This targets elements with the 'up-and-down3' class that have completed an AOS animation */
 .up-and-down1[data-aos].aos-animate {
-  opacity: 0.5 !important;
-}
-.up-and-down2[data-aos].aos-animate {
-  opacity: 0.5 !important;
-}
-.up-and-down3[data-aos].aos-animate {
-  opacity: 0.5 !important;
+    opacity: 0.25 !important;
 }
 
+.up-and-down2[data-aos].aos-animate {
+    opacity: 0.5 !important;
+}
+
+.up-and-down3[data-aos].aos-animate {
+    opacity: 1 !important;
+}
+
+.balls {
+    position: absolute;
+    background: linear-gradient(to bottom, var(--color-surface), var(--color-accent));
+    border-radius: 100%;
+    box-shadow: 0 0 40px #7C3AED;
+}
 
 .carousel {
     /* margin: 20px auto; */

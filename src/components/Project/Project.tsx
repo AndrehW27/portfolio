@@ -13,6 +13,19 @@ import zerameta6 from "../../assets/projects/zerameta6.png";
 import zerameta7 from "../../assets/projects/zerameta7.png";
 import zerameta8 from "../../assets/projects/zerameta8.png";
 
+import consultor1desktop from "../../assets/projects/consultor1.png";
+import consultor1 from "../../assets/projects/consultor1.png";
+import consultor2 from "../../assets/projects/consultor2.png";
+import consultor3 from "../../assets/projects/consultor3.png";
+import consultor4 from "../../assets/projects/consultor4.png";
+import consultor5 from "../../assets/projects/consultor5.png";
+import consultor6 from "../../assets/projects/consultor6.png";
+import consultor7 from "../../assets/projects/consultor7.png";
+import consultor8 from "../../assets/projects/consultor8.png";
+
+
+import portalsindesktop from "../../assets/projects/portalsin1cut.png";
+import portalsin1 from "../../assets/projects/portalsin-journey.png";
 
 import netflix1desktop from "../../assets/projects/netflix1.jpg";
 import netflix1 from "../../assets/projects/netflix2.jpg";
@@ -31,7 +44,7 @@ export default function Projects() {
   // SLIDES DATA
   const slidesData = [
     {
-      title: "ZeraMeta",
+      title: t("project.zera.title"),
       icons: [
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
@@ -56,7 +69,56 @@ export default function Projects() {
       description: t("project.zera.description"),
     },
     {
-      title: "Portfolio",
+      title: t("project.security.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg",
+          color: "#00a1e0"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+          color: "#0078d4"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg",
+          color: "#5600ce"
+        }
+      ],
+      images: [consultor1, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
+      desktop: consultor1desktop,
+      links: [
+        "https://",
+        "https://",
+      ],
+      description: t("project.security.description"),
+    },
+    {
+      title: t("project.portal.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+          color: "#ea23a4"
+        },
+
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+          color: "#ff9900"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+          color: "#f37036"
+        }
+      ],
+      images: [portalsin1],
+      desktop: portalsindesktop,
+      links: [
+        "https://",
+        "https://",
+      ],
+      description: t("project.portal.description"),
+    },
+    {
+      title: t("project.port.title"),
       icons: [
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -80,7 +142,7 @@ export default function Projects() {
       description: t("project.port.description"),
     },
     {
-      title: "NetflixClone",
+      title: t("project.net.title"),
       icons: [
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -193,7 +255,7 @@ export default function Projects() {
             >
               {/* Title + Icons */}
               <div className="h-[35dvw] w-full flex flex-col items-center justify-center mt-10 text-accent white:text-light-blue">
-                <h1 data-aos="fade-down" data-aos-offset="200" className="text-2xl sm:text-5xl">{s.title}</h1>
+                <h1 data-aos="fade-down" data-aos-offset="200" className="text-2xl text-text sm:text-5xl">{s.title}</h1>
                 <div className="flex gap-4 mt-5">
                   {s.icons.map((src, i) => (
                     <img
@@ -221,18 +283,8 @@ export default function Projects() {
               />
 
               {/* Bottom section */}
-              <div data-aos="zoom-in-up" data-aos-offset="200" className="w-full flex flex-col items-center mt-4 text-center">
-                {/* Indicators */}
-                <div className="flex gap-2 z-20">
-                  {slidesData.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => goTo(i)}
-                      className={`w-3 h-3 rounded-full ${i === index ? "bg-accent white:bg-light-blue" : "bg-white/40 white:bg-white/90"
-                        }`}
-                    />
-                  ))}
-                </div>
+              <div data-aos="zoom-in-up" data-aos-offset="200" className="w-full flex flex-col items-center text-center">
+
 
                 <button
                   onClick={() => {
@@ -240,7 +292,7 @@ export default function Projects() {
                     setModalIndex(0);
                     setShowModal(true);
                   }}
-                  className="m-3 text-accent white:text-light-blue rounded-full"
+                  className="m-3 text-accent white:text-light-blue border-b border-accent"
                 >
                   {t("project.show")}
                 </button>
@@ -286,6 +338,8 @@ export default function Projects() {
         >
           ›
         </button>
+
+
       </div>
 
       {/* MODAL */}
@@ -337,10 +391,24 @@ export default function Projects() {
 
       )}
 
+      {/* INDICATORS */}
+      <div className="absolute bottom-25 flex gap-2 z-20">
+        {slidesData.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            className={`w-3 h-3 rounded-full ${i === index ? "bg-accent white:bg-light-blue" : "bg-white/40 white:bg-white/90"
+              }`}
+          />
+        ))}
+      </div>
+
       {/* CHEVRON */}
       <a href="#contact" className="up-and-down absolute bottom-10 z-900" >
         <ChevronDown />
       </a>
+
+
 
     </section>
   );

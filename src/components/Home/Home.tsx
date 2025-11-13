@@ -117,25 +117,24 @@ function Hero({ theme }: HeroProps) {
             <div className='absolute top-27 left-7 w-13 h-13 up-and-down bg-linear-to-t from-accent   bg-transparent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
             </div> */}
 
+
+            {/* BALLS */}
             {theme !== "white" &&
               <div>
-                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className='absolute top-30 left-20 w-10 h-10 up-and-down2 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED]'>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className='absolute top-55 left-25 w-20 h-20 up-and-down3 opacity-10 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED]'>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className='absolute top-30 left-50 w-30 h-30 up-and-down1 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED]'>
-                </div>
+                <div className='balls top-30 left-20 w-10 h-10 up-and-down1' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800"></div>
+                <div className='balls top-30 left-50 w-20 h-20 up-and-down1' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800"></div>
+                <div className='balls top-45 left-8 w-3 h-3 up-and-down2' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000"></div>
+                <div className='balls top-55 right-4 w-8 h-8 up-and-down2' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000"></div>
+                <div className='balls top-55 left-25 w-15 h-15 up-and-down2' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000"></div>
+                <div className='balls top-70 left-12 w-8 h-8 up-and-down3' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></div>
+                <div className='balls top-75 right-20 w-10 h-10 up-and-down3' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></div>
               </div>
             }
 
+            {/* SENTENCES */}
             <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
-            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-2xl sm:text-4xl font-bold mt-6 py-2 px-5 rounded-full bg-linear-to-t from-accent to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
-            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className="typing text-1xl sm:text-4xl border-r-3 border-accent white:border-light-blue white:text-light-blue font-bold mb-10 mt-6">
-              {t("home.subtitle")}
-            </h3>
-
-
-            {/* CRIATIVITY */}
+            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-2xl sm:text-4xl font-bold mt-6 py-2 px-5 rounded-full bg-surface text-text white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
+            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className="typing text-1xl text-accent sm:text-4xl border-r-3 border-accent white:border-light-blue white:text-light-blue font-bold mb-10 mt-6">{t("home.subtitle")}</h3>
             <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className="text-sm font-bold mb-40 mt-10">{t("home.text")}</h5>
 
             {/* ABOUT BUTTON */}
