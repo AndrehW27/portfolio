@@ -29,20 +29,20 @@ function Contact() {
         </a>
 
         {/* SOCIAL MEDIA */}
-        <div className='border-red-500 w-60 h-fit flex items-center justify-evenly mt-10'>
+        <div data-aos="zoom-in" data-aos-offset="200" className='border-red-500 w-60 h-fit flex items-center justify-evenly mt-10'>
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
-            <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="400" className='w-12 h-12 p-2 rounded-md shadow-[0_0_10px_#0076b2]'>
+            <div className='w-12 h-12 p-2 rounded-md shadow-[0_0_10px_#0076b2]'>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
             </div>
           </a>
 
           <a href="https://github.com/AndrehW27" target="_blank" rel="noopener noreferrer">
-            <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="800" className='white: border border-dark-gray w-12 h-12 p-2 rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
+            <div className='white: border border-dark-gray w-12 h-12 p-2 rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
               <i className="text-3xl mr-4text-accent devicon-github-original"></i>
             </div>
           </a>
 
-          <a data-aos="zoom-in" data-aos-offset="200" data-aos-delay="1200"
+          <a 
             href="https://wa.me/5511992603675?text=Hello%20André,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!"
             target="_blank"
             rel="noopener noreferrer"
