@@ -125,7 +125,7 @@ function Journey() {
 
                     </div>
 
-                    <div className='w-40 px-6 sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
+                    <div className='w-35 px-6 sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
                         <div className='w-40 pr-6 sm:w-100 h-50  border-orange-500 flex justify-center items-start'>
                             <div data-aos="fade-left">
                                 <h1 className='text-accent white:text-light-blue font-bold'>{t("about.ufabc")}</h1>
