@@ -2,3 +2,55 @@
   mask-image: radial-gradient(circle, white 60%, transparent 100%);
   -webkit-mask-image: radial-gradient(circle, white 30%, transparent 100%);
 }
+
+.carousel {
+    /* margin: 20px auto; */
+    /* margin-bottom: 24px; */
+    /* width: 100dvw; */
+    /* border: 1px solid red; */
+    height: 6rem;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+    animation: spin 8s linear infinite;
+    /* padding-right: 1rem; */
+}
+
+.card-carousel {
+    flex: 0 0 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    /* border: 1px solid red ; */
+    /* width: 10rem; */
+    padding: 0.75rem;
+    border-radius: 2rem;
+    /* background-color: cornflowerblue; */
+    font-size: 6rem;
+    border-radius: .2rem;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+

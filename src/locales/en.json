@@ -1,5 +1,6 @@
 {
   "navbar.about": "About",
+  "navbar.journey": "Journey",
   "navbar.projects": "Projects",
   "navbar.contact": "Contact",
   "home.welcome": "Hello there, welcome!",
@@ -9,7 +10,7 @@
   "home.button": "Aboute Me",
   "about.interface": "Modern, and highly performant user interfaces.",
   "about.api": "High-availability and low-latency API development.",
-  "about.cycle": "Full lifecycle management and value-driven.",
+  "about.cycle": "Secure, stable, and continuous development and deployment.",
   "about.driven": "I’m a driven Full-Stack Developer with over five years of experience developing and improving web systems for the largest bank in Latin America.",
   "about.strive": "Constantly seeking growth, I strive to build efficient, intuitive, and impactful solutions that deliver real value.",
   "about.aboutme": "About Me",

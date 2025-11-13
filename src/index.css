@@ -61,3 +61,19 @@ html, body {
   overflow-x: hidden;
   overflow-y: auto;
 } */
+
+.up-and-down{
+    animation: upDown 1s linear infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

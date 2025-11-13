@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GiClick } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
-
+import { ChevronDown } from "lucide-react";
 
 import zerameta1desktop from "../../assets/projects/zera-desktop1.png";
 import zerameta1 from "../../assets/projects/zerameta1.png";
@@ -335,10 +335,15 @@ export default function Projects() {
               className="h-[85vh] w-[80vw] object-cover rounded-2xl "
             />
 
-
           </div>
+
         </div>
+
       )}
+
+      <a href="#contact" className="up-and-down absolute bottom-10 z-900" >
+        <ChevronDown />
+      </a>
     </section>
   );
 }

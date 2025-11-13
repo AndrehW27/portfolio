@@ -2,6 +2,7 @@
 import Home from './components/Home/Home.tsx'
 import Project from './components/Project/Project.tsx'
 import About from './components/About/About.tsx'
+import Journey from './components/Journey/Journey.tsx'
 import Contact from './components/Contact/Contact.tsx'
 import Teste from './components/Test/Teste.tsx'
 
@@ -40,7 +41,7 @@ function App() {
     // Apply the 'white' class here to wrap the entire application
     <div className={`${theme === 'white' ? 'white' : ''}`}>
 
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-2 z-9999'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-0 z-9999'>
 
         {theme === 'white' &&
           <button
@@ -58,7 +59,7 @@ function App() {
         }
 
       </div>
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-11 z-9999'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 z-9999'>
 
         {language === '' &&
           <button
@@ -80,9 +81,10 @@ function App() {
       </div>
 
       <Home theme={theme} />
-      <Teste />
+
       <About />
-      <Teste />
+      <Journey />
+
       <Project />
       <Teste />
       <Contact />
