@@ -119,11 +119,11 @@ function Hero({ theme }: HeroProps) {
 
             {theme !== "white" &&
               <div>
-                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className='absolute top-30 left-20 w-10 h-10 up-and-down2 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className='absolute top-30 left-20 w-10 h-10 up-and-down2 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED]'>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className='absolute top-50 left-25 w-20 h-20 up-and-down3 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className='absolute top-55 left-25 w-20 h-20 up-and-down3 opacity-10 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED]'>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className='absolute top-30 left-50 w-30 h-30 up-and-down1 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className='absolute top-30 left-50 w-30 h-30 up-and-down1 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED]'>
                 </div>
               </div>
             }

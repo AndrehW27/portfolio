@@ -68,6 +68,19 @@
     }
 }
 
+/* Add this rule to ensure opacity is 10% after AOS completes */
+/* This targets elements with the 'up-and-down3' class that have completed an AOS animation */
+.up-and-down1[data-aos].aos-animate {
+  opacity: 0.5 !important;
+}
+.up-and-down2[data-aos].aos-animate {
+  opacity: 0.5 !important;
+}
+.up-and-down3[data-aos].aos-animate {
+  opacity: 0.5 !important;
+}
+
+
 .carousel {
     /* margin: 20px auto; */
     /* margin-bottom: 24px; */
