@@ -199,7 +199,7 @@ export default function Projects() {
                     <img
                       data-aos="zoom-in" data-aos-offset="200"
                       key={i}
-                      className="h-12 w-12 p-2 rounded-md shadow-[0_0_10px_var(--shadow-color)]"
+                      className="icons shadow-[0_0_10px_var(--shadow-color)]"
                       src={src.icon}
                       style={{ '--shadow-color': src.color } as React.CSSProperties}
                       alt=""

@@ -84,9 +84,9 @@ function App() {
 
       <About />
       <Journey />
-
-      <Project />
       <Teste />
+      <Project />
+
       <Contact />
     </div>
   )

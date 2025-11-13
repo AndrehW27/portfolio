@@ -16,14 +16,14 @@
   --color-accent: #7C3AED;
   --color-text: #e8e9e9;
   --color-text-muted: #A3A3B3;
-  
+
   /* WHITE */
   --color-white-bg: #ebecf0;
   --color-dark-gray: #1f1f1f;
   --color-light-blue: #415ff5;
   --color-text-dark: #1f1f1f;
 
-  
+
 }
 
 /* @layer base {
@@ -48,10 +48,13 @@
 } */
 
 /* 🌍 HTML & Body Setup */
-html, body {
+html,
+body {
 
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  scroll-behavior: smooth; /* Smooth scrolling for anchors */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+  scroll-behavior: smooth;
+  /* Smooth scrolling for anchors */
 
 }
 
@@ -62,45 +65,89 @@ html, body {
   overflow-y: auto;
 } */
 
-.up-and-down{
-    animation: upDown 2s linear infinite;
+.up-and-down {
+  animation: upDown 2s linear infinite;
 }
 
 @keyframes upDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* 🌊 Shared smooth float base */
 @keyframes float1 {
-  0% { transform: translate3d(0, 0, 0) scale(1); }
-  25% { transform: translate3d(4px, -8px, 10px) scale(1.07); }
-  50% { transform: translate3d(-5px, -12px, 18px) scale(1.12); }
-  75% { transform: translate3d(3px, -6px, 8px) scale(1.06); }
-  100% { transform: translate3d(0, 0, 0) scale(1); }
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate3d(4px, -8px, 10px) scale(1.07);
+  }
+
+  50% {
+    transform: translate3d(-5px, -12px, 18px) scale(1.12);
+  }
+
+  75% {
+    transform: translate3d(3px, -6px, 8px) scale(1.06);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 @keyframes float2 {
-  0% { transform: translate3d(0, 0, 0) scale(1); }
-  25% { transform: translate3d(-6px, -10px, 12px) scale(1.1); }
-  50% { transform: translate3d(5px, -14px, 20px) scale(1.15); }
-  75% { transform: translate3d(-3px, -8px, 10px) scale(1.08); }
-  100% { transform: translate3d(0, 0, 0) scale(1); }
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate3d(-6px, -10px, 12px) scale(1.1);
+  }
+
+  50% {
+    transform: translate3d(5px, -14px, 20px) scale(1.15);
+  }
+
+  75% {
+    transform: translate3d(-3px, -8px, 10px) scale(1.08);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 @keyframes float3 {
-  0% { transform: translate3d(0, 0, 0) scale(1); }
-  25% { transform: translate3d(3px, -6px, 8px) scale(1.05); }
-  50% { transform: translate3d(-4px, -11px, 16px) scale(1.1); }
-  75% { transform: translate3d(2px, -7px, 9px) scale(1.06); }
-  100% { transform: translate3d(0, 0, 0) scale(1); }
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate3d(3px, -6px, 8px) scale(1.05);
+  }
+
+  50% {
+    transform: translate3d(-4px, -11px, 16px) scale(1.1);
+  }
+
+  75% {
+    transform: translate3d(2px, -7px, 9px) scale(1.06);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 /* 🌬️ Individual float behaviors */
@@ -116,3 +163,11 @@ html, body {
   animation: float3 8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
 
+.icons {
+  height: 36px;
+  width: 36px;
+  padding: 8px;
+  transition: 300 ease-in-out;
+  border-radius: 6px;
+  border: 1px solid var(--color-text-dark);
+}
