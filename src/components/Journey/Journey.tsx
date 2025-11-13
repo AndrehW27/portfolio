@@ -86,35 +86,35 @@ function Journey() {
                             <div data-aos="fade-up" className='h-9 w-9 sm:h-12 sm:w-12 border-3 border-accent white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center 1 transition'>
                                 <School className='2' />
                             </div>
-                            <div data-aos="fade-up" className='w-1 h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
+                            <div data-aos="fade-up" className='w-1 h-31 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                             </div>
                         </div>
                         <div className='w-50 h-40 border-orange-500 flex flex-col justify-start items-center'>
                             <div data-aos="fade-up" className='h-9 w-9 sm:h-12 sm:w-12 border-3 border-accent white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center 1 transition'>
                                 <GraduationCap className='2' />
                             </div>
-                            <div data-aos="fade-up" className='w-1 h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
+                            <div data-aos="fade-up" className='w-1 h-31 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                             </div>
                         </div>
                         <div className='w-50 h-40 border-orange-500 flex flex-col justify-start items-center'>
                             <div data-aos="fade-up" className='h-9 w-9 sm:h-12 sm:w-12 border-3 border-accent white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center 1 transition'>
                                 <University className='2' />
                             </div>
-                            <div data-aos="fade-up" className='w-1 h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
+                            <div data-aos="fade-up" className='w-1 h-31 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                             </div>
                         </div>
                         <div className='w-50 h-40 border-orange-500 flex flex-col justify-start items-center'>
                             <div data-aos="fade-up" className='h-9 w-9 sm:h-12 sm:w-12 border-3 border-accent white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center 1 transition'>
                                 <Factory className='2' />
                             </div>
-                            <div data-aos="fade-up" className='w-1 h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
+                            <div data-aos="fade-up" className='w-1 h-31 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                             </div>
                         </div>
                         <div className='w-50 h-40 border-orange-500 flex flex-col justify-start items-center'>
                             <div data-aos="fade-up" className='h-9 w-9 sm:h-12 sm:w-12 border-3 border-accent white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center 1 transition'>
                                 <Landmark className='2' />
                             </div>
-                            <div data-aos="fade-up" className='w-1 h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
+                            <div data-aos="fade-up" className='w-1 h-31 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                             </div>
                         </div>
                         <div className='w-50 h-40 border-orange-500 flex flex-col justify-start items-center'>
