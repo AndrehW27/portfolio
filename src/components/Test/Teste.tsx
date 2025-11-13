@@ -1,5 +1,5 @@
 import "./Teste.css";
-import bg from "../../assets/parallax.jpeg";
+import bg from "../../assets/parallaxvert1.jpeg.png";
 // import video from "../../assets/waves-video2.mp4";
 
 export default function Teste() {
