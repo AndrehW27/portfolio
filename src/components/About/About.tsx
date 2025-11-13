@@ -24,14 +24,14 @@ function About() {
 
   return (
     <>
-      <section id="about" className='bg-background font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start pb-20'>
+      <section id="about" className='bg-background font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start'>
 
         <div className='relative flex justify-center items-end gap-3 h-dvh w-dvw border-red-500 text-xs sm:text-base'>
 
-
-          <h1 data-aos="fade-in" className='absolute top-16 text-text white:text-dark-gray text-2xl sm:text-2xl font-bold'>{t("about.aboutme")}</h1>
-
-
+          {/* ABOUT ME */}
+          <h1 data-aos="fade-down" className='absolute top-16 text-text white:text-dark-gray text-2xl sm:text-2xl font-bold'>{t("about.aboutme")}</h1>
+          
+          {/* LEFT SENTENCES */}
           <div data-aos="fade-right" className='pl-6 pr-2 flex flex-col justify-start items-start h-140 w-60 sm:w-160  border-accent'>
             <div className='flex mb-5'>
               <div className='text-accent white:text-light-blue w-10 h-10 mr-3'>
@@ -55,6 +55,7 @@ function About() {
             </div>
           </div>
 
+          {/* RIGHT SENTENCCE */}
           <div data-aos="fade-left" className='pl-2 pr-6 h-120 sm:h-100 w-60 sm:w-100 border-accent white:text-dark-gray'>
             <h1 className='border-accent white:border-light-blue'>
               {t("about.driven")}
@@ -65,12 +66,13 @@ function About() {
             </h1>
           </div>
 
-
-          <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-0 left-10 border-blue-500 w-[60dvw] h-fit rounded-full z-800'>
+          {/* MY IMAGE */}
+          <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-0 left-10 border-blue-500 w-[55dvw] h-fit rounded-full z-800'>
             <img className='' src={perfil} alt="A cool image" />
           </div>
 
-          <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="0" className="absolute bottom-0 carousel w-dvw sm:w-100 text-accent white:text-light-blue mb-30 z-700">
+          {/* CAROUSEL */}
+          <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="0" className="absolute bottom-20 carousel w-dvw sm:w-100 text-accent white:text-light-blue z-700">
             <div className="group">
               <div className="card-carousel"><Waypoints className='h-full w-full' /></div>
               <div className="card-carousel"><SquareDashedBottomCode className='h-full w-full' /></div>
@@ -89,14 +91,13 @@ function About() {
             </div>
           </div>
 
+          {/* DOWN CHEVRON */}
           <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" className="up-and-down absolute bottom-10 z-900" href="#journey" >
             <ChevronDown />
           </a>
 
-
         </div>
 
-     
       </section>
     </>
   )

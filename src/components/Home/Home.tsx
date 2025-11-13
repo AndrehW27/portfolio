@@ -69,7 +69,6 @@ function Hero({ theme }: HeroProps) {
       <nav className="text-text font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9998">
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
-
           <a className="w-9 h-9 fixed left-4" href="#">
             <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw_light.png')]"></div>
           </a>
@@ -107,45 +106,46 @@ function Hero({ theme }: HeroProps) {
             playsInline
           />
 
-          {/* ✅ Content scrolls normally */}
-          <div
-            ref={ContentFade}
-            className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white white:text-dark-gray"
-          >
+          {/* GSAP CONTAINER ZOOM OUT VIDEO */}
+          <div ref={ContentFade} className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white white:text-dark-gray">
+
+            {/* WELCOME */}
+            {/* <div className='absolute top-20 left-5 w-2 h-2 up-and-down bg-linear-to-t from-accent   bg-transparent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+            </div>
+            <div className='absolute top-30 right-5 w-5 h-5 up-and-down bg-linear-to-t from-accent   bg-transparent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+            </div>
+            <div className='absolute top-27 left-7 w-13 h-13 up-and-down bg-linear-to-t from-accent   bg-transparent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+            </div> */}
+
+            {theme !== "white" &&
+              <div>
+                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className='absolute top-30 left-20 w-10 h-10 up-and-down2 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className='absolute top-50 left-25 w-20 h-20 up-and-down3 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className='absolute top-30 left-50 w-30 h-30 up-and-down1 bg-linear-to-b from-surface to-accent rounded-full flex flex-col items-center justify-center shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]'>
+                </div>
+              </div>
+            }
 
             <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>
-            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-2xl sm:text-4xl font-bold mt-6 py-2 px-5 rounded-2xl bg-linear-to-t from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
-            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className="typing text-2xl sm:text-4xl border-r-3 border-accent white:border-light-blue text-accent white:text-light-blue font-bold mb-10 mt-6">
+            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-2xl sm:text-4xl font-bold mt-6 py-2 px-5 rounded-full bg-linear-to-t from-accent to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#415ff5]">{t("home.title")}</h1>
+            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className="typing text-1xl sm:text-4xl border-r-3 border-accent white:border-light-blue white:text-light-blue font-bold mb-10 mt-6">
               {t("home.subtitle")}
             </h3>
 
-            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className="text-sm font-bold mb-40">{t("home.text")}</h5>
 
-            {/* <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2800" className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mb-30">
-              <div className="group">
-                <div className="card-carousel"><Waypoints /></div>
-                <div className="card-carousel"><SquareDashedBottomCode /></div>
-                <div className="card-carousel"><ServerCog /></div>
-                <div className="card-carousel"><Database /></div>
-                <div className="card-carousel"><ShieldCheck /></div>
-                <div className="card-carousel"><Rocket /></div>
-              </div>
-              <div aria-hidden className="group">
-                <div className="card-carousel"><Waypoints /></div>
-                <div className="card-carousel"><SquareDashedBottomCode /></div>
-                <div className="card-carousel"><ServerCog /></div>
-                <div className="card-carousel"><Database /></div>
-                <div className="card-carousel"><ShieldCheck /></div>
-                <div className="card-carousel"><Rocket /></div>
-              </div>
-            </div> */}
+            {/* CRIATIVITY */}
+            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className="text-sm font-bold mb-40 mt-10">{t("home.text")}</h5>
 
+            {/* ABOUT BUTTON */}
             <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" href="#about">
               <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
                 {t("home.button")}
               </button>
             </a>
 
+            {/* DOWN CHEVRON */}
             <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="up-and-down absolute bottom-10" href="#about">
               <ChevronDown />
             </a>

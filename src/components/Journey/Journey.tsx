@@ -27,7 +27,7 @@ function Journey() {
         <>
             <section id="journey" className='bg-background font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start'>
 
-                <h1 data-aos="fade-in" className=' white:text-dark-gray mt-15 text-2xl sm:text-2xl font-bold'>{t("about.journey")}</h1>
+                <h1 data-aos="fade-down" className=' white:text-dark-gray mt-15 text-2xl sm:text-2xl font-bold'>{t("about.journey")}</h1>
 
                 <div className='relative  pb-30 white:text-dark-gray  border-yellow-300 text-xs w-[70vw] flex items-center justify-center mt-10'>
 

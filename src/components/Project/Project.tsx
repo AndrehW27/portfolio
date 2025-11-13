@@ -25,12 +25,10 @@ import portfolio2 from "../../assets/projects/port2.png";
 import portfolio3 from "../../assets/projects/port3.png";
 import portfolio4 from "../../assets/projects/port4.png";
 
-
-
-
 export default function Projects() {
   const { t } = useTranslation();
 
+  // SLIDES DATA
   const slidesData = [
     {
       title: "ZeraMeta",
@@ -107,10 +105,9 @@ export default function Projects() {
     },
   ];
 
-
   const [index, setIndex] = useState(0);
 
-  // Modal state
+  // MODAL STATE
   const [showModal, setShowModal] = useState(false);
   const [modalImages, setModalImages] = useState<string[]>([]);
   const [modalIndex, setModalIndex] = useState(0);
@@ -177,10 +174,9 @@ export default function Projects() {
   }
 
   return (
-    <section
-      id="projects"
-      className="relative bg-background white:bg-white-bg h-dvh w-dvw flex items-center justify-center text-text white:text-text-dark font-bold"
-    >
+    <section id="projects" className="relative bg-background white:bg-white-bg h-dvh w-dvw flex items-center justify-center text-text white:text-text-dark font-bold">
+
+      {/* CAROUSEL CONTAINER  */}
       <div className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         <div
           ref={containerRef}
@@ -197,7 +193,7 @@ export default function Projects() {
             >
               {/* Title + Icons */}
               <div className="h-[35dvw] w-full flex flex-col items-center justify-center mt-10 text-accent white:text-light-blue">
-                <h1 data-aos="zoom-in-up" data-aos-offset="200" className="text-2xl sm:text-5xl">{s.title}</h1>
+                <h1 data-aos="fade-down" data-aos-offset="200" className="text-2xl sm:text-5xl">{s.title}</h1>
                 <div className="flex gap-4 mt-5">
                   {s.icons.map((src, i) => (
                     <img
@@ -292,7 +288,7 @@ export default function Projects() {
         </button>
       </div>
 
-      {/* Modal */}
+      {/* MODAL */}
       {showModal && (
         <div className="absolute inset-0 flex items-center justify-center z-[9999]">
           <div
@@ -341,9 +337,11 @@ export default function Projects() {
 
       )}
 
+      {/* CHEVRON */}
       <a href="#contact" className="up-and-down absolute bottom-10 z-900" >
         <ChevronDown />
       </a>
+
     </section>
   );
 }
