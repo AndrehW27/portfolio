@@ -258,24 +258,29 @@ export default function Projects() {
 
               {/* Main image */}
               <div
-                className="absolute bottom-12 h-[80dvh] w-[90dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);
                   setModalIndex(0);
                   setShowModal(true);
                 }}>
-                <div className=" bg-cover h-full w-full rounded-3xl  bg-black/75 text-white/99 ">
+                <div className=" bg-cover h-full w-full rounded-3xl bg-black/75 text-white/99 ">
                   <div className="absolute top-6 left-6 text-3xl font-bold">ZeraMeta </div>
-                  <div className="absolute top-18 left-6 text-sm w-68  border-red-500">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
+                  <div className="absolute top-18 left-6 text-sm w-60  border-red-500">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
 
-                  <div className="absolute top-37 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
-                  <div className="absolute top-37 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
-                  <div className="absolute top-37 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div>
+                  <div className="absolute top-42 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
+                  <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
+                  <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div>
                   <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
                   <div className="absolute bottom-6 left-30 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Demo</div>
                   <button
-                    onClick={prev}
+                    onClick={() => {
+                      setModalImages(s.images);
+                      setModalIndex(0);
+                      setShowModal(true);
+                    }
+                    }
                     className="absolute bottom-6 right-6 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
                   >
                     <GiClick />

@@ -9,7 +9,7 @@ export default function Teste() {
       <section id="test" className="relative h-[100dvh] w-dvw bg-background flex items-center justify-center">
 
         <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] bg-center bg-no-repeat rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface" style={{ backgroundImage: `url(${bg})` }}></div>
-        {/* <div className="absolute bottom-0 left-0 w-full h-[100dvh] bg-[linear-gradient(to_top,#111_30%,transparent_70%)]">
+        <div className="absolute bottom-0 left-0 w-full h-[100dvh] bg-[linear-gradient(to_top,#111_30%,transparent_70%)]">
 
           <div className='absolute bottom-20 left-20 w-40 sm:w-100 h-40 border-orange-500 flex justify-end items-start'>
             <div className='flex align-center justify-center gap-2 sm:gap-4 z-100'>
@@ -19,10 +19,28 @@ export default function Teste() {
             </div>
           </div>
 
-          <h1 className="absolute bottom-20 left-10 text-text w-70">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</h1>
+          <h1 className="absolute bottom-25 left-10 text-text w-70">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</h1>
 
-        </div> */}
-        <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] rounded-3xl  bg-black/75 text-white/99 ">
+          <div className="absolute bottom-10 left-10 text-sm font-bold bg-white/70 text-black/80 px-5 py-2 rounded-2xl">Code</div>
+          <div className="absolute bottom-10 left-33 text-sm font-bold bg-accent/70 text-white/80 px-5 py-2 rounded-2xl">Demo</div>
+
+        </div>
+        {/* Controls */}
+
+        <button
+
+          className="absolute top-1/2 translate-y-[-100%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+        >
+          ‹
+        </button>
+        <button
+
+          className="absolute top-1/2 translate-y-[-100%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+        >
+          ›
+        </button>
+
+        {/* <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] rounded-3xl  bg-black/75 text-white/99 ">
           <div className="absolute top-8 left-6 text-3xl font-bold">ZeraMeta </div>
           <div className="absolute top-20 left-6 text-sm w-65">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
           <div className="absolute top-140 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
@@ -37,12 +55,7 @@ export default function Teste() {
           <div className="absolute top-70 right-2 text-3xl text-white/99">›</div>
           <div className="absolute top-70 left-2 text-3xl text-white/99">‹</div>
 
-        </div>
-        
-
-
-
-
+        </div> */}
 
 
       </section>
