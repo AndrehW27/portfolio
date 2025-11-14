@@ -1,5 +1,5 @@
 import "./Teste.css";
-// import bg from "../../assets/projects/zerameta1.png";
+import bg from "../../assets/projects/zerameta1.png";
 // import video from "../../assets/waves-video2.mp4";
 
 export default function Teste() {
@@ -7,6 +7,11 @@ export default function Teste() {
   return (
     <>
       <section id="test" className="relative h-[100dvh] w-dvw bg-background flex items-center justify-center">
+
+        <div className="card h-[50dvh] w-[40dvw]">
+          <img src={bg} />
+        </div>
+
 
         {/* <div className="absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] BORDER border-surface">
           <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">

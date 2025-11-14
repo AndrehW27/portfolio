@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GiClick } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
+
+import "./Project.css";
 // import { ChevronDown } from "lucide-react";
 
 import zerameta1desktop from "../../assets/projects/zerameta1.png";
@@ -249,7 +251,7 @@ export default function Projects() {
 
       {/* CAROUSEL CONTAINER  */}
       <div data-aos="flip-left"
-        data-aos-offset="350" className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
+        data-aos-offset="350" className=" relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         <div
           ref={containerRef}
           onTouchStart={handleTouchStart}
@@ -261,14 +263,14 @@ export default function Projects() {
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="w-full shrink-0 h-full flex flex-col items-center"
+              className="card w-full shrink-0 h-full flex flex-col items-center"
             >
               {/* Title + Icons */}
 
 
               {/* Main image */}
               <div
-                className="scale border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className=" scale border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);

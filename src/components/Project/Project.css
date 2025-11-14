@@ -33,3 +33,11 @@
 .project-carousel-container {
   transform-style: preserve-3d;
 }
+
+.card {
+  transform: perspective(400px) rotatey(-12deg);
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: perspective(800px) rotateY(0deg);
+}
