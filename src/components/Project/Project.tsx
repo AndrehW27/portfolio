@@ -270,7 +270,7 @@ export default function Projects() {
 
               {/* Main image */}
               <div
-                className=" scale border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="scale border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_25%,transparent_70%)]">
@@ -300,10 +300,10 @@ export default function Projects() {
                   <div className="absolute bottom-18 left-30 text-xs text-accent w-60  border-red-500">details</div> */}
 
                   <a href={s.links[0]} target="_blank" rel="noopener noreferrer">
-                    <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-3 py-1 rounded-2xl">{t("project.code")}</div>
+                    <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
                   </a>
                   <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
-                    <div className="absolute bottom-6 left-24 text-sm bg-accent text-white/80 px-3 py-1 rounded-2xl">{t("project.demo")}</div>
+                    <div className="absolute bottom-6 left-26 text-sm bg-accent text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
                   </a>
                   <div className="absolute bottom-8 left-55 text-xs text-accent w-60  border-red-500">details</div>
 
