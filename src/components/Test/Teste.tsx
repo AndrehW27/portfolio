@@ -8,7 +8,7 @@ export default function Teste() {
     <>
       <section id="test" className="relative h-[100dvh] w-dvw bg-background flex items-center justify-center">
 
-        <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] bg-center bg-no-repeat rounded-3xl  border-surface" style={{ backgroundImage: `url(${bg})` }}></div>
+        <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] bg-center bg-no-repeat rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface" style={{ backgroundImage: `url(${bg})` }}></div>
         {/* <div className="absolute bottom-0 left-0 w-full h-[100dvh] bg-[linear-gradient(to_top,#111_30%,transparent_70%)]">
 
           <div className='absolute bottom-20 left-20 w-40 sm:w-100 h-40 border-orange-500 flex justify-end items-start'>
@@ -27,14 +27,6 @@ export default function Teste() {
           <div className="absolute top-20 left-6 text-sm w-65">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
           <div className="absolute top-140 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
           <div className="absolute top-140 left-33 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Demo</div>
-
-          {/* <div className="absolute top-11 left-48 text-3xl"><i className="devicon-angular-plain"></i></div>
-          <div className="absolute top-11 left-60 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
-          <div className="absolute top-11 left-72 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
-          {/* 
-          <div className="absolute top-22 left-10 text-3xl"><i className="devicon-angular-plain"></i></div>
-          <div className="absolute top-22 left-25 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
-          <div className="absolute top-22 left-40 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
           <div className="absolute top-40 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
           <div className="absolute top-40 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>

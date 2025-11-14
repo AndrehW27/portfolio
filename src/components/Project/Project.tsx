@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GiClick } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
-import { ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
 
-import zerameta1desktop from "../../assets/projects/zera-desktop1.png";
+import zerameta1desktop from "../../assets/projects/zerameta1.png";
 import zerameta1 from "../../assets/projects/zerameta1.png";
 import zerameta2 from "../../assets/projects/zerameta2.png";
 import zerameta3 from "../../assets/projects/zerameta3.png";
@@ -13,7 +13,7 @@ import zerameta6 from "../../assets/projects/zerameta6.png";
 import zerameta7 from "../../assets/projects/zerameta7.png";
 import zerameta8 from "../../assets/projects/zerameta8.png";
 
-import consultor1desktop from "../../assets/projects/consultor1desktop.png";
+import consultor1desktop from "../../assets/projects/consultor1teste2.png";
 import consultor1 from "../../assets/projects/consultor1teste2.png";
 import consultor2 from "../../assets/projects/consultor2final.png";
 import consultor3 from "../../assets/projects/consultor3final.png";
@@ -27,12 +27,12 @@ import consultor8 from "../../assets/projects/consultor8final.png";
 import portalsindesktop from "../../assets/projects/portalsin1cut.png";
 import portalsin1 from "../../assets/projects/portalsin-journey.png";
 
-import netflix1desktop from "../../assets/projects/netflix1.jpg";
+import netflix1desktop from "../../assets/projects/netflix2.jpg";
 import netflix1 from "../../assets/projects/netflix2.jpg";
 import netflix2 from "../../assets/projects/net-lands.png";
 
 
-import portfolio1desktop from "../../assets/projects/port-desktop.png";
+import portfolio1desktop from "../../assets/projects/port1.png";
 import portfolio1 from "../../assets/projects/port1.png";
 import portfolio2 from "../../assets/projects/port2.png";
 import portfolio3 from "../../assets/projects/port3.png";
@@ -236,7 +236,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative bg-background white:bg-white-bg h-dvh w-dvw flex items-center justify-center text-text white:text-text-dark font-bold">
+    <section id="projects" className="relative bg-background white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold">
 
       {/* CAROUSEL CONTAINER  */}
       <div className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
@@ -251,95 +251,72 @@ export default function Projects() {
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="w-full flex-shrink-0 h-full flex flex-col items-center"
+              className="w-full shrink-0 h-full flex flex-col items-center"
             >
               {/* Title + Icons */}
-              <div className="h-[35dvw] w-full flex flex-col items-center justify-center mt-10 text-accent white:text-light-blue">
-                <h1 data-aos="fade-down" data-aos-offset="200" className="text-2xl text-text sm:text-5xl">{s.title}</h1>
-                <div className="flex gap-4 mt-5">
-                  {s.icons.map((src, i) => (
-                    <img
-                      data-aos="zoom-in" data-aos-offset="200"
-                      key={i}
-                      className="icons shadow-[0_0_10px_var(--shadow-color)]"
-                      src={src.icon}
-                      style={{ '--shadow-color': src.color } as React.CSSProperties}
-                      alt=""
-                    />
-                  ))}
-                </div>
-              </div>
+
 
               {/* Main image */}
               <div
-                data-aos="flip-up" data-aos-offset="350"
-                className="h-fit min-h-[50dvw] w-[90dvw] bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="absolute bottom-12 h-[80dvh] w-[90dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);
                   setModalIndex(0);
                   setShowModal(true);
-                }}
-              />
+                }}>
+                <div className=" bg-cover h-full w-full rounded-3xl  bg-black/75 text-white/99 ">
+                  <div className="absolute top-6 left-6 text-3xl font-bold">ZeraMeta </div>
+                  <div className="absolute top-18 left-6 text-sm w-68  border-red-500">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
 
-              {/* Bottom section */}
-              <div data-aos="zoom-in-up" data-aos-offset="200" className="w-full flex flex-col items-center text-center">
+                  <div className="absolute top-37 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
+                  <div className="absolute top-37 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
+                  <div className="absolute top-37 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div>
+                  <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
+                  <div className="absolute bottom-6 left-30 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Demo</div>
+                  <button
+                    onClick={prev}
+                    className="absolute bottom-6 right-6 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+                  >
+                    <GiClick />
+                  </button>
 
-
-                <button
-                  onClick={() => {
-                    setModalImages(s.images);
-                    setModalIndex(0);
-                    setShowModal(true);
-                  }}
-                  className="m-3 text-accent white:text-light-blue border-b border-accent"
-                >
-                  {t("project.show")}
-                </button>
-
-                <h1 className="w-80">{s.description}</h1>
-
-                <div className="mt-6">
-                  <a href={s.links[0]} target="_blank">
-                    <button className="border-accent px-6 py-3 mr-3 rounded-full shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc]">
-                      {t("project.code")}
-                    </button>
-                  </a>
-                  <a href={s.links[1]} target="_blank">
-                    <button className="bg-accent white:bg-light-blue px-6 py-3 ml-3 rounded-full">
-                      {t("project.demo")}
-                    </button>
-                  </a>
                 </div>
               </div>
             </article>
           ))}
         </div>
 
-        {/* Controls */}
-        <button
-          data-aos="fade-left" data-aos-offset="200"
-          onClick={prev}
-          className="absolute top-1/2 translate-y-[-460%] text-accent white:text-light-blue right-2 bg-text/30 w-10 h-10 border border-accent white:border-light-blue rounded-full flex justify-center items-center"
-        >
-          <GiClick />
-        </button>
-        <button
-          data-aos="fade-right" data-aos-offset="200"
-          onClick={prev}
-          className="absolute top-1/2 translate-y-[-260%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
-        >
-          ‹
-        </button>
-        <button
-          data-aos="fade-left" data-aos-offset="200"
-          onClick={next}
-          className="absolute top-1/2 translate-y-[-260%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
-        >
-          ›
-        </button>
 
 
+      </div>
+
+      {/* Controls */}
+
+      <button
+        onClick={prev}
+        className="absolute top-1/2 translate-y-[-100%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+      >
+        ‹
+      </button>
+      <button
+        onClick={next}
+        className="absolute top-1/2 translate-y-[-100%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+      >
+        ›
+      </button>
+
+
+      {/* INDICATORS */}
+      <div className="absolute text-center w-full bottom-5 flex justify-center gap-2 z-20">
+        {slidesData.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            className={`w-3 h-3 rounded-full ${i === index ? "bg-accent white:bg-light-blue" : "bg-white/40 white:bg-white/90"
+              }`}
+          />
+        ))}
       </div>
 
       {/* MODAL */}
@@ -390,23 +367,6 @@ export default function Projects() {
         </div>
 
       )}
-
-      {/* INDICATORS */}
-      <div className="absolute bottom-25 flex gap-2 z-20">
-        {slidesData.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goTo(i)}
-            className={`w-3 h-3 rounded-full ${i === index ? "bg-accent white:bg-light-blue" : "bg-white/40 white:bg-white/90"
-              }`}
-          />
-        ))}
-      </div>
-
-      {/* CHEVRON */}
-      <a href="#contact" className="up-and-down absolute bottom-10 z-900" >
-        <ChevronDown />
-      </a>
 
 
 
