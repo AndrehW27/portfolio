@@ -2,10 +2,13 @@ import './Contact.css'
 import { ChevronUp } from "lucide-react";
 import wpp from "../../assets/whatsapp.png"
 import { useTranslation } from "react-i18next";
+import { useState } from 'react';
 
 function Contact() {
 
   const { t } = useTranslation();
+
+  const [message, setMessage] = useState('');
 
   return (
     <>
@@ -17,12 +20,12 @@ function Contact() {
 
 
         {/* INPUTS */}
-        <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-10 font-normal w-60' type="text" placeholder='Name' />
-        <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60' type="text" placeholder='E-mail' />
-        <textarea data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60 h-30' name="" id="" placeholder='Message'></textarea>
+        {/* <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-10 font-normal w-60' type="text" placeholder='Name' />
+        <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60' type="text" placeholder='E-mail' /> */}
+        <textarea data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60 h-30' name="" id="message" placeholder='E-mail me here' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
         {/* BUTTON */}
-        <a href="mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=Hello André,">
+        <a href={`mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
           <button data-aos="zoom-in" data-aos-offset="200" className='px-3 py-1 rounded-md mt-4  font-bold bg-linear-to-t from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5]' type="submit">
             {t("contact.send")}
           </button>

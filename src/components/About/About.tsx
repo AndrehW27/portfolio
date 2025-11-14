@@ -56,7 +56,7 @@ function About() {
           </div>
 
           {/* RIGHT SENTENCCE */}
-          <div data-aos="fade-left" className='pl-2 pr-6 h-120 sm:h-100 w-60 sm:w-100 border-accent white:text-dark-gray'>
+          <div data-aos="fade-left" data-aos-offset="180" className='pl-2 pr-6 h-120 sm:h-100 w-60 sm:w-100 border-accent white:text-dark-gray'>
             <h1 className='border-accent white:border-light-blue'>
               {t("about.driven")}
             </h1>
@@ -67,7 +67,7 @@ function About() {
           </div>
 
           {/* MY IMAGE */}
-          <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-0 left-10 border-blue-500 w-[55dvw] h-fit rounded-full z-800'>
+          <div data-aos="zoom-in" data-aos-offset="50" className='absolute bottom-0 left-10 border-blue-500 w-[55dvw] h-fit rounded-full z-800'>
             <img className='' src={perfil} alt="A cool image" />
           </div>
 

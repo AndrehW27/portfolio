@@ -119,7 +119,7 @@ function Hero({ theme }: HeroProps) {
 
 
             {/* BALLS */}
-            {theme !== "white" &&
+            {/* {theme !== "white" &&
               <div>
                 <div className='balls top-30 left-20 w-10 h-10 up-and-down1' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800"></div>
                 <div className='balls top-30 left-50 w-20 h-20 up-and-down1' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800"></div>
@@ -129,7 +129,7 @@ function Hero({ theme }: HeroProps) {
                 <div className='balls top-70 left-12 w-8 h-8 up-and-down3' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></div>
                 <div className='balls top-75 right-20 w-10 h-10 up-and-down3' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></div>
               </div>
-            }
+            } */}
 
             {/* SENTENCES */}
             <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="text-1xl sm:text-2xl font-bold mt-4">{t("home.welcome")}</h1>

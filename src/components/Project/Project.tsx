@@ -13,15 +13,15 @@ import zerameta6 from "../../assets/projects/zerameta6.png";
 import zerameta7 from "../../assets/projects/zerameta7.png";
 import zerameta8 from "../../assets/projects/zerameta8.png";
 
-import consultor1desktop from "../../assets/projects/consultor1.png";
-import consultor1 from "../../assets/projects/consultor1.png";
-import consultor2 from "../../assets/projects/consultor2.png";
-import consultor3 from "../../assets/projects/consultor3.png";
-import consultor4 from "../../assets/projects/consultor4.png";
-import consultor5 from "../../assets/projects/consultor5.png";
-import consultor6 from "../../assets/projects/consultor6.png";
-import consultor7 from "../../assets/projects/consultor7.png";
-import consultor8 from "../../assets/projects/consultor8.png";
+import consultor1desktop from "../../assets/projects/consultor1desktop.png";
+import consultor1 from "../../assets/projects/consultor1teste2.png";
+import consultor2 from "../../assets/projects/consultor2final.png";
+import consultor3 from "../../assets/projects/consultor3final.png";
+import consultor4 from "../../assets/projects/consultor4final.png";
+import consultor5 from "../../assets/projects/consultor5final.png";
+import consultor6 from "../../assets/projects/consultor6final.png";
+import consultor7 from "../../assets/projects/consultor7final.png";
+import consultor8 from "../../assets/projects/consultor8final.png";
 
 
 import portalsindesktop from "../../assets/projects/portalsin1cut.png";
