@@ -239,11 +239,11 @@ export default function Projects() {
     <section id="projects" className="relative bg-background white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold">
 
       {/* FAKE SCREENS */}
-      <div className="border-6 border-surface absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
+      <div className=" border-surface absolute bottom-24 left-65 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
         <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
         </div>
       </div>
-      <div className="border-6 border-surface absolute top-15 right-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
+      <div className=" border-surface absolute bottom-24 right-65 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
         <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
         </div>
       </div>
@@ -268,7 +268,7 @@ export default function Projects() {
 
               {/* Main image */}
               <div
-                className="border-6 border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="scale border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);
@@ -386,14 +386,14 @@ export default function Projects() {
             </>
           )}
 
-          <div className="relative rounded-2xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] ">
+          <div className="relative rounded-3xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] ">
 
 
             {/* Modal image */}
             <img
               src={modalImages[modalIndex]}
               alt="modal"
-              className="h-[85vh] w-[80vw] object-cover rounded-2xl "
+              className="h-[85vh] w-[77vw] object-cover rounded-2xl "
             />
 
           </div>
