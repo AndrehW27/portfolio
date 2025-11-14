@@ -1,5 +1,5 @@
 import "./Teste.css";
-import bg from "../../assets/projects/zerameta1.png";
+// import bg from "../../assets/projects/zerameta1.png";
 // import video from "../../assets/waves-video2.mp4";
 
 export default function Teste() {
@@ -8,7 +8,7 @@ export default function Teste() {
     <>
       <section id="test" className="relative h-[100dvh] w-dvw bg-background flex items-center justify-center">
 
-        <div className="absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] BORDER border-surface">
+        {/* <div className="absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] BORDER border-surface">
           <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
           </div>
         </div>
@@ -34,11 +34,11 @@ export default function Teste() {
             <div className="absolute bottom-6 left-28 text-sm font-bold bg-accent/70 text-white/80 px-5 py-2 rounded-2xl">Demo</div>
 
           </div>
-        </div>
+        </div> */}
 
         {/* Controls */}
 
-        <button
+        {/* <button
 
           className="absolute top-1/2 translate-y-[-100%] left-2 text-text bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
         >
@@ -49,7 +49,7 @@ export default function Teste() {
           className="absolute top-1/2 translate-y-[-100%] right-2 text-text bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
         >
           ›
-        </button>
+        </button> */}
 
         {/* <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] rounded-3xl  bg-black/75 text-white/99 ">
           <div className="absolute top-8 left-6 text-3xl font-bold">ZeraMeta </div>

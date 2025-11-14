@@ -77,11 +77,11 @@ export default function Projects() {
         },
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
-          color: "#0078d4"
+          color: "#00a1e0"
         },
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg",
-          color: "#5600ce"
+          color: "#7300ff"
         }
       ],
       images: [consultor1, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
@@ -99,14 +99,13 @@ export default function Projects() {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
           color: "#ea23a4"
         },
-
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
           color: "#ff9900"
         },
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
-          color: "#f37036"
+          color: "#ff7700"
         }
       ],
       images: [portalsin1],
@@ -285,23 +284,31 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute bottom-46 left-20 w-fit sm:w-100 border-orange-500 flex justify-center items-start'>
+                  <div className='absolute bottom-46 w-full sm:w-100 border-orange-500 flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
-                      <img className='icons  shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                      <img className='icons shadow-[0_0_10px_#f16529]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                      <img className='icons shadow-[0_0_10px_#31a5d9]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                      {s.icons.map((iconData, iconIdx) => (
+                        <img
+                          key={iconIdx}
+                          className="icons shadow-[0_0_10px_var(--icon-shadow-color)]"
+                          src={iconData.icon}
+                          style={{ '--icon-shadow-color': iconData.color } as React.CSSProperties}
+                        />
+                      ))}
                     </div>
                   </div>
 
-                  <div className="absolute bottom-34 left-6 text-xl w-60  border-red-500">{s.title}</div>
+                  <div className="absolute bottom-34 left-6 text-xl w-60 text-accent  border-red-500">{s.title}</div>
                   <div className="absolute bottom-20 left-6 text-xs w-60  border-red-500">{s.description}</div>
                   {/* <div className="absolute bottom-20 left-34 text-xs text-accent w-60  border-red-500">^</div>
                   <div className="absolute bottom-18 left-30 text-xs text-accent w-60  border-red-500">details</div> */}
 
-
-                  <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-3 py-1 rounded-2xl">{t("project.code")}</div>
-                  <div className="absolute bottom-6 left-24 text-sm bg-accent text-white/80 px-3 py-1 rounded-2xl">{t("project.demo")}</div>
-                  <div className="absolute bottom-8 left-55 text-xs text-accent w-60  border-red-500">details</div>
+                  <a href={s.links[0]} target="_blank" rel="noopener noreferrer">
+                    <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-3 py-1 rounded-2xl">{t("project.code")}</div>
+                  </a>
+                  <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
+                    <div className="absolute bottom-6 left-24 text-sm bg-accent text-white/80 px-3 py-1 rounded-2xl">{t("project.demo")}</div>
+                  </a>
+                  <div className="absolute bottom-8 left-57 text-xs text-accent w-60  border-red-500">details</div>
 
 
                   <button
@@ -330,6 +337,7 @@ export default function Projects() {
 
       <button
         data-aos="fade-right"
+        data-aos-offset="0"
         onClick={prev}
         className="absolute top-1/2 translate-y-[-100%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
       >
@@ -337,6 +345,7 @@ export default function Projects() {
       </button>
       <button
         data-aos="fade-left"
+        data-aos-offset="0"
         onClick={next}
         className="absolute top-1/2 translate-y-[-100%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
       >
@@ -389,7 +398,7 @@ export default function Projects() {
             </>
           )}
 
-          <div className="relative rounded-3xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] ">
+          <div className="relative rounded-3xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
 
 
             {/* Modal image */}
