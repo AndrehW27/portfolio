@@ -6,7 +6,9 @@ export default function Teste() {
 
   return (
     <>
-      <section className="relative bg-fixed h-[100dvh] w-dvw bg-cover bg-center bg-no-repeat rounded-3xl z-9999" style={{ backgroundImage: `url(${bg})` }}>
+      <section id="test" className="relative h-[100dvh] w-dvw bg-background flex items-center justify-center">
+
+        <div className="absolute top-15 bg-cover h-[90dvh] w-[90dvw] bg-center bg-no-repeat rounded-3xl  border-surface" style={{ backgroundImage: `url(${bg})` }}></div>
         {/* <div className="absolute bottom-0 left-0 w-full h-[100dvh] bg-[linear-gradient(to_top,#111_30%,transparent_70%)]">
 
           <div className='absolute bottom-20 left-20 w-40 sm:w-100 h-40 border-orange-500 flex justify-end items-start'>
@@ -20,11 +22,11 @@ export default function Teste() {
           <h1 className="absolute bottom-20 left-10 text-text w-70">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</h1>
 
         </div> */}
-        <div className="relative w-full h-full bg-black/75 text-white/99 ">
-          <div className="absolute top-10 left-10 text-3xl font-bold">ZeraMeta </div>
-          <div className="absolute top-22 left-10 text-sm w-70">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
-          <div className="absolute top-160 left-10 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
-          <div className="absolute top-160 left-33 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Demo</div>
+        <div className="absolute top-15 bg-cover h-[90dvh] w-[90dvw] rounded-3xl  bg-black/75 text-white/99 ">
+          <div className="absolute top-8 left-6 text-3xl font-bold">ZeraMeta </div>
+          <div className="absolute top-20 left-6 text-sm w-65">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
+          <div className="absolute top-150 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
+          <div className="absolute top-150 left-33 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Demo</div>
 
           {/* <div className="absolute top-11 left-48 text-3xl"><i className="devicon-angular-plain"></i></div>
           <div className="absolute top-11 left-60 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
@@ -34,14 +36,14 @@ export default function Teste() {
           <div className="absolute top-22 left-25 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
           <div className="absolute top-22 left-40 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-          <div className="absolute top-40 left-10 text-3xl"><i className="devicon-angular-plain"></i></div>
-          <div className="absolute top-40 left-25 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
-          <div className="absolute top-40 left-40 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div>
+          <div className="absolute top-40 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
+          <div className="absolute top-40 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
+          <div className="absolute top-40 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div>
 
-          <div className="absolute top-160 left-75 text-3xl"><i className="devicon-nodejs-plain"></i></div>
+          <div className="absolute top-150 left-70 text-3xl"><i className="devicon-nodejs-plain"></i></div>
 
-          <div className="absolute top-80 right-80 text-3xl text-white/30"><i className="devicon-nodejs-plain"></i></div>
-          <div className="absolute top-80 left-80 text-3xl text-white/30"><i className="devicon-nodejs-plain"></i></div>
+          <div className="absolute top-70 right-70 text-3xl text-white/30"><i className="devicon-nodejs-plain"></i></div>
+          <div className="absolute top-70 left-70 text-3xl text-white/30"><i className="devicon-nodejs-plain"></i></div>
 
 
 

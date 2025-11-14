@@ -185,7 +185,7 @@ function Journey() {
                     </div>
 
 
-                    <a href="#projects" className="up-and-down absolute bottom-10 z-900" >
+                    <a href="#test" className="up-and-down absolute bottom-10 z-900" >
                         <ChevronDown />
                     </a>
 
