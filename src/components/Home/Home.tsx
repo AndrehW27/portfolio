@@ -66,7 +66,7 @@ function Hero({ theme }: HeroProps) {
 
   return (
     <>
-      <nav className="text-text font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9998">
+      <nav className="text-text font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
           <a className="w-9 h-9 fixed left-4" href="#">

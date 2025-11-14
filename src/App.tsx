@@ -41,7 +41,7 @@ function App() {
     // Apply the 'white' class here to wrap the entire application
     <div className={`${theme === 'white' ? 'white' : ''}`}>
 
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-0 z-9999'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-0 z-9998'>
 
         {theme === 'white' &&
           <button
@@ -59,7 +59,7 @@ function App() {
         }
 
       </div>
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 z-9999'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 z-9998'>
 
         {language === '' &&
           <button

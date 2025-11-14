@@ -251,7 +251,7 @@ export default function Projects() {
 
       {/* CAROUSEL CONTAINER  */}
       <div data-aos="flip-left"
-        data-aos-offset="350" className=" relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
+        data-aos-offset="350" className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         <div
           ref={containerRef}
           onTouchStart={handleTouchStart}
@@ -263,7 +263,7 @@ export default function Projects() {
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="card w-full shrink-0 h-full flex flex-col items-center"
+              className="card w-full shrink-0 h-full flex flex-col items-center "
             >
               {/* Title + Icons */}
 
@@ -271,12 +271,7 @@ export default function Projects() {
               {/* Main image */}
               <div
                 className=" scale border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
-                style={{ backgroundImage: `url(${s.desktop})` }}
-                onClick={() => {
-                  setModalImages(s.images);
-                  setModalIndex(0);
-                  setShowModal(true);
-                }}>
+                style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_25%,transparent_70%)]">
 
@@ -310,7 +305,7 @@ export default function Projects() {
                   <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
                     <div className="absolute bottom-6 left-24 text-sm bg-accent text-white/80 px-3 py-1 rounded-2xl">{t("project.demo")}</div>
                   </a>
-                  <div className="absolute bottom-8 left-57 text-xs text-accent w-60  border-red-500">details</div>
+                  <div className="absolute bottom-8 left-55 text-xs text-accent w-60  border-red-500">details</div>
 
 
                   <button
@@ -320,9 +315,10 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute top-32 right-6 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+                    className="absolute top-32 right-6 bg-white/30 w-12 h-12 border border-accent text-accent rounded-full flex justify-center items-center"
+                  
                   >
-                    <GiClick />
+                    <GiClick className="h-full w-full p-2"/>
                   </button>
 
                 </div>
@@ -341,7 +337,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="absolute top-1/2 translate-y-[-100%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+        className="card absolute top-1/2 translate-y-[-100%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
       >
         ‹
       </button>
@@ -349,7 +345,7 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="absolute top-1/2 translate-y-[-100%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+        className="card absolute top-1/2 translate-y-[-100%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
       >
         ›
       </button>
