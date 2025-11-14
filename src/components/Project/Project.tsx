@@ -239,23 +239,24 @@ export default function Projects() {
     <section id="projects" className="relative bg-background white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold">
 
       {/* FAKE SCREENS */}
-      <div className=" border-surface absolute bottom-24 left-65 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
+      {/* <div className="absolute bottom-20 left-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
         <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
         </div>
       </div>
-      <div className=" border-surface absolute bottom-24 right-65 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
+      <div className="absolute bottom-20 right-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]">
         <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
         </div>
-      </div>
+      </div> */}
 
       {/* CAROUSEL CONTAINER  */}
-      <div className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
+      <div data-aos="flip-left"
+        data-aos-offset="350" className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         <div
           ref={containerRef}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
-          className="h-full flex transition-transform duration-500 ease-in-out"
+          className="project-carousel-container h-full flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slidesData.map((s, slideIdx) => (
@@ -292,14 +293,14 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-34 left-6 text-xl w-60  border-red-500">ZeraMeta</div>
-                  <div className="absolute bottom-20 left-6 text-xs w-60  border-red-500">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
+                  <div className="absolute bottom-34 left-6 text-xl w-60  border-red-500">{s.title}</div>
+                  <div className="absolute bottom-20 left-6 text-xs w-60  border-red-500">{s.description}</div>
                   {/* <div className="absolute bottom-20 left-34 text-xs text-accent w-60  border-red-500">^</div>
                   <div className="absolute bottom-18 left-30 text-xs text-accent w-60  border-red-500">details</div> */}
 
 
-                  <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-3 py-1 rounded-2xl">Code</div>
-                  <div className="absolute bottom-6 left-24 text-sm bg-accent text-white/80 px-3 py-1 rounded-2xl">Demo</div>
+                  <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-3 py-1 rounded-2xl">{t("project.code")}</div>
+                  <div className="absolute bottom-6 left-24 text-sm bg-accent text-white/80 px-3 py-1 rounded-2xl">{t("project.demo")}</div>
                   <div className="absolute bottom-8 left-55 text-xs text-accent w-60  border-red-500">details</div>
 
 
@@ -328,12 +329,14 @@ export default function Projects() {
       {/* Controls */}
 
       <button
+        data-aos="fade-right"
         onClick={prev}
         className="absolute top-1/2 translate-y-[-100%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
       >
         ‹
       </button>
       <button
+        data-aos="fade-left"
         onClick={next}
         className="absolute top-1/2 translate-y-[-100%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
       >

@@ -191,3 +191,15 @@ body {
 }
 
 
+/* Fix for AOS flip animations not appearing due to initial transform and lack of opacity handling */
+[data-aos='flip-up'] {
+  opacity: 0 !important; /* Start invisible */
+}
+
+[data-aos='flip-up'].aos-animate {
+  opacity: 1 !important; /* Become visible when animated */
+}
+
+/* Apply this to other flip animations if needed */
+/* [data-aos^='flip']:not(.aos-animate) { opacity: 0 !important; } */
+/* [data-aos^='flip'].aos-animate { opacity: 1 !important; } */

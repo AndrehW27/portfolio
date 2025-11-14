@@ -21,3 +21,15 @@
 .animate-zoomIn {
   animation: zoomIn 0.3s ease forwards;
 }
+
+.trapezoid {
+  width: 0;              /* top width */
+  height: 600px;                 
+  border-bottom: 80px solid transparent;  /* height + color */
+  border-top: 80px solid transparent;  /* height + color */
+  border-right: 150px solid white;
+}
+
+.project-carousel-container {
+  transform-style: preserve-3d;
+}

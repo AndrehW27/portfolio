@@ -8,7 +8,7 @@ export default function Teste() {
     <>
       <section id="test" className="relative h-[100dvh] w-dvw bg-background flex items-center justify-center">
 
-        <div className="absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
+        <div className="absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] BORDER border-surface">
           <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
           </div>
         </div>
