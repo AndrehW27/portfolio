@@ -15,8 +15,8 @@ import zerameta6 from "../../assets/projects/zerameta6.png";
 import zerameta7 from "../../assets/projects/zerameta7.png";
 import zerameta8 from "../../assets/projects/zerameta8.png";
 
-import consultor1desktop from "../../assets/projects/consultor1teste2.png";
-import consultor1 from "../../assets/projects/consultor1teste2.png";
+import consultor1desktop from "../../assets/projects/consultor.png";
+import consultor1 from "../../assets/projects/consultor.png";
 import consultor2 from "../../assets/projects/consultor2final.png";
 import consultor3 from "../../assets/projects/consultor3final.png";
 import consultor4 from "../../assets/projects/consultor4final.png";
@@ -26,8 +26,10 @@ import consultor7 from "../../assets/projects/consultor7final.png";
 import consultor8 from "../../assets/projects/consultor8final.png";
 
 
-import portalsindesktop from "../../assets/projects/portalsin1cut.png";
-import portalsin1 from "../../assets/projects/portalsin-journey.png";
+import portalsindesktop from "../../assets/projects/sin1test3.png";
+import portalsin1 from "../../assets/projects/sin1test3.png";
+import portalsin2 from "../../assets/projects/sin2cut.png";
+import portalsin3 from "../../assets/projects/sin3cut.png";
 
 import netflix1desktop from "../../assets/projects/netflix2.jpg";
 import netflix1 from "../../assets/projects/netflix2.jpg";
@@ -110,7 +112,7 @@ export default function Projects() {
           color: "#ff7700"
         }
       ],
-      images: [portalsin1],
+      images: [portalsin1, portalsin2, portalsin3],
       desktop: portalsindesktop,
       links: [
         "https://",
