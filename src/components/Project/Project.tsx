@@ -238,6 +238,16 @@ export default function Projects() {
   return (
     <section id="projects" className="relative bg-background white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold">
 
+      {/* FAKE SCREENS */}
+      <div className="border-6 border-surface absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
+        <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
+        </div>
+      </div>
+      <div className="border-6 border-surface absolute top-15 right-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
+        <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
+        </div>
+      </div>
+
       {/* CAROUSEL CONTAINER  */}
       <div className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
         <div
@@ -258,22 +268,23 @@ export default function Projects() {
 
               {/* Main image */}
               <div
-                className="absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-6 border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}
                 onClick={() => {
                   setModalImages(s.images);
                   setModalIndex(0);
                   setShowModal(true);
                 }}>
-                <div className=" bg-cover h-full w-full rounded-3xl bg-black/75 text-white/99 ">
-                  <div className="absolute top-6 left-6 text-3xl font-bold text-accent">ZeraMeta </div>
-                  <div className="absolute top-18 left-6 text-sm w-60  border-red-500">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
+
+                <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_25%,transparent_70%)]">
+
+
 
                   {/* <div className="absolute top-42 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute top-42 left-8 w-fit sm:w-100 h-40 border-orange-500 flex justify-end items-start'>
+                  <div className='absolute bottom-46 left-20 w-fit sm:w-100 border-orange-500 flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       <img className='icons  shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                       <img className='icons shadow-[0_0_10px_#f16529]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
@@ -281,8 +292,17 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
-                  <div className="absolute bottom-6 left-26 text-sm bg-accent text-white/80 px-5 py-2 rounded-2xl">Demo</div>
+                  <div className="absolute bottom-34 left-6 text-xl w-60  border-red-500">ZeraMeta</div>
+                  <div className="absolute bottom-20 left-6 text-xs w-60  border-red-500">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
+                  {/* <div className="absolute bottom-20 left-34 text-xs text-accent w-60  border-red-500">^</div>
+                  <div className="absolute bottom-18 left-30 text-xs text-accent w-60  border-red-500">details</div> */}
+
+
+                  <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-3 py-1 rounded-2xl">Code</div>
+                  <div className="absolute bottom-6 left-24 text-sm bg-accent text-white/80 px-3 py-1 rounded-2xl">Demo</div>
+                  <div className="absolute bottom-8 left-55 text-xs text-accent w-60  border-red-500">details</div>
+
+
                   <button
                     onClick={() => {
                       setModalImages(s.images);
@@ -290,7 +310,7 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute bottom-6 right-6 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+                    className="absolute top-32 right-6 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
                   >
                     <GiClick />
                   </button>
