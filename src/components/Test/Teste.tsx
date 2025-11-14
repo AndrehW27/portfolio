@@ -11,7 +11,7 @@ export default function Teste() {
         <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] bg-center bg-no-repeat rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface" style={{ backgroundImage: `url(${bg})` }}></div>
         <div className="absolute bottom-0 left-0 w-full h-[100dvh] bg-[linear-gradient(to_top,#111_30%,transparent_70%)]">
 
-          <div className='absolute bottom-20 left-20 w-40 sm:w-100 h-40 border-orange-500 flex justify-end items-start'>
+          <div className='absolute bottom-20 left-22 w-40 sm:w-100 h-40 border-orange-500 flex justify-end items-start'>
             <div className='flex align-center justify-center gap-2 sm:gap-4 z-100'>
               <img className='icons shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
               <img className='icons shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />

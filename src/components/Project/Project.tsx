@@ -266,14 +266,23 @@ export default function Projects() {
                   setShowModal(true);
                 }}>
                 <div className=" bg-cover h-full w-full rounded-3xl bg-black/75 text-white/99 ">
-                  <div className="absolute top-6 left-6 text-3xl font-bold">ZeraMeta </div>
+                  <div className="absolute top-6 left-6 text-3xl font-bold text-accent">ZeraMeta </div>
                   <div className="absolute top-18 left-6 text-sm w-60  border-red-500">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
 
-                  <div className="absolute top-42 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
+                  {/* <div className="absolute top-42 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
-                  <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div>
+                  <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
+
+                  <div className='absolute top-42 left-8 w-fit sm:w-100 h-40 border-orange-500 flex justify-end items-start'>
+                    <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
+                      <img className='icons  shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                      <img className='icons shadow-[0_0_10px_#f16529]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                      <img className='icons shadow-[0_0_10px_#31a5d9]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                    </div>
+                  </div>
+
                   <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
-                  <div className="absolute bottom-6 left-30 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Demo</div>
+                  <div className="absolute bottom-6 left-26 text-sm bg-accent text-white/80 px-5 py-2 rounded-2xl">Demo</div>
                   <button
                     onClick={() => {
                       setModalImages(s.images);
