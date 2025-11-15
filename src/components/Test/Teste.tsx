@@ -8,10 +8,13 @@ export default function Teste() {
 
   return (
     <>
-      <section id="test" className="relative h-[500dvh]  w-dvw  flex flex-col items-center justify-center">
+      <section id="test" className="relative h-[800dvh]  w-dvw  flex flex-col items-center justify-center">
 
-        <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center  border-red-500 bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]">
-          <div className="relative bg-white/10  rounded-3xl to-accent to-[90%] h-[55dvh] w-[80dvw]">
+
+
+
+        <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center  border-red-500 bg-gradient-to-tr bg-blur from-accent from-[5%] via-surface via-[50%] to-background to-[90%]">
+          <div className="relative bg-white/10 rounded-3xl h-[55dvh] w-[80dvw]">
             <h1 className="absolute left-10 top-10 text-text font-bold">Hello there, welcome!</h1>
             <h1 className="absolute left-10 top-20 text-2xl text-accent font-bold">I'm André Willian</h1>
             <h1 className="absolute left-10 top-30 text-text font-bold">Fullstack Developer</h1>
@@ -232,21 +235,21 @@ export default function Teste() {
             loop
             playsInline
           />
-          <h1 className="absolute left-10 top-22 text-xl text-text font-bold">Hello there, welcome!</h1>
-          <h1 className="absolute left-10 top-36 text-3xl text-accent font-bold">I'm André Willian</h1>
-          <h1 className="absolute left-10 top-46 text-xl text-text font-bold">Fullstack Developer</h1>
+          <h1 className="absolute left-10 top-18 text-xl text-text font-bold">Hello there, welcome!</h1>
+          <h1 className="absolute left-10 top-30 text-3xl text-accent font-bold">I'm André Willian</h1>
+          <h1 className="absolute left-10 top-40 text-xl text-text font-bold typing">Fullstack Developer</h1>
 
           <div className="absolute left-0 bottom-0 flex items-end justify-center ">
             <img className="w-50" src={bg} />
 
-            <div className='absolute text-text text-sm w-50 left-35 bottom-80 font-bold'>
-              <div className='flex mb-5'>
+            <div className='absolute text-text text-xs w-70 left-10 bottom-90 font-bold'>
+              <div className='flex mb-3'>
                 <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                   <Wallpaper />
                 </div>
                 <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
               </div>
-              <div className='flex mb-5'>
+              <div className='flex mb-3'>
                 <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
                   <Gauge />
                 </div>
@@ -263,6 +266,193 @@ export default function Teste() {
             </div>
           </div>
         </div>
+
+        {/* -------------------------------------------------------------------- */}
+
+        <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
+          <video
+            key={video}
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={video}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+
+          <img className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
+
+
+          <div className="relative video-wrapper rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
+
+            <video
+              key={video}
+              className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl "
+              src={video}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
+            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
+            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
+
+
+
+            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
+
+              <div className='text-text text-xs w-60 mb-18 ml-10 font-bold'>
+                <div className='flex mb-2'>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <Wallpaper />
+                  </div>
+                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
+                </div>
+                <div className='flex mb-2'>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <Gauge />
+                  </div>
+                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
+                </div>
+                <div className='flex '>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <DatabaseBackup />
+                  </div>
+                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+        {/* -------------------------------------------------------------------- */}
+
+        <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
+          <video
+            key={video}
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={video}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+
+          <img className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
+
+
+          <div className="relative bg-black/50 rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
+
+
+            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
+            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
+            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
+
+
+
+            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
+
+              <div className='text-text text-xs w-60 mb-18 ml-10 font-bold'>
+                <div className='flex mb-2'>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <Wallpaper />
+                  </div>
+                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
+                </div>
+                <div className='flex mb-2'>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <Gauge />
+                  </div>
+                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
+                </div>
+                <div className='flex '>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <DatabaseBackup />
+                  </div>
+                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+        {/* -------------------------------------------------------------------- */}
+
+                <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
+          <video
+            key={video}
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={video}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+
+          <img className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
+
+
+          <div className="relative bg-gradient-to-tr bg-blur from-accent from-[5%] via-surface via-[50%] to-background to-[90%] rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
+
+       
+            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
+            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
+            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
+
+
+
+            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
+
+              <div className='text-text text-xs w-60 mb-18 ml-10 font-bold'>
+                <div className='flex mb-2'>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <Wallpaper />
+                  </div>
+                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
+                </div>
+                <div className='flex mb-2'>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <Gauge />
+                  </div>
+                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
+                </div>
+                <div className='flex '>
+                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                    <DatabaseBackup />
+                  </div>
+                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+  
+
+        </div>
+
+
+        {/* -------------------------------------------------------------------- */}
 
 
 
