@@ -1,6 +1,6 @@
 import "./Teste.css";
 import bg from "../../assets/me_art_modern-nobg.png";
-import bg2 from "../../assets/me_art_modern-nobg.png";
+// import bg2 from "../../assets/me_art_modern-nobg.png";
 import video from "../../assets/waves-video2.mp4";
 import { ChevronDown, Wallpaper, DatabaseBackup, Gauge } from "lucide-react";
 
