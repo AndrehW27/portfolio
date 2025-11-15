@@ -190,6 +190,15 @@ body {
   border: 1px solid var(--color-text-dark);
 }
 
+.icons-projects{
+  height: 42px;
+  width: 42px;
+  padding: 8px;
+  transition: 300 ease-in-out;
+  border-radius: 6px;
+  border: 1px solid var(--color-text-dark);
+}
+
 
 /* Fix for AOS flip animations not appearing due to initial transform and lack of opacity handling */
 [data-aos='flip-up'] {

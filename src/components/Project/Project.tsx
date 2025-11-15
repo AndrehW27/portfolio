@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { GiClick } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 
@@ -191,11 +191,22 @@ export default function Projects() {
     };
   }, [showModal]);
 
+  // Carousel navigation
+  const prev = useCallback(() =>
+    setIndex((i) => (i - 1 + slidesData.length) % slidesData.length), [slidesData.length]);
+  const next = useCallback(() => setIndex((i) => (i + 1) % slidesData.length), [slidesData.length]);
+
+  // Modal navigation
+  const nextModal = useCallback(() =>
+    setModalIndex((i) => (i + 1) % modalImages.length), [modalImages.length]);
+  const prevModal = useCallback(() =>
+    setModalIndex((i) => (i - 1 + modalImages.length) % modalImages.length), [modalImages.length]);
+
   // Keyboard navigation
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === "ArrowLeft") prev();
-      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft" && !showModal) prev();
+      if (e.key === "ArrowRight" && !showModal) next();
       if (e.key === "Escape" && showModal) setShowModal(false);
 
       if (showModal) {
@@ -205,19 +216,9 @@ export default function Projects() {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [index, showModal, modalIndex]);
+  }, [showModal, modalIndex, next, nextModal, prev, prevModal]);
 
-  // Carousel navigation
-  const prev = () =>
-    setIndex((i) => (i - 1 + slidesData.length) % slidesData.length);
-  const next = () => setIndex((i) => (i + 1) % slidesData.length);
   const goTo = (i: number) => setIndex(i);
-
-  // Modal navigation
-  const nextModal = () =>
-    setModalIndex((i) => (i + 1) % modalImages.length);
-  const prevModal = () =>
-    setModalIndex((i) => (i - 1 + modalImages.length) % modalImages.length);
 
   // Swipe handlers
   function handleTouchStart(e: React.TouchEvent) {
@@ -272,10 +273,10 @@ export default function Projects() {
 
               {/* Main image */}
               <div
-                className="scale border-surface absolute bottom-12 h-[85dvh] w-[78dvw] rounded-3xl bg-cover bg-top shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="scale border-surface absolute bottom-16 h-[80dvh] w-[75dvw] rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
-                <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_25%,transparent_70%)]">
+                <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
 
 
 
@@ -288,7 +289,7 @@ export default function Projects() {
                       {s.icons.map((iconData, iconIdx) => (
                         <img
                           key={iconIdx}
-                          className="icons shadow-[0_0_10px_var(--icon-shadow-color)]"
+                          className="icons-projects shadow-[0_0_10px_var(--icon-shadow-color)]"
                           src={iconData.icon}
                           style={{ '--icon-shadow-color': iconData.color } as React.CSSProperties}
                         />
@@ -296,7 +297,7 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-34 left-6 text-xl w-60 text-accent  border-red-500">{s.title}</div>
+                  <div className="absolute bottom-34 left-6 text-xl w-60 text-accent white:text-light-blue  border-red-500">{s.title}</div>
                   <div className="absolute bottom-20 left-6 text-xs w-60  border-red-500">{s.description}</div>
                   {/* <div className="absolute bottom-20 left-34 text-xs text-accent w-60  border-red-500">^</div>
                   <div className="absolute bottom-18 left-30 text-xs text-accent w-60  border-red-500">details</div> */}
@@ -305,9 +306,9 @@ export default function Projects() {
                     <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
                   </a>
                   <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
-                    <div className="absolute bottom-6 left-26 text-sm bg-accent text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
+                    <div className="absolute bottom-6 left-26 text-sm bg-accent white:bg-light-blue text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
                   </a>
-                  <div className="absolute bottom-8 left-55 text-xs text-accent w-60  border-red-500">details</div>
+                  {/* <div className="absolute bottom-8 left-55 text-xs text-accent white:text-light-blue w-60  border-red-500">details</div> */}
 
 
                   <button
@@ -317,7 +318,7 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute top-32 right-6 bg-white/30 w-12 h-12 border border-accent text-accent rounded-full flex justify-center items-center"
+                    className="absolute top-40 right-4 bg-white/30 w-12 h-12 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
                   
                   >
                     <GiClick className="h-full w-full p-2"/>
@@ -339,7 +340,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="card absolute top-1/2 translate-y-[-100%] left-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+        className="card absolute top-1/2 -translate-y- left-2 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
       >
         ‹
       </button>
@@ -347,19 +348,19 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="card absolute top-1/2 translate-y-[-100%] right-2 bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
+        className="card absolute top-1/2 -translate-y- right-2 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
       >
         ›
       </button>
 
 
       {/* INDICATORS */}
-      <div className="absolute text-center w-full bottom-5 flex justify-center gap-2 z-20">
+      <div className="absolute text-center w-full bottom-6 flex justify-center gap-2 z-20">
         {slidesData.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
-            className={`w-3 h-3 rounded-full ${i === index ? "bg-accent white:bg-light-blue" : "bg-white/40 white:bg-white/90"
+            className={`w-3 h-3 rounded-full ${i === index ? "bg-accent white:bg-light-blue" : "bg-white/40 white:bg-dark-gray/40"
               }`}
           />
         ))}
@@ -367,7 +368,7 @@ export default function Projects() {
 
       {/* MODAL */}
       {showModal && (
-        <div className="absolute inset-0 flex items-center justify-center z-[9999]">
+        <div className="absolute inset-0 flex items-center justify-center z-9999">
           <div
             className="absolute inset-0 bg-black/10 backdrop-blur-sm animate-fadeIn"
             onClick={() => setShowModal(false)}
@@ -384,21 +385,21 @@ export default function Projects() {
             <>
               <button
                 onClick={prevModal}
-                className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center z-100"
+                className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100"
               >
                 ‹
               </button>
 
               <button
                 onClick={nextModal}
-                className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text flex justify-center items-center z-100"
+                className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100"
               >
                 ›
               </button>
             </>
           )}
 
-          <div className="relative rounded-3xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+          <div className="relative rounded-3xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
 
 
             {/* Modal image */}

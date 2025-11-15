@@ -35,7 +35,7 @@
 }
 
 .card {
-  transform: perspective(400px) rotatey(-12deg);
+  transform: perspective(400px) rotatey(-10deg);
   transition: 0.3s ease;
 }
 .card:hover {
