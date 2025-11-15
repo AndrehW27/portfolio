@@ -8,9 +8,9 @@ export default function Teste() {
 
   return (
     <>
-      <section id="test" className="relative h-[400dvh]  w-dvw  flex flex-col items-center justify-center">
+      <section id="test" className="relative h-[500dvh]  w-dvw  flex flex-col items-center justify-center">
 
-        <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 border-red-500 bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]">
+        <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center  border-red-500 bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]">
           <div className="relative bg-white/10  rounded-3xl to-accent to-[90%] h-[55dvh] w-[80dvw]">
             <h1 className="absolute left-10 top-10 text-text font-bold">Hello there, welcome!</h1>
             <h1 className="absolute left-10 top-20 text-2xl text-accent font-bold">I'm André Willian</h1>
@@ -81,10 +81,10 @@ export default function Teste() {
 
         </div>
 
-                {/* -------------------------------------------------------------------- */}
+        {/* -------------------------------------------------------------------- */}
 
         <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
-    
+
 
           <div className="relative video-wrapper rounded-3xl h-[55dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
 
@@ -216,6 +216,69 @@ export default function Teste() {
           </a>
 
         </div>
+
+        {/* -------------------------------------------------------------------- */}
+
+
+
+        <div className="relative video-wrapper h-[100dvh] w-[100dvw]   shadow-[0_0_20px_#7C3AED]">
+
+          <video
+            key={video}
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={video}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+          <h1 className="absolute left-10 top-22 text-xl text-text font-bold">Hello there, welcome!</h1>
+          <h1 className="absolute left-10 top-36 text-3xl text-accent font-bold">I'm André Willian</h1>
+          <h1 className="absolute left-10 top-46 text-xl text-text font-bold">Fullstack Developer</h1>
+
+          <div className="absolute left-0 bottom-0 flex items-end justify-center ">
+            <img className="w-50" src={bg} />
+
+            <div className='absolute text-text text-sm w-50 left-35 bottom-80 font-bold'>
+              <div className='flex mb-5'>
+                <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                  <Wallpaper />
+                </div>
+                <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
+              </div>
+              <div className='flex mb-5'>
+                <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                  <Gauge />
+                </div>
+                <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
+              </div>
+              <div className='flex '>
+                <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
+                  <DatabaseBackup />
+                </div>
+                <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        {/* ABOUT BUTTON */}
+        {/* <a href="#about">
+            <button className="absolute left-32 bottom-30 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-accent white:bg-text-dark text-text white:text-text white:from-light-blue to-dark-gray font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
+              About Me
+            </button>
+          </a> */}
+
+        {/* DOWN CHEVRON */}
+        <a className="up-and-down absolute bottom-6 text-text" href="#about">
+          <ChevronDown />
+        </a>
+
+
 
         {/* <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 border-red-500">
           <div className="relative bg-white/10  rounded-3xl to-accent to-[90%] h-[55dvh] w-[80dvw]">
