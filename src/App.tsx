@@ -82,7 +82,7 @@ function App() {
 
       <Home theme={theme} />
 
-      <About />
+      {/* <About /> */}
       <Journey />
       <Teste />
       <Project />
