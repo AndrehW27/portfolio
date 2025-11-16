@@ -12,7 +12,7 @@ function Contact() {
 
   return (
     <>
-      <section id="contact" className="relative bg-[url('./assets/bg/vortex1cut2.png')] bg-cover bg-left white:bg-white-bg h-dvh w-dvw flex flex-col items-center justify-start text-text white:text-text-dark font-bold bord-red-500">
+      <section id="contact" className="relative  white:bg-white-bg h-dvh w-dvw flex flex-col items-center justify-start text-text white:text-text-dark font-bold bord-red-500">
 
         {/* TITLES */}
         <h1 data-aos="fade-down" data-aos-offset="200" className='text-2xl mt-16'>{t("contact.title")}</h1>

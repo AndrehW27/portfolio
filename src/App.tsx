@@ -39,7 +39,7 @@ function App() {
 
   return (
     // Apply the 'white' class here to wrap the entire application
-    <div className={`${theme === 'white' ? 'white' : ''}`}>
+    <div className={`${theme === 'white' ? 'white' : ''} bg-[url('./assets/bg/vortex1cut2.png')] bg-cover bg-left`}>
 
       <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-0 z-9998'>
 
