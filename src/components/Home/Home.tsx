@@ -154,7 +154,7 @@ function Hero({ theme }: HeroProps) {
               </div>
             </div>
 
-            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className="text-sm  mt-10 ml-10">{t("home.text")}</h5>
+            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-sm w-30 mt-40 ml-55">{t("home.text")}</h5>
 
 
 
