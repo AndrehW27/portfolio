@@ -25,11 +25,11 @@ function Journey() {
 
     return (
         <>
-            <section id="journey" className="bg-[url('./assets/bg/vortex.png')] bg-cover bg-left font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
+            <section id="journey" className="relative bg-[url('./assets/bg/vortex.png')] bg-cover bg-left font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
 
                 <h1 data-aos="fade-down" className=' white:text-dark-gray mt-15 text-2xl sm:text-2xl font-bold'>{t("about.journey")}</h1>
 
-                <div className='relative  pb-30 white:text-dark-gray  border-yellow-300 text-xs w-[70vw] flex items-center justify-center mt-10'>
+                <div className='relative white:text-dark-gray  border-yellow-300 text-xs w-[70vw] flex items-center justify-center mt-10'>
 
                     <div className='w-35 sm:text-base sm:w-100 border-red-500 flex flex-col justify-start items-center'>
                         <div className='w-40 sm:w-100 h-40 border-blue-500 flex justify-end items-start'>
@@ -185,11 +185,21 @@ function Journey() {
                     </div>
 
 
-                    <a href="#test" className="up-and-down absolute bottom-10 z-900" >
-                        <ChevronDown />
-                    </a>
+
+
 
                 </div>
+
+                <h1 className="w-70 mb-30 mt-10 text-xs">
+                    {t("about.driven")}
+                    <br />
+                    <br />
+                    {t("about.strive")}
+                </h1>
+
+                <a href="#test" className="up-and-down absolute bottom-10 z-900" >
+                    <ChevronDown />
+                </a>
 
             </section>
         </>
