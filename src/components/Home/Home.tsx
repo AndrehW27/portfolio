@@ -75,16 +75,16 @@ function Hero({ theme }: HeroProps) {
           </a>
 
           <ul className="text-xs">
-            <li><a href="#about" className="hover:text-accent mr-2 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
+            <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
+          </ul>
+          {/* <ul className="text-xs">
+            <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
+          </ul> */}
+          <ul className="text-xs">
+            <li><a href="#projects" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
           </ul>
           <ul className="text-xs">
-            <li><a href="#journey" className="hover:text-accent mr-2 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
-          </ul>
-          <ul className="text-xs">
-            <li><a href="#projects" className="hover:text-accent mr-2 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
-          </ul>
-          <ul className="text-xs">
-            <li><a href="#contact" className="hover:text-accent mr-2 transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
+            <li><a href="#contact" className="hover:text-accent transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
           </ul>
         </div>
       </nav>
