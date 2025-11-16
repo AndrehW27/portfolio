@@ -1,7 +1,8 @@
 import './Journey.css'
 // import { ChevronDown, Database, Rocket, ServerCog, ShieldCheck, SquareDashedBottomCode, Waypoints } from "lucide-react";
 
-import { School, ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
+import { School } from "lucide-react";
 import { University } from "lucide-react";
 import { GraduationCap } from "lucide-react";
 import { Factory } from "lucide-react";
