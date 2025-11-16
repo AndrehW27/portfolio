@@ -1,7 +1,7 @@
 // import Navbar from './components/Navbar/Navbar.tsx'
 import Home from './components/Home/Home.tsx'
 import Project from './components/Project/Project.tsx'
-import About from './components/About/About.tsx'
+// import About from './components/About/About.tsx'
 import Journey from './components/Journey/Journey.tsx'
 import Contact from './components/Contact/Contact.tsx'
 import Teste from './components/Test/Teste.tsx'
