@@ -124,42 +124,42 @@ function Hero({ theme }: HeroProps) {
             } */}
 
             {/* SENTENCES */}
-            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="ml-10 text-1xl sm:text-2xl  mt-20">{t("home.welcome")}</h1>
-            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" className="mt-5 ml-10 text-3xl sm:text-4xl  rounded-full text-accent white:text-light-blue  ">{t("home.title")}</h1>
-            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" className="ml-10 typing text-1xl text-text sm:text-4xl border-r-3 ">{t("home.subtitle")}</h3>
+            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="ml-10 text-1xl sm:text-2xl  mt-20">{t("home.welcome")}</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="mt-5 ml-10 text-3xl sm:text-4xl  rounded-full text-accent white:text-light-blue  ">{t("home.title")}</h1>
+            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="ml-10 typing text-1xl text-text sm:text-4xl border-r-3 ">{t("home.subtitle")}</h3>
 
 
-            <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800" className=' text-xs mt-10 ml-10 w-70 border-accent'>
+            <div className=' text-xs mt-10 ml-10 w-70 border-accent'>
 
 
-              <div className='flex'>
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
                   <Wallpaper />
                 </div>
-                <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
+                <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
               </div>
-              <div className='flex'>
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
                   <Gauge />
                 </div>
-                <h1 className='white:text-dark-gray'>High avaliablity and low-latency structured API.</h1>
+                <h1 className='white:text-dark-gray'>{t("home.api")}</h1>
               </div>
-              <div className='flex'>
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1600" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
                   <DatabaseBackup />
                 </div>
-                <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
+                <h1 className='white:text-dark-gray'>{t("home.cycle")}</h1>
               </div>
               <div>
               </div>
             </div>
 
-            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-sm w-30 mt-40 ml-55">{t("home.text")}</h5>
+            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="text-sm w-30 mt-30 ml-55">{t("home.text")}</h5>
 
 
 
             {/* IMG */}
-            <img data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute bottom-0 left-0 w-50" src={bg} />
+            <img data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-0 w-50" src={bg} />
 
 
 
