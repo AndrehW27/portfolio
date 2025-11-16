@@ -1,7 +1,7 @@
 import './Home.css'
 import { ChevronDown, Wallpaper, DatabaseBackup, Gauge } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import bg from "../../assets/me/me_art_modern-nobg.png";
+import bg from "../../assets/Me/me_art_modern-nobg.png";
 
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
