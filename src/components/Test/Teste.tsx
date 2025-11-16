@@ -1,8 +1,8 @@
 import "./Teste.css";
-import bg from "../../assets/me_art_modern-nobg.png";
+// import bg from "../../assets/me_art_modern-nobg.png";
 // import bg2 from "../../assets/me_art_modern-nobg.png";
-import video from "../../assets/waves-video2.mp4";
-import { ChevronDown, Wallpaper, DatabaseBackup, Gauge } from "lucide-react";
+// import video from "../../assets/waves-video2.mp4";
+import { ChevronDown } from "lucide-react";
 
 export default function Teste() {
 
@@ -179,7 +179,7 @@ export default function Teste() {
         </div> */}
 
         {/* -------------------------------------------------------------------- */}
-
+{/* 
         <div className="relative video-wrapper h-[100dvh] w-[100dvw]   shadow-[0_0_20px_#7C3AED]">
 
           <video
@@ -221,7 +221,7 @@ export default function Teste() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* -------------------------------------------------------------------- */}
 

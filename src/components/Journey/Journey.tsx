@@ -13,9 +13,9 @@ import { Rocket } from "lucide-react";
 // import { ChevronDown } from "lucide-react";
 
 
-import logic from '../../assets/logic.png';
-import settings from '../../assets/settings.png';
-import english from '../../assets/eng.png';
+import logic from '../../assets/icons/logic.png';
+import settings from '../../assets/icons/settings.png';
+import english from '../../assets/icons/eng.png';
 // import perfil from '../../assets/me_art_modern-nobg.png';
 import { useTranslation } from "react-i18next";
 
@@ -25,7 +25,7 @@ function Journey() {
 
     return (
         <>
-            <section id="journey" className='bg-background font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start'>
+            <section id="journey" className="bg-[url('./assets/bg/vortex.png')] bg-cover bg-left font-bold white:bg-white-bg text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
 
                 <h1 data-aos="fade-down" className=' white:text-dark-gray mt-15 text-2xl sm:text-2xl font-bold'>{t("about.journey")}</h1>
 

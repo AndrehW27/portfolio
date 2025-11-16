@@ -240,7 +240,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative bg-background white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold">
+    <section id="projects" className="relative bg-[url('./assets/bg/vortex1cut2.png')] bg-cover bg-left white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold">
 
       {/* FAKE SCREENS */}
       {/* <div className="absolute bottom-20 left-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">

@@ -15,7 +15,7 @@ import { Gauge } from "lucide-react";
 // import logic from '../../assets/logic.png';
 // import settings from '../../assets/settings.png';
 // import english from '../../assets/eng.png';
-import perfil from '../../assets/me_art_modern-nobg.png';
+import perfil from '../../assets/me/me_art_modern-nobg.png';
 import { useTranslation } from "react-i18next";
 
 function About() {

@@ -1,14 +1,14 @@
 import './Home.css'
 import { ChevronDown, Wallpaper, DatabaseBackup, Gauge } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import bg from "../../assets/me_art_modern-nobg.png";
+import bg from "../../assets/me/me_art_modern-nobg.png";
 
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import wavesDark from '../../assets/waves-video2.mp4';
-import wavesLight from '../../assets/white-video.mp4';
+import wavesDark from '../../assets/videos/waves-video2.mp4';
+import wavesLight from '../../assets/videos/white-video.mp4';
 
 type HeroProps = {
   theme: string;
@@ -71,7 +71,7 @@ function Hero({ theme }: HeroProps) {
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
           <a className="w-9 h-9 fixed left-4" href="#">
-            <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/aw-final.png')] white:bg-[url('./assets/aw_light.png')]"></div>
+            <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/icons/aw-final.png')] white:bg-[url('./assets/icons/aw_light.png')]"></div>
           </a>
 
           <ul className="text-xs">
@@ -154,12 +154,12 @@ function Hero({ theme }: HeroProps) {
               </div>
             </div>
 
-            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="text-sm w-30 mt-30 ml-55">{t("home.text")}</h5>
+            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="text-sm w-30 mt-30 ml-55 text-center">{t("home.text")}</h5>
 
 
 
             {/* IMG */}
-            <img data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-0 w-50" src={bg} />
+            <img data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="2000" className="absolute bottom-0 left-0 w-50" src={bg} />
 
 
 
@@ -171,7 +171,7 @@ function Hero({ theme }: HeroProps) {
             </a> */}
 
             {/* DOWN CHEVRON */}
-            <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-5 up-and-down w-full flex justify-center" href="#about">
+            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-5 up-and-down w-full flex justify-center">
               <ChevronDown />
             </a>
 
