@@ -266,14 +266,14 @@ export default function Projects() {
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="card w-full shrink-0 h-full flex flex-col items-center  border-blue-500"
+              className="card border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[70dvw] sm:w-[360px] shrink-0 flex flex-col items-center  border-blue-500"
             >
               {/* Title + Icons */}
 
 
               {/* Main image */}
               <div
-                className=" border-orange-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[70dvw] sm:w-[360px] rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="hover border-orange-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[70dvw] sm:w-[360px] rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
@@ -284,7 +284,7 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute bottom-48 sm:bottom-60 w-full sm:w-[360px] sm:w-100 border-orange-500 flex justify-center items-start'>
+                  <div className='absolute bottom-50 sm:bottom-60 w-full sm:w-[360px] sm:w-100 border-orange-500 flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       {s.icons.map((iconData, iconIdx) => (
                         <img
@@ -297,7 +297,7 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-25 flex flex-col ml-8">
+                  <div className="absolute bottom-22 flex flex-col ml-8">
                     <div className="mb-2 left-6 text-base sm:text-2xl w-100 text-accent white:text-light-blue border-red-500">{s.title}</div>
                     <div className="left-6 text-xs sm:text-base w-50 sm:w-75  border-red-500">{s.description}</div>
                   </div>
@@ -332,7 +332,7 @@ export default function Projects() {
                     <GiClick className="h-full w-full p-2" />
                   </button>
 
-                  <div className="absolute top-50 sm:top-65 bg-transparent rounded-3xl h-120 w-full"
+                  <div className="absolute top-46 sm:top-62 z-9999 rounded-3xl h-75 sm:h-105 w-full"
                     onClick={() => {
                       setModalImages(s.images);
                       setModalIndex(0);
@@ -357,7 +357,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="card absolute top-1/2 -translate-y- left-2 sm:left-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
+        className="absolute top-1/2 -translate-y- left-2 sm:left-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
       >
         ‹
       </button>
@@ -365,7 +365,7 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="card absolute top-1/2 -translate-y- right-2 sm:right-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
+        className="absolute top-1/2 -translate-y- right-2 sm:right-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
       >
         ›
       </button>
