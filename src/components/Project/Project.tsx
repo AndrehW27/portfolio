@@ -254,26 +254,26 @@ export default function Projects() {
 
       {/* CAROUSEL CONTAINER  */}
       <div data-aos="flip-left"
-        data-aos-offset="350" className="relative w-full h-[100dvh] max-w-[1200px] overflow-hidden">
+        data-aos-offset="350" className="relative w-full sm:w-[100dvw] h-[100dvh] overflow-hidden  border-yellow-500">
         <div
           ref={containerRef}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
-          className="project-carousel-container h-full flex transition-transform duration-500 ease-in-out"
+          className="project-carousel-container h-full sm:w-[100dvw] flex transition-transform duration-500 ease-in-out  border-red-500"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="card w-full shrink-0 h-full flex flex-col items-center "
+              className="card w-full shrink-0 h-full flex flex-col items-center  border-blue-500"
             >
               {/* Title + Icons */}
 
 
               {/* Main image */}
               <div
-                className="scale border-surface absolute bottom-16 h-[80dvh] w-[75dvw] rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className=" border-orange-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[70dvw] sm:w-[360px] rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
@@ -284,12 +284,12 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute bottom-46 w-full sm:w-100 border-orange-500 flex justify-center items-start'>
+                  <div className='absolute bottom-48 sm:bottom-60 w-full sm:w-[360px] sm:w-100 border-orange-500 flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       {s.icons.map((iconData, iconIdx) => (
                         <img
                           key={iconIdx}
-                          className="icons-projects shadow-[0_0_10px_var(--icon-shadow-color)]"
+                          className="icons-projects w-10 h-10 sm:w-14 sm:h-14 shadow-[0_0_10px_var(--icon-shadow-color)]"
                           src={iconData.icon}
                           style={{ '--icon-shadow-color': iconData.color } as React.CSSProperties}
                         />
@@ -297,17 +297,25 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-34 left-6 text-xl w-60 text-accent white:text-light-blue  border-red-500">{s.title}</div>
-                  <div className="absolute bottom-20 left-6 text-xs w-60  border-red-500">{s.description}</div>
+                  <div className="absolute bottom-25 flex flex-col ml-8">
+                    <div className="mb-2 left-6 text-base sm:text-2xl w-100 text-accent white:text-light-blue border-red-500">{s.title}</div>
+                    <div className="left-6 text-xs sm:text-base w-50 sm:w-75  border-red-500">{s.description}</div>
+                  </div>
+
+
                   {/* <div className="absolute bottom-20 left-34 text-xs text-accent w-60  border-red-500">^</div>
                   <div className="absolute bottom-18 left-30 text-xs text-accent w-60  border-red-500">details</div> */}
 
-                  <a href={s.links[0]} target="_blank" rel="noopener noreferrer">
-                    <div className="absolute bottom-6 left-6 text-sm bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
-                  </a>
-                  <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
-                    <div className="absolute bottom-6 left-26 text-sm bg-accent white:bg-light-blue text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
-                  </a>
+
+                  <div className="absolute bottom-6 flex">
+                    <a href={s.links[0]} target="_blank" rel="noopener noreferrer">
+                      <div className="ml-6 text-xs sm:text-base bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
+                    </a>
+                    <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
+                      <div className="ml-4 sm:left-32 text-xs sm:text-base bg-accent white:bg-light-blue text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
+                    </a>
+                  </div>
+
                   {/* <div className="absolute bottom-8 left-55 text-xs text-accent white:text-light-blue w-60  border-red-500">details</div> */}
 
 
@@ -318,11 +326,20 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute top-40 right-4 bg-white/30 w-12 h-12 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
-                  
+                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
+
                   >
-                    <GiClick className="h-full w-full p-2"/>
+                    <GiClick className="h-full w-full p-2" />
                   </button>
+
+                  <div className="absolute top-50 sm:top-65 bg-transparent rounded-3xl h-120 w-full"
+                    onClick={() => {
+                      setModalImages(s.images);
+                      setModalIndex(0);
+                      setShowModal(true);
+                    }
+                    }
+                  ></div>
 
                 </div>
               </div>
@@ -340,7 +357,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="card absolute top-1/2 -translate-y- left-2 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
+        className="card absolute top-1/2 -translate-y- left-2 sm:left-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
       >
         ‹
       </button>
@@ -348,7 +365,7 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="card absolute top-1/2 -translate-y- right-2 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
+        className="card absolute top-1/2 -translate-y- right-2 sm:right-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
       >
         ›
       </button>
@@ -406,7 +423,7 @@ export default function Projects() {
             <img
               src={modalImages[modalIndex]}
               alt="modal"
-              className="h-[85vh] w-[77vw] object-cover rounded-2xl "
+              className="h-[85vh] w-[77vw] sm:w-[425px] object-cover rounded-2xl "
             />
 
           </div>

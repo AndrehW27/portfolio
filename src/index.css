@@ -181,9 +181,7 @@ body {
   animation: float3 8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
 
-.icons {
-  height: 36px;
-  width: 36px;
+.icons {  
   padding: 8px;
   transition: 300 ease-in-out;
   border-radius: 6px;
@@ -191,8 +189,6 @@ body {
 }
 
 .icons-projects{
-  height: 42px;
-  width: 42px;
   padding: 8px;
   transition: 300 ease-in-out;
   border-radius: 6px;

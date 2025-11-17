@@ -67,32 +67,32 @@ function Hero({ theme }: HeroProps) {
 
   return (
     <>
-      <nav className="text-text font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
+      <nav className="text-text text-xs sm:text-xl font-bold fixed w-dvw top-0 left-0 bg-transparent white:bg-white-bg z-9990">
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
-          <a className="w-9 h-9 fixed left-4" href="#">
-            <div className="w-9 h-9 fixed left-4 bg-cover bg-center bg-[url('./assets/icons/aw-final.png')] white:bg-[url('./assets/icons/aw_light.png')]"></div>
+          <a className="w-9 h-9 sm:w-12 sm:h-12 fixed left-4" href="#">
+            <div className="w-9 h-9 sm:w-12 sm:h-12 fixed left-4 bg-cover bg-center bg-[url('./assets/icons/aw-final.png')] white:bg-[url('./assets/icons/aw_light.png')]"></div>
           </a>
 
-          <ul className="text-xs">
+          <ul className="">
             <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
           </ul>
-          {/* <ul className="text-xs">
+          {/* <ul className="">
             <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
           </ul> */}
-          <ul className="text-xs">
+          <ul className="">
             <li><a href="#projects" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
           </ul>
-          <ul className="text-xs">
+          <ul className="">
             <li><a href="#contact" className="hover:text-accent transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
           </ul>
         </div>
       </nav>
 
-      <section className="bg-background white:bg-text">
+      <section className="bg-background white:bg-text ">
 
         {/* HERO SECTION */}
-        <section className="video-wrapper relative w-dvw h-dvh overflow-hidden">
+        <section className="relative w-dvw h-dvh flex flex-col items-center justify-center overflow-hidden">
 
           {/* ✅ Dynamic theme-based video */}
           <video
@@ -108,7 +108,7 @@ function Hero({ theme }: HeroProps) {
           />
 
           {/* GSAP CONTAINER ZOOM OUT VIDEO */}
-          <div ref={ContentFade} className="relative z-10 flex flex-col items-start justify-start w-full h-full text-white white:text-dark-gray font-bold">
+          <div ref={ContentFade} className="relative z-10 w-dvw sm:w-fit  h-dvh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
 
             {/* BALLS */}
             {/* {theme !== "white" &&
@@ -124,42 +124,44 @@ function Hero({ theme }: HeroProps) {
             } */}
 
             {/* SENTENCES */}
-            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="ml-10 text-1xl sm:text-2xl  mt-20">{t("home.welcome")}</h1>
-            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="mt-5 ml-10 text-3xl sm:text-4xl  rounded-full text-accent white:text-light-blue  ">{t("home.title")}</h1>
-            <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="ml-10 typing text-1xl text-text sm:text-4xl border-r-3 ">{t("home.subtitle")}</h3>
+            <div className='border-accent ml-10 sm:ml-0'>
+              <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="text-xl sm:text-3xl mt-20 sm:mt-25">{t("home.welcome")}</h1>
+              <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="mt-5  text-3xl sm:text-5xl  rounded-full text-accent white:text-light-blue">{t("home.title")}</h1>
+              <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className=" typing text-1xl sm:text-3xl text-text  border-r-3 ">{t("home.subtitle")}</h3>
+            </div>
 
-
-            <div className=' text-xs mt-10 ml-10 w-70 border-accent'>
-
+            <div className='text-xs sm:text-xl mt-10 sm:mt-20 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
 
               <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <Wallpaper />
+                  <Wallpaper className='sm:w-8 h-8 sm:mr-2'/>
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
               </div>
+
               <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <Gauge />
+                  <Gauge className='sm:w-8 h-8 sm:mr-2' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.api")}</h1>
               </div>
+
               <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1600" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <DatabaseBackup />
+                  <DatabaseBackup className='sm:w-8 h-8 sm:mr-2 '/>
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.cycle")}</h1>
               </div>
-              <div>
-              </div>
+
+           
             </div>
 
-            <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-35 right-5 text-md w-42">{t("home.text")}</h5>
+            {/* <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="text-md sm:text-2xl w-120">{t("home.text")}</h5> */}
 
 
 
             {/* IMG */}
-            <img data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="2000" className="absolute bottom-0 left-0 w-50" src={bg} />
+            <img data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-0 w-50 sm:w-70" src={bg} />
 
 
 

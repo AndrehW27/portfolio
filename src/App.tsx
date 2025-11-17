@@ -48,18 +48,18 @@ function App() {
             onClick={() => {
               setTheme('');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GoSun className='h-6 w-6 text-accent white:text-light-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GoSun className='h-6 w-6 sm:w-9 sm:h-9 text-accent white:text-light-blue' /></button>
         }
         {theme === '' &&
           <button
             onClick={() => {
               setTheme('white');
             }}
-            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-6 w-6 text-accent white:text-light-blue' /></button>
+            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-6 w-6 sm:w-9 sm:h-9 text-accent white:text-light-blue' /></button>
         }
 
       </div>
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 z-9998'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 sm:right-12  z-9998'>
 
         {language === '' &&
           <button
@@ -67,7 +67,7 @@ function App() {
               toggleLanguage();
               setLanguage('english');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-7 w-7 text-accent white:text-light-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><GiBrazilFlag className='h-7 w-7 sm:w-10 sm:h-10 text-accent white:text-light-blue' /></button>
         }
         {language === 'english' &&
           <button
@@ -75,7 +75,7 @@ function App() {
               toggleLanguage();
               setLanguage('');
             }}
-            className='p-1 transition duration-300 ease-in-out cursor-pointer'><LiaFlagUsaSolid className='h-7 w-7 text-accent white:text-light-blue' /></button>
+            className='p-1 transition duration-300 ease-in-out cursor-pointer'><LiaFlagUsaSolid className='h-7 w-7 sm:w-10 sm:h-10 text-accent white:text-light-blue' /></button>
         }
 
       </div>

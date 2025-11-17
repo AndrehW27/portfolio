@@ -1,10 +1,10 @@
 .typing {
-    width: 16ch;
+    width: 19ch;
     /* number of characters */
     /* border: 1px solid #7C3AED; */
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(16) infinite alternate, blink 0.5s step-end infinite alternate;
+    animation: typing 2s steps(19) infinite alternate, blink 0.5s step-end infinite alternate;
     animation-delay: 2s;
 }
 
@@ -14,7 +14,7 @@
     }
 
     to {
-        width: 16ch;
+        width: 19ch;
     }
 }
 
@@ -89,44 +89,6 @@
     background: linear-gradient(to bottom, var(--color-surface), var(--color-accent));
     border-radius: 100%;
     box-shadow: 0 0 40px #7C3AED;
-}
-
-.carousel {
-    /* margin: 20px auto; */
-    /* margin-bottom: 24px; */
-    /* width: 100dvw; */
-    /* border: 1px solid red; */
-    height: 3rem;
-    display: flex;
-    overflow-x: auto;
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* gap: 1rem; */
-    animation: spin 8s linear infinite;
-    /* padding-right: 1rem; */
-}
-
-.card-carousel {
-    flex: 0 0 4rem;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    /* width: 10rem; */
-    padding: 0.75rem;
-    border-radius: 2rem;
-    /* background-color: cornflowerblue; */
-    font-size: 2rem;
-    border-radius: .2rem;
-    text-align: center;
-    align-content: center;
 }
 
 @keyframes spin {
