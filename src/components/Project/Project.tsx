@@ -168,6 +168,127 @@ export default function Projects() {
       desktop: netflix1desktop,
       description: t("project.net.description"),
     },
+    {
+      title: t("project.zera.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+          color: "#ea23a4"
+        },
+
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+          color: "#5fa04e"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
+          color: "#4faa41"
+        }
+      ],
+      images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
+      desktop: zerameta1desktop,
+      links: [
+        "https://github.com/AndrehW27/ZeraMetaBackEnd/",
+        "https://zera-meta.vercel.app/boas-vindas",
+      ],
+      description: t("project.zera.description"),
+    },
+    {
+      title: t("project.security.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg",
+          color: "#00a1e0"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+          color: "#00a1e0"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg",
+          color: "#7300ff"
+        }
+      ],
+      images: [consultor1, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
+      desktop: consultor1desktop,
+      links: [
+        "https://",
+        "https://",
+      ],
+      description: t("project.security.description"),
+    },
+    {
+      title: t("project.portal.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+          color: "#ea23a4"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+          color: "#ff9900"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+          color: "#ff7700"
+        }
+      ],
+      images: [portalsin1, portalsin2, portalsin3],
+      desktop: portalsindesktop,
+      links: [
+        "https://",
+        "https://",
+      ],
+      description: t("project.portal.description"),
+    },
+    {
+      title: t("project.port.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#29acdb"
+        },
+        {
+          icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
+          color: "#4faa41"
+        },
+      ],
+      images: [portfolio1, portfolio2, portfolio3, portfolio4],
+      desktop: portfolio1desktop,
+      links: [
+        "https://github.com/AndrehW27/portfolio",
+        "https://portfolio-teal-ten-48.vercel.app/",
+      ],
+      description: t("project.port.description"),
+    },
+    {
+      title: t("project.net.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+          color: "#007acc"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+          color: "#31a5d9"
+        },
+      ],
+      links: [
+        "https://github.com/AndrehW27/NetflixClone",
+        "https://",
+      ],
+      images: [netflix1, netflix2],
+      desktop: netflix1desktop,
+      description: t("project.net.description"),
+    },
   ];
 
   const [index, setIndex] = useState(0);
@@ -240,7 +361,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative  white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold">
+    <section id="projects" className="relative border-pink-500 white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
       {/* FAKE SCREENS */}
       {/* <div className="absolute bottom-20 left-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
@@ -253,30 +374,36 @@ export default function Projects() {
       </div> */}
 
       {/* CAROUSEL CONTAINER  */}
-      <div data-aos="flip-left"
-        data-aos-offset="350" className="relative w-full sm:w-[100dvw] h-[100dvh] overflow-hidden  border-yellow-500">
+      <div
+        data-aos="flip-left"
+        data-aos-offset="400"
+        data-aos-duration="3000"
+        className=" w-full sm:w-[80dvw] h-[100dvh] overflow-hidden  border-blue-500">
         <div
+
           ref={containerRef}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
-          className="project-carousel-container h-full sm:w-[100dvw] flex transition-transform duration-500 ease-in-out  border-red-500"
+          className="project-carousel-container h-full sm:w-[380px] flex items-end justify-start transition-transform duration-500 ease-in-out border-red-500"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slidesData.map((s, slideIdx) => (
             <article
               key={slideIdx}
-              className="card border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[70dvw] sm:w-[360px] shrink-0 flex flex-col items-center  border-blue-500"
+
+              className="card  border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[360px] shrink-0 flex flex-col items-center"
             >
               {/* Title + Icons */}
 
 
               {/* Main image */}
               <div
-                className="hover border-orange-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[70dvw] sm:w-[360px] rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+
+                className="hover border-yellow-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[70dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
-                <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
+                <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
 
 
 
@@ -284,7 +411,7 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute bottom-50 sm:bottom-60 w-full sm:w-[360px] sm:w-100 border-orange-500 flex justify-center items-start'>
+                  <div className='absolute bottom-50 sm:bottom-60 w-full sm:w-[360px] sm:w-100  flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       {s.icons.map((iconData, iconIdx) => (
                         <img
@@ -312,7 +439,7 @@ export default function Projects() {
                       <div className="ml-6 text-xs sm:text-base bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
                     </a>
                     <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
-                      <div className="ml-4 sm:left-32 text-xs sm:text-base bg-accent white:bg-light-blue text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
+                      <div className="pointer ml-4 sm:left-32 text-xs sm:text-base bg-accent white:bg-light-blue text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
                     </a>
                   </div>
 
@@ -326,7 +453,7 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
+                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
 
                   >
                     <GiClick className="h-full w-full p-2" />
@@ -357,7 +484,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="absolute top-1/2 -translate-y- left-2 sm:left-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
+        className="absolute top-1/2 -translate-y- left-6 sm:left-30 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ‹
       </button>
@@ -365,7 +492,7 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="absolute top-1/2 -translate-y- right-2 sm:right-10 bg-white/30 w-10 h-10 border border-text white:border-dark-gray rounded-full flex justify-center items-center"
+        className="absolute top-1/2 -translate-y- right-2 sm:right-30 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ›
       </button>
@@ -385,46 +512,53 @@ export default function Projects() {
 
       {/* MODAL */}
       {showModal && (
-        <div className="absolute inset-0 flex items-center justify-center z-9999">
+        <div className="absolute border-4 border-red-500 inset-0 flex items-center justify-center z-9999">
           <div
-            className="absolute inset-0 bg-black/10 backdrop-blur-sm animate-fadeIn"
+            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
-          <button
-            onClick={() => setShowModal(false)}
-            className="absolute top-11 right-6 bg-white/30 w-10 h-10 rounded-full flex justify-center items-center border border-text z-100"
-          >
-            X
-          </button>
-          {/* Pagination arrows */}
-          {modalImages.length > 1 && (
-            <>
+
+
+
+          <div className="relative rounded-3xl max-w-[900px] bg-background flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+
+
+            <div className="relative">
+              {/* Modal image */}
+              <img
+                src={modalImages[modalIndex]}
+                alt="modal"
+                className="h-[85vh] w-[77vw] sm:w-[425px] object-cover rounded-2xl "
+              />
               <button
-                onClick={prevModal}
-                className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100"
+                onClick={() => setShowModal(false)}
+                className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
               >
-                ‹
+                X
               </button>
-
-              <button
-                onClick={nextModal}
-                className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100"
-              >
-                ›
-              </button>
-            </>
-          )}
-
-          <div className="relative rounded-3xl  max-w-[900px] bg-background flex flex-col items-center overflow-hidden animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+            </div>
 
 
-            {/* Modal image */}
-            <img
-              src={modalImages[modalIndex]}
-              alt="modal"
-              className="h-[85vh] w-[77vw] sm:w-[425px] object-cover rounded-2xl "
-            />
+
+            {/* Pagination arrows */}
+            {modalImages.length > 1 && (
+              <>
+                <button
+                  onClick={prevModal}
+                  className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                >
+                  ‹
+                </button>
+
+                <button
+                  onClick={nextModal}
+                  className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                >
+                  ›
+                </button>
+              </>
+            )}
 
           </div>
 

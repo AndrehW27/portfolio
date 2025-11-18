@@ -67,7 +67,7 @@ function Hero({ theme }: HeroProps) {
 
   return (
     <>
-      <nav className="text-text text-xs sm:text-xl font-bold fixed w-dvw top-0 left-0 bg-transparent white:bg-white-bg z-9990">
+      <nav className="text-text text-xs sm:text-xl font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
           <a className="w-9 h-9 sm:w-12 sm:h-12 fixed left-4" href="#">
@@ -75,16 +75,16 @@ function Hero({ theme }: HeroProps) {
           </a>
 
           <ul className="">
-            <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
+            <li><a href="#journey" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
           </ul>
           {/* <ul className="">
             <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
           </ul> */}
           <ul className="">
-            <li><a href="#projects" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
+            <li><a href="#projects" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
           </ul>
           <ul className="">
-            <li><a href="#contact" className="hover:text-accent transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
+            <li><a href="#contact" className="hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
           </ul>
         </div>
       </nav>
@@ -127,7 +127,7 @@ function Hero({ theme }: HeroProps) {
             <div className='border-accent ml-10 sm:ml-0'>
               <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="text-xl sm:text-3xl mt-20 sm:mt-25">{t("home.welcome")}</h1>
               <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="mt-5  text-3xl sm:text-5xl  rounded-full text-accent white:text-light-blue">{t("home.title")}</h1>
-              <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className=" typing text-1xl sm:text-3xl text-text  border-r-3 ">{t("home.subtitle")}</h3>
+              <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className=" typing text-1xl sm:text-3xl text-text  white:text-dark-gray border-r-3 ">{t("home.subtitle")}</h3>
             </div>
 
             <div className='text-xs sm:text-xl mt-10 sm:mt-20 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>

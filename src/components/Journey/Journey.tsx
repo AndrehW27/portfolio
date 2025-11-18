@@ -191,7 +191,7 @@ function Journey() {
 
                 </div>
 
-                <h1 data-aos="fade-in" data-aos-offset="300" className="w-60 text-center sm:w-120 sm:mt-20">
+                <h1 data-aos="fade-in" data-aos-offset="150" className="w-60 text-center sm:w-120 sm:mt-20">
                     {t("about.driven")}
                     <br />
                     <br />
