@@ -127,7 +127,7 @@ function Hero({ theme }: HeroProps) {
             <div className='border-accent ml-10 sm:ml-0'>
               <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="text-xl sm:text-3xl mt-20 sm:mt-25">{t("home.welcome")}</h1>
               <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="mt-5  text-3xl sm:text-5xl  rounded-full text-accent white:text-light-blue">{t("home.title")}</h1>
-              <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className=" typing text-1xl sm:text-3xl text-text  white:text-dark-gray border-r-3 ">{t("home.subtitle")}</h3>
+              <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className=" typing text-1xl sm:text-3xl text-text  white:text-dark-gray border-r-3 "><span className='text-4xl'>‹ </span>{t("home.subtitle")}<span className='text-4xl'> ›</span></h3>
             </div>
 
             <div className='text-xs sm:text-xl mt-10 sm:mt-20 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
@@ -161,7 +161,7 @@ function Hero({ theme }: HeroProps) {
 
             {/* IMG */}
 
-            <div data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-50px] sm:left-[-60px] w-110 sm:w-180 h-60 sm:h-100 clip-hex bg-gradient-to-tr from-text from-[5%] via-accent via-[30%] to-background to-[80%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[110%] flex justify-end items-center ">
+            <div data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-60px] sm:left-[-60px] w-110 sm:w-180 h-60 sm:h-100 clip-hex bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
               <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="text-xs sm:text-2xl w-30 sm:w-60 mr-20 sm:mr-35 mb-20">{t("home.text")}</h5>
             </div>
 

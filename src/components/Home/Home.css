@@ -1,10 +1,10 @@
 .typing {
-    width: 19ch;
+    width: 20ch;
     /* number of characters */
     /* border: 1px solid #7C3AED; */
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(19) infinite alternate, blink 0.5s step-end infinite alternate;
+    animation: typing 2s steps(20) infinite alternate, blink 0.5s step-end infinite alternate;
     animation-delay: 2s;
 }
 
@@ -14,7 +14,7 @@
     }
 
     to {
-        width: 19ch;
+        width: 20ch;
     }
 }
 
@@ -107,4 +107,12 @@
     100% 0%, 75% 100%,
     25% 100%, 0% 50%
   );
+}
+
+.card {
+  transform: perspective(400px) rotatey(-12deg);
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: perspective(400px) rotateY(0deg);
 }

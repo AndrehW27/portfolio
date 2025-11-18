@@ -184,22 +184,11 @@ function Journey() {
                         </div>
 
                     </div>
-
-
-
-
-
                 </div>
 
-                <h1 data-aos="fade-in" data-aos-offset="150" className="w-60 text-center sm:w-120 sm:mt-20">
-                    {t("about.driven")}
-                    <br />
-                    <br />
-                    {t("about.strive")}
-                </h1>
 
                 {/* CAROUSEL */}
-                <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="150" className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mb-30 sm:mb-60 sm:mt-10 z-700">
+                <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="150" className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mt-10 sm:mb-60 z-700">
                     <div className="group">
                         <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Waypoints className='h-full w-full' /></div>
                         <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><SquareDashedBottomCode className='h-full w-full' /></div>
@@ -217,6 +206,23 @@ function Journey() {
                         <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Rocket className='h-full w-full' /></div>
                     </div>
                 </div>
+
+                <div
+                    className='scale relative border-accent h-60 w-150 flex fex-col items-center justify-center mt-40 mb-80'>
+                    {/* <div className='absolute top-[-150px] left-[-120px] rounded-full w-100 h-100 bg-gradient-to-tr from-background from-[15%] via-surface via-[50%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc]'></div> */}
+                    <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="350" className='absolute top-[-10px] left-65 sm:top-[-175px] sm:left-0 rounded-full w-90 h-90 sm:w-150 sm:h-150 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#6594fc]'></div>
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="350" className='absolute top-[-120px] left-20 sm:top-[-175px] sm:left-0 rounded-full w-110 h-110 sm:w-150 sm:h-150 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#6594fc] flex fex-col items-center justify-center'>
+                        <h1 data-aos="fade-in" data-aos-duration="2000" data-aos-offset="350" className="w-60 text-center sm:w-100 z-10 ">
+                            {t("about.driven")}
+                            <br />
+                            <br />
+                            {t("about.strive")}
+                        </h1>
+                    </div>
+                </div>
+
+
+
 
                 <a href="#projects" className="up-and-down absolute bottom-10 z-900" >
                     <ChevronDown />

@@ -1,13 +1,14 @@
 import "./Teste.css";
 // import bg from "../../assets/me_art_modern-nobg.png";
 // import bg2 from "../../assets/me_art_modern-nobg.png";
-// import video from "../../assets/waves-video2.mp4";
-import { ChevronDown } from "lucide-react";
+// import video from "../../assets/videos/wave-dna.mp4";
+// import { ChevronDown } from "lucide-react";
 
 export default function Teste() {
 
   return (
     <>
+      {/* <section id="test" className="bg-fixed h-[100dvh] w-dvw"> */}
       <section id="test" className="bg-fixed h-[100dvh] w-dvw bg-[url('./assets/bg/parallaxvert1.png')] bg-cover bg-center">
         {/* 
         <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center  border-red-500 bg-gradient-to-tr bg-blur from-accent from-[5%] via-surface via-[50%] to-background to-[90%]">
@@ -21,18 +22,18 @@ export default function Teste() {
 
         {/* -------------------------------------------------------------------- */}
 
-        {/* <div className="video-wrapper relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
+        {/* <div className="bg-fixed relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
           <video
             key={video}
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="fixed top-0 left-0 w-full h-full object-cover -z-10"
             src={video}
             autoPlay
             muted
             loop
             playsInline
-          />
+          /> */}
 
-          <div className="relative bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%] rounded-3xl to-accent to-[90%] h-[55dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
+          {/* <div className="relative bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%] rounded-3xl to-accent to-[90%] h-[55dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
             <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
             <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
             <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
@@ -63,9 +64,9 @@ export default function Teste() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-        </div> */}
+        {/* </div> */}
 
         {/* -------------------------------------------------------------------- */}
 
@@ -417,9 +418,9 @@ export default function Teste() {
           </a> */}
 
         {/* DOWN CHEVRON */}
-        <a className="up-and-down absolute bottom-6 text-text" href="#about">
+        {/* <a className="up-and-down absolute bottom-6 text-text" href="#about">
           <ChevronDown />
-        </a>
+        </a> */}
 
 
 
