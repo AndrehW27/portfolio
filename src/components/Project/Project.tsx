@@ -452,7 +452,7 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
+                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
 
                   >
                     <GiClick className="h-full w-full p-2" />

@@ -1,5 +1,5 @@
 import './Journey.css'
-import { Database, ServerCog, ShieldCheck, SquareDashedBottomCode, Waypoints } from "lucide-react";
+import { Database, ServerCog, ShieldCheck, SquareDashedBottomCode, Waypoints, ChevronDown } from "lucide-react";
 
 // import { ChevronDown } from "lucide-react";
 import { School } from "lucide-react";
@@ -218,12 +218,14 @@ function Journey() {
                     </div>
                 </div>
 
-                <h1 className='text-2xl'>Projects</h1>
-
-                {/* 
                 <a href="#projects" className="up-and-down absolute bottom-10 z-900" >
                     <ChevronDown />
-                </a> */}
+                </a>
+
+                <h1 className='text-2xl mb-30'>Projects</h1>
+
+
+
 
             </section>
         </>

@@ -8,7 +8,7 @@ export default function Teste() {
 
   return (
     <>
-      <section id="test" className="relative h-[100dvh]  w-dvw  flex flex-col items-center justify-center">
+      <section id="test" className="bg-fixed h-[100dvh] w-dvw bg-[url('./assets/bg/parallaxvert1.png')] bg-cover bg-center">
         {/* 
         <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center  border-red-500 bg-gradient-to-tr bg-blur from-accent from-[5%] via-surface via-[50%] to-background to-[90%]">
           <div className="relative bg-white/10 rounded-3xl h-[55dvh] w-[80dvw]">
