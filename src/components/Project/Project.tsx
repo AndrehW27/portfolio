@@ -25,7 +25,6 @@ import consultor6 from "../../assets/projects/consultor6final.png";
 import consultor7 from "../../assets/projects/consultor7final.png";
 import consultor8 from "../../assets/projects/consultor8final.png";
 
-
 import portalsindesktop from "../../assets/projects/sin1test3.png";
 import portalsin1 from "../../assets/projects/sin1test3.png";
 import portalsin2 from "../../assets/projects/sin2cut.png";
@@ -361,7 +360,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative border-pink-500 white:bg-white-bg h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
+    <section id="projects" className="relative border-pink-500 h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
       {/* FAKE SCREENS */}
       {/* <div className="absolute bottom-20 left-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
@@ -453,7 +452,7 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
+                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
 
                   >
                     <GiClick className="h-full w-full p-2" />
@@ -512,7 +511,7 @@ export default function Projects() {
 
       {/* MODAL */}
       {showModal && (
-        <div className="absolute border-4 border-red-500 inset-0 flex items-center justify-center z-9999">
+        <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
           <div
             className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}

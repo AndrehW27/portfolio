@@ -134,7 +134,7 @@ function Hero({ theme }: HeroProps) {
 
               <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <Wallpaper className='sm:w-8 h-8 sm:mr-2'/>
+                  <Wallpaper className='sm:w-8 h-8 sm:mr-2' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
               </div>
@@ -148,19 +148,23 @@ function Hero({ theme }: HeroProps) {
 
               <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1600" className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <DatabaseBackup className='sm:w-8 h-8 sm:mr-2 '/>
+                  <DatabaseBackup className='sm:w-8 h-8 sm:mr-2 ' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.cycle")}</h1>
               </div>
 
-           
+
             </div>
 
-            {/* <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="text-md sm:text-2xl w-120">{t("home.text")}</h5> */}
 
 
 
             {/* IMG */}
+
+            <div data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-50px] sm:left-[-60px] w-110 sm:w-180 h-60 sm:h-100 clip-hex bg-gradient-to-tr from-text from-[5%] via-accent via-[30%] to-background to-[80%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[110%] flex justify-end items-center ">
+              <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="text-xs sm:text-2xl w-30 sm:w-60 mr-20 sm:mr-35 mb-20">{t("home.text")}</h5>
+            </div>
+
             <img data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-0 w-50 sm:w-70" src={bg} />
 
 
