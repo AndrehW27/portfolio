@@ -30,7 +30,7 @@ function Journey() {
 
                 <h1 data-aos="fade-down" className=' white:text-dark-gray mt-16 sm:mt-25 text-2xl sm:text-2xl font-bold'>{t("about.aboutme")}</h1>
 
-                <div className='relative white:text-dark-gray  border-yellow-300  w-[70vw] flex items-center justify-center mt-10'>
+                <div className='relative white:text-dark-gray  border-yellow-300  w-[70vw] flex items-center justify-center mt-15 sm:mt-30'>
 
                     <div className='w-35  sm:w-100 border-red-500 flex flex-col justify-start items-center'>
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-blue-500 flex justify-end items-start'>
@@ -69,7 +69,7 @@ function Journey() {
                                 <div className='flex align-center justify-center gap-2 sm:gap-4 mt-5'>
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 border border-text-dark  bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg" />
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#007acc] white:shadow-[0_0_10px_#007acc] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#f24e1e] white:shadow-[0_0_10px_#f24e1e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
                                 </div>
                             </div>
                         </div>
@@ -173,12 +173,12 @@ function Journey() {
                                 <div className='flex align-center justify-center gap-2 sm:gap-4'>
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 border border-text-dark  bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
                                 </div>
                                 <div className='flex align-center justify-center gap-2 sm:gap-4 mt-5'>
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
-                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#e0e0e6] bg-text white:shadow-[0_0_10px_#e0e0e6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
                                 </div>
                             </div>
                         </div>
@@ -186,33 +186,11 @@ function Journey() {
                     </div>
                 </div>
 
-
-                {/* CAROUSEL */}
-                <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="150" className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mt-10 sm:mb-60 z-700">
-                    <div className="group">
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Waypoints className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><SquareDashedBottomCode className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><ServerCog className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Database className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><ShieldCheck className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Rocket className='h-full w-full' /></div>
-                    </div>
-                    <div aria-hidden className="group">
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Waypoints className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><SquareDashedBottomCode className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><ServerCog className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Database className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><ShieldCheck className='h-full w-full' /></div>
-                        <div className="card-carousel grow-0 shrink-0 basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem"><Rocket className='h-full w-full' /></div>
-                    </div>
-                </div>
-
-                <div
-                    className='scale relative border-accent h-60 w-150 flex fex-col items-center justify-center mt-40 mb-80'>
+                {/* MAIN TEXT */}
+                <div className='scale relative border-accent h-80 w-100 flex flex-col items-center justify-center mt-10'>
                     {/* <div className='absolute top-[-150px] left-[-120px] rounded-full w-100 h-100 bg-gradient-to-tr from-background from-[15%] via-surface via-[50%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc]'></div> */}
-                    <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="350" className='absolute top-[-10px] left-65 sm:top-[-175px] sm:left-0 rounded-full w-90 h-90 sm:w-150 sm:h-150 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#6594fc]'></div>
-                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="350" className='absolute top-[-120px] left-20 sm:top-[-175px] sm:left-0 rounded-full w-110 h-110 sm:w-150 sm:h-150 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_40px_#6594fc] flex fex-col items-center justify-center'>
-                        <h1 data-aos="fade-in" data-aos-duration="2000" data-aos-offset="350" className="w-60 text-center sm:w-100 z-10 ">
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="350" className='clip-hex2 absolute top-0 left-[-70px]  w-110 h-90 sm:w-150 sm:h-140 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex fex-col items-center justify-center'>
+                        <h1 data-aos="fade-in" data-aos-duration="2000" data-aos-offset="350" className="w-60 text-center ml-20 mt-10 sm:w-100 z-10 ">
                             {t("about.driven")}
                             <br />
                             <br />
@@ -221,8 +199,134 @@ function Journey() {
                     </div>
                 </div>
 
+                {/* CAROUSEL */}
+                <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="0" className="border-red-500 carousel w-dvw sm:w-100 text-accent white:text-light-blue mt-20 mb-60 z-700">
+                    <div className="border-blue-500 group ">
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+                        </div>
+                    </div>
+                    <div className="border-blue-500 group ">
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+                        </div>
+                        <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                        </div>
+                        <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                            <img className='icons shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+                        </div>
+                    </div>
 
-
+                </div>
+                {/* <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="0" className="carousel w-dvw sm:w-100 text-accent white:text-light-blue mt-20 mb-60 sm:mb-60 z-700">
+                    <div className="group">
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[5rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                    </div>
+                    <div aria-hidden className="group">
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className='card-carousel grow-0 shrink-0'>
+                            <img className='basis-[3rem] w-3rem h-3rem sm:basis-[4rem] sm:w-4rem sm:h-4rem shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        </div>
+                    </div>
+                </div> */}
 
                 <a href="#projects" className="up-and-down absolute bottom-10 z-900" >
                     <ChevronDown />

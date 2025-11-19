@@ -103,16 +103,10 @@
 
 .clip-hex {
   clip-path: polygon(
-    25% 0%, 175% 0%,
-    100% 0%, 75% 100%,
+    25% 0%, 100px 0%,
+    150% 0%, 75% 90%,
     25% 100%, 0% 50%
   );
 }
 
-.card {
-  transform: perspective(400px) rotatey(-12deg);
-  transition: 0.3s ease;
-}
-.card:hover {
-  transform: perspective(400px) rotateY(0deg);
-}
+
