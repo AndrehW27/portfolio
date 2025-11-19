@@ -25,6 +25,30 @@ import consultor6 from "../../assets/projects/consultor6final.png";
 import consultor7 from "../../assets/projects/consultor7final.png";
 import consultor8 from "../../assets/projects/consultor8final.png";
 
+import impacta1desktop from "../../assets/projects/impacta/impacta-mobile1.png";
+import impacta1 from "../../assets/projects/impacta/impacta-mobile1.png";
+import impacta2 from "../../assets/projects/impacta/impacta-mobile2.png";
+import impacta3 from "../../assets/projects/impacta/impacta-mobile3.png";
+import impacta4 from "../../assets/projects/impacta/impacta-mobile4.png";
+import impacta5 from "../../assets/projects/impacta/impacta-mobile5.png";
+import impacta6 from "../../assets/projects/impacta/impacta-mobile6.png";
+import impacta7 from "../../assets/projects/impacta/impacta-mobile7.png";
+import impacta8 from "../../assets/projects/impacta/impacta-mobile8.png";
+import impacta9 from "../../assets/projects/impacta/impacta-mobile9.png";
+import impacta10 from "../../assets/projects/impacta/impacta-mobile10.png";
+
+import poke1desktop from "../../assets/projects/pokedex/poke-mobile-1.png";
+import poke1 from "../../assets/projects/pokedex/poke-mobile-1.png";
+import poke2 from "../../assets/projects/pokedex/poke-mobile-2.png";
+import poke3 from "../../assets/projects/pokedex/poke-mobile-3.png";
+import poke4 from "../../assets/projects/pokedex/poke-mobile-4.png";
+import poke5 from "../../assets/projects/pokedex/poke-mobile-5.png";
+import poke6 from "../../assets/projects/pokedex/poke-mobile-6.png";
+
+
+import tft1desktop from "../../assets/projects/tft-store/tft-store1-square.png";
+import tft1 from "../../assets/projects/tft-store/tft-store1-vertical2.png";
+
 import portalsindesktop from "../../assets/projects/sin1test3.png";
 import portalsin1 from "../../assets/projects/sin1test3.png";
 import portalsin2 from "../../assets/projects/sin2cut.png";
@@ -53,7 +77,6 @@ export default function Projects() {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
           color: "#ea23a4"
         },
-
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
           color: "#5fa04e"
@@ -66,10 +89,22 @@ export default function Projects() {
       images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
       desktop: zerameta1desktop,
       links: [
-        "https://github.com/AndrehW27/ZeraMetaBackEnd/",
-        "https://zera-meta.vercel.app/boas-vindas",
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/ZeraMetaBackEnd/"
+        },
+        {
+          hasDemo: true,
+          demo: "https://zera-meta.vercel.app/boas-vindas"
+        }
       ],
       description: t("project.zera.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
     },
     {
       title: t("project.security.title"),
@@ -90,10 +125,22 @@ export default function Projects() {
       images: [consultor1, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
       desktop: consultor1desktop,
       links: [
-        "https://",
-        "https://",
+        {
+          hasCode: false,
+          code: ""
+        },
+        {
+          hasDemo: false,
+          demo: ""
+        }
       ],
       description: t("project.security.description"),
+      message: [
+        {
+          hasMsg: true,
+          text: t("project.important")
+        }
+      ]
     },
     {
       title: t("project.portal.title"),
@@ -114,10 +161,58 @@ export default function Projects() {
       images: [portalsin1, portalsin2, portalsin3],
       desktop: portalsindesktop,
       links: [
-        "https://",
-        "https://",
+        {
+          hasCode: false,
+          code: "https://github.com/AndrehW27/ZeraMetaBackEnd/"
+        },
+        {
+          hasDemo: false,
+          demo: "https://zera-meta.vercel.app/boas-vindas"
+        }
       ],
       description: t("project.portal.description"),
+      message: [
+        {
+          hasMsg: true,
+          text: t("project.important")
+        }
+      ]
+    },
+    {
+      title: t("project.impacta.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+          color: "#ea23a4"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg",
+          color: "#d32a2d"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
+          color: "#a9bfd1"
+        }
+      ],
+      images: [impacta1, impacta2, impacta3, impacta4, impacta5, impacta6, impacta7, impacta8, impacta9, impacta10],
+      desktop: impacta1desktop,
+      links: [
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/impactaMais-Front-End"
+        },
+        {
+          hasDemo: false,
+          demo: ""
+        }
+      ],
+      description: t("project.impacta.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
     },
     {
       title: t("project.port.title"),
@@ -138,10 +233,94 @@ export default function Projects() {
       images: [portfolio1, portfolio2, portfolio3, portfolio4],
       desktop: portfolio1desktop,
       links: [
-        "https://github.com/AndrehW27/portfolio",
-        "https://portfolio-teal-ten-48.vercel.app/",
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/portfolio/"
+        },
+        {
+          hasDemo: true,
+          demo: "https://portfolio-teal-ten-48.vercel.app/"
+        }
       ],
       description: t("project.port.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
+    },
+    {
+      title: t("project.poke.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+          color: "#ea23a4"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+          color: "#007acc"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+          color: "#8e13fd"
+        },
+      ],
+      links: [
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/pokedex"
+        },
+        {
+          hasDemo: true,
+          demo: "https://andrehw27.github.io/pokedex/"
+        }
+      ],
+      images: [poke1, poke2, poke3, poke4, poke5, poke6],
+      desktop: poke1desktop,
+      description: t("project.poke.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
+    },
+    {
+      title: t("project.tft.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          color: "#f0db4f"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+          color: "#31a5d9"
+        },
+      ],
+      links: [
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/Loja-TFT/"
+        },
+        {
+          hasDemo: true,
+          demo: "https://tftstore-andrehw27.vercel.app/"
+        }
+      ],
+      images: [tft1],
+      desktop: tft1desktop,
+      description: t("project.tft.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
     },
     {
       title: t("project.net.title"),
@@ -160,133 +339,24 @@ export default function Projects() {
         },
       ],
       links: [
-        "https://github.com/AndrehW27/NetflixClone",
-        "https://",
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/NetflixClone/"
+        },
+        {
+          hasDemo: false,
+          demo: ""
+        }
       ],
       images: [netflix1, netflix2],
       desktop: netflix1desktop,
       description: t("project.net.description"),
-    },
-    {
-      title: t("project.zera.title"),
-      icons: [
+      message: [
         {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-          color: "#ea23a4"
-        },
-
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-          color: "#5fa04e"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
-          color: "#4faa41"
+          hasMsg: false,
+          text: ""
         }
       ],
-      images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
-      desktop: zerameta1desktop,
-      links: [
-        "https://github.com/AndrehW27/ZeraMetaBackEnd/",
-        "https://zera-meta.vercel.app/boas-vindas",
-      ],
-      description: t("project.zera.description"),
-    },
-    {
-      title: t("project.security.title"),
-      icons: [
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg",
-          color: "#00a1e0"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
-          color: "#00a1e0"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg",
-          color: "#7300ff"
-        }
-      ],
-      images: [consultor1, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
-      desktop: consultor1desktop,
-      links: [
-        "https://",
-        "https://",
-      ],
-      description: t("project.security.description"),
-    },
-    {
-      title: t("project.portal.title"),
-      icons: [
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-          color: "#ea23a4"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-          color: "#ff9900"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
-          color: "#ff7700"
-        }
-      ],
-      images: [portalsin1, portalsin2, portalsin3],
-      desktop: portalsindesktop,
-      links: [
-        "https://",
-        "https://",
-      ],
-      description: t("project.portal.description"),
-    },
-    {
-      title: t("project.port.title"),
-      icons: [
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-          color: "#61dafb"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-          color: "#29acdb"
-        },
-        {
-          icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
-          color: "#4faa41"
-        },
-      ],
-      images: [portfolio1, portfolio2, portfolio3, portfolio4],
-      desktop: portfolio1desktop,
-      links: [
-        "https://github.com/AndrehW27/portfolio",
-        "https://portfolio-teal-ten-48.vercel.app/",
-      ],
-      description: t("project.port.description"),
-    },
-    {
-      title: t("project.net.title"),
-      icons: [
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-          color: "#61dafb"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-          color: "#007acc"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-          color: "#31a5d9"
-        },
-      ],
-      links: [
-        "https://github.com/AndrehW27/NetflixClone",
-        "https://",
-      ],
-      images: [netflix1, netflix2],
-      desktop: netflix1desktop,
-      description: t("project.net.description"),
     },
   ];
 
@@ -294,6 +364,8 @@ export default function Projects() {
 
   // MODAL STATE
   const [showModal, setShowModal] = useState(false);
+  const [showModalImportant, setShowModalImportant] = useState(false);
+
   const [modalImages, setModalImages] = useState<string[]>([]);
   const [modalIndex, setModalIndex] = useState(0);
 
@@ -360,7 +432,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative border-pink-500 h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
+    <section id="projects" className="relative  border-pink-500 h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
       {/* FAKE SCREENS */}
       {/* <div className="absolute bottom-20 left-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
@@ -377,7 +449,7 @@ export default function Projects() {
         data-aos="flip-left"
         data-aos-offset="400"
         data-aos-duration="3000"
-        className=" w-full sm:w-[80dvw] h-[100dvh] overflow-hidden  border-blue-500">
+        className=" w-full sm:w-[80dvw] h-[100dvh] overflow-hidden sm:mb-10 border-blue-500">
         <div
 
           ref={containerRef}
@@ -399,7 +471,7 @@ export default function Projects() {
               {/* Main image */}
               <div
 
-                className="hover border-yellow-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[70dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className=" border-yellow-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[63dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
@@ -410,7 +482,7 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute bottom-50 sm:bottom-60 w-full sm:w-[360px] sm:w-100  flex justify-center items-start'>
+                  <div className='absolute bottom-48 sm:bottom-60 w-full sm:w-[360px] sm:w-100  flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       {s.icons.map((iconData, iconIdx) => (
                         <img
@@ -423,9 +495,9 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-22 flex flex-col ml-8">
+                  <div className="absolute bottom-18 flex flex-col ml-8">
                     <div className="mb-2 left-6 text-base sm:text-2xl w-100 text-accent white:text-light-blue border-red-500">{s.title}</div>
-                    <div className="left-6 text-xs sm:text-base w-50 sm:w-75  border-red-500">{s.description}</div>
+                    <div className="left-6 text-xs sm:text-base w-50 sm:w-75 white:text-text border-red-500">{s.description}</div>
                   </div>
 
 
@@ -434,14 +506,29 @@ export default function Projects() {
 
 
                   <div className="absolute bottom-6 flex">
-                    <a href={s.links[0]} target="_blank" rel="noopener noreferrer">
-                      <div className="ml-6 text-xs sm:text-base bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
-                    </a>
-                    <a href={s.links[1]} target="_blank" rel="noopener noreferrer">
-                      <div className="pointer ml-4 sm:left-32 text-xs sm:text-base bg-accent white:bg-light-blue text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
-                    </a>
+                    {s.links[0].hasCode &&
+                      <a href={s.links[0].code} target="_blank" rel="noopener noreferrer">
+                        <div className="ml-6 text-xs sm:text-base bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
+                      </a>
+                    }
+
+                    {s.links[1].hasDemo &&
+                      <a href={s.links[1].demo} target="_blank" rel="noopener noreferrer">
+                        <div className="pointer ml-4 sm:left-32 text-xs sm:text-base bg-accent white:bg-light-blue text-white/80 px-4 py-2 rounded-2xl">{t("project.demo")}</div>
+                      </a>
+                    }
                   </div>
 
+                  {s.message[0].hasMsg &&
+                    <div className="absolute bottom-6  w-full flex justify-center">
+                      <h1
+                        onClick={() => {
+                          setShowModalImportant(true);
+                          console.log("Important!");
+                        }}
+                        className="pointer hover:text-text hover:bg-red-700/50 text-xs px-4 py-2 rounded-2xl border border-red-700 text-red-700 transition duration-400 ease-in-out">{s.message[0].text}</h1>
+                    </div>
+                  }
                   {/* <div className="absolute bottom-8 left-55 text-xs text-accent white:text-light-blue w-60  border-red-500">details</div> */}
 
 
@@ -520,7 +607,7 @@ export default function Projects() {
 
 
 
-          <div className="relative rounded-3xl max-w-[900px] bg-background flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+          <div className="relative rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
 
 
             <div className="relative">
@@ -528,7 +615,7 @@ export default function Projects() {
               <img
                 src={modalImages[modalIndex]}
                 alt="modal"
-                className="h-[85vh] w-[77vw] sm:w-[425px] object-cover rounded-2xl "
+                className="h-fit max-h-[90dvh] w-[77vw] sm:w-[425px] object-contain rounded-2xl "
               />
               <button
                 onClick={() => setShowModal(false)}
@@ -560,6 +647,31 @@ export default function Projects() {
             )}
 
           </div>
+
+        </div>
+
+      )}
+
+      {/* MODAL IMPORTANT */}
+      {showModalImportant && (
+        <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
+
+          <div
+            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+            onClick={() => setShowModalImportant(false)}
+          />
+
+          <div className="relative rounded-3xl text-xs text-center w-fit h-fit max-w-[250px] bg-background white:bg-text flex items-center justify-center p-6 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+            <button
+              onClick={() => setShowModalImportant(false)}
+              className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
+            >
+              X
+            </button>
+            <h1>{t("project.important.description")}</h1>
+          </div>
+
+
 
         </div>
 

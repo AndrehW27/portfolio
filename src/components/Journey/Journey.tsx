@@ -152,7 +152,7 @@ function Journey() {
                                 <div className='flex align-center justify-center gap-2 sm:gap-4'>
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                                    <img className='icons w-9 h-9 sm:w-15 sm:h-15 bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
                                 </div>
                                 <div className='flex align-center justify-center gap-2 sm:gap-4 mt-5'>
                                     <img className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#6762a6] white:shadow-[0_0_10px_#6762a6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
@@ -225,7 +225,7 @@ function Journey() {
                             <img className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
                         </div>
                         <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                            <img className='icons shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                            <img className='icons bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
                         </div>
                         <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                             <img className='icons shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
@@ -266,7 +266,7 @@ function Journey() {
                             <img className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
                         </div>
                         <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                            <img className='icons shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                            <img className='icons bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
                         </div>
                         <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                             <img className='icons shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
