@@ -68,7 +68,7 @@ function About() {
 
           {/* MY IMAGE */}
           <div data-aos="zoom-in" data-aos-offset="50" className='absolute bottom-0 left-10 border-blue-500 w-[55dvw] h-fit rounded-full z-800'>
-            <img className='' src={perfil} alt="A cool image" />
+            <img loading="lazy" className='' src={perfil} alt="A cool image" />
           </div>
 
           {/* CAROUSEL */}

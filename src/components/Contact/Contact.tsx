@@ -35,7 +35,7 @@ function Contact() {
         <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-40 sm:w-70 h-fit flex items-center justify-evenly'>
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
             <div className='w-9 h-9 sm:w-15 sm:h-15 p-2 rounded-md shadow-[0_0_10px_#0076b2]'>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
             </div>
           </a>
 
@@ -51,7 +51,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="w-9 h-9 sm:w-15 sm:h-15 p-2 rounded-md shadow-[0_0_10px_#29a71a] flex items-center justify-center"
           >
-            <img src={wpp} alt="WhatsApp" />
+            <img loading="lazy" src={wpp} alt="WhatsApp" />
           </a>
         </div>
 

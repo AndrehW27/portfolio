@@ -1,21 +1,20 @@
-// import Navbar from './components/Navbar/Navbar.tsx'
-import Home from './components/Home/Home.tsx'
-import Project from './components/Project/Project.tsx'
-// import About from './components/About/About.tsx'
-import Journey from './components/Journey/Journey.tsx'
-import Contact from './components/Contact/Contact.tsx'
-import Teste from './components/Test/Teste.tsx'
+import React, { Suspense, useEffect, useState } from "react";
+
+const Home = React.lazy(() => import('./components/Home/Home'));
+const Project = React.lazy(() => import('./components/Project/Project'));
+const Journey = React.lazy(() => import('./components/Journey/Journey'));
+const Contact = React.lazy(() => import('./components/Contact/Contact'));
+const Teste = React.lazy(() => import('./components/Test/Teste'));
+
 
 import './App.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 // import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import { IoMoonOutline } from "react-icons/io5";
 import { GoSun } from "react-icons/go";
 import { GiBrazilFlag } from "react-icons/gi";
 import { LiaFlagUsaSolid } from "react-icons/lia";
-import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -80,14 +79,35 @@ function App() {
 
       </div>
 
-      <Home theme={theme} />
+      <Suspense fallback={<div></div>}>
+        <Home theme={theme} />
+      </Suspense>
+
+      <Suspense fallback={<div></div>}>
+        <Journey />
+      </Suspense>
+
+      <Suspense fallback={<div></div>}>
+        <Teste />
+      </Suspense>
+
+      <Suspense fallback={<div></div>}>
+        <Project />
+      </Suspense>
+
+      <Suspense fallback={<div></div>}>
+        <Contact />
+      </Suspense>
+
+      {/* 
+      <Home theme={theme} /> */}
 
       {/* <About /> */}
-      <Journey />
+      {/* <Journey />
       <Teste />
       <Project />
 
-      <Contact />
+      <Contact /> */}
     </div>
   )
 }

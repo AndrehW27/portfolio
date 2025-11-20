@@ -16,7 +16,7 @@ export default function Teste() {
             <h1 className="absolute left-10 top-10 text-text font-bold">Hello there, welcome!</h1>
             <h1 className="absolute left-10 top-20 text-2xl text-accent font-bold">I'm André Willian</h1>
             <h1 className="absolute left-10 top-30 text-text font-bold">Fullstack Developer</h1>
-            <img className="absolute left-0 bottom-0 card w-40" src={bg} />
+            <img loading="lazy" className="absolute left-0 bottom-0 card w-40" src={bg} />
           </div>
         </div> */}
 
@@ -39,7 +39,7 @@ export default function Teste() {
             <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
 
             <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-              <img className="w-40" src={bg} />
+              <img loading="lazy" className="w-40" src={bg} />
 
               <div className='text-text text-xs w-33 mb-8 font-bold'>
                 <div className='flex mb-5'>
@@ -88,7 +88,7 @@ export default function Teste() {
             <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
 
             <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-              <img className="w-40" src={bg} />
+              <img loading="lazy" className="w-40" src={bg} />
 
               <div className='text-text text-xs w-33 mb-8 font-bold'>
                 <div className='flex mb-5'>
@@ -146,7 +146,7 @@ export default function Teste() {
             <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
 
             <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-              <img className="w-40" src={bg} />
+              <img loading="lazy" className="w-40" src={bg} />
 
               <div className='text-text text-xs w-33 mb-8 font-bold'>
                 <div className='flex mb-5'>
@@ -197,7 +197,7 @@ export default function Teste() {
           <h1 className="absolute left-10 top-40 text-xl text-text font-bold typing">Fullstack Developer</h1>
 
           <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-            <img className="w-50" src={bg} />
+            <img loading="lazy" className="w-50" src={bg} />
 
             <div className='absolute text-text text-xs w-70 left-10 bottom-90 font-bold'>
               <div className='flex mb-3'>
@@ -237,7 +237,7 @@ export default function Teste() {
             playsInline
           />
 
-          <img className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
+          <img loading="lazy" className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
 
 
           <div className="relative video-wrapper rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
@@ -303,7 +303,7 @@ export default function Teste() {
             playsInline
           />
 
-          <img className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
+          <img loading="lazy" className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
 
 
           <div className="relative bg-black/50 rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
@@ -361,7 +361,7 @@ export default function Teste() {
             playsInline
           />
 
-          <img className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
+          <img loading="lazy" className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
 
 
           <div className="relative bg-gradient-to-tr bg-blur from-accent from-[5%] via-surface via-[50%] to-background to-[90%] rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
@@ -431,7 +431,7 @@ export default function Teste() {
             <h1 className="absolute left-10 top-20 text-2xl text-accent font-bold">I'm André Willian</h1>
             <h1 className="absolute left-10 top-30 text-text font-bold">Fullstack Developer</h1>
 
-            <img className="absolute left-0 bottom-0 card w-40" src={bg} />
+            <img loading="lazy" className="absolute left-0 bottom-0 card w-40" src={bg} />
 
           </div>
         </div> */}
@@ -451,9 +451,9 @@ export default function Teste() {
 
             <div className='absolute bottom-35 left-15 w-40 sm:w-100 border-orange-500 flex justify-center items-start'>
               <div className='flex align-center justify-center gap-2 sm:gap-4 z-100'>
-                <img className='icons shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                <img className='icons shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                <img className='icons shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <img loading="lazy" className='icons shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <img loading="lazy" className='icons shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <img loading="lazy" className='icons shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
               </div>
             </div>
 

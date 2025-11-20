@@ -215,42 +215,6 @@ export default function Projects() {
       ],
     },
     {
-      title: t("project.port.title"),
-      icons: [
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-          color: "#61dafb"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-          color: "#29acdb"
-        },
-        {
-          icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
-          color: "#4faa41"
-        },
-      ],
-      images: [portfolio1, portfolio2, portfolio3, portfolio4],
-      desktop: portfolio1desktop,
-      links: [
-        {
-          hasCode: true,
-          code: "https://github.com/AndrehW27/portfolio/"
-        },
-        {
-          hasDemo: true,
-          demo: "https://portfolio-teal-ten-48.vercel.app/"
-        }
-      ],
-      description: t("project.port.description"),
-      message: [
-        {
-          hasMsg: false,
-          text: ""
-        }
-      ],
-    },
-    {
       title: t("project.poke.title"),
       icons: [
         {
@@ -279,6 +243,42 @@ export default function Projects() {
       images: [poke1, poke2, poke3, poke4, poke5, poke6],
       desktop: poke1desktop,
       description: t("project.poke.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
+    },
+    {
+      title: t("project.port.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#29acdb"
+        },
+        {
+          icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
+          color: "#4faa41"
+        },
+      ],
+      images: [portfolio1, portfolio2, portfolio3, portfolio4],
+      desktop: portfolio1desktop,
+      links: [
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/portfolio/"
+        },
+        {
+          hasDemo: true,
+          demo: "https://portfolio-teal-ten-48.vercel.app/"
+        }
+      ],
+      description: t("project.port.description"),
       message: [
         {
           hasMsg: false,
@@ -463,7 +463,7 @@ export default function Projects() {
             <article
               key={slideIdx}
 
-              className="card  border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[360px] shrink-0 flex flex-col items-center"
+              className="card border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[360px] shrink-0 flex flex-col items-center"
             >
               {/* Title + Icons */}
 
@@ -471,7 +471,7 @@ export default function Projects() {
               {/* Main image */}
               <div
 
-                className=" border-yellow-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[63dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-yellow-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[63dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
@@ -482,7 +482,7 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute bottom-48 sm:bottom-60 w-full sm:w-[360px] sm:w-100  flex justify-center items-start'>
+                  <div className='absolute bottom-48 sm:bottom-60 w-full sm:w-[360px] sm:w-100 flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       {s.icons.map((iconData, iconIdx) => (
                         <img
@@ -612,10 +612,10 @@ export default function Projects() {
 
             <div className="relative">
               {/* Modal image */}
-              <img
+              <img loading="lazy"
                 src={modalImages[modalIndex]}
                 alt="modal"
-                className="h-fit max-h-[90dvh] w-[77vw] sm:w-[425px] object-contain rounded-2xl "
+                className="h-fit max-h-[90dvh] w-[77dvw] sm:w-[425px] object-contain rounded-2xl "
               />
               <button
                 onClick={() => setShowModal(false)}
