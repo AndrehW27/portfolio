@@ -5,25 +5,25 @@ import { useTranslation } from "react-i18next";
 import "./Project.css";
 // import { ChevronDown } from "lucide-react";
 
-import zerameta1desktop from "../../assets/projects/zerameta1.png";
-import zerameta1 from "../../assets/projects/zerameta1.png";
-import zerameta2 from "../../assets/projects/zerameta2.png";
-import zerameta3 from "../../assets/projects/zerameta3.png";
-import zerameta4 from "../../assets/projects/zerameta4.png";
-import zerameta5 from "../../assets/projects/zerameta5.png";
-import zerameta6 from "../../assets/projects/zerameta6.png";
-import zerameta7 from "../../assets/projects/zerameta7.png";
-import zerameta8 from "../../assets/projects/zerameta8.png";
+import zerameta1desktop from "../../assets/projects/zera/zerameta1.png";
+import zerameta1 from "../../assets/projects/zera/zerameta1.png";
+import zerameta2 from "../../assets/projects/zera/zerameta2.png";
+import zerameta3 from "../../assets/projects/zera/zerameta3.png";
+import zerameta4 from "../../assets/projects/zera/zerameta4.png";
+import zerameta5 from "../../assets/projects/zera/zerameta5.png";
+import zerameta6 from "../../assets/projects/zera/zerameta6.png";
+import zerameta7 from "../../assets/projects/zera/zerameta7.png";
+import zerameta8 from "../../assets/projects/zera/zerameta8.png";
 
-import consultor1desktop from "../../assets/projects/consultor.png";
-import consultor1 from "../../assets/projects/consultor.png";
-import consultor2 from "../../assets/projects/consultor2final.png";
-import consultor3 from "../../assets/projects/consultor3final.png";
-import consultor4 from "../../assets/projects/consultor4final.png";
-import consultor5 from "../../assets/projects/consultor5final.png";
-import consultor6 from "../../assets/projects/consultor6final.png";
-import consultor7 from "../../assets/projects/consultor7final.png";
-import consultor8 from "../../assets/projects/consultor8final.png";
+import consultor1desktop from "../../assets/projects/consultor/consultor.png";
+import consultor1 from "../../assets/projects/consultor/consultor.png";
+import consultor2 from "../../assets/projects/consultor/consultor2final.png";
+import consultor3 from "../../assets/projects/consultor/consultor3final.png";
+import consultor4 from "../../assets/projects/consultor/consultor4final.png";
+import consultor5 from "../../assets/projects/consultor/consultor5final.png";
+import consultor6 from "../../assets/projects/consultor/consultor6final.png";
+import consultor7 from "../../assets/projects/consultor/consultor7final.png";
+import consultor8 from "../../assets/projects/consultor/consultor8final.png";
 
 import impacta1desktop from "../../assets/projects/impacta/impacta-mobile1.png";
 import impacta1 from "../../assets/projects/impacta/impacta-mobile1.png";
@@ -49,21 +49,21 @@ import poke6 from "../../assets/projects/pokedex/poke-mobile-6.png";
 import tft1desktop from "../../assets/projects/tft-store/tft-store1-square.png";
 import tft1 from "../../assets/projects/tft-store/tft-store1-vertical2.png";
 
-import portalsindesktop from "../../assets/projects/sin1test3.png";
-import portalsin1 from "../../assets/projects/sin1test3.png";
-import portalsin2 from "../../assets/projects/sin2cut.png";
-import portalsin3 from "../../assets/projects/sin3cut.png";
+import portalsindesktop from "../../assets/projects/portal-sin/sin1test3.png";
+import portalsin1 from "../../assets/projects/portal-sin/sin1test3.png";
+import portalsin2 from "../../assets/projects/portal-sin/sin2cut.png";
+import portalsin3 from "../../assets/projects/portal-sin/sin3cut.png";
 
-import netflix1desktop from "../../assets/projects/netflix2.jpg";
-import netflix1 from "../../assets/projects/netflix2.jpg";
-import netflix2 from "../../assets/projects/net-lands.png";
+import netflix1desktop from "../../assets/projects/netflix/netflix2.jpg";
+import netflix1 from "../../assets/projects/netflix/netflix2.jpg";
+import netflix2 from "../../assets/projects/netflix/net-lands.png";
 
 
-import portfolio1desktop from "../../assets/projects/port1.png";
-import portfolio1 from "../../assets/projects/port1.png";
-import portfolio2 from "../../assets/projects/port2.png";
-import portfolio3 from "../../assets/projects/port3.png";
-import portfolio4 from "../../assets/projects/port4.png";
+import portfolio1desktop from "../../assets/projects/portfolio/port1.png";
+import portfolio1 from "../../assets/projects/portfolio/port1.png";
+import portfolio2 from "../../assets/projects/portfolio/port2.png";
+import portfolio3 from "../../assets/projects/portfolio/port3.png";
+import portfolio4 from "../../assets/projects/portfolio/port4.png";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -471,7 +471,7 @@ export default function Projects() {
               {/* Main image */}
               <div
 
-                className="border-yellow-500 scale absolute bottom-16 mb-6 h-[75dvh] w-[63dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
