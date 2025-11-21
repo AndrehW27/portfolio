@@ -331,42 +331,6 @@ export default function Projects() {
         }
       ],
     },
-    {
-      title: t("project.net.title"),
-      icons: [
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-          color: "#61dafb"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-          color: "#007acc"
-        },
-        {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-          color: "#31a5d9"
-        },
-      ],
-      links: [
-        {
-          hasCode: true,
-          code: "https://github.com/AndrehW27/NetflixClone/"
-        },
-        {
-          hasDemo: false,
-          demo: ""
-        }
-      ],
-      images: [netflix1, netflix2],
-      desktop: netflix1desktop,
-      description: t("project.net.description"),
-      message: [
-        {
-          hasMsg: false,
-          text: ""
-        }
-      ],
-    },
 
     {
       title: t("project.move.title"),
@@ -434,6 +398,43 @@ export default function Projects() {
       images: [hero1, hero2, hero3],
       desktop: hero1desktop,
       description: t("project.hero.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
+    },
+
+        {
+      title: t("project.net.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+          color: "#007acc"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+          color: "#31a5d9"
+        },
+      ],
+      links: [
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/NetflixClone/"
+        },
+        {
+          hasDemo: false,
+          demo: ""
+        }
+      ],
+      images: [netflix1, netflix2],
+      desktop: netflix1desktop,
+      description: t("project.net.description"),
       message: [
         {
           hasMsg: false,
