@@ -67,11 +67,11 @@ function Hero({ theme }: HeroProps) {
 
   return (
     <>
-      <nav className="text-text text-xs sm:text-xl font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
+      <nav className="text-text text-xs sm:text-base font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
-          <a className="w-9 h-9 sm:w-12 sm:h-12 fixed left-4" href="#">
-            <div className="w-9 h-9 sm:w-12 sm:h-12 fixed left-4 bg-cover bg-center bg-[url('./assets/icons/aw-final.png')] white:bg-[url('./assets/icons/aw_light.png')]"></div>
+          <a className="w-11 h-11 sm:w-16 sm:h-16 fixed left-4" href="#">
+            <div className="w-11 h-11 sm:w-16 sm:h-16 fixed left-4 bg-cover bg-center bg-[url('./assets/icons/aw-final.png')] white:bg-[url('./assets/icons/aw_light.png')]"></div>
           </a>
 
           <ul className="">
@@ -160,14 +160,12 @@ function Hero({ theme }: HeroProps) {
 
 
             {/* IMG */}
+              <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-60px] sm:left-[-60px] w-95 sm:w-160 h-60 sm:h-90 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
+                <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-xs sm:text-xl w-30 sm:w-60 mr-5 sm:mr-15 mb-30">{t("home.text")}</h5>
+              </div>
 
-            <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-60px] sm:left-[-60px] w-95 sm:w-160 h-60 sm:h-90 clip-hex bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
-              <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-xs sm:text-xl w-30 sm:w-60 mr-5 sm:mr-15 mb-30">{t("home.text")}</h5>
-            </div>
-
-            <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2400" className="absolute bottom-0 left-0 w-50 sm:w-70" src={bg} />
-
-
+              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2400" className="absolute bottom-0 left-0 w-50 sm:w-70" src={bg} />
+   
 
             {/* ABOUT BUTTON */}
             {/* <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" href="#about">

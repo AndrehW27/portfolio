@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import "./Project.css";
 // import { ChevronDown } from "lucide-react";
 
-import zerameta1desktop from "../../assets/projects/zera/zerameta1.png";
+import zerameta1desktop from "../../assets/projects/zera/zerameta1.png";// import zerameta1desktop from "../../assets/projects/zera/zerameta1.png";
 import zerameta1 from "../../assets/projects/zera/zerameta1.png";
 import zerameta2 from "../../assets/projects/zera/zerameta2.png";
 import zerameta3 from "../../assets/projects/zera/zerameta3.png";
@@ -45,6 +45,16 @@ import poke4 from "../../assets/projects/pokedex/poke-mobile-4.png";
 import poke5 from "../../assets/projects/pokedex/poke-mobile-5.png";
 import poke6 from "../../assets/projects/pokedex/poke-mobile-6.png";
 
+import move1desktop from "../../assets/projects/MoveIt/MoveLightMobile1.png";
+import move1 from "../../assets/projects/MoveIt/MoveLightMobile1.png";
+import move2 from "../../assets/projects/MoveIt/MoveLightMobile2.png";
+import move3 from "../../assets/projects/MoveIt/MoveLightMobile3.png";
+import move4 from "../../assets/projects/MoveIt/MoveLightMobile4.png";
+
+import hero1desktop from "../../assets/projects/BeTheHero/heroMobile1.png";
+import hero1 from "../../assets/projects/BeTheHero/heroDesktop1.png";
+import hero2 from "../../assets/projects/BeTheHero/heroDesktop2.png";
+import hero3 from "../../assets/projects/BeTheHero/heroDesktop3.png";
 
 import tft1desktop from "../../assets/projects/tft-store/tft-store1-square.png";
 import tft1 from "../../assets/projects/tft-store/tft-store1-vertical2.png";
@@ -57,7 +67,6 @@ import portalsin3 from "../../assets/projects/portal-sin/sin3cut.png";
 import netflix1desktop from "../../assets/projects/netflix/netflix2.jpg";
 import netflix1 from "../../assets/projects/netflix/netflix2.jpg";
 import netflix2 from "../../assets/projects/netflix/net-lands.png";
-
 
 import portfolio1desktop from "../../assets/projects/portfolio/port1.png";
 import portfolio1 from "../../assets/projects/portfolio/port1.png";
@@ -358,13 +367,90 @@ export default function Projects() {
         }
       ],
     },
+
+    {
+      title: t("project.move.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+          color: "#007acc"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+          color: "#5fa04e"
+        },
+      ],
+      links: [
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/moveit"
+        },
+        {
+          hasDemo: false,
+          demo: ""
+        }
+      ],
+      images: [move1, move2, move3, move4],
+      desktop: move1desktop,
+      description: t("project.move.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
+    },
+
+    {
+      title: t("project.hero.title"),
+      icons: [
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          color: "#61dafb"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          color: "#f0db4f"
+        },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+          color: "#5fa04e"
+        },
+      ],
+      links: [
+        {
+          hasCode: true,
+          code: "https://github.com/AndrehW27/SemanaOmniStack11.BeTheHero"
+        },
+        {
+          hasDemo: false,
+          demo: ""
+        }
+      ],
+      images: [hero1, hero2, hero3],
+      desktop: hero1desktop,
+      description: t("project.hero.description"),
+      message: [
+        {
+          hasMsg: false,
+          text: ""
+        }
+      ],
+    },
+
   ];
 
   const [index, setIndex] = useState(0);
 
   // MODAL STATE
   const [showModal, setShowModal] = useState(false);
+  const [showModalDetails, setShowModalDetails] = useState(false);
   const [showModalImportant, setShowModalImportant] = useState(false);
+
 
   const [modalImages, setModalImages] = useState<string[]>([]);
   const [modalIndex, setModalIndex] = useState(0);
@@ -446,7 +532,7 @@ export default function Projects() {
 
       {/* CAROUSEL CONTAINER  */}
       <div
-        data-aos="flip-left"
+        data-aos="zoom-in"
         data-aos-offset="400"
         data-aos-duration="3000"
         className=" w-full sm:w-[80dvw] h-[100dvh] overflow-hidden sm:mb-10 border-blue-500">
@@ -463,7 +549,7 @@ export default function Projects() {
             <article
               key={slideIdx}
 
-              className="card border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[360px] shrink-0 flex flex-col items-center"
+              className="card border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[500px] shrink-0 flex flex-col items-center"
             >
               {/* Title + Icons */}
 
@@ -471,7 +557,7 @@ export default function Projects() {
               {/* Main image */}
               <div
 
-                className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:w-[340px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
@@ -482,7 +568,7 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute bottom-48 sm:bottom-60 w-full sm:w-[360px] sm:w-100 flex justify-center items-start'>
+                  <div className='absolute  bottom-48 sm:bottom-60 w-full sm:w-[460px] sm:w-100 flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       {s.icons.map((iconData, iconIdx) => (
                         <img
@@ -496,8 +582,8 @@ export default function Projects() {
                   </div>
 
                   <div className="absolute bottom-18 flex flex-col ml-8">
-                    <div className="mb-2 left-6 text-base sm:text-2xl w-100 text-accent white:text-light-blue border-red-500">{s.title}</div>
-                    <div className="left-6 text-xs sm:text-base w-50 sm:w-75 white:text-text border-red-500">{s.description}</div>
+                    <div className="mb-2 left-6 text-lg sm:text-2xl w-100 text-accent white:text-light-blue border-red-500">{s.title}</div>
+                    <div className="left-6 text-xs sm:text-base w-60 sm:w-90 white:text-text border-red-500">{s.description}</div>
                   </div>
 
 
@@ -520,17 +606,23 @@ export default function Projects() {
                   </div>
 
                   {s.message[0].hasMsg &&
-                    <div className="absolute bottom-6  w-full flex justify-center">
+                    <div className="absolute bottom-6 w-full flex justify-start">
                       <h1
                         onClick={() => {
                           setShowModalImportant(true);
-                          console.log("Important!");
                         }}
-                        className="pointer hover:text-text hover:bg-red-700/50 text-xs px-4 py-2 rounded-2xl border border-red-700 text-red-700 transition duration-400 ease-in-out">{s.message[0].text}</h1>
+                        className="pointer hover:text-text hover:bg-red-700/50 text-xs px-4 py-2 ml-6 rounded-2xl border border-red-700 text-red-700 transition duration-400 ease-in-out">{s.message[0].text}
+                      </h1>
                     </div>
                   }
                   {/* <div className="absolute bottom-8 left-55 text-xs text-accent white:text-light-blue w-60  border-red-500">details</div> */}
 
+                  <h1 className="text-accent absolute bottom-6 right-6 pointer"
+                    onClick={() => {
+                      setShowModalDetails(true);
+                    }}
+                  >details
+                  </h1>
 
                   <button
                     onClick={() => {
@@ -539,7 +631,7 @@ export default function Projects() {
                       setShowModal(true);
                     }
                     }
-                    className="absolute top-50 sm:top-70 right-4 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
+                    className="absolute top-50 sm:top-65 right-4 sm:right-8 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
 
                   >
                     <GiClick className="h-full w-full p-2" />
@@ -556,8 +648,60 @@ export default function Projects() {
 
                 </div>
               </div>
+
+              {/* MODAL DETAILS */}
+              {showModalDetails && (
+                <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
+
+                  <div
+                    className="absolute h-[100dvh] w-[100dvw] inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+                    onClick={() => setShowModalDetails(false)}
+                  />
+
+                  <div className="relative rounded-3xl text-sm w-fit h-fit max-w-[250px] bg-background white:bg-text flex flex-col items-center justify-center px-6 py-10 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+                    <button
+                      onClick={() => setShowModalDetails(false)}
+                      className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
+                    >
+                      X
+                    </button>
+                    <div className='flex justify-center items-start'>
+                      <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
+                        {s.icons.map((iconData, iconIdx) => (
+                          <img
+                            key={iconIdx}
+                            className="icons-projects w-10 h-10 sm:w-14 sm:h-14 shadow-[0_0_10px_var(--icon-shadow-color)]"
+                            src={iconData.icon}
+                            style={{ '--icon-shadow-color': iconData.color } as React.CSSProperties}
+                          />
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col mt-6">
+                      <div className="text-lg sm:text-2xl text-accent white:text-light-blue border-red-500 mb-2">{s.title}</div>
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                      <br />
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                      <br />
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                      <br />
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+              )}
+
+
             </article>
           ))}
+
+
+
         </div>
 
 
@@ -652,6 +796,7 @@ export default function Projects() {
 
       )}
 
+
       {/* MODAL IMPORTANT */}
       {showModalImportant && (
         <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
@@ -661,7 +806,7 @@ export default function Projects() {
             onClick={() => setShowModalImportant(false)}
           />
 
-          <div className="relative rounded-3xl text-xs text-center w-fit h-fit max-w-[250px] bg-background white:bg-text flex items-center justify-center p-6 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+          <div className="relative rounded-3xl text-sm text-center w-fit h-fit max-w-[250px] bg-background white:bg-text flex items-center justify-center p-6 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
             <button
               onClick={() => setShowModalImportant(false)}
               className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"

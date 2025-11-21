@@ -182,14 +182,14 @@ body {
 }
 
 .icons {  
-  padding: 8px;
+  padding: 6px;
   transition: 300 ease-in-out;
   border-radius: 6px;
   border: 1px solid var(--color-text-dark);
 }
 
 .icons-projects{
-  padding: 8px;
+  padding: 6px;
   transition: 300 ease-in-out;
   border-radius: 6px;
   border: 1px solid var(--color-text-dark);
