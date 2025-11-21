@@ -51,7 +51,7 @@ import move2 from "../../assets/projects/MoveIt/MoveLightMobile2.png";
 import move3 from "../../assets/projects/MoveIt/MoveLightMobile3.png";
 import move4 from "../../assets/projects/MoveIt/MoveLightMobile4.png";
 
-import hero1desktop from "../../assets/projects/BeTheHero/heroMobile1.png";
+import hero1desktop from "../../assets/projects/BeTheHero/HeroMobile1.png";
 import hero1 from "../../assets/projects/BeTheHero/heroDesktop1.png";
 import hero2 from "../../assets/projects/BeTheHero/heroDesktop2.png";
 import hero3 from "../../assets/projects/BeTheHero/heroDesktop3.png";
