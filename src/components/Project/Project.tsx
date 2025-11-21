@@ -52,9 +52,9 @@ import move3 from "../../assets/projects/MoveIt/MoveLightMobile3.png";
 import move4 from "../../assets/projects/MoveIt/MoveLightMobile4.png";
 
 import hero1desktop from "../../assets/projects/BeTheHero/HeroMobile1.png";
-import hero1 from "../../assets/projects/BeTheHero/heroDesktop1.png";
-import hero2 from "../../assets/projects/BeTheHero/heroDesktop2.png";
-import hero3 from "../../assets/projects/BeTheHero/heroDesktop3.png";
+import hero1 from "../../assets/projects/BeTheHero/HeroDesktop1.png";
+import hero2 from "../../assets/projects/BeTheHero/HeroDesktop2.png";
+import hero3 from "../../assets/projects/BeTheHero/HeroDesktop3.png";
 
 import tft1desktop from "../../assets/projects/tft-store/tft-store1-square.png";
 import tft1 from "../../assets/projects/tft-store/tft-store1-vertical2.png";
