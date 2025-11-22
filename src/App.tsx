@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 
-import bgVideo from './assets/videos/waves-video3.mp4';
+import bgVideo from './assets/videos/waves-slow.mp4';
 import bgVideoWhite from './assets/videos/white-video.mp4';
 const Home = React.lazy(() => import('./components/Home/Home'));
 const Project = React.lazy(() => import('./components/Project/Project'));
