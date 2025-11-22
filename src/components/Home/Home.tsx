@@ -164,7 +164,7 @@ function Hero({ theme }: HeroProps) {
                 <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-xs sm:text-xl w-30 sm:w-60 mr-5 sm:mr-15 mb-30">{t("home.text")}</h5>
               </div>
 
-              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2400" className="absolute bottom-0 left-0 w-50 sm:w-70" src={bg} />
+              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2400" className="absolute bottom-0 left-0 w-50 sm:w-70" src={bg} />
    
 
             {/* ABOUT BUTTON */}
