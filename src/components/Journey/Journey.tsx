@@ -203,7 +203,7 @@ function Journey() {
                             <br />
                             {t("about.paragraph4")}
                         </h1>
-                        <button className='mt-10 px-4 py-2 rounded-full bg-accent pointer'>{t("about.certificate")}</button>
+                        <button className='mt-10 px-4 py-2 rounded-full bg-accent white:bg-light-blue pointer'>{t("about.certificate")}</button>
                     </div>
 
                     {/* CAROUSEL */}

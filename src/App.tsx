@@ -1,5 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 
+import bgVideo from './assets/videos/waves-video3.mp4';
+import bgVideoWhite from './assets/videos/white-video.mp4';
 const Home = React.lazy(() => import('./components/Home/Home'));
 const Project = React.lazy(() => import('./components/Project/Project'));
 const Journey = React.lazy(() => import('./components/Journey/Journey'));
@@ -38,9 +40,13 @@ function App() {
 
   return (
     // Apply the 'white' class here to wrap the entire application
-    <div className={`${theme === 'white' ? 'white' : ''} bg-[url('./assets/bg/vortex1cut2.png')] bg-cover bg-left white:bg-[url('./assets/bg/white-full2.png')]`}>
+    <div className={`${theme === 'white' ? 'white' : ''} relative`}>
+      <video key={theme} autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover -z-10">
+        <source src={theme === 'white' ? bgVideoWhite : bgVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-0 z-9998'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-0 z-50'>
 
         {theme === 'white' &&
           <button
@@ -54,11 +60,11 @@ function App() {
             onClick={() => {
               setTheme('white');
             }}
-            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-6 w-6 sm:w-9 sm:h-9 text-accent white:text-light-blue' /></button>
+            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-6 w-6 sm:w-9 smh-9 text-accent white:text-light-blue' /></button>
         }
 
       </div>
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 sm:right-12  z-9998'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 sm:right-12  z-50'>
 
         {language === '' &&
           <button
@@ -79,35 +85,38 @@ function App() {
 
       </div>
 
-      <Suspense fallback={<div></div>}>
-        <Home theme={theme} />
-      </Suspense>
+      {/* Content on top of the video */}
+      <div className="relative z-10">
+        <Suspense fallback={<div></div>}>
+          <Home theme={theme} />
+        </Suspense>
 
-      <Suspense fallback={<div></div>}>
-        <Journey />
-      </Suspense>
+        <Suspense fallback={<div></div>}>
+          <Journey />
+        </Suspense>
 
-      {/* <Suspense fallback={<div></div>}>
+        {/* <Suspense fallback={<div></div>}>
         <Teste />
       </Suspense> */}
 
-      <Suspense fallback={<div></div>}>
-        <Project />
-      </Suspense>
+        <Suspense fallback={<div></div>}>
+          <Project />
+        </Suspense>
 
-      <Suspense fallback={<div></div>}>
-        <Contact />
-      </Suspense>
+        <Suspense fallback={<div></div>}>
+          <Contact />
+        </Suspense>
 
-      {/* 
+        {/* 
       <Home theme={theme} /> */}
 
-      {/* <About /> */}
-      {/* <Journey />
+        {/* <About /> */}
+        {/* <Journey />
       <Teste />
       <Project />
 
       <Contact /> */}
+      </div>
     </div>
   )
 }

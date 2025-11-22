@@ -73,6 +73,8 @@ import portfolio1 from "../../assets/projects/portfolio/port1.png";
 import portfolio2 from "../../assets/projects/portfolio/port2.png";
 import portfolio3 from "../../assets/projects/portfolio/port3.png";
 import portfolio4 from "../../assets/projects/portfolio/port4.png";
+import portfolio5 from "../../assets/projects/portfolio/port5.png";
+import portfolio6 from "../../assets/projects/portfolio/port6.png";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -300,7 +302,7 @@ export default function Projects() {
           color: "#4faa41"
         },
       ],
-      images: [portfolio1, portfolio2, portfolio3, portfolio4],
+      images: [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6],
       desktop: portfolio1desktop,
       links: [
         {
@@ -664,7 +666,7 @@ export default function Projects() {
                   }
                   {/* <div className="absolute bottom-8 left-55 text-xs text-accent white:text-light-blue w-60  border-red-500">details</div> */}
 
-                  <h1 className="text-accent absolute bottom-6 right-6 pointer"
+                  <h1 className="text-accent white:text-light-blue absolute bottom-6 right-6 pointer"
                     onClick={() => {
                       setShowModalDetails(true);
                     }}
@@ -705,7 +707,7 @@ export default function Projects() {
                     onClick={() => setShowModalDetails(false)}
                   />
 
-                  <div className="border-blue-500 relative rounded-3xl text-sm min-h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-6 py-10 animate-zoomIn ">
+                  <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-6 py-10 animate-zoomIn ">
                     <button
                       onClick={() => setShowModalDetails(false)}
                       className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
@@ -725,15 +727,15 @@ export default function Projects() {
                       </div>
                     </div>
 
-                    <div className="flex flex-col mt-6">
+                    <div className="flex flex-col mt-6 white:text-text-dark ">
                       <div className="text-lg sm:text-2xl text-accent white:text-light-blue border-red-500 mb-2">{s.title}</div>
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full1}</div>
+                      <div className="text-xs sm:text-base border-red-500">{s.full1}</div>
                       <br />
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full2}</div>
+                      <div className="text-xs sm:text-base border-red-500">{s.full2}</div>
                       <br />
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full3}</div>
+                      <div className="text-xs sm:text-base border-red-500">{s.full3}</div>
                       <br />
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full4}</div>
+                      <div className="text-xs sm:text-base border-red-500">{s.full4}</div>
                     </div>
                   </div>
 
