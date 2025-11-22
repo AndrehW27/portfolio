@@ -36,7 +36,7 @@ function Journey() {
                     <div className='w-35  sm:w-100 border-red-500 flex flex-col justify-start items-center'>
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-blue-500 flex justify-end items-start'>
                             <div>
-                                <img loading="lazy" data-aos="fade-right" className=' icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#3594d2] white:shadow-[0_0_10px_#3594d2] transition' src={logic} />
+                                <img loading="lazy" data-aos="fade-right" className=' icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#3594d2] white:shadow-[0_0_10px_#3594d2] transition' src={logic} />
                             </div>
                         </div>
                         <div className='w-40 pl-6 sm:w-100 h-40 sm:h-60 border-orange-500  flex justify-center items-start'>
@@ -48,9 +48,9 @@ function Journey() {
 
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-orange-500 flex justify-end items-start'>
                             <div data-aos="fade-right" className='flex align-center justify-center gap-2 sm:gap-4'>
-                                <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                                <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                                <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                                <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                             </div>
                         </div>
                         <div className='w-40 pl-6 sm:w-100 h-40 sm:h-60  border-orange-500 flex justify-center items-start'>
@@ -63,14 +63,14 @@ function Journey() {
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-orange-500 flex justify-end items-start'>
                             <div data-aos="fade-right">
                                 <div className='flex align-center justify-center gap-2 sm:gap-4'>
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5b00d1] white:shadow-[0_0_10px_#5b00d1] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5b00d1] white:shadow-[0_0_10px_#5b00d1] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
                                 </div>
                                 <div className='flex align-center justify-center gap-2 sm:gap-4 mt-5'>
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 border border-text-dark  bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#007acc] white:shadow-[0_0_10px_#007acc] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 border border-text-dark  bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#007acc] white:shadow-[0_0_10px_#007acc] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
                                 </div>
                             </div>
                         </div>
@@ -137,8 +137,8 @@ function Journey() {
 
                         <div className='w-40 sm:w-100 h-40 sm:h-60  border-orange-500 flex justify-start items-start'>
                             <div data-aos="fade-left" className='flex align-center justify-center gap-2 sm:gap-4'>
-                                <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src={settings} />
-                                <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src={english} />
+                                <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src={settings} />
+                                <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src={english} />
                             </div>
                         </div>
                         <div className='w-40 pr-6 sm:w-100 h-40 sm:h-60  border-orange-500 flex justify-center items-start'>
@@ -150,14 +150,14 @@ function Journey() {
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-orange-500 flex justify-start items-start'>
                             <div data-aos="fade-left" >
                                 <div className='flex align-center justify-center gap-2 sm:gap-4'>
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                                    <img loading="lazy" className='icons  w-9 h-9 sm:w-15 sm:h-15 bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
                                 </div>
                                 <div className='flex align-center justify-center gap-2 sm:gap-4 mt-5'>
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#6762a6] white:shadow-[0_0_10px_#6762a6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#4f982e] white:shadow-[0_0_10px_#4f982e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#8e13fd] white:shadow-[0_0_10px_#8e13fd]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#6762a6] white:shadow-[0_0_10px_#6762a6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#4f982e] white:shadow-[0_0_10px_#4f982e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#8e13fd] white:shadow-[0_0_10px_#8e13fd]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
                                 </div>
                             </div>
                         </div>
@@ -172,13 +172,13 @@ function Journey() {
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-orange-500 flex justify-start items-start'>
                             <div data-aos="fade-left">
                                 <div className='flex align-center justify-center gap-2 sm:gap-4'>
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
                                     <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 border border-text-dark  bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
                                 </div>
                                 <div className='flex align-center justify-center gap-2 sm:gap-4 mt-5'>
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
-                                    <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                                    <img loading="lazy" className='icons bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#29acdb] white:shadow-[0_0_10px_#29acdb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
                                     <img loading="lazy" className='icons w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#e0e0e6] bg-text white:shadow-[0_0_10px_#e0e0e6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
                                 </div>
                             </div>
@@ -207,93 +207,6 @@ function Journey() {
                     </div>
 
                     {/* CAROUSEL */}
-                    {/* <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="10" className="absolute top-0 border-red-500 carousel w-dvw sm:w-100 text-accent white:text-light-blue">
-                        <div className="border-blue-500 group ">
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
-                            </div>
-                        </div>
-                        <div className="border-blue-500 group ">
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#4faa41] white:shadow-[0_0_10px_#4faa41]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-                            </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#ea23a4]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-                            </div>
-                            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
-                            </div>
-                        </div>
-
-                    </div> */}
-
-                    {/* CAROUSEL */}
                     <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="10" className="absolute bottom-0 border-red-500 carousel w-dvw sm:w-100 text-accent white:text-light-blue z-700">
                         <div className="border-blue-500 group ">
                             <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
@@ -317,9 +230,6 @@ function Journey() {
                             <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
                             </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                            </div>
                             <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
                             </div>
@@ -328,6 +238,9 @@ function Journey() {
                             </div>
                             <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                            </div>
+                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                                <img loading="lazy" className='icons bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
                             </div>
                             <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#ff9900]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
@@ -358,9 +271,6 @@ function Journey() {
                             <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-background bg-text shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
                             </div>
-                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
-                                <img loading="lazy" className='icons bg-background bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                            </div>
                             <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#d32a2d] white:shadow-[0_0_10px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
                             </div>
@@ -369,6 +279,9 @@ function Journey() {
                             </div>
                             <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                            </div>
+                            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
+                                <img loading="lazy" className='icons bg-background bg-text shadow-[0_0_10px_#a9bfd1] white:shadow-[0_0_10px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
                             </div>
                             <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[5rem] sm:w-5rem sm:h-5rem">
                                 <img loading="lazy" className='icons bg-background shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />

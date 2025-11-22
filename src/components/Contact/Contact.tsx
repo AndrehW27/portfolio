@@ -1,6 +1,7 @@
 import './Contact.css'
 import { ChevronUp } from "lucide-react";
 import wpp from "../../assets/icons/whatsapp.png"
+import trail from "../../assets/icons/trailhead.png"
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 
@@ -32,7 +33,7 @@ function Contact() {
         </a>
 
         {/* SOCIAL MEDIA */}
-        <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-40 sm:w-70 h-fit flex items-center justify-evenly'>
+        <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-60 sm:w-80 h-fit flex items-center justify-evenly'>
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
             <div className='w-9 h-9 sm:w-15 sm:h-15 p-1.5 rounded-md shadow-[0_0_10px_#0076b2]'>
               <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
@@ -45,8 +46,15 @@ function Contact() {
             </div>
           </a>
 
-          <a 
-            href="https://wa.me/5511992603675?text=Hello%20André,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!"
+          <a href="https://www.salesforce.com/trailblazer/andrehwillian"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-9 h-9 sm:w-15 sm:h-15 rounded-md shadow-[0_0_10px_#0076b2] flex items-center justify-center"
+          >
+            <img loading="lazy" src={trail} alt="WhatsApp" />
+          </a>
+
+          <a href="https://wa.me/5511992603675?text=Hello%20André,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!"
             target="_blank"
             rel="noopener noreferrer"
             className="w-9 h-9 sm:w-15 sm:h-15 p-1.5 rounded-md shadow-[0_0_10px_#29a71a] flex items-center justify-center"
