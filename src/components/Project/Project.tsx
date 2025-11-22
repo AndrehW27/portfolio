@@ -108,6 +108,10 @@ export default function Projects() {
         }
       ],
       description: t("project.zera.description"),
+      full1: t("project.zera.full1"),
+      full2: t("project.zera.full2"),
+      full3: t("project.zera.full3"),
+      full4: t("project.zera.full4"),
       message: [
         {
           hasMsg: false,
@@ -115,6 +119,7 @@ export default function Projects() {
         }
       ],
     },
+
     {
       title: t("project.security.title"),
       icons: [
@@ -144,6 +149,10 @@ export default function Projects() {
         }
       ],
       description: t("project.security.description"),
+      full1: t("project.security.full1"),
+      full2: t("project.security.full2"),
+      full3: t("project.security.full3"),
+      full4: t("project.security.full4"),
       message: [
         {
           hasMsg: true,
@@ -151,6 +160,7 @@ export default function Projects() {
         }
       ]
     },
+
     {
       title: t("project.portal.title"),
       icons: [
@@ -180,6 +190,10 @@ export default function Projects() {
         }
       ],
       description: t("project.portal.description"),
+      full1: t("project.portal.full1"),
+      full2: t("project.portal.full2"),
+      full3: t("project.portal.full3"),
+      full4: t("project.portal.full4"),
       message: [
         {
           hasMsg: true,
@@ -187,6 +201,7 @@ export default function Projects() {
         }
       ]
     },
+
     {
       title: t("project.impacta.title"),
       icons: [
@@ -216,6 +231,10 @@ export default function Projects() {
         }
       ],
       description: t("project.impacta.description"),
+      full1: t("project.impacta.full1"),
+      full2: t("project.impacta.full2"),
+      full3: t("project.impacta.full3"),
+      full4: t("project.impacta.full4"),
       message: [
         {
           hasMsg: false,
@@ -223,6 +242,7 @@ export default function Projects() {
         }
       ],
     },
+
     {
       title: t("project.poke.title"),
       icons: [
@@ -252,6 +272,10 @@ export default function Projects() {
       images: [poke1, poke2, poke3, poke4, poke5, poke6],
       desktop: poke1desktop,
       description: t("project.poke.description"),
+      full1: t("project.poke.full1"),
+      full2: t("project.poke.full2"),
+      full3: t("project.poke.full3"),
+      full4: t("project.poke.full4"),
       message: [
         {
           hasMsg: false,
@@ -259,6 +283,7 @@ export default function Projects() {
         }
       ],
     },
+
     {
       title: t("project.port.title"),
       icons: [
@@ -288,6 +313,10 @@ export default function Projects() {
         }
       ],
       description: t("project.port.description"),
+      full1: t("project.port.full1"),
+      full2: t("project.port.full2"),
+      full3: t("project.port.full3"),
+      full4: t("project.port.full4"),
       message: [
         {
           hasMsg: false,
@@ -295,6 +324,7 @@ export default function Projects() {
         }
       ],
     },
+
     {
       title: t("project.tft.title"),
       icons: [
@@ -324,6 +354,10 @@ export default function Projects() {
       images: [tft1],
       desktop: tft1desktop,
       description: t("project.tft.description"),
+      full1: t("project.tft.full1"),
+      full2: t("project.tft.full2"),
+      full3: t("project.tft.full3"),
+      full4: t("project.tft.full4"),
       message: [
         {
           hasMsg: false,
@@ -361,6 +395,10 @@ export default function Projects() {
       images: [move1, move2, move3, move4],
       desktop: move1desktop,
       description: t("project.move.description"),
+      full1: t("project.move.full1"),
+      full2: t("project.move.full2"),
+      full3: t("project.move.full3"),
+      full4: t("project.move.full4"),
       message: [
         {
           hasMsg: false,
@@ -398,6 +436,10 @@ export default function Projects() {
       images: [hero1, hero2, hero3],
       desktop: hero1desktop,
       description: t("project.hero.description"),
+      full1: t("project.hero.full1"),
+      full2: t("project.hero.full2"),
+      full3: t("project.hero.full3"),
+      full4: t("project.hero.full4"),
       message: [
         {
           hasMsg: false,
@@ -406,7 +448,7 @@ export default function Projects() {
       ],
     },
 
-        {
+    {
       title: t("project.net.title"),
       icons: [
         {
@@ -414,8 +456,8 @@ export default function Projects() {
           color: "#61dafb"
         },
         {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-          color: "#007acc"
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          color: "#f0db4f"
         },
         {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
@@ -435,6 +477,10 @@ export default function Projects() {
       images: [netflix1, netflix2],
       desktop: netflix1desktop,
       description: t("project.net.description"),
+      full1: t("project.net.full1"),
+      full2: t("project.net.full2"),
+      full3: t("project.net.full3"),
+      full4: t("project.net.full4"),
       message: [
         {
           hasMsg: false,
@@ -569,7 +615,7 @@ export default function Projects() {
                   <div className="absolute top-42 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
                   <div className="absolute top-42 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div> */}
 
-                  <div className='absolute  bottom-48 sm:bottom-60 w-full sm:w-[460px] sm:w-100 flex justify-center items-start'>
+                  <div className='absolute bottom-48 sm:bottom-60 w-full sm:w-[460px] sm:w-100 flex justify-center items-start'>
                     <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                       {s.icons.map((iconData, iconIdx) => (
                         <img
@@ -607,7 +653,7 @@ export default function Projects() {
                   </div>
 
                   {s.message[0].hasMsg &&
-                    <div className="absolute bottom-6 w-full flex justify-start">
+                    <div className="absolute bottom-6 w-full flex justify-start font-bold">
                       <h1
                         onClick={() => {
                           setShowModalImportant(true);
@@ -622,7 +668,7 @@ export default function Projects() {
                     onClick={() => {
                       setShowModalDetails(true);
                     }}
-                  >details
+                  >{t("project.details")}
                   </h1>
 
                   <button
@@ -655,18 +701,18 @@ export default function Projects() {
                 <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
 
                   <div
-                    className="absolute h-[100dvh] w-[100dvw] inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+                    className="border-green-500 absolute h-[100dvh] w-[100dvw] inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
                     onClick={() => setShowModalDetails(false)}
                   />
 
-                  <div className="relative rounded-3xl text-sm w-fit h-fit max-w-[250px] bg-background white:bg-text flex flex-col items-center justify-center px-6 py-10 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+                  <div className="border-blue-500 relative rounded-3xl text-sm min-h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-6 py-10 animate-zoomIn ">
                     <button
                       onClick={() => setShowModalDetails(false)}
                       className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
                     >
                       X
                     </button>
-                    <div className='flex justify-center items-start'>
+                    <div className='border-pink-500 flex justify-center items-start'>
                       <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
                         {s.icons.map((iconData, iconIdx) => (
                           <img
@@ -681,13 +727,13 @@ export default function Projects() {
 
                     <div className="flex flex-col mt-6">
                       <div className="text-lg sm:text-2xl text-accent white:text-light-blue border-red-500 mb-2">{s.title}</div>
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full1}</div>
                       <br />
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full2}</div>
                       <br />
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full3}</div>
                       <br />
-                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.description}</div>
+                      <div className="text-xs sm:text-base  white:text-text border-red-500">{s.full4}</div>
                     </div>
                   </div>
 
