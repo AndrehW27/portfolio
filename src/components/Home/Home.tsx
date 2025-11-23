@@ -161,10 +161,11 @@ function Hero({ theme }: HeroProps) {
 
 
             {/* IMG */}
-            <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-45px] sm:left-[-80px] w-90 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
-              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2400" className="absolute rounded-3xl bottom-0 left-10 w-70 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} />
-              {/* <div className='abosulute top-0 right-0 w-80 h-full bg-[linear-gradient(to_left,#111_25%,transparent_60%)] z-200'></div> */}
-              {/* <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-xs sm:text-xl w-30 sm:w-60 mr-5 sm:mr-15 mb-30">{t("home.text")}</h5> */}
+            <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-45px] sm:left-[-80px] w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
+              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} />
+              <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_35%,transparent_60%)] z-200 border-red-500'>
+                <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-20 right-10 border-blue-500 text-xs sm:text-xl w-30 sm:w-60">{t("home.text")}</h5>
+              </div>
             </div>
 
 
