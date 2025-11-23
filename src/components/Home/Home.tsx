@@ -1,7 +1,7 @@
 import './Home.css'
 import { ChevronDown, Wallpaper, DatabaseBackup, Gauge } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import bg from "../../assets/Me/me_art_modern-nobg.png";
+import bg from "../../assets/Me/me-pc2.png";
 
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -157,15 +157,17 @@ function Hero({ theme }: HeroProps) {
             </div>
 
 
+            {/* <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2400" className="absolute rounded-3xl bottom-0 left-0 w-65 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} /> */}
 
 
             {/* IMG */}
-              <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-60px] sm:left-[-60px] w-95 sm:w-160 h-60 sm:h-90 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
-                <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-xs sm:text-xl w-30 sm:w-60 mr-5 sm:mr-15 mb-30">{t("home.text")}</h5>
-              </div>
+            <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-45px] sm:left-[-80px] w-90 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
+              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2400" className="absolute rounded-3xl bottom-0 left-10 w-70 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} />
+              {/* <div className='abosulute top-0 right-0 w-80 h-full bg-[linear-gradient(to_left,#111_25%,transparent_60%)] z-200'></div> */}
+              {/* <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="text-xs sm:text-xl w-30 sm:w-60 mr-5 sm:mr-15 mb-30">{t("home.text")}</h5> */}
+            </div>
 
-              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2400" className="absolute bottom-0 left-0 w-50 sm:w-70" src={bg} />
-   
+
 
             {/* ABOUT BUTTON */}
             {/* <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" href="#about">
