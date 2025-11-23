@@ -4,500 +4,178 @@ import "./Teste.css";
 // import video from "../../assets/videos/wave-dna.mp4";
 // import { ChevronDown } from "lucide-react";
 
-export default function Teste() {
+import { ChevronDown, Wallpaper, DatabaseBackup, Gauge } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import bg from "../../assets/Me/me-pc2.png";
+
+import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import wavesDark from '../../assets/videos/waves-video2.mp4';
+import wavesLight from '../../assets/videos/white-video.mp4';
+
+type HeroProps = {
+  theme: string;
+};
+
+// export default function Teste()
+
+function Teste({ theme }: HeroProps) {
+
+    const { t } = useTranslation();
+  
+
+  // Decide which video to use
+  const videoSrc = theme === "white" ? wavesLight : wavesDark;
+
+  // const videoSrc = theme === "white" ? wavesDarkLight;
+
+  // Animate ONLY the video
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useLayoutEffect(() => {
+    if (!videoRef.current) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(videoRef.current, {
+      scale: 2,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: videoRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+        markers: false
+      }
+    });
+  }, [theme]);
+  // IMPORTANT: re-run when theme switches (so GSAP resets)
+
+  // Fade content slightly
+  const ContentFade = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (!ContentFade.current) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(ContentFade.current, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ContentFade.current,
+        start: "top 5%",
+        end: "bottom top",
+        scrub: true,
+        markers: false
+      }
+    });
+  }, []);
+
 
   return (
+
     <>
       {/* <section id="test" className="bg-fixed h-[100dvh] w-dvw"> */}
-      <section id="test" className="bg-fixed h-[100dvh] w-dvw bg-[url('./assets/bg/parallaxvert1.png')] bg-cover bg-center">
-        {/* 
-        <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center  border-red-500 bg-gradient-to-tr bg-blur from-accent from-[5%] via-surface via-[50%] to-background to-[90%]">
-          <div className="relative bg-white/10 rounded-3xl h-[55dvh] w-[80dvw]">
-            <h1 className="absolute left-10 top-10 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-20 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-30 text-text font-bold">Fullstack Developer</h1>
-            <img loading="lazy" className="absolute left-0 bottom-0 card w-40" src={bg} />
-          </div>
-        </div> */}
+      <section className="bg-background white:bg-text ">
 
-        {/* -------------------------------------------------------------------- */}
+        {/* HERO SECTION */}
+        <section className="relative w-dvw h-dvh flex flex-col items-center justify-center overflow-hidden">
 
-        {/* <div className="bg-fixed relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
+          {/* ✅ Dynamic theme-based video */}
           <video
-            key={video}
-            className="fixed top-0 left-0 w-full h-full object-cover -z-10"
-            src={video}
-            autoPlay
-            muted
-            loop
-            playsInline
-          /> */}
-
-          {/* <div className="relative bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%] rounded-3xl to-accent to-[90%] h-[55dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
-            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
-
-            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-              <img loading="lazy" className="w-40" src={bg} />
-
-              <div className='text-text text-xs w-33 mb-8 font-bold'>
-                <div className='flex mb-5'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Wallpaper />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
-                </div>
-                <div className='flex mb-5'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Gauge />
-                  </div>
-                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
-                </div>
-                <div className='flex '>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <DatabaseBackup />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
-                </div>
-                <div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
-        {/* </div> */}
-
-        {/* -------------------------------------------------------------------- */}
-
-        {/* <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
-
-          <div className="relative video-wrapper rounded-3xl h-[55dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
-
-            <video
-              key={video}
-              className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl"
-              src={video}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
-
-            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-              <img loading="lazy" className="w-40" src={bg} />
-
-              <div className='text-text text-xs w-33 mb-8 font-bold'>
-                <div className='flex mb-5'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Wallpaper />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
-                </div>
-                <div className='flex mb-5'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Gauge />
-                  </div>
-                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
-                </div>
-                <div className='flex '>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <DatabaseBackup />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
-                </div>
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div> */}
-
-        {/* -------------------------------------------------------------------- */}
-
-        {/* <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
-          <video
-            key={video}
+            key={videoSrc}
+            // forcing React to reload video smoothly when theme changes
+            ref={videoRef}
             className="absolute top-0 left-0 w-full h-full object-cover"
-            src={video}
+            src={videoSrc}
             autoPlay
             muted
             loop
             playsInline
           />
 
-          <div className="relative video-wrapper rounded-3xl h-[55dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
+          {/* GSAP CONTAINER ZOOM OUT VIDEO */}
+          <div ref={ContentFade} className="relative z-10 w-dvw sm:w-fit  h-dvh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
 
-            <video
-              key={video}
-              className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl"
-              src={video}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
-
-            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-              <img loading="lazy" className="w-40" src={bg} />
-
-              <div className='text-text text-xs w-33 mb-8 font-bold'>
-                <div className='flex mb-5'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Wallpaper />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
-                </div>
-                <div className='flex mb-5'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Gauge />
-                  </div>
-                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
-                </div>
-                <div className='flex '>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <DatabaseBackup />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
-                </div>
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a className="up-and-down absolute bottom-10 text-text" href="#about">
-            <ChevronDown />
-          </a>
-
-        </div> */}
-
-        {/* -------------------------------------------------------------------- */}
-{/* 
-        <div className="relative video-wrapper h-[100dvh] w-[100dvw]   shadow-[0_0_20px_#7C3AED]">
-
-          <video
-            key={video}
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            src={video}
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-          <h1 className="absolute left-10 top-18 text-xl text-text font-bold">Hello there, welcome!</h1>
-          <h1 className="absolute left-10 top-30 text-3xl text-accent font-bold">I'm André Willian</h1>
-          <h1 className="absolute left-10 top-40 text-xl text-text font-bold typing">Fullstack Developer</h1>
-
-          <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-            <img loading="lazy" className="w-50" src={bg} />
-
-            <div className='absolute text-text text-xs w-70 left-10 bottom-90 font-bold'>
-              <div className='flex mb-3'>
-                <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                  <Wallpaper />
-                </div>
-                <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
-              </div>
-              <div className='flex mb-3'>
-                <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                  <Gauge />
-                </div>
-                <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
-              </div>
-              <div className='flex '>
-                <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                  <DatabaseBackup />
-                </div>
-                <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
-              </div>
+            {/* BALLS */}
+            {/* {theme !== "white" &&
               <div>
+                <div className='balls top-30 left-20 w-10 h-10 up-and-down1' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800"></div>
+                <div className='balls top-30 left-50 w-20 h-20 up-and-down1' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800"></div>
+                <div className='balls top-45 left-8 w-3 h-3 up-and-down2' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000"></div>
+                <div className='balls top-55 right-4 w-8 h-8 up-and-down2' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000"></div>
+                <div className='balls top-55 left-25 w-15 h-15 up-and-down2' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000"></div>
+                <div className='balls top-70 left-12 w-8 h-8 up-and-down3' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></div>
+                <div className='balls top-75 right-20 w-10 h-10 up-and-down3' data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></div>
               </div>
-            </div>
-          </div>
-        </div> */}
+            } */}
 
-        {/* -------------------------------------------------------------------- */}
+            {/* SENTENCES */}
 
-        {/* <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
-          <video
-            key={video}
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            src={video}
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-
-          <img loading="lazy" className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
-
-
-          <div className="relative video-wrapper rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
-
-            <video
-              key={video}
-              className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl "
-              src={video}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
-
-
-
-            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-
-              <div className='text-text text-xs w-60 mb-18 ml-10 font-bold'>
-                <div className='flex mb-2'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Wallpaper />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
+            <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute top-30 left-[-45px] sm:left-[-80px] w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
+              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} />
+              <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_35%,transparent_60%)] z-200 border-red-500'>
+                <div className='absolute top-10 right-10 border-accent ml-10 sm:ml-0'>
+                  <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="text-xs sm:text-3xl">{t("home.welcome")}</h1>
+                  <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="mt-5  text-base sm:text-5xl  rounded-full text-accent white:text-light-blue">{t("home.title")}</h1>
+                  <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className=" typing text-sm sm:text-3xl text-text  white:text-dark-gray border-r-3 "><span className='text-2xl sm:text-4xl'>‹ </span>{t("home.subtitle")}<span className='text-2xl sm:text-4xl'> ›</span></h3>
                 </div>
-                <div className='flex mb-2'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Gauge />
-                  </div>
-                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
-                </div>
-                <div className='flex '>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <DatabaseBackup />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
-                </div>
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-        </div> */}
-
-        {/* -------------------------------------------------------------------- */}
-
-        {/* <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
-          <video
-            key={video}
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            src={video}
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-
-          <img loading="lazy" className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
-
-
-          <div className="relative bg-black/50 rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
-
-
-            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
-
-
-
-            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-
-              <div className='text-text text-xs w-60 mb-18 ml-10 font-bold'>
-                <div className='flex mb-2'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Wallpaper />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
-                </div>
-                <div className='flex mb-2'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Gauge />
-                  </div>
-                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
-                </div>
-                <div className='flex '>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <DatabaseBackup />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
-                </div>
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-        </div> */}
-
-        {/* -------------------------------------------------------------------- */}
-
-        {/* <div className="bg-gradient-to-tr from-accent from-[5%] via-surface via-[50%] to-background to-[90%]  relative h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 red-500 overflow-hidden">
-          <video
-            key={video}
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            src={video}
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-
-          <img loading="lazy" className="absolute bottom-0 left-0 z-9999 w-40" src={bg} />
-
-
-          <div className="relative bg-gradient-to-tr bg-blur from-accent from-[5%] via-surface via-[50%] to-background to-[90%] rounded-3xl h-[50dvh] w-[85dvw]   shadow-[0_0_20px_#7C3AED]">
-
-
-            <h1 className="absolute left-10 top-8 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-16 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-24 text-text font-bold">Fullstack Developer</h1>
-
-
-
-            <div className="absolute left-0 bottom-0 flex items-end justify-center ">
-
-              <div className='text-text text-xs w-60 mb-18 ml-10 font-bold'>
-                <div className='flex mb-2'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Wallpaper />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Modern and highly performant applications.</h1>
-                </div>
-                <div className='flex mb-2'>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <Gauge />
-                  </div>
-                  <h1 className='white:text-dark-gray'>High avaliablity and low-latency API.</h1>
-                </div>
-                <div className='flex '>
-                  <div className='text-accent white:text-light-blue w-10 h-10 mr-2'>
-                    <DatabaseBackup />
-                  </div>
-                  <h1 className='white:text-dark-gray'>Secure development and deployment proceses.</h1>
-                </div>
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-        </div> */}
-
-        {/* -------------------------------------------------------------------- */}
-
-
-
-        {/* ABOUT BUTTON */}
-        {/* <a href="#about">
-            <button className="absolute left-32 bottom-30 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-accent white:bg-text-dark text-text white:text-text white:from-light-blue to-dark-gray font-bold py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
-              About Me
-            </button>
-          </a> */}
-
-        {/* DOWN CHEVRON */}
-        {/* <a className="up-and-down absolute bottom-6 text-text" href="#about">
-          <ChevronDown />
-        </a> */}
-
-
-
-        {/* <div className="h-[100dvh] w-[100dvw] flex flex-col items-center justify-center border-2 border-red-500">
-          <div className="relative bg-white/10  rounded-3xl to-accent to-[90%] h-[55dvh] w-[80dvw]">
-
-            <h1 className="absolute left-10 top-10 text-text font-bold">Hello there, welcome!</h1>
-            <h1 className="absolute left-10 top-20 text-2xl text-accent font-bold">I'm André Willian</h1>
-            <h1 className="absolute left-10 top-30 text-text font-bold">Fullstack Developer</h1>
-
-            <img loading="lazy" className="absolute left-0 bottom-0 card w-40" src={bg} />
-
-          </div>
-        </div> */}
-
-
-        {/* <div className="absolute top-15 left-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] BORDER border-surface">
-          <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
-          </div>
-        </div>
-        <div className="absolute top-15 right-85 bg-cover h-[85dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface">
-          <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
-          </div>
-        </div>
-
-        <div className="absolute top-15 bg-cover h-[85dvh] w-[78dvw] bg-center bg-no-repeat rounded-3xl shadow-[0_0_10px_#7C3AED]  border-surface" style={{ backgroundImage: `url(${bg})` }}>
-          <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
-
-            <div className='absolute bottom-35 left-15 w-40 sm:w-100 border-orange-500 flex justify-center items-start'>
-              <div className='flex align-center justify-center gap-2 sm:gap-4 z-100'>
-                <img loading="lazy" className='icons shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                <img loading="lazy" className='icons shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                <img loading="lazy" className='icons shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                {/* <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-20 right-10 border-blue-500 text-xs sm:text-xl w-30 sm:w-60">{t("home.text")}</h5> */}
               </div>
             </div>
 
-            <h1 className="absolute bottom-20 left-6 text-text text-xs w-55">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</h1>
 
-            <div className="absolute bottom-6 left-6 text-sm font-bold bg-white/70 text-black/80 px-5 py-2 rounded-2xl">Code</div>
-            <div className="absolute bottom-6 left-28 text-sm font-bold bg-accent/70 text-white/80 px-5 py-2 rounded-2xl">Demo</div>
+            <div className='absolute bottom-10 text-xs sm:text-xl mt-10 sm:mt-20 w-80 ml-10 sm:ml-0 sm:w-160 border-orange'>
+
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
+                <div className='text-accent white:text-light-blue mr-3 mb-6'>
+                  <Wallpaper className='sm:w-8 h-8 sm:mr-2' />
+                </div>
+                <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
+              </div>
+
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200" className='flex'>
+                <div className='text-accent white:text-light-blue mr-3 mb-6'>
+                  <Gauge className='sm:w-8 h-8 sm:mr-2' />
+                </div>
+                <h1 className='white:text-dark-gray'>{t("home.api")}</h1>
+              </div>
+
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1600" className='flex'>
+                <div className='text-accent white:text-light-blue mr-3 mb-6'>
+                  <DatabaseBackup className='sm:w-8 h-8 sm:mr-2 ' />
+                </div>
+                <h1 className='white:text-dark-gray'>{t("home.cycle")}</h1>
+              </div>
+
+
+            </div>
+
+
+            {/* <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2400" className="absolute rounded-3xl bottom-0 left-0 w-65 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} /> */}
+
+
+            {/* IMG */}
+
+
+
+
+            {/* ABOUT BUTTON */}
+            {/* <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" href="#about">
+              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray  py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
+                {t("home.button")}
+              </button>
+            </a> */}
+
+            {/* DOWN CHEVRON */}
+            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-5 up-and-down w-full flex justify-center">
+              <ChevronDown />
+            </a>
 
           </div>
-        </div> */}
-
-        {/* Controls */}
-
-        {/* <button
-
-          className="absolute top-1/2 translate-y-[-100%] left-2 text-text bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
-        >
-          ‹
-        </button>
-        <button
-
-          className="absolute top-1/2 translate-y-[-100%] right-2 text-text bg-white/30 w-10 h-10 border border-text rounded-full flex justify-center items-center"
-        >
-          ›
-        </button> */}
-
-        {/* <div className="absolute top-15 bg-cover h-[85dvh] w-[90dvw] rounded-3xl  bg-black/75 text-white/99 ">
-          <div className="absolute top-8 left-6 text-3xl font-bold">ZeraMeta </div>
-          <div className="absolute top-20 left-6 text-sm w-65">Comprehensive Fullstack app with database, secure authentication, and ChatGPT-powered AI integration.</div>
-          <div className="absolute top-140 left-6 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Code</div>
-          <div className="absolute top-140 left-33 text-sm bg-white/99 text-black/80 px-5 py-2 rounded-2xl">Demo</div>
-
-          <div className="absolute top-40 left-8 text-3xl"><i className="devicon-angular-plain"></i></div>
-          <div className="absolute top-40 left-23 text-3xl"><i className="devicon-mongodb-plain-wordmark"></i></div>
-          <div className="absolute top-40 left-38 text-3xl"><i className="devicon-nodejs-plain-wordmark"></i></div>
-
-          <div className="absolute top-140 right-6 text-3xl"><i className="devicon-nodejs-plain"></i></div>
-
-          <div className="absolute top-70 right-2 text-3xl text-white/99">›</div>
-          <div className="absolute top-70 left-2 text-3xl text-white/99">‹</div>
-
-        </div> */}
-
-
+        </section>
       </section>
       {/* <section className="video-wrapper relative bg-fixed w-dvw h-[50dvh] overflow-hidden">
         <video
@@ -513,3 +191,5 @@ export default function Teste() {
     </>
   );
 }
+
+export default Teste;

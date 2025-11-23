@@ -6,7 +6,7 @@ const Home = React.lazy(() => import('./components/Home/Home'));
 const Project = React.lazy(() => import('./components/Project/Project'));
 const Journey = React.lazy(() => import('./components/Journey/Journey'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
-// const Teste = React.lazy(() => import('./components/Test/Teste'));
+const Teste = React.lazy(() => import('./components/Test/Teste'));
 
 
 import './App.css'
@@ -95,9 +95,9 @@ function App() {
           <Journey />
         </Suspense>
 
-        {/* <Suspense fallback={<div></div>}>
-        <Teste />
-      </Suspense> */}
+        <Suspense fallback={<div></div>}>
+          <Teste theme={theme} />
+        </Suspense>
 
         <Suspense fallback={<div></div>}>
           <Project />
