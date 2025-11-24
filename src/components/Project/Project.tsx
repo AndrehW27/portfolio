@@ -666,7 +666,7 @@ export default function Projects() {
                   }
                   {/* <div className="absolute bottom-8 left-55 text-xs text-accent white:text-light-blue w-60  border-red-500">details</div> */}
 
-                  <h1 className="text-accent white:text-light-blue absolute bottom-6 right-6 pointer"
+                  <h1 className="text-accent white:text-light-blue absolute bottom-6 right-6 cursor-pointer"
                     onClick={() => {
                       setShowModalDetails(true);
                     }}

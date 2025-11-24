@@ -33,15 +33,15 @@ function Contact() {
         </a>
 
         {/* SOCIAL MEDIA */}
-        <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-60 sm:w-80 h-fit flex items-center justify-evenly'>
+        <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-60 sm:w-120 h-fit flex items-center justify-evenly'>
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
-            <div className='w-9 h-9 sm:w-15 sm:h-15 p-1.5 rounded-md shadow-[0_0_10px_#0076b2]'>
+            <div className='w-9 h-9 sm:w-20 sm:h-20 p-1.5 rounded-md shadow-[0_0_10px_#0076b2]'>
               <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
             </div>
           </a>
 
           <a href="https://github.com/AndrehW27" target="_blank" rel="noopener noreferrer">
-            <div className='white: border border-dark-gray w-9 h-9 sm:w-15 sm:h-15 rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
+            <div className='white: border border-dark-gray w-9 h-9 sm:w-20 sm:h-20 rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
               <i className="text-3xl sm:text-5xl mr-4text-accent devicon-github-original"></i>
             </div>
           </a>
@@ -49,7 +49,7 @@ function Contact() {
           <a href="https://www.salesforce.com/trailblazer/andrehwillian"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 sm:w-15 sm:h-15 p-1 bg-text rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
+            className="w-9 h-9 sm:w-20 sm:h-20 p-1 bg-text rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
           >
             <img loading="lazy" src={trail} alt="WhatsApp" />
           </a>
@@ -57,7 +57,7 @@ function Contact() {
           <a href="https://wa.me/5511992603675?text=Hello%20André,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 sm:w-15 sm:h-15 p-1.5 rounded-md shadow-[0_0_10px_#29a71a] flex items-center justify-center"
+            className="w-9 h-9 sm:w-20 sm:h-20 p-1.5 rounded-md shadow-[0_0_10px_#29a71a] flex items-center justify-center"
           >
             <img loading="lazy" src={wpp} alt="WhatsApp" />
           </a>
@@ -65,7 +65,7 @@ function Contact() {
 
         {/* DOWN CHEVRON */}
         <a href="#" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" className="up-and-down absolute bottom-25 sm:bottom-35 z-900">
-          <ChevronUp />
+          <ChevronUp className='sm:w-10 sm:h-10'/>
         </a>
 
         {/* FOOTER */}

@@ -170,8 +170,8 @@ function Teste({ theme }: HeroProps) {
             </a> */}
 
             {/* DOWN CHEVRON */}
-            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-5 up-and-down w-full flex justify-center">
-              <ChevronDown />
+            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-6 sm:bottom-16 up-and-down w-full flex justify-center">
+              <ChevronDown className=' sm:w-10 sm:h-10'/>
             </a>
 
           </div>
