@@ -1,7 +1,7 @@
 import './Contact.css'
 import { ChevronUp } from "lucide-react";
 import wpp from "../../assets/icons/whatsapp.png"
-import trail from "../../assets/icons/trailhead.png"
+import trail from "../../assets/icons/trailhead2.png"
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 
@@ -17,7 +17,7 @@ function Contact() {
 
         {/* TITLES */}
         {/* <h1 data-aos="fade-down" data-aos-offset="200" className='text-2xl sm:text-4xl mt-16 sm:mt-25'>{t("contact.title")}</h1> */}
-        <h1 data-aos="fade-down" data-aos-offset="200" className='text-base sm:text-xl mt-16 mb-6 '>{t("contact.subtitle")}</h1>
+        <h1 data-aos="fade-down" data-aos-offset="200" className='text-base sm:text-2xl mt-20 sm:mt-30 mb-6 sm:mb-10'>{t("contact.subtitle")}</h1>
 
 
         {/* INPUTS */}
@@ -41,15 +41,15 @@ function Contact() {
           </a>
 
           <a href="https://github.com/AndrehW27" target="_blank" rel="noopener noreferrer">
-            <div className='white: border border-dark-gray w-9 h-9 sm:w-15 sm:h-15 p-1.5 rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
-              <i className="text-2xl sm:text-4xl mr-4text-accent devicon-github-original"></i>
+            <div className='white: border border-dark-gray w-9 h-9 sm:w-15 sm:h-15 rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
+              <i className="text-3xl sm:text-5xl mr-4text-accent devicon-github-original"></i>
             </div>
           </a>
 
           <a href="https://www.salesforce.com/trailblazer/andrehwillian"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 sm:w-15 sm:h-15 rounded-md shadow-[0_0_10px_#0076b2] flex items-center justify-center"
+            className="w-9 h-9 sm:w-15 sm:h-15 p-1 bg-text rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
           >
             <img loading="lazy" src={trail} alt="WhatsApp" />
           </a>

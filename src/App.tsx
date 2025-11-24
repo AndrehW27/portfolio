@@ -47,7 +47,7 @@ function App() {
         Your browser does not support the video tag.
       </video>
 
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-0 z-50'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-2 z-50'>
 
         {theme === 'white' &&
           <button
@@ -61,11 +61,11 @@ function App() {
             onClick={() => {
               setTheme('white');
             }}
-            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-6 w-6 sm:w-9 smh-9 text-accent white:text-light-blue' /></button>
+            className='p-1 rounded-full transition duration-300 ease-in-out cursor-pointer'><IoMoonOutline className='h-6 w-6 sm:w-9 sm:h-9 text-accent white:text-light-blue' /></button>
         }
 
       </div>
-      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-8 sm:right-12  z-50'>
+      <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-11 sm:right-16  z-50'>
 
         {language === '' &&
           <button

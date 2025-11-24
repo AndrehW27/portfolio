@@ -808,7 +808,7 @@ export default function Projects() {
               <img loading="lazy"
                 src={modalImages[modalIndex]}
                 alt="modal"
-                className="h-fit max-h-[90dvh] w-[77dvw] sm:w-[425px] object-contain rounded-2xl "
+                className="h-fit w-fit max-h-[80dvh] object-contain rounded-2xl "
               />
               <button
                 onClick={() => setShowModal(false)}

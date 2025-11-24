@@ -16,13 +16,13 @@ function Journey() {
 
   return (
     <>
-      <section id="about" className="relative font-bold text-xs sm:text-xl text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
+      <section id="about" className="relative font-bold text-xs text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
 
         {/* MAIN TEXT */}
-        <div className='scale relative text-xs border-green-500 h-140 w-140 flex flex-col items-center justify-center mt-10 text-center mb-35 white:text-text pointer'>
-          <div data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="200" className='rounded-full w-140 h-140 bg-gradient-to-tr from-background from-[15%] via-surface via-[50%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] flex flex-col items-center justify-center z-600'>
+        <div className='scale relative text-xs sm:text-xl border-green-500 h-140 w-140 sm:h-220 sm:w-220 flex flex-col items-center justify-center mt-10 text-center mb-35 white:text-text pointer'>
+          <div data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="220" className='rounded-full w-140 h-140 sm:h-220 sm:w-220 bg-gradient-to-tr from-background from-[15%] via-surface via-[50%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] flex flex-col items-center justify-center z-600'>
             {/* <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="350" className='border-blue-500 clip-hex2 absolute top-0 left-[-70px] w-110 h-130 sm:w-150 sm:h-140 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex fex-col items-center justify-center'> */}
-            <h1 className=" border-red-500 w-80 sm:w-100 z-10 ">
+            <div className=" border-red-500 w-90 sm:w-140 z-10 ">
               {t("about.paragraph1")}
               <br />
               <br />
@@ -33,12 +33,12 @@ function Journey() {
               <br />
               <br />
               {t("about.paragraph4")}
-            </h1>
+            </div>
             <button
               onClick={() => {
                 setShowModal(true);
               }}
-              className='mt-10 px-4 py-2 rounded-full bg-accent white:bg-light-blue pointer'>{t("about.certificate")}
+              className='mt-10 px-4 py-2 rounded-full bg-linear-to-t from-surface to-accent white:from-text-dark white:to-light-blue white:bg-light-blue pointer'>{t("about.certificate")}
               </button>
           </div>
 
@@ -132,7 +132,7 @@ function Journey() {
 
         {/* <h1 className='text-2xl absolute bottom-16'>Projects</h1> */}
 
-        <a href="#projects" className="up-and-down absolute bottom-10 z-900" >
+        <a href="#projects" className="up-and-down absolute bottom-6 z-900" >
           <ChevronDown />
         </a>
 
@@ -145,7 +145,7 @@ function Journey() {
               onClick={() => setShowModal(false)}
             />
 
-            <div className='scale relative text-xs border-green-500 h-140 w-140 flex flex-col items-center justify-center mt-10 text-center mb-35 white:text-text pointer'>
+            <div className='scale relative text-xs sm:text-xl border-green-500 h-140 w-140 sm:h-220 sm:w-220 flex flex-col items-center justify-center mt-10 text-center mb-35 white:text-text pointer'>
 
               {/* <button
                 onClick={() => setShowModal(false)}
@@ -154,10 +154,9 @@ function Journey() {
                 X
               </button> */}
 
-              <div data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="200" className='rounded-full w-140 h-140 bg-gradient-to-tr from-background from-[15%] via-surface via-[50%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] flex flex-col items-center justify-center z-600'>
+              <div data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="200" className='rounded-full w-140 h-140 sm:h-220 sm:w-220 bg-gradient-to-tr from-background from-[15%] via-surface via-[50%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] flex flex-col items-center justify-center z-600'>
                 {/* <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="350" className='border-blue-500 clip-hex2 absolute top-0 left-[-70px] w-110 h-130 sm:w-150 sm:h-140 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex fex-col items-center justify-center'> */}
-                <div className=" border-red-500 w-80 sm:w-100 z-10 ">
-
+                <div className=" border-red-500 w-90 sm:w-140 z-10 ">
 
                   <a href="https://drive.google.com/file/d/1Dfsjvic7Z9wcLdjXfSIvKjF_BuvckW3o/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 border-b pointer'>{t("about.dev")}</h1>
@@ -191,7 +190,7 @@ function Journey() {
                   onClick={() => {
                     setShowModal(false);
                   }}
-                  className='px-4 py-2 rounded-full bg-accent white:bg-light-blue pointer'>About</button>
+                  className='px-4 py-2 rounded-full bg-linear-to-t from-surface to-accent white:from-text-dark white:to-light-blue pointer mt-6'>{t("about.aboutme")}</button>
               </div>
 
             </div>
