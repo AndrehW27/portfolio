@@ -38,7 +38,8 @@ function Journey() {
               onClick={() => {
                 setShowModal(true);
               }}
-              className='mt-10 px-4 py-2 rounded-full bg-accent white:bg-light-blue pointer'>{t("about.certificate")}</button>
+              className='mt-10 px-4 py-2 rounded-full bg-accent white:bg-light-blue pointer'>{t("about.certificate")}
+              </button>
           </div>
 
           {/* CAROUSEL */}
@@ -155,19 +156,42 @@ function Journey() {
 
               <div data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="200" className='rounded-full w-140 h-140 bg-gradient-to-tr from-background from-[15%] via-surface via-[50%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] flex flex-col items-center justify-center z-600'>
                 {/* <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="350" className='border-blue-500 clip-hex2 absolute top-0 left-[-70px] w-110 h-130 sm:w-150 sm:h-140 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex fex-col items-center justify-center'> */}
-                <h1 className=" border-red-500 w-80 sm:w-100 z-10 ">
-                  <h1 className='mb-2'>Salesforce - Developer</h1>
-                  <h1 className='mb-2'>Salesforce - Administrator</h1>
-                  <h1 className='mb-2'>Salesforce - Developer</h1>
-                  <h1 className='mb-2'>Salesforce - Administrator</h1>
-                  <h1 className='mb-2'>Salesforce - Developer</h1>
-                  <h1 className=''>Salesforce - Administrator</h1>
-                </h1>
+                <div className=" border-red-500 w-80 sm:w-100 z-10 ">
+
+
+                  <a href="https://drive.google.com/file/d/1Dfsjvic7Z9wcLdjXfSIvKjF_BuvckW3o/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.dev")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/13dlxZgxaoNgn2UgUKnW4jG7ePsfXvVqc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.adm")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1bRluLJoZ09jgAKB7g5537JMitziAOVM7/view" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.jr")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1h_SM0ytcV88K8RbDRH-o42OHw6EIfF5p/view" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.react")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/0B9EwvgeYbwGuWldKclJzUUlEVTQ/view?resourcekey=0-m6tPdA_Yd-W0DzJ0UwHItA" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.eli")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1cb7fdYla7avKo7Ju_-ukM8uTQr8DPY9P/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.bct")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/12MZR5OlbskTs5fsX2TqgGLPrnrlfSiIz/view" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.omni")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1rj1R8i6UXtx1p0r_KkLC97Q6Jw9WPmni/view" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.html")}</h1>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1AVLCvLr-qYvcEzdVqKgvizOVUxtzA1Lc/view" target="_blank" rel="noopener noreferrer">
+                    <h1 className='mb-5 border-b pointer'>{t("about.css")}</h1>
+                  </a>
+                </div>
                 <button
                   onClick={() => {
                     setShowModal(false);
                   }}
-                  className='mt-10 px-4 py-2 rounded-full bg-accent white:bg-light-blue pointer'>About</button>
+                  className='px-4 py-2 rounded-full bg-accent white:bg-light-blue pointer'>About</button>
               </div>
 
             </div>
