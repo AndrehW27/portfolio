@@ -67,7 +67,7 @@ function Hero({ theme }: HeroProps) {
 
   return (
     <>
-      <nav className="text-text text-xs sm:text-base font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
+      <nav className="text-text text-[10px] sm:text-base font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
           <a className="w-11 h-11 sm:w-16 sm:h-16 fixed left-4" href="#">
@@ -75,7 +75,11 @@ function Hero({ theme }: HeroProps) {
           </a>
 
           <ul className="">
-            <li><a href="#journey" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
+            <li><a href="#journey" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
+          </ul>
+
+          <ul className="">
+            <li><a href="#about" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
           </ul>
           {/* <ul className="">
             <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
@@ -161,10 +165,10 @@ function Hero({ theme }: HeroProps) {
 
 
             {/* IMG */}
-            <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-45px] sm:left-[-80px] w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
+            <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="absolute bottom-0 left-[-45px] sm:left-[-80px] w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-accent from-[20%] via-surface via-[50%] to-background to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex justify-end items-center ">
               <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} />
-              <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_35%,transparent_60%)] z-200 border-red-500'>
-                <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-20 right-10 border-blue-500 text-xs sm:text-xl w-30 sm:w-60">{t("home.text")}</h5>
+              <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] z-200 border-red-500'>
+                <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 right-10 border-blue-500 text-xs sm:text-xl w-30 sm:w-60 white:text-text">{t("home.text")}</h5>
               </div>
             </div>
 
@@ -178,7 +182,7 @@ function Hero({ theme }: HeroProps) {
             </a> */}
 
             {/* DOWN CHEVRON */}
-            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-5 up-and-down w-full flex justify-center">
+            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-6 up-and-down w-full flex justify-center">
               <ChevronDown />
             </a>
 

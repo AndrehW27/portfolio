@@ -127,23 +127,23 @@ function Teste({ theme }: HeroProps) {
             </div>
 
 
-            <div className='absolute bottom-10 text-xs sm:text-xl mt-10 sm:mt-20 w-80 ml-10 sm:ml-0 sm:w-160 border-orange'>
+            <div className='absolute bottom-20 text-xs sm:text-xl mt-10 sm:mt-20 w-80 ml-10 sm:ml-0 sm:w-160 border-orange'>
 
-              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
+              <div className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
                   <Wallpaper className='sm:w-8 h-8 sm:mr-2' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
               </div>
 
-              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200" className='flex'>
+              <div className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
                   <Gauge className='sm:w-8 h-8 sm:mr-2' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.api")}</h1>
               </div>
 
-              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1600" className='flex'>
+              <div className='flex'>
                 <div className='text-accent white:text-light-blue mr-3 mb-6'>
                   <DatabaseBackup className='sm:w-8 h-8 sm:mr-2 ' />
                 </div>
