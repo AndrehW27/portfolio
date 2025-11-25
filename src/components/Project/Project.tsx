@@ -110,6 +110,7 @@ export default function Projects() {
         }
       ],
       description: t("project.zera.description"),
+      details: [t("project.zera.full1"), t("project.zera.full2"), t("project.zera.full3"), t("project.zera.full4")],
       full1: t("project.zera.full1"),
       full2: t("project.zera.full2"),
       full3: t("project.zera.full3"),
@@ -151,6 +152,7 @@ export default function Projects() {
         }
       ],
       description: t("project.security.description"),
+      details: [t("project.security.full1"), t("project.security.full2"), t("project.security.full3"), t("project.security.full4")],
       full1: t("project.security.full1"),
       full2: t("project.security.full2"),
       full3: t("project.security.full3"),
@@ -192,6 +194,7 @@ export default function Projects() {
         }
       ],
       description: t("project.portal.description"),
+      details: [t("project.portal.full1"), t("project.portal.full2"), t("project.portal.full3"), t("project.portal.full4")],
       full1: t("project.portal.full1"),
       full2: t("project.portal.full2"),
       full3: t("project.portal.full3"),
@@ -233,6 +236,7 @@ export default function Projects() {
         }
       ],
       description: t("project.impacta.description"),
+      details: [t("project.impacta.full1"), t("project.impacta.full2"), t("project.impacta.full3"), t("project.impacta.full4")],
       full1: t("project.impacta.full1"),
       full2: t("project.impacta.full2"),
       full3: t("project.impacta.full3"),
@@ -274,6 +278,7 @@ export default function Projects() {
       images: [poke1, poke2, poke3, poke4, poke5, poke6],
       desktop: poke1desktop,
       description: t("project.poke.description"),
+      details: [t("project.poke.full1"), t("project.poke.full2"), t("project.poke.full3"), t("project.poke.full4")],
       full1: t("project.poke.full1"),
       full2: t("project.poke.full2"),
       full3: t("project.poke.full3"),
@@ -315,6 +320,7 @@ export default function Projects() {
         }
       ],
       description: t("project.port.description"),
+      details: [t("project.port.full1"), t("project.port.full2"), t("project.port.full3"), t("project.port.full4")],
       full1: t("project.port.full1"),
       full2: t("project.port.full2"),
       full3: t("project.port.full3"),
@@ -356,6 +362,7 @@ export default function Projects() {
       images: [tft1],
       desktop: tft1desktop,
       description: t("project.tft.description"),
+      details: [t("project.tft.full1"), t("project.tft.full2"), t("project.tft.full3"), t("project.tft.full4")],
       full1: t("project.tft.full1"),
       full2: t("project.tft.full2"),
       full3: t("project.tft.full3"),
@@ -397,6 +404,7 @@ export default function Projects() {
       images: [move1, move2, move3, move4],
       desktop: move1desktop,
       description: t("project.move.description"),
+      details: [t("project.move.full1"), t("project.move.full2"), t("project.move.full3"), t("project.move.full4")],
       full1: t("project.move.full1"),
       full2: t("project.move.full2"),
       full3: t("project.move.full3"),
@@ -438,6 +446,7 @@ export default function Projects() {
       images: [hero1, hero2, hero3],
       desktop: hero1desktop,
       description: t("project.hero.description"),
+      details: [t("project.hero.full1"), t("project.hero.full2"), t("project.hero.full3"), t("project.hero.full4")],
       full1: t("project.hero.full1"),
       full2: t("project.hero.full2"),
       full3: t("project.hero.full3"),
@@ -479,6 +488,7 @@ export default function Projects() {
       images: [netflix1, netflix2],
       desktop: netflix1desktop,
       description: t("project.net.description"),
+      details: [t("project.net.full1"), t("project.net.full2"), t("project.net.full3"), t("project.net.full4")],
       full1: t("project.net.full1"),
       full2: t("project.net.full2"),
       full3: t("project.net.full3"),
@@ -497,10 +507,14 @@ export default function Projects() {
 
   // MODAL STATE
   const [showModal, setShowModal] = useState(false);
-  const [showModalDetails, setShowModalDetails] = useState(false);
+  // const [showModalDetails, setShowModalDetails] = useState(false);
+  const [showModalDetails2, setShowModalDetails2] = useState(false);
   const [showModalImportant, setShowModalImportant] = useState(false);
 
 
+  const [modalDetails2, setModalDetails2] = useState<string[]>([]);
+  const [modalTitle, setModalTitle] = useState('');
+  const [modalIcons, setModalIcons] = useState<{ icon: string; color: string; }[]>([]);
   const [modalImages, setModalImages] = useState<string[]>([]);
   const [modalIndex, setModalIndex] = useState(0);
 
@@ -567,7 +581,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative  border-pink-500 h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
+    <section id="projects" className="relative border-pink-500 h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
       {/* FAKE SCREENS */}
       {/* <div className="absolute bottom-20 left-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
@@ -584,7 +598,7 @@ export default function Projects() {
         data-aos="zoom-in"
         data-aos-offset="400"
         data-aos-duration="3000"
-        className=" w-full sm:w-[80dvw] h-[100dvh] overflow-hidden sm:mb-10 border-blue-500">
+        className=" border-green-500 w-full sm:w-[80dvw] h-[100dvh] overflow-hidden sm:mb-10 border-blue-500">
         <div
 
           ref={containerRef}
@@ -598,7 +612,7 @@ export default function Projects() {
             <article
               key={slideIdx}
 
-              className="card border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[500px] shrink-0 flex flex-col items-center"
+              className="card  border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[440px] shrink-0 flex flex-col items-center"
             >
               {/* Title + Icons */}
 
@@ -606,7 +620,7 @@ export default function Projects() {
               {/* Main image */}
               <div
 
-                className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:h-[78dvh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.desktop})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
@@ -666,9 +680,15 @@ export default function Projects() {
                   }
                   {/* <div className="absolute bottom-8 left-55 text-xs text-accent white:text-light-blue w-60  border-red-500">details</div> */}
 
-                  <h1 className="text-accent white:text-light-blue absolute bottom-6 right-6 cursor-pointer"
+                  <h1 className="text-accent white:text-light-blue absolute bottom-6 right-6 cursor-pointer underline"
                     onClick={() => {
-                      setShowModalDetails(true);
+                      setShowModalDetails2(true);
+                      setModalDetails2(s.details);
+                      setModalTitle(s.title);
+                      setModalIcons(s.icons);
+                      console.log('s.details: ' + s.details);
+                      console.log('ModalDetails2: ' + modalDetails2[0]);
+
                     }}
                   >{t("project.details")}
                   </h1>
@@ -681,12 +701,11 @@ export default function Projects() {
                     }
                     }
                     className="absolute top-50 sm:top-65 right-4 sm:right-8 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
-
                   >
                     <GiClick className="h-full w-full p-2" />
                   </button>
 
-                  <div className="absolute top-46 sm:top-62 z-9999 rounded-3xl h-75 sm:h-105 w-full"
+                  <div className="absolute  top-46 sm:top-62 z-9999 rounded-3xl h-75 sm:h-105 w-full"
                     onClick={() => {
                       setModalImages(s.images);
                       setModalIndex(0);
@@ -699,17 +718,17 @@ export default function Projects() {
               </div>
 
               {/* MODAL DETAILS */}
-              {showModalDetails && (
-                <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
+              {/* {showModalDetails && (
+                <div className="sticky inset-0 border-6 border-red-500 h-[100dvh] w-[100dvw] flex items-center justify-center z-9999">
 
                   <div
-                    className="border-green-500 absolute h-[100dvh] w-[100dvw] inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
-                    onClick={() => setShowModalDetails(false)}
+                    className=" border-green-500 absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+                    onClick={() => setShowModalDetails2(false)}
                   />
 
                   <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-6 py-10 animate-zoomIn ">
                     <button
-                      onClick={() => setShowModalDetails(false)}
+                      onClick={() => setShowModalDetails2(false)}
                       className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
                     >
                       X
@@ -743,7 +762,7 @@ export default function Projects() {
 
                 </div>
 
-              )}
+              )} */}
 
 
             </article>
@@ -789,19 +808,15 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* MODAL */}
+      {/* MODAL MOBILE*/}
       {showModal && (
-        <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
+        <div className="block sm:hidden absolute inset-0 flex items-center justify-center z-9999">
           <div
             className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
-
-
-
-          <div className="relative rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
-
+          <div className="relative  rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
 
             <div className="relative">
               {/* Modal image */}
@@ -845,34 +860,143 @@ export default function Projects() {
 
       )}
 
-
-      {/* MODAL IMPORTANT */}
-      {showModalImportant && (
-        <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
-
+      {/* MODAL DESKTOP*/}
+      {showModal && (
+        <div className="hidden sm:block absolute inset-0 flex items-center justify-center z-9999">
           <div
             className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
-            onClick={() => setShowModalImportant(false)}
+            onClick={() => setShowModal(false)}
           />
 
-          <div className="relative rounded-3xl text-sm text-center w-fit h-fit max-w-[250px] bg-background white:bg-text flex items-center justify-center p-6 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
-            <button
-              onClick={() => setShowModalImportant(false)}
-              className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
-            >
-              X
-            </button>
-            <h1>{t("project.important.description")}</h1>
+          <div className="relative rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+
+            <div className="relative">
+              {/* Modal image */}
+              {/* <img loading="lazy"
+                src={modalImages[modalIndex]}
+                alt="modal"
+                className="h-fit w-fit max-h-[80dvh] object-contain rounded-2xl "
+              /> */}
+
+              <h1>MODAL DESKTOP!</h1>
+              
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
+              >
+                X
+              </button>
+            </div>
+
+
+
+            {/* Pagination arrows */}
+            {modalImages.length > 1 && (
+              <>
+                <button
+                  onClick={prevModal}
+                  className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                >
+                  ‹
+                </button>
+
+                <button
+                  onClick={nextModal}
+                  className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                >
+                  ›
+                </button>
+              </>
+            )}
+
           </div>
-
-
 
         </div>
 
       )}
 
+      {/* MODAL DETAILS 2*/}
+      {showModalDetails2 && (
+        <div className="absolute  inset-0 flex items-center justify-center z-9999">
+          <div
+            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+            onClick={() => setShowModalDetails2(false)}
+          />
+          <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-8 py-10 animate-zoomIn ">
+            {/* <div className="relative  rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] "> */}
 
 
-    </section>
+            <button
+              onClick={() => setShowModalDetails2(false)}
+              className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
+            >
+              X
+            </button>
+
+            <div className='border-pink-500 flex justify-center items-start'>
+              <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
+                {modalIcons.map((iconData, iconIdx) => (
+                  <img
+                    key={iconIdx}
+                    className="icons-projects w-10 h-10 sm:w-14 sm:h-14 shadow-[0_0_10px_var(--icon-shadow-color)]"
+                    src={iconData.icon}
+                    style={{ '--icon-shadow-color': iconData.color } as React.CSSProperties}
+                  />
+                ))}
+              </div>
+            </div>
+
+
+            <div className="flex flex-col mt-6 white:text-text-dark ">
+              <div className="text-lg sm:text-2xl text-accent white:text-light-blue border-red-500 mb-2">{modalTitle}</div>
+              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[0]}</div>
+              <br />
+              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[1]}</div>
+              <br />
+              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[2]}</div>
+              <br />
+              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[3]}</div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      )
+      }
+
+
+      {/* MODAL IMPORTANT */}
+      {
+        showModalImportant && (
+          <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
+
+            <div
+              className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+              onClick={() => setShowModalImportant(false)}
+            />
+
+            <div className="relative rounded-3xl text-sm text-center w-fit h-fit max-w-[250px] bg-background white:bg-text flex items-center justify-center p-6 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+              <button
+                onClick={() => setShowModalImportant(false)}
+                className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
+              >
+                X
+              </button>
+              <h1>{t("project.important.description")}</h1>
+            </div>
+
+
+
+          </div>
+
+        )
+      }
+
+
+
+    </section >
   );
 }
