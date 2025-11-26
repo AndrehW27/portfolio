@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { GiClick } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
+import sql from "../../assets/icons/sql.png"
 
 import "./Project.css";
 // import { ChevronDown } from "lucide-react";
@@ -23,8 +24,8 @@ import zerameta6 from "../../assets/projects/zera/zerameta6.png";
 import zerameta7 from "../../assets/projects/zera/zerameta7.png";
 import zerameta8 from "../../assets/projects/zera/zerameta8.png";
 
-import consultor1desktop from "../../assets/projects/consultor/consultor.png";
-import consultor1 from "../../assets/projects/consultor/consultor.png";
+import consultor1desktop from "../../assets/projects/consultor/consultor1.png";
+import consultor1 from "../../assets/projects/consultor/consultor1.png";
 import consultor2 from "../../assets/projects/consultor/consultor2final.png";
 import consultor3 from "../../assets/projects/consultor/consultor3final.png";
 import consultor4 from "../../assets/projects/consultor/consultor4final.png";
@@ -86,10 +87,13 @@ import hero1 from "../../assets/projects/BeTheHero/HeroMobile1.png";
 import tft1desktop from "../../assets/projects/tft-store/tft-store1.png";
 import tft1 from "../../assets/projects/tft-store/tft-store1-square.png";
 
-import portalsindesktop from "../../assets/projects/portal-sin/sin1test3.png";
-import portalsin1 from "../../assets/projects/portal-sin/sin1test3.png";
-import portalsin2 from "../../assets/projects/portal-sin/sin2cut.png";
-import portalsin3 from "../../assets/projects/portal-sin/sin3cut.png";
+import portalsindesktop1 from "../../assets/projects/portal-sin/portalDesk1.png";
+import portalsindesktop2 from "../../assets/projects/portal-sin/portalDesk2.png";
+import portalsindesktop3 from "../../assets/projects/portal-sin/portalDesk3.png";
+
+import portalsin1 from "../../assets/projects/portal-sin/portalMob1.png";
+import portalsin2 from "../../assets/projects/portal-sin/portalMob2.png";
+import portalsin3 from "../../assets/projects/portal-sin/portalMob3.png";
 
 import netflixdesktop1 from "../../assets/projects/netflix/netDesk1.jpg";
 import netflixdesktop2 from "../../assets/projects/netflix/netDesk2.jpg";
@@ -167,7 +171,7 @@ export default function Projects() {
           color: "#00a1e0"
         },
         {
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+          icon: sql,
           color: "#00a1e0"
         },
         {
@@ -221,7 +225,7 @@ export default function Projects() {
       ],
       images: {
         mobile: [portalsin1, portalsin2, portalsin3],
-        desktop: [portalsindesktop, portalsin2, portalsin3],
+        desktop: [portalsindesktop1, portalsindesktop2, portalsindesktop3],
       },
       links: [
         {
@@ -673,7 +677,7 @@ export default function Projects() {
             <article
               key={slideIdx}
 
-              className="card  border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[440px] shrink-0 flex flex-col items-center"
+              className="card  border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[460px] shrink-0 flex flex-col items-center"
             >
               {/* Title + Icons */}
 
@@ -684,7 +688,7 @@ export default function Projects() {
                 className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:h-[78dvh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.images.mobile[0]})` }}>
 
-                <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
+                <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)] sm:bg-[linear-gradient(to_top,#111_25%,transparent_60%)]">
 
 
 
@@ -705,7 +709,7 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-18 flex flex-col ml-8">
+                  <div className="absolute bottom-18 sm:bottom-22 flex flex-col ml-8">
                     <div className="mb-2 left-6 text-lg sm:text-2xl w-100 text-accent white:text-light-blue border-red-500">{s.title}</div>
                     <div className="left-6 text-xs sm:text-base w-60 sm:w-90 white:text-text border-red-500">{s.description}</div>
                   </div>
@@ -735,7 +739,8 @@ export default function Projects() {
                         onClick={() => {
                           setShowModalImportant(true);
                         }}
-                        className="pointer hover:text-text hover:bg-red-700/50 text-xs px-4 py-2 ml-6 rounded-2xl border border-red-700 text-red-700 transition duration-400 ease-in-out">{s.message[0].text}
+                        className="pointer hover:text-text hover:bg-red-700/50 text-xs sm:text-lg px-4 py-2 ml-6 rounded-full border border-red-700 text-red-700 transition duration-400 ease-in-out">
+                          {s.message[0].text}
                       </h1>
                     </div>
                   }
@@ -843,7 +848,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="absolute top-1/2 -translate-y- left-6 sm:left-30 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
+        className="absolute top-1/2 -translate-y- left-6 sm:left-30 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ‹
       </button>
@@ -851,7 +856,7 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="absolute top-1/2 -translate-y- right-2 sm:right-30 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
+        className="absolute top-1/2 -translate-y- right-2 sm:right-30 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ›
       </button>
@@ -923,20 +928,21 @@ export default function Projects() {
 
       {/* MODAL DESKTOP*/}
       {showModal && (
-        <div className="hidden sm:flex  border-red-500 absolute inset-0 items-center justify-center z-9999">
+        <div className="hidden sm:flex  absolute inset-0 items-center justify-center z-9999">
           <div
-            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+            className="absolute border-yellow-300 inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
-          <div className="relative rounded-3xl w-fit min-w-[1000px] max-w-[1500px] flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+          <div className="relative rounded-2xl border-red-500  max-w-[1700px] flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
 
-            <div className="relative">
+            <div className="relative border-blue-500">
               {/* Modal image */}
-              {modalImages && <img loading="lazy"
+              {modalImages && <img
+                loading="lazy"
                 src={modalImages.desktop[modalIndex]}
                 alt="modal"
-                className=" object-contain rounded-2xl "
+                className="border-green-500 h-[80dvh] w-fit object-cover rounded-2xl "
               />}
               <button
                 onClick={() => setShowModal(false)}
@@ -953,14 +959,14 @@ export default function Projects() {
               <>
                 <button
                   onClick={prevModalDesktop}
-                  className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                  className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ‹
                 </button>
 
                 <button
                   onClick={nextModalDesktop}
-                  className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                  className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ›
                 </button>
@@ -1036,7 +1042,7 @@ export default function Projects() {
               onClick={() => setShowModalImportant(false)}
             />
 
-            <div className="relative rounded-3xl text-sm text-center w-fit h-fit max-w-[250px] bg-background white:bg-text flex items-center justify-center p-6 animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+            <div className="relative rounded-3xl p-8 text-sm sm:text-lg text-center w-fit h-fit max-w-[250px] sm:max-w-[350px] bg-background white:bg-text flex items-center justify-center  animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
               <button
                 onClick={() => setShowModalImportant(false)}
                 className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"

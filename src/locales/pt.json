@@ -42,7 +42,7 @@
     "about.css": "CSS fundamentals course – SoloLearn",
     "project.security.title": "Consultor de Segurança",
     "project.security.description": "App mobile que garante a conformidade e integridade dos equipamentos de segurança das agências Itaú",
-    "project.security.full1": "No ambiente Salesforce, desenvolvi o Security Consultant, um app mobile para garantir a conformidade e integridade dos equipamentos de segurança nas agências do Itaú.",
+    "project.security.full1": "No ambiente Salesforce, desenvolvi o Consultor de Segurança, um app mobile para garantir a conformidade e integridade dos equipamentos de segurança nas agências do Itaú.",
     "project.security.full2": "Eu precisava criar uma experiência simples e confiável para que as equipes validassem equipamentos e registrassem inspeções pelo celular.",
     "project.security.full3": "Criei seis telas com LWC e duas APIs REST em Apex, aprendendo ambas as tecnologias do zero. Essas APIs depois foram reutilizadas para exportar dados do Salesforce e gerar dashboards.",
     "project.security.full4": "A solução final melhorou a precisão das inspeções e agilizou os processos de segurança, além de fortalecer minhas habilidades em LWC e Apex.",
