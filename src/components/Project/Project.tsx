@@ -688,7 +688,7 @@ export default function Projects() {
                 className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:h-[78dvh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.images.mobile[0]})` }}>
 
-                <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)] sm:bg-[linear-gradient(to_top,#111_25%,transparent_60%)]">
+                <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)] sm:bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
 
 
 
@@ -783,54 +783,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* MODAL DETAILS */}
-              {/* {showModalDetails && (
-                <div className="sticky inset-0 border-6 border-red-500 h-[100dvh] w-[100dvw] flex items-center justify-center z-9999">
-
-                  <div
-                    className=" border-green-500 absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
-                    onClick={() => setShowModalDetails2(false)}
-                  />
-
-                  <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-6 py-10 animate-zoomIn ">
-                    <button
-                      onClick={() => setShowModalDetails2(false)}
-                      className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
-                    >
-                      X
-                    </button>
-                    <div className='border-pink-500 flex justify-center items-start'>
-                      <div className='flex align-center justify-center gap-2 sm:gap-4 z-100 '>
-                        {s.icons.map((iconData, iconIdx) => (
-                          <img
-                            key={iconIdx}
-                            className="icons-projects w-10 h-10 sm:w-14 sm:h-14 shadow-[0_0_10px_var(--icon-shadow-color)]"
-                            src={iconData.icon}
-                            style={{ '--icon-shadow-color': iconData.color } as React.CSSProperties}
-                          />
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col mt-6 white:text-text-dark ">
-                      <div className="text-lg sm:text-2xl text-accent white:text-light-blue border-red-500 mb-2">{s.title}</div>
-                      <div className="text-xs sm:text-base border-red-500">{s.full1}</div>
-                      <br />
-                      <div className="text-xs sm:text-base border-red-500">{s.full2}</div>
-                      <br />
-                      <div className="text-xs sm:text-base border-red-500">{s.full3}</div>
-                      <br />
-                      <div className="text-xs sm:text-base border-red-500">{s.full4}</div>
-                    </div>
-                  </div>
-
-
-
-                </div>
-
-              )} */}
-
-
+             
             </article>
           ))}
 
@@ -886,7 +839,8 @@ export default function Projects() {
 
             <div className="relative">
               {/* Modal image */}
-              {modalImages && <img loading="lazy"
+              {modalImages && 
+              <img loading="lazy"
                 src={modalImages.mobile[modalIndex]}
                 alt="modal"
                 className=" w-fit max-h-[80dvh] max-w-[90dvw] object-contain rounded-2xl "

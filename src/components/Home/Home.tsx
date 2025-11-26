@@ -128,7 +128,7 @@ function Hero({ theme }: HeroProps) {
             } */}
 
             {/* SENTENCES */}
-            <div className='border-accent ml-10 sm:ml-0 sm:flex sm:items-start sm:justify-start sm:mt-50'>
+            <div className='border-accent ml-10 sm:ml-0 sm:flex sm:items-start sm:justify-start sm:mt-45'>
 
               {/* IMG DESKTOP*/}
               <div className='sm:ml-20'>
@@ -138,7 +138,7 @@ function Hero({ theme }: HeroProps) {
                 <div className='hidden sm:block text-xs sm:text-xl mt-10 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
                   <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
                     <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                      <Wallpaper className='sm:w-8 h-8 sm:mr-2' />
+                      <div className='text-accent white:text-light-blue mr-3 mb-6'><Wallpaper className='sm:w-8 h-8 sm:mr-2' /></div>
                     </div>
                     <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
                   </div>
@@ -160,10 +160,12 @@ function Hero({ theme }: HeroProps) {
 
                 </div>
               </div>
-              <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="hidden sm:flex w-100 sm:w-230 h-85 sm:h-150 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center border-2 border-accent white:border-blue-500 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]">
-                <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-180" src={bg} />
-                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
-                  <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-30 right-10 sm:right-25 border-blue-500 text-sm sm:text-2xl w-40 sm:w-60 white:text-text">{t("home.text")}</h5>
+              <div className="card-home hidden sm:flex border-accent">
+                <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="relative w-100 sm:w-230 h-85 sm:h-150 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
+                  <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-180" src={bg} />
+                  <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
+                    <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-30 right-10 sm:right-25 border-blue-500 text-sm sm:text-2xl w-40 sm:w-60 white:text-text">{t("home.text")}</h5>
+                  </div>
                 </div>
               </div>
 
@@ -201,10 +203,12 @@ function Hero({ theme }: HeroProps) {
 
 
             {/* IMG MOBILE */}
-            <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex sm:hidden absolute bottom-0 left-[-45px] sm:left-[-80px] w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center border-2 border-accent white:border-blue-500 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]">
-              <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-150" src={bg} />
-              <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
-                <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-25 right-10 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
+            <div className="card-home flex absolute bottom-0 left-[-45px] sm:left-[-80px] sm:hidden border-accent">
+              <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
+                <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-150" src={bg} />
+                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
+                  <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-25 right-10 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
+                </div>
               </div>
             </div>
 
@@ -219,7 +223,7 @@ function Hero({ theme }: HeroProps) {
 
             {/* DOWN CHEVRON */}
             <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-6 sm:bottom-16 up-and-down w-full flex justify-center">
-              <ChevronDown className=' sm:w-10 sm:h-10'/>
+              <ChevronDown className=' sm:w-10 sm:h-10' />
             </a>
 
           </div>

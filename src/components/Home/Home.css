@@ -109,4 +109,12 @@
   );
 }
 
+.card-home {
+  transform: perspective(800px) rotatey(12deg);
+  transition: 0.3s ease;
+}
+.card-home:hover {
+  transform: perspective(800px) rotateY(0deg);
+}
+
 
