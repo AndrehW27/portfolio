@@ -5,7 +5,15 @@ import { useTranslation } from "react-i18next";
 import "./Project.css";
 // import { ChevronDown } from "lucide-react";
 
-import zerameta1desktop from "../../assets/projects/zera/zerameta1.png";// import zerameta1desktop from "../../assets/projects/zera/zerameta1.png";
+import zerameta1desktop from "../../assets/projects/zera/zera-desktop1.png";
+import zerameta2desktop from "../../assets/projects/zera/zera-desktop2.png";
+import zerameta3desktop from "../../assets/projects/zera/zera-desktop3.png";
+import zerameta4desktop from "../../assets/projects/zera/zera-desktop4.png";
+import zerameta5desktop from "../../assets/projects/zera/zera-desktop5.png";
+import zerameta6desktop from "../../assets/projects/zera/zera-desktop6.png";
+import zerameta7desktop from "../../assets/projects/zera/zera-desktop7.png";
+import zerameta8desktop from "../../assets/projects/zera/zera-desktop8.png";
+
 import zerameta1 from "../../assets/projects/zera/zerameta1.png";
 import zerameta2 from "../../assets/projects/zera/zerameta2.png";
 import zerameta3 from "../../assets/projects/zera/zerameta3.png";
@@ -25,7 +33,15 @@ import consultor6 from "../../assets/projects/consultor/consultor6final.png";
 import consultor7 from "../../assets/projects/consultor/consultor7final.png";
 import consultor8 from "../../assets/projects/consultor/consultor8final.png";
 
-import impacta1desktop from "../../assets/projects/impacta/impacta-mobile1.png";
+import impacta1desktop1 from "../../assets/projects/impacta/impacta-desktop1.png";
+import impacta1desktop2 from "../../assets/projects/impacta/impacta-desktop2.png";
+import impacta1desktop3 from "../../assets/projects/impacta/impacta-desktop3.png";
+import impacta1desktop4 from "../../assets/projects/impacta/impacta-desktop4.png";
+import impacta1desktop5 from "../../assets/projects/impacta/impacta-desktop5.png";
+import impacta1desktop6 from "../../assets/projects/impacta/impacta-desktop6.png";
+import impacta1desktop7 from "../../assets/projects/impacta/impacta-desktop7.png";
+import impacta1desktop8 from "../../assets/projects/impacta/impacta-desktop8.png";
+
 import impacta1 from "../../assets/projects/impacta/impacta-mobile1.png";
 import impacta2 from "../../assets/projects/impacta/impacta-mobile2.png";
 import impacta3 from "../../assets/projects/impacta/impacta-mobile3.png";
@@ -37,7 +53,13 @@ import impacta8 from "../../assets/projects/impacta/impacta-mobile8.png";
 import impacta9 from "../../assets/projects/impacta/impacta-mobile9.png";
 import impacta10 from "../../assets/projects/impacta/impacta-mobile10.png";
 
-import poke1desktop from "../../assets/projects/pokedex/poke-mobile-1.png";
+import poke1desktop from "../../assets/projects/pokedex/poke-desktop-1.png";
+import poke2desktop from "../../assets/projects/pokedex/poke-desktop-2.png";
+import poke3desktop from "../../assets/projects/pokedex/poke-desktop-3.png";
+import poke4desktop from "../../assets/projects/pokedex/poke-desktop-4.png";
+import poke5desktop from "../../assets/projects/pokedex/poke-desktop-5.png";
+import poke6desktop from "../../assets/projects/pokedex/poke-desktop-6.png";
+
 import poke1 from "../../assets/projects/pokedex/poke-mobile-1.png";
 import poke2 from "../../assets/projects/pokedex/poke-mobile-2.png";
 import poke3 from "../../assets/projects/pokedex/poke-mobile-3.png";
@@ -45,30 +67,42 @@ import poke4 from "../../assets/projects/pokedex/poke-mobile-4.png";
 import poke5 from "../../assets/projects/pokedex/poke-mobile-5.png";
 import poke6 from "../../assets/projects/pokedex/poke-mobile-6.png";
 
-import move1desktop from "../../assets/projects/MoveIt/MoveLightMobile1.png";
+import move1desktop from "../../assets/projects/MoveIt/MoveLightDesktop1.png";
+import move2desktop from "../../assets/projects/MoveIt/MoveLightDesktop2.png";
+import move3desktop from "../../assets/projects/MoveIt/MoveLightDesktop3.png";
+import move4desktop from "../../assets/projects/MoveIt/MoveLightDesktop4.png";
+
 import move1 from "../../assets/projects/MoveIt/MoveLightMobile1.png";
 import move2 from "../../assets/projects/MoveIt/MoveLightMobile2.png";
 import move3 from "../../assets/projects/MoveIt/MoveLightMobile3.png";
 import move4 from "../../assets/projects/MoveIt/MoveLightMobile4.png";
 
-import hero1desktop from "../../assets/projects/BeTheHero/HeroMobile1.png";
-import hero1 from "../../assets/projects/BeTheHero/HeroDesktop1.png";
-import hero2 from "../../assets/projects/BeTheHero/HeroDesktop2.png";
-import hero3 from "../../assets/projects/BeTheHero/HeroDesktop3.png";
+import hero1desktop from "../../assets/projects/BeTheHero/HeroDesktop1.png";
+import hero2desktop from "../../assets/projects/BeTheHero/HeroDesktop2.png";
+import hero3desktop from "../../assets/projects/BeTheHero/HeroDesktop3.png";
 
-import tft1desktop from "../../assets/projects/tft-store/tft-store1-square.png";
-import tft1 from "../../assets/projects/tft-store/tft-store1-vertical2.png";
+import hero1 from "../../assets/projects/BeTheHero/HeroMobile1.png";
+
+import tft1desktop from "../../assets/projects/tft-store/tft-store1.png";
+import tft1 from "../../assets/projects/tft-store/tft-store1-square.png";
 
 import portalsindesktop from "../../assets/projects/portal-sin/sin1test3.png";
 import portalsin1 from "../../assets/projects/portal-sin/sin1test3.png";
 import portalsin2 from "../../assets/projects/portal-sin/sin2cut.png";
 import portalsin3 from "../../assets/projects/portal-sin/sin3cut.png";
 
-import netflix1desktop from "../../assets/projects/netflix/netflix2.jpg";
-import netflix1 from "../../assets/projects/netflix/netflix2.jpg";
-import netflix2 from "../../assets/projects/netflix/net-lands.png";
+import netflixdesktop1 from "../../assets/projects/netflix/netDesk1.jpg";
+import netflixdesktop2 from "../../assets/projects/netflix/netDesk2.jpg";
 
-import portfolio1desktop from "../../assets/projects/portfolio/port1.png";
+import netflix1 from "../../assets/projects/netflix/netMob1.jpg";
+
+import portfolio1desktop from "../../assets/projects/portfolio/port1Desk.png";
+import portfolio2desktop from "../../assets/projects/portfolio/port2Desk.png";
+import portfolio3desktop from "../../assets/projects/portfolio/port3Desk.png";
+import portfolio4desktop from "../../assets/projects/portfolio/port4Desk.png";
+import portfolio5desktop from "../../assets/projects/portfolio/port5Desk.png";
+import portfolio6desktop from "../../assets/projects/portfolio/port6Desk.png";
+
 import portfolio1 from "../../assets/projects/portfolio/port1.png";
 import portfolio2 from "../../assets/projects/portfolio/port2.png";
 import portfolio3 from "../../assets/projects/portfolio/port3.png";
@@ -97,8 +131,10 @@ export default function Projects() {
           color: "#4faa41"
         }
       ],
-      images: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
-      desktop: zerameta1desktop,
+      images: {
+        mobile: [zerameta1, zerameta2, zerameta3, zerameta4, zerameta5, zerameta6, zerameta7, zerameta8],
+        desktop: [zerameta1desktop, zerameta2desktop, zerameta3desktop, zerameta4desktop, zerameta5desktop, zerameta6desktop, zerameta7desktop, zerameta8desktop],
+      },
       links: [
         {
           hasCode: true,
@@ -139,8 +175,10 @@ export default function Projects() {
           color: "#7300ff"
         }
       ],
-      images: [consultor1, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
-      desktop: consultor1desktop,
+      images: {
+        mobile: [consultor1, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
+        desktop: [consultor1desktop, consultor2, consultor3, consultor4, consultor5, consultor6, consultor7, consultor8],
+      },
       links: [
         {
           hasCode: false,
@@ -181,8 +219,10 @@ export default function Projects() {
           color: "#ff7700"
         }
       ],
-      images: [portalsin1, portalsin2, portalsin3],
-      desktop: portalsindesktop,
+      images: {
+        mobile: [portalsin1, portalsin2, portalsin3],
+        desktop: [portalsindesktop, portalsin2, portalsin3],
+      },
       links: [
         {
           hasCode: false,
@@ -223,8 +263,10 @@ export default function Projects() {
           color: "#a9bfd1"
         }
       ],
-      images: [impacta1, impacta2, impacta3, impacta4, impacta5, impacta6, impacta7, impacta8, impacta9, impacta10],
-      desktop: impacta1desktop,
+      images: {
+        mobile: [impacta1, impacta2, impacta3, impacta4, impacta5, impacta6, impacta7, impacta8, impacta9, impacta10],
+        desktop: [impacta1desktop1, impacta1desktop2, impacta1desktop3, impacta1desktop4, impacta1desktop5, impacta1desktop6, impacta1desktop7, impacta1desktop8],
+      },
       links: [
         {
           hasCode: true,
@@ -275,8 +317,10 @@ export default function Projects() {
           demo: "https://andrehw27.github.io/pokedex/"
         }
       ],
-      images: [poke1, poke2, poke3, poke4, poke5, poke6],
-      desktop: poke1desktop,
+      images: {
+        mobile: [poke1, poke2, poke3, poke4, poke5, poke6],
+        desktop: [poke1desktop, poke2desktop, poke3desktop, poke4desktop, poke5desktop, poke6desktop],
+      },
       description: t("project.poke.description"),
       details: [t("project.poke.full1"), t("project.poke.full2"), t("project.poke.full3"), t("project.poke.full4")],
       full1: t("project.poke.full1"),
@@ -307,8 +351,10 @@ export default function Projects() {
           color: "#4faa41"
         },
       ],
-      images: [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6],
-      desktop: portfolio1desktop,
+      images: {
+        mobile: [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6],
+        desktop: [portfolio1desktop, portfolio2desktop, portfolio3desktop, portfolio4desktop, portfolio5desktop, portfolio6desktop],
+      },
       links: [
         {
           hasCode: true,
@@ -359,8 +405,10 @@ export default function Projects() {
           demo: "https://tftstore-andrehw27.vercel.app/"
         }
       ],
-      images: [tft1],
-      desktop: tft1desktop,
+      images: {
+        mobile: [tft1],
+        desktop: [tft1desktop],
+      },
       description: t("project.tft.description"),
       details: [t("project.tft.full1"), t("project.tft.full2"), t("project.tft.full3"), t("project.tft.full4")],
       full1: t("project.tft.full1"),
@@ -401,8 +449,10 @@ export default function Projects() {
           demo: ""
         }
       ],
-      images: [move1, move2, move3, move4],
-      desktop: move1desktop,
+      images: {
+        mobile: [move1, move2, move3, move4],
+        desktop: [move1desktop, move2desktop, move3desktop, move4desktop],
+      },
       description: t("project.move.description"),
       details: [t("project.move.full1"), t("project.move.full2"), t("project.move.full3"), t("project.move.full4")],
       full1: t("project.move.full1"),
@@ -443,8 +493,10 @@ export default function Projects() {
           demo: ""
         }
       ],
-      images: [hero1, hero2, hero3],
-      desktop: hero1desktop,
+      images: {
+        mobile: [hero1],
+        desktop: [hero1desktop, hero2desktop, hero3desktop],
+      },
       description: t("project.hero.description"),
       details: [t("project.hero.full1"), t("project.hero.full2"), t("project.hero.full3"), t("project.hero.full4")],
       full1: t("project.hero.full1"),
@@ -485,8 +537,10 @@ export default function Projects() {
           demo: ""
         }
       ],
-      images: [netflix1, netflix2],
-      desktop: netflix1desktop,
+      images: {
+        mobile: [netflix1],
+        desktop: [netflixdesktop1, netflixdesktop2],
+      },
       description: t("project.net.description"),
       details: [t("project.net.full1"), t("project.net.full2"), t("project.net.full3"), t("project.net.full4")],
       full1: t("project.net.full1"),
@@ -515,7 +569,8 @@ export default function Projects() {
   const [modalDetails2, setModalDetails2] = useState<string[]>([]);
   const [modalTitle, setModalTitle] = useState('');
   const [modalIcons, setModalIcons] = useState<{ icon: string; color: string; }[]>([]);
-  const [modalImages, setModalImages] = useState<string[]>([]);
+  const [modalImages, setModalImages] = useState<{ mobile: string[]; desktop: string[]; } | null>(null);
+  // const [modalImagesDesktop, setModalImagesDesktop] = useState<string[]>([]);
   const [modalIndex, setModalIndex] = useState(0);
 
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -537,11 +592,17 @@ export default function Projects() {
     setIndex((i) => (i - 1 + slidesData.length) % slidesData.length), [slidesData.length]);
   const next = useCallback(() => setIndex((i) => (i + 1) % slidesData.length), [slidesData.length]);
 
-  // Modal navigation
+  // Modal navigation MOBILE
   const nextModal = useCallback(() =>
-    setModalIndex((i) => (i + 1) % modalImages.length), [modalImages.length]);
+    setModalIndex((i) => (i + 1) % (modalImages?.mobile.length || 1)), [modalImages]);
   const prevModal = useCallback(() =>
-    setModalIndex((i) => (i - 1 + modalImages.length) % modalImages.length), [modalImages.length]);
+    setModalIndex((i) => (i - 1 + (modalImages?.mobile.length || 1)) % (modalImages?.mobile.length || 1)), [modalImages]);
+
+  // Modal navigation DESKTOP
+  const nextModalDesktop = useCallback(() =>
+    setModalIndex((i) => (i + 1) % (modalImages?.desktop.length || 1)), [modalImages]);
+  const prevModalDesktop = useCallback(() =>
+    setModalIndex((i) => (i - 1 + (modalImages?.desktop.length || 1)) % (modalImages?.desktop.length || 1)), [modalImages]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -621,7 +682,7 @@ export default function Projects() {
               <div
 
                 className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:h-[78dvh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
-                style={{ backgroundImage: `url(${s.desktop})` }}>
+                style={{ backgroundImage: `url(${s.images.mobile[0]})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
 
@@ -705,7 +766,7 @@ export default function Projects() {
                     <GiClick className="h-full w-full p-2" />
                   </button>
 
-                  <div className="absolute  top-46 sm:top-62 z-9999 rounded-3xl h-75 sm:h-105 w-full"
+                  <div className="absolute top-46 sm:top-62 z-9999 rounded-3xl h-75 sm:h-105 w-full"
                     onClick={() => {
                       setModalImages(s.images);
                       setModalIndex(0);
@@ -810,21 +871,21 @@ export default function Projects() {
 
       {/* MODAL MOBILE*/}
       {showModal && (
-        <div className="block sm:hidden absolute inset-0 flex items-center justify-center z-9999">
+        <div className="flex sm:hidden absolute inset-0 items-center justify-center z-9999">
           <div
             className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
-          <div className="relative  rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+          <div className="relative rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
 
             <div className="relative">
               {/* Modal image */}
-              <img loading="lazy"
-                src={modalImages[modalIndex]}
+              {modalImages && <img loading="lazy"
+                src={modalImages.mobile[modalIndex]}
                 alt="modal"
-                className="h-fit w-fit max-h-[80dvh] object-contain rounded-2xl "
-              />
+                className=" w-fit max-h-[80dvh] max-w-[90dvw] object-contain rounded-2xl "
+              />}
               <button
                 onClick={() => setShowModal(false)}
                 className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
@@ -836,7 +897,7 @@ export default function Projects() {
 
 
             {/* Pagination arrows */}
-            {modalImages.length > 1 && (
+            {modalImages && modalImages.mobile.length > 1 && (
               <>
                 <button
                   onClick={prevModal}
@@ -862,24 +923,21 @@ export default function Projects() {
 
       {/* MODAL DESKTOP*/}
       {showModal && (
-        <div className="hidden sm:block absolute inset-0 flex items-center justify-center z-9999">
+        <div className="hidden sm:flex  border-red-500 absolute inset-0 items-center justify-center z-9999">
           <div
             className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
-          <div className="relative rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
+          <div className="relative rounded-3xl w-fit min-w-[1000px] max-w-[1500px] flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] ">
 
             <div className="relative">
               {/* Modal image */}
-              {/* <img loading="lazy"
-                src={modalImages[modalIndex]}
+              {modalImages && <img loading="lazy"
+                src={modalImages.desktop[modalIndex]}
                 alt="modal"
-                className="h-fit w-fit max-h-[80dvh] object-contain rounded-2xl "
-              /> */}
-
-              <h1>MODAL DESKTOP!</h1>
-              
+                className=" object-contain rounded-2xl "
+              />}
               <button
                 onClick={() => setShowModal(false)}
                 className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"
@@ -891,17 +949,17 @@ export default function Projects() {
 
 
             {/* Pagination arrows */}
-            {modalImages.length > 1 && (
+            {modalImages && modalImages.desktop.length > 1 && (
               <>
                 <button
-                  onClick={prevModal}
+                  onClick={prevModalDesktop}
                   className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ‹
                 </button>
 
                 <button
-                  onClick={nextModal}
+                  onClick={nextModalDesktop}
                   className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ›
