@@ -23,11 +23,11 @@ function Contact() {
         {/* INPUTS */}
         {/* <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-10 font-normal w-60' type="text" placeholder='Name' />
         <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60' type="text" placeholder='E-mail' /> */}
-        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60 sm:w-140 h-30 sm:h-60 shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5]' name="" id="message" placeholder='E-mail me here' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-1 rounded-3xl mt-4 font-normal w-60 sm:w-140 h-30 sm:h-60' name="" id="message" placeholder='E-mail me here' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
         {/* BUTTON */}
         <a href={`mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
-          <button data-aos="zoom-in" data-aos-offset="200" className='px-3 py-1 rounded-md mt-4 sm:mt-10 sm:text-xl font-bold bg-linear-to-t from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] hover:opacity-50 hover:border border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
+          <button data-aos="zoom-in" data-aos-offset="200" className='px-4 py-2 rounded-md mt-4 sm:mt-10 sm:text-xl font-bold bg-linear-to-t from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] hover:opacity-50 hover:border border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
             {t("contact.send")}
           </button>
         </a>

@@ -174,7 +174,7 @@ function Journey() {
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-orange-500 flex justify-start items-start'>
                             <div data-aos="fade-left">
                                 <div className='flex align-center justify-center gap-2 sm:gap-4'>
-                                    <img loading="lazy" className='icons hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                                    <img loading="lazy" className='icons hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                                     <img loading="lazy" className='icons hover:bg-[#e0e0e6] w-9 h-9 sm:w-20 sm:h-20 border border-text-dark  bg-text p-2 rounded-md shadow-[0_0_10px_#e0e0e6] white:shadow-[0_0_10px_#e0e0e6]  transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
                                     <img loading="lazy" className='icons hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#5fa04e] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
                                 </div>

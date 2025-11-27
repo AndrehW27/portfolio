@@ -93,7 +93,10 @@ function Hero({ theme }: HeroProps) {
         </div>
       </nav>
 
-      <section className="bg-background white:bg-text ">
+      <section className=" border-red-500 bg-background white:bg-text ">
+
+        {/* HIDE VEO */}
+        {/* <div className='absolute bottom-0 right-0 bg-accent w-20 h-20'></div> */}
 
         {/* HERO SECTION */}
         <section className="relative w-dvw h-dvh flex flex-col items-center justify-center overflow-hidden">
@@ -103,7 +106,7 @@ function Hero({ theme }: HeroProps) {
             key={videoSrc}
             // forcing React to reload video smoothly when theme changes
             ref={videoRef}
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="scale-110 absolute top-0 left-0 w-full h-full object-cover"
             src={videoSrc}
             autoPlay
             muted
@@ -112,7 +115,7 @@ function Hero({ theme }: HeroProps) {
           />
 
           {/* GSAP CONTAINER ZOOM OUT VIDEO */}
-          <div ref={ContentFade} className="relative z-10 w-dvw sm:w-fit  h-dvh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
+          <div ref={ContentFade} className=" border-red-500 relative z-10 w-dvw sm:w-fit h-dvh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
 
             {/* BALLS */}
             {/* {theme !== "white" &&
@@ -128,17 +131,20 @@ function Hero({ theme }: HeroProps) {
             } */}
 
             {/* SENTENCES */}
-            <div className='border-accent ml-10 sm:ml-0 sm:flex sm:items-start sm:justify-start sm:mt-45'>
+            <div className='sm:border border-accent white:border-light-blue sm:bg-black/30 white:sm:bg-white/30 rounded-3xl ml-10 sm:ml-0 sm:flex sm:items-start sm:justify-start sm:mt-35'
+              data-aos="fade-in" data-aos-duration="3000" data-aos-offset="-500" data-aos-delay="0">
 
-              {/* IMG DESKTOP*/}
-              <div className='sm:ml-20'>
-                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-xl sm:text-4xl mt-20 sm:mt-0">{t("home.welcome")}</h1>
-                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-5  text-3xl sm:text-6xl  rounded-full text-accent white:text-light-blue">{t("home.title")}</h1>
-                <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className=" typing text-1xl sm:text-4xl text-text  white:text-dark-gray border-r-3 "><span className='text-2xl sm:text-4xl'>‹ </span>{t("home.subtitle")}<span className='text-2xl sm:text-4xl'> ›</span></h3>
-                <div className='hidden sm:block text-xs sm:text-xl mt-10 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
+              {/* TEXT DESKTOP AND MOBILE*/}
+              <div className='sm:ml-15 sm:mt-15 flex flex-col items-start justify-start'>
+                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
+                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-2 sm:mt-4 text-3xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'>‹ </span>{t("home.title")}<span className='text-4xl sm:text-6xl'> ›</span></h1>
+                <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="typing mt-2 text-1xl sm:text-4xl text-text  white:text-dark-gray border-r-3 ">{t("home.subtitle")}</h3>
+
+                <div className='hidden sm:block text-xs sm:text-xl mt-10 sm:mt-10 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
+
                   <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
                     <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                      <div className='text-accent white:text-light-blue mr-3 mb-6'><Wallpaper className='sm:w-8 h-8 sm:mr-2' /></div>
+                      <Wallpaper className='sm:w-8 h-8 sm:mr-2' />
                     </div>
                     <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
                   </div>
@@ -159,58 +165,113 @@ function Hero({ theme }: HeroProps) {
 
 
                 </div>
+
+                <div className='hidden sm:flex gap-4 mt-10'>
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" loading="lazy" className='icons white:bg-text hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" loading="lazy" className='icons white:bg-text hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1600" loading="lazy" className='icons white:bg-text hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" loading="lazy" className='icons white:bg-text hover:bg-[#ff9900] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" loading="lazy" className='icons white:bg-text hover:bg-[#00a1e0] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+                </div>
+
               </div>
+
+              {/* IMG DESKTOP*/}
               <div className="card-home hidden sm:flex border-accent">
                 <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="relative w-100 sm:w-230 h-85 sm:h-150 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                   <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-180" src={bg} />
-                  <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
-                    <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-30 right-10 sm:right-25 border-blue-500 text-sm sm:text-2xl w-40 sm:w-60 white:text-text">{t("home.text")}</h5>
+                  <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#381f70_35%,transparent_80%)] white:sm:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
+                    {/* <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-30 right-10 sm:right-25 border-blue-500 text-sm sm:text-2xl w-40 sm:w-60 white:text-text">{t("home.text")}</h5> */}
                   </div>
                 </div>
               </div>
 
+              {/* ICONS DESKTOP */}
+              {/* <img loading="lazy" className='absolute bottom-[-60px] right-160 icons hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-30 sm:h-30 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+              <img loading="lazy" className='absolute bottom-85 right-45 icons hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+              <img loading="lazy" className='absolute top-20 right-20 icons hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" /> */}
 
             </div>
 
-            <div className='sm:hidden text-xs sm:text-xl mt-10 sm:mt-40 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
+            {/* STATS DESKTOP */}
+            <div className='absolute bottom-40 w-full text-xl border-red-500  hidden sm:flex'
+              data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800">
+              <p><span className='text-5xl ml-20 text-accent white:text-light-blue'>5+</span> {t("home.years")}</p>
+              <p className='absolute bottom-0 left-100'><span className='text-5xl text-accent white:text-light-blue'>40+</span> {t("home.github")}</p>
+              <p className='absolute bottom-0 right-20'> {t("home.text")}</p>
+            </div>
 
-              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
-                <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <Wallpaper className='sm:w-8 h-8 sm:mr-2' />
+
+
+
+
+            {/* TEXT MOBILE */}
+            <div className='sm:hidden text-xs mt-5 w-70 ml-10 '>
+
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex items-center justify-start mb-3 border-accent'>
+                <div className='text-accent white:text-light-blue mr-3 '>
+                  <Wallpaper className=' ' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.interface")}</h1>
               </div>
 
-              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200" className='flex'>
-                <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <Gauge className='sm:w-8 h-8 sm:mr-2' />
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200" className='flex items-center justify-start mb-3'>
+                <div className='text-accent white:text-light-blue mr-3'>
+                  <Gauge className='' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.api")}</h1>
               </div>
 
-              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1600" className='flex'>
-                <div className='text-accent white:text-light-blue mr-3 mb-6'>
-                  <DatabaseBackup className='sm:w-8 h-8 sm:mr-2 ' />
+              <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1600" className='flex items-center justify-start mb-3'>
+                <div className='text-accent white:text-light-blue mr-3'>
+                  <DatabaseBackup className=' ' />
                 </div>
                 <h1 className='white:text-dark-gray'>{t("home.cycle")}</h1>
               </div>
 
+              <div className='flex gap-4 mt-6'>
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1600" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#ff9900] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#00a1e0] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+              </div>
+
+              <div className='flex text-xs mt-4'
+              data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400">
+                <div>
+                  <p className='text-3xl text-accent white:text-light-blue'>40+</p>
+                  <p>{t("home.github")}</p>
+                </div>
+                <div className='ml-6'>
+                  <p className='text-3xl text-accent white:text-light-blue'>5+</p>
+                  <p>{t("home.years")}</p>
+                </div>
+              </div>
 
             </div>
 
 
-            {/* <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2400" className="absolute rounded-3xl bottom-0 left-0 w-65 sm:w-120 shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc]" src={bg} /> */}
-
-
             {/* IMG MOBILE */}
+
             <div className="card-home flex absolute bottom-0 left-[-45px] sm:left-[-80px] sm:hidden border-accent">
               <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                 <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-150" src={bg} />
                 <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
                   <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-25 right-10 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
+
+                  {/* <div className='absolute top-20 right-20 text-xs'>
+                    <p className='text-2xl text-accent white:text-light-blue'>40+</p>
+                    <p>{t("home.github")}</p>
+                    <p className='text-2xl text-accent white:text-light-blue'>5+</p>
+                    <p>{t("home.years")}</p>
+                  </div> */}
+
                 </div>
               </div>
             </div>
+
+
 
 
 

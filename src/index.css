@@ -7,7 +7,7 @@
 }
 
 @theme {
-  --font-sans: InterVariable, sans-serif;
+  --font-mono: ui-monospace;
   --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
 
   /* Add your custom color palette here 👇 */
@@ -182,9 +182,9 @@ body {
 }
 
 .icons {  
-  padding: 6px;
+  padding: 0.75rem;
   transition: 300 ease-in-out;
-  border-radius: 6px;
+  border-radius: 50%;
   border: 1px solid var(--color-text-dark);
 }
 
