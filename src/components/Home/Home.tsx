@@ -136,8 +136,8 @@ function Hero({ theme }: HeroProps) {
 
               {/* TEXT DESKTOP AND MOBILE*/}
               <div className='sm:ml-15 sm:mt-15 flex flex-col items-start justify-start'>
-                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
-                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-2 sm:mt-4 text-3xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'>‹ </span>{t("home.title")}<span className='text-4xl sm:text-6xl'> ›</span></h1>
+                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-1xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
+                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-2 sm:mt-4 text-2xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'>‹ </span>{t("home.title")}<span className='text-4xl sm:text-6xl'> ›</span></h1>
                 <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="typing mt-2 text-1xl sm:text-4xl text-text  white:text-dark-gray border-r-3 ">{t("home.subtitle")}</h3>
 
                 <div className='hidden sm:block text-xs sm:text-xl mt-10 sm:mt-10 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
@@ -237,8 +237,8 @@ function Hero({ theme }: HeroProps) {
                 <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#00a1e0] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
               </div>
 
-              <div className='flex text-xs mt-4'
-              data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" data-aos-offset="-500">
+              {/* <div className='flex text-xs mt-4'
+                data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" data-aos-offset="-500">
                 <div>
                   <p className='text-3xl text-accent white:text-light-blue'>40+</p>
                   <p>{t("home.github")}</p>
@@ -247,7 +247,7 @@ function Hero({ theme }: HeroProps) {
                   <p className='text-3xl text-accent white:text-light-blue'>5+</p>
                   <p>{t("home.years")}</p>
                 </div>
-              </div>
+              </div> */}
 
             </div>
 
@@ -257,15 +257,21 @@ function Hero({ theme }: HeroProps) {
             <div className="card-home flex absolute bottom-0 left-[-45px] sm:left-[-80px] sm:hidden border-accent">
               <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                 <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-150" src={bg} />
-                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
-                  <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-25 right-10 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
+                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_50%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
+                  <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-8 sm:top-25 right-4 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
 
-                  {/* <div className='absolute top-20 right-20 text-xs'>
+                  <div className='absolute top-20 right-14 text-xs'
+                  data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500">
+
+                    {/* <p><span className='text-2xl white:text-light-blue'>40+</span> {t("home.github")}</p>
+                    <p><span className='text-2xl white:text-light-blue'>5+</span> {t("home.years")}</p> */}
+
                     <p className='text-2xl text-accent white:text-light-blue'>40+</p>
                     <p>{t("home.github")}</p>
-                    <p className='text-2xl text-accent white:text-light-blue'>5+</p>
+                    <p className='text-2xl text-accent white:text-light-blue mt-2'>5+</p>
                     <p>{t("home.years")}</p>
-                  </div> */}
+
+                  </div>
 
                 </div>
               </div>
