@@ -238,7 +238,7 @@ function Hero({ theme }: HeroProps) {
               </div>
 
               <div className='flex text-xs mt-4'
-              data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400">
+              data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" data-aos-offset="-500">
                 <div>
                   <p className='text-3xl text-accent white:text-light-blue'>40+</p>
                   <p>{t("home.github")}</p>
