@@ -935,7 +935,7 @@ export default function Projects() {
 
       {/* MODAL DETAILS 2*/}
       {showModalDetails2 && (
-        <div className="absolute  inset-0 flex items-center justify-center z-9999">
+        <div className="absolute inset-0 flex items-center justify-center z-9999">
           <div
             className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModalDetails2(false)}
@@ -967,13 +967,13 @@ export default function Projects() {
 
             <div className="flex flex-col mt-6 white:text-text-dark ">
               <div className="text-lg sm:text-2xl text-accent white:text-light-blue border-red-500 mb-2">{modalTitle}</div>
-              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[0]}</div>
+              <div className="text-xs sm:text-base border-red-500">{modalDetails2[0]}</div>
               <br />
-              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[1]}</div>
+              <div className="text-xs sm:text-base border-red-500">{modalDetails2[1]}</div>
               <br />
-              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[2]}</div>
+              <div className="text-xs sm:text-base border-red-500">{modalDetails2[2]}</div>
               <br />
-              <div className="text-xs sm:text-xl border-red-500">{modalDetails2[3]}</div>
+              <div className="text-xs sm:text-base border-red-500">{modalDetails2[3]}</div>
             </div>
 
 

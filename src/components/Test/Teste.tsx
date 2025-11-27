@@ -164,7 +164,7 @@ function Teste({ theme }: HeroProps) {
 
             {/* ABOUT BUTTON */}
             {/* <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" href="#about">
-              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray  py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
+              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray  py-2 px-4 rounded mt-10 transition duration-400 ease-in-out">
                 {t("home.button")}
               </button>
             </a> */}
