@@ -115,7 +115,7 @@ function Hero({ theme }: HeroProps) {
           />
 
           {/* GSAP CONTAINER ZOOM OUT VIDEO */}
-          <div ref={ContentFade} className=" border-red-500 relative z-10 w-dvw sm:w-fit h-dvh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
+          <div ref={ContentFade} className="border-red-500 relative z-10 w-dvw sm:w-fit h-dvh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
 
             {/* BALLS */}
             {/* {theme !== "white" &&
@@ -181,7 +181,6 @@ function Hero({ theme }: HeroProps) {
                 <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="relative w-100 sm:w-230 h-85 sm:h-150 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                   <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-180" src={bg} />
                   <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#381f70_35%,transparent_80%)] white:sm:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
-                    {/* <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-15 sm:top-30 right-10 sm:right-25 border-blue-500 text-sm sm:text-2xl w-40 sm:w-60 white:text-text">{t("home.text")}</h5> */}
                   </div>
                 </div>
               </div>
@@ -196,10 +195,26 @@ function Hero({ theme }: HeroProps) {
             {/* STATS DESKTOP */}
             <div className='absolute bottom-40 w-full text-xl border-red-500  hidden sm:flex'
               data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800">
-              <p><span className='text-5xl ml-20 text-accent white:text-light-blue'>5+</span> {t("home.years")}</p>
-              <p className='absolute bottom-0 left-100'><span className='text-5xl text-accent white:text-light-blue'>40+</span> {t("home.github")}</p>
+              <div className='ml-20'>
+                <p className='text-5xl text-accent white:text-light-blue'>40+</p>
+                <p className='uw:text-black'>{t("home.github")}</p> 
+              </div>
+              <div className='absolute left-100'>
+                <p className='text-5xl text-accent white:text-light-blue mt-2'>5+</p>
+                <p>{t("home.years")}</p>
+              </div>
               <p className='absolute bottom-0 right-20'> {t("home.text")}</p>
             </div>
+
+            {/* <div className='absolute top-20 right-14 text-xs'
+              data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500">
+
+            
+              <p>{t("home.github")}</p>
+              <p className='text-2xl text-accent white:text-light-blue mt-2'>5+</p>
+              <p>{t("home.years")}</p>
+
+            </div> */}
 
 
 
@@ -230,11 +245,11 @@ function Hero({ theme }: HeroProps) {
               </div>
 
               <div className='flex gap-4 mt-6'>
-                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1600" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
-                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#ff9900] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#00a1e0] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="-500" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" data-aos-offset="-500" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1600" data-aos-offset="-500" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" data-aos-offset="-500" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#ff9900] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" data-aos-offset="-500" loading="lazy" className='rounded-full p-2 white:bg-text hover:bg-[#00a1e0] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
               </div>
 
               {/* <div className='flex text-xs mt-4'
@@ -261,7 +276,7 @@ function Hero({ theme }: HeroProps) {
                   <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-8 sm:top-25 right-4 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
 
                   <div className='absolute top-20 right-14 text-xs'
-                  data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500">
+                    data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500">
 
                     {/* <p><span className='text-2xl white:text-light-blue'>40+</span> {t("home.github")}</p>
                     <p><span className='text-2xl white:text-light-blue'>5+</span> {t("home.years")}</p> */}
