@@ -102,7 +102,7 @@ function App() {
         </Suspense>
 
         <Suspense fallback={<div></div>}>
-          <Teste theme={theme} />
+          <Teste />
         </Suspense>
 
         <Suspense fallback={<div></div>}>
