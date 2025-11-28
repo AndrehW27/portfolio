@@ -7,7 +7,7 @@ const Project = React.lazy(() => import('./components/Project/Project'));
 const Journey = React.lazy(() => import('./components/Journey/Journey'));
 const About = React.lazy(() => import('./components/About/About'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
-// const Teste = React.lazy(() => import('./components/Test/Teste'));
+const Teste = React.lazy(() => import('./components/Test/Teste'));
 
 
 import './App.css'
@@ -40,12 +40,13 @@ function App() {
 
 
   return (
-    // Apply the 'white' class here to wrap the entire application
-    <div className={`${theme === 'white' ? 'white' : ''} relative`}>
+    <div className="bg-background">
+  
+    {/* <div className={`${theme === 'white' ? 'white' : ''} relative`}>
       <video key={theme} autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover -z-10">
         <source src={theme === 'white' ? bgVideoWhite : bgVideo} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-2 z-50'>
 
@@ -100,9 +101,9 @@ function App() {
           <About />
         </Suspense>
 
-        {/* <Suspense fallback={<div></div>}>
+        <Suspense fallback={<div></div>}>
           <Teste theme={theme} />
-        </Suspense> */}
+        </Suspense>
 
         <Suspense fallback={<div></div>}>
           <Project />

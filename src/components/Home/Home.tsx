@@ -131,11 +131,11 @@ function Hero({ theme }: HeroProps) {
             } */}
 
             {/* SENTENCES */}
-            <div className='sm:border border-accent white:border-light-blue sm:bg-black/30 white:sm:bg-white/30 rounded-3xl ml-10 sm:ml-0 sm:flex sm:items-start sm:justify-start sm:mt-35'
+            <div className='sm:border border-accent sm:mb-10 white:border-light-blue sm:bg-black/30 white:sm:bg-white/30 rounded-3xl ml-10 sm:ml-0 sm:flex sm:items-start sm:justify-start sm:mt-35'
               data-aos="fade-in" data-aos-duration="3000" data-aos-offset="-500" data-aos-delay="0">
 
               {/* TEXT DESKTOP AND MOBILE*/}
-              <div className='sm:ml-15 sm:mt-15 flex flex-col items-start justify-start'>
+              <div className='sm:ml-15 sm:mt-15 flex flex-col items-start justify-start '>
                 <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-1xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
                 <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-2 sm:mt-4 text-2xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'>‹ </span>{t("home.title")}<span className='text-4xl sm:text-6xl'> ›</span></h1>
                 <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="typing mt-2 text-1xl sm:text-4xl text-text  white:text-dark-gray border-r-3 ">{t("home.subtitle")}</h3>
@@ -167,17 +167,17 @@ function Hero({ theme }: HeroProps) {
                 </div>
 
                 <div className='hidden sm:flex gap-4 mt-10'>
-                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" loading="lazy" className='icons white:bg-text hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" loading="lazy" className='icons white:bg-text hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1600" loading="lazy" className='icons white:bg-text hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
-                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" loading="lazy" className='icons white:bg-text hover:bg-[#ff9900] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" loading="lazy" className='icons white:bg-text hover:bg-[#00a1e0] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1600" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#ff9900] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ff9900] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+                  <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2400" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#00a1e0] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#00a1e0] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
                 </div>
 
               </div>
 
               {/* IMG DESKTOP*/}
-              <div className="card-home hidden sm:flex border-accent">
+              <div className="card-home hidden sm:flex border-accent ">
                 <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="relative w-100 sm:w-230 h-85 sm:h-150 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                   <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-180" src={bg} />
                   <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#381f70_35%,transparent_80%)] white:sm:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
@@ -193,11 +193,11 @@ function Hero({ theme }: HeroProps) {
             </div>
 
             {/* STATS DESKTOP */}
-            <div className='absolute bottom-40 w-full text-xl border-red-500  hidden sm:flex'
+            <div className='absolute bottom-[8dvh] w-full text-xl border-red-500  hidden sm:flex'
               data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800">
               <div className='ml-20'>
                 <p className='text-5xl text-accent white:text-light-blue'>40+</p>
-                <p className='uw:text-black'>{t("home.github")}</p> 
+                <p>{t("home.github")}</p> 
               </div>
               <div className='absolute left-100'>
                 <p className='text-5xl text-accent white:text-light-blue mt-2'>5+</p>
