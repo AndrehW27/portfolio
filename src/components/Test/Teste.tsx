@@ -8,22 +8,22 @@ import "./Teste.css";
 // import { useTranslation } from "react-i18next";
 // import bg from "../../assets/Me/me-pc2.png";
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SquareDashedBottomCode, Keyboard, GalleryHorizontalEnd } from "lucide-react";
+import { SquareDashedBottomCode } from "lucide-react";
 
 
 // import wavesDark from '../../assets/videos/waves-video2.mp4';
 // import wavesLight from '../../assets/videos/white-video.mp4';
 
-type HeroProps = {
-  theme: string;
-};
+// type HeroProps = {
+//   theme: string;
+// };
 
 // export default function Teste()
 
-function Teste({ theme }: HeroProps) {
+function Teste() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
