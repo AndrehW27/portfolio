@@ -270,8 +270,8 @@ function Hero({ theme }: HeroProps) {
             {/* IMG MOBILE */}
 
             <div className="card-home flex absolute bottom-0 left-[-45px] sm:left-[-80px] sm:hidden border-accent">
-              <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-100 sm:w-190 h-65 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
-                <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-150" src={bg} />
+              <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-110 sm:w-190 h-75 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
+                <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-90 sm:w-150" src={bg} />
                 <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_50%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
                   <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-8 sm:top-25 right-4 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
 
