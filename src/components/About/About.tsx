@@ -128,6 +128,8 @@ function Journey() {
             </div>
 
           </div>
+
+          
         </div>
 
         {/* <h1 className='text-2xl absolute bottom-16'>Projects</h1> */}

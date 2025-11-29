@@ -4,7 +4,7 @@ import React, { Suspense, useEffect, useState } from "react";
 // import bgVideoWhite from './assets/videos/white-video.mp4';
 const Home = React.lazy(() => import('./components/Home/Home'));
 const Project = React.lazy(() => import('./components/Project/Project'));
-// const Journey = React.lazy(() => import('./components/Journey/Journey'));
+const Journey = React.lazy(() => import('./components/Journey/Journey'));
 // const About = React.lazy(() => import('./components/About/About'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
 const Teste = React.lazy(() => import('./components/Test/Teste'));
@@ -93,11 +93,11 @@ function App() {
           <Home theme={theme} />
         </Suspense>
 
-        {/* <Suspense fallback={<div></div>}>
+        <Suspense fallback={<div></div>}>
           <Journey />
         </Suspense>
 
-        <Suspense fallback={<div></div>}>
+        {/* <Suspense fallback={<div></div>}>
           <About />
         </Suspense> */}
 
