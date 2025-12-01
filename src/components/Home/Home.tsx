@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import wavesDark from '../../assets/videos/waves-video2.mp4';
 import wavesLight from '../../assets/videos/white-video.mp4';
+import andre from "../../assets/me/im_aw2.png";
 
 type HeroProps = {
   theme: string;
@@ -93,7 +94,7 @@ function Hero({ theme }: HeroProps) {
         </div>
       </nav>
 
-      <section className=" border-red-500 bg-background white:bg-text ">
+      <section className="border-red-500 bg-background white:bg-text ">
 
         {/* HIDE VEO */}
         {/* <div className='absolute bottom-0 right-0 bg-accent w-20 h-20'></div> */}
@@ -134,11 +135,16 @@ function Hero({ theme }: HeroProps) {
             <div className='sm:border border-accent sm:mb-10 white:border-light-blue sm:bg-black/30 white:sm:bg-white/30 rounded-3xl ml-10 sm:ml-0 sm:flex sm:items-start sm:justify-start sm:mt-35'
               data-aos="fade-in" data-aos-duration="3000" data-aos-offset="-500" data-aos-delay="0">
 
+
               {/* TEXT DESKTOP AND MOBILE*/}
-              <div className='sm:ml-15 sm:mt-15 flex flex-col items-start justify-start '>
+              <div className='relative sm:ml-15 sm:mt-15 flex flex-col items-start justify-start '>
                 <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-1xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
-                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-2 sm:mt-4 text-2xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'>‹ </span>{t("home.title")}<span className='text-4xl sm:text-6xl'> ›</span></h1>
-                <h3 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" className="typing mt-2 text-1xl sm:text-4xl text-text  white:text-dark-gray border-r-3 ">{t("home.subtitle")}</h3>
+                {/* MY SIGNATURE*/}
+                <div className="border-red-500 absolute -top-17 -left-15 sm:-top-60 sm:-left-35 w-100 h-100 sm:w-190 sm:h-190 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${andre})` }}
+                  data-aos="fade-in" data-aos-duration="2000" data-aos-delay="2800"
+                ></div>
+                {/* <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-2 sm:mt-4 text-2xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'>‹ </span>{t("home.title")}<span className='text-4xl sm:text-6xl'>‹ </span></h1> */}
+                <h3 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2800" className="typing mt-25 sm:mt-50 text-2xl sm:text-4xl text-text white:text-dark-gray border-r-3 z-702"><span className='text-3xl sm:text-5xl'>‹ </span>{t("home.subtitle")}<span className='text-3xl sm:text-5xl'> ›</span></h3>
 
                 <div className='hidden sm:block text-xs sm:text-xl mt-10 sm:mt-10 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
 
@@ -166,7 +172,10 @@ function Hero({ theme }: HeroProps) {
 
                 </div>
 
-                <div className='hidden sm:flex gap-4 mt-10'>
+                <div className='hidden sm:flex gap-6 mt-6'>
+                  {/* <div className='hover:bg-[#61dafb] bg-slate-700 w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition flex items-center justify-center'>
+                    <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="-500" loading="lazy" className='icons white:bg-text w-9 h-9 sm:w-15 sm:h-15' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                  </div> */}
                   <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#61dafb] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                   <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#ea23a4] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#ea23a4] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
                   <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1600" data-aos-offset="-500" loading="lazy" className='icons white:bg-text hover:bg-[#5fa04e] bg-background w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#5fa04e] white:shadow-[0_0_10px_#61dafb] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
@@ -178,9 +187,9 @@ function Hero({ theme }: HeroProps) {
 
               {/* IMG DESKTOP*/}
               <div className="card-home hidden sm:flex border-accent ">
-                <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="relative w-100 sm:w-230 h-85 sm:h-150 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
-                  <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-180" src={bg} />
-                  <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#381f70_35%,transparent_80%)] white:sm:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
+                <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="relative w-100 sm:w-230 h-85 sm:h-170 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
+                  <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-210" src={bg} />
+                  <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#381f70_25%,transparent_80%)] white:sm:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
                   </div>
                 </div>
               </div>
@@ -197,7 +206,7 @@ function Hero({ theme }: HeroProps) {
               data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800">
               <div className='ml-20'>
                 <p className='text-5xl text-accent white:text-light-blue'>40+</p>
-                <p>{t("home.github")}</p> 
+                <p>{t("home.github")}</p>
               </div>
               <div className='absolute left-100'>
                 <p className='text-5xl text-accent white:text-light-blue mt-2'>5+</p>
@@ -215,10 +224,6 @@ function Hero({ theme }: HeroProps) {
               <p>{t("home.years")}</p>
 
             </div> */}
-
-
-
-
 
             {/* TEXT MOBILE */}
             <div className='sm:hidden text-xs mt-5 w-70 ml-10 '>
