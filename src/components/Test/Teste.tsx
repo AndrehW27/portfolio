@@ -1,5 +1,5 @@
 import "./Teste.css";
-import bg from "../../assets/me/me_art_modern-nobg.png";
+import bg from "../../assets/Me/me_art_modern-nobg.png";
 // import bg2 from "../../assets/me_art_modern-nobg.png";
 // import video from "../../assets/videos/wave-dna.mp4";
 // import { ChevronDown } from "lucide-react";
