@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import wavesDark from '../../assets/videos/waves-video2.mp4';
 import wavesLight from '../../assets/videos/white-video.mp4';
-import andre from "../../assets/me/im_aw2.png";
+import andre from "../../assets/Me/im_aw2.png";
 
 type HeroProps = {
   theme: string;
