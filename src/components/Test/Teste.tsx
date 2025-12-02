@@ -291,8 +291,8 @@ function Teste() {
         <div className=" border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${me})` }}
           data-aos="fade-left" data-aos-duration="2000" data-aos-offset="150"
         ></div>
-        {/* <div className="box border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${three_d})` }}
-        ></div> */}
+        <div className="box border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${three_d})` }}
+        ></div>
 
         {/* GSAP CROUSEL ANIMATIONS */}
         {/* <div className="carousel mt-40 border border-red-500">
