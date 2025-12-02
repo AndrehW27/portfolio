@@ -1,5 +1,6 @@
 import "./Teste.css";
-import bg from "../../assets/Me/me_art_modern-nobg.png";
+import me from "../../assets/Me/me_art_modern-nobg.png";
+import three_d from "../../assets/bg/purple-3D.png";
 // import bg2 from "../../assets/me_art_modern-nobg.png";
 // import video from "../../assets/videos/wave-dna.mp4";
 // import { ChevronDown } from "lucide-react";
@@ -287,9 +288,11 @@ function Teste() {
         </div>
 
         {/* MY PHOTO */}
-        <div className=" border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${bg})` }}
+        <div className=" border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${me})` }}
           data-aos="fade-left" data-aos-duration="2000" data-aos-offset="150"
         ></div>
+        {/* <div className="box border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${three_d})` }}
+        ></div> */}
 
         {/* GSAP CROUSEL ANIMATIONS */}
         {/* <div className="carousel mt-40 border border-red-500">

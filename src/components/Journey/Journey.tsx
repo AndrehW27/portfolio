@@ -29,7 +29,7 @@ function Journey() {
 
     return (
         <>
-            <section id="journey" className="relative font-bold text-xs sm:text-xl text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
+            <section id="journey" className="relative bg-[url('./assets/bg/nebule.jpeg')] bg-no-repeat bg-center bg-cover font-bold text-xs sm:text-xl text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
 
                 {/* <h1 data-aos="fade-down" className=' white:text-dark-gray mt-16 sm:mt-25 text-2xl sm:text-2xl font-bold'>{t("about.aboutme")}</h1> */}
 

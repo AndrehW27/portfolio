@@ -105,7 +105,6 @@ function Hero({ theme }: HeroProps) {
           {/* ✅ Dynamic theme-based video */}
           <video
             key={videoSrc}
-            // forcing React to reload video smoothly when theme changes
             ref={videoRef}
             className="scale-110 absolute top-0 left-0 w-full h-full object-cover"
             src={videoSrc}
@@ -189,7 +188,7 @@ function Hero({ theme }: HeroProps) {
               <div className="card-home hidden sm:flex border-accent ">
                 <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="relative w-100 sm:w-230 h-85 sm:h-170 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                   <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-80 sm:w-210" src={bg} />
-                  <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_25%,transparent_70%)] sm:w-160 sm:bg-[linear-gradient(to_left,#381f70_25%,transparent_80%)] white:sm:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
+                  <div className='absolute top-0 right-0 w-90 h-full sm:w-160 bg-[linear-gradient(to_left,#381f70_25%,transparent_80%)] white:sm:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
                   </div>
                 </div>
               </div>
@@ -205,11 +204,11 @@ function Hero({ theme }: HeroProps) {
             <div className='absolute bottom-[8dvh] w-full text-xl border-red-500  hidden sm:flex'
               data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800">
               <div className='ml-20'>
-                <p className='text-5xl text-accent white:text-light-blue'>40+</p>
+                <p className='text-5xl'>40+</p>
                 <p>{t("home.github")}</p>
               </div>
               <div className='absolute left-100'>
-                <p className='text-5xl text-accent white:text-light-blue mt-2'>5+</p>
+                <p className='text-5xl mt-2'>5+</p>
                 <p>{t("home.years")}</p>
               </div>
               <p className='absolute bottom-0 right-20'> {t("home.text")}</p>
@@ -277,7 +276,7 @@ function Hero({ theme }: HeroProps) {
             <div className="card-home flex absolute bottom-0 left-[-45px] sm:hidden border-accent">
               <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-110 sm:w-190 h-70 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                 <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-90 sm:w-150" src={bg} />
-                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_50%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
+                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#381f70_25%,transparent_70%)] z-200 '>
                   <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-8 sm:top-25 right-4 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
 
                   <div className='absolute top-20 right-14 text-xs'
@@ -286,9 +285,9 @@ function Hero({ theme }: HeroProps) {
                     {/* <p><span className='text-2xl white:text-light-blue'>40+</span> {t("home.github")}</p>
                     <p><span className='text-2xl white:text-light-blue'>5+</span> {t("home.years")}</p> */}
 
-                    <p className='text-2xl text-accent white:text-light-blue'>40+</p>
+                    <p className='text-2xl'>40+</p>
                     <p>{t("home.github")}</p>
-                    <p className='text-2xl text-accent white:text-light-blue mt-2'>5+</p>
+                    <p className='text-2xl mt-2'>5+</p>
                     <p>{t("home.years")}</p>
 
                   </div>

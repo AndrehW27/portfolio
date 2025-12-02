@@ -8,6 +8,9 @@ export default {
       'uw2': '3440px',  // for 21:9 ultrawide monitors
     },
     extend: {
+      fontFamily: {
+        monofett: ['"Monofett"', 'cursive'],
+      },
       colors: {
         // background: 'hsl(var(--background))',
         // surface: 'hsl(var(--surface))',
