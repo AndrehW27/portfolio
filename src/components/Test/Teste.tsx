@@ -72,10 +72,11 @@ function Teste() {
         gsap.from(box, {
           x: "-100vw",
           opacity: 0,
+          // duration: 6,
           rotate: -360,
           scrollTrigger: {
             trigger: box,
-            start: "top 50%",
+            start: "top 60%",
             end: "center 50%",
             scrub: true,
             // markers: true,

@@ -129,7 +129,7 @@ function Journey() {
 
           </div>
 
-          
+
         </div>
 
         {/* <h1 className='text-2xl absolute bottom-16'>Projects</h1> */}
@@ -160,31 +160,31 @@ function Journey() {
                 {/* <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="350" className='border-blue-500 clip-hex2 absolute top-0 left-[-70px] w-110 h-130 sm:w-150 sm:h-140 bg-gradient-to-tr from-background from-[5%] via-surface via-[40%] to-accent to-[100%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] flex fex-col items-center justify-center'> */}
                 <div className=" border-red-500 w-90 sm:w-140 z-10 ">
 
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/1Dfsjvic7Z9wcLdjXfSIvKjF_BuvckW3o/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/1Dfsjvic7Z9wcLdjXfSIvKjF_BuvckW3o/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.dev")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/13dlxZgxaoNgn2UgUKnW4jG7ePsfXvVqc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/13dlxZgxaoNgn2UgUKnW4jG7ePsfXvVqc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.adm")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/1bRluLJoZ09jgAKB7g5537JMitziAOVM7/view" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/1bRluLJoZ09jgAKB7g5537JMitziAOVM7/view" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.jr")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/1h_SM0ytcV88K8RbDRH-o42OHw6EIfF5p/view" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/1h_SM0ytcV88K8RbDRH-o42OHw6EIfF5p/view" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.react")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/0B9EwvgeYbwGuWldKclJzUUlEVTQ/view?resourcekey=0-m6tPdA_Yd-W0DzJ0UwHItA" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/0B9EwvgeYbwGuWldKclJzUUlEVTQ/view?resourcekey=0-m6tPdA_Yd-W0DzJ0UwHItA" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.eli")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/1cb7fdYla7avKo7Ju_-ukM8uTQr8DPY9P/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/1cb7fdYla7avKo7Ju_-ukM8uTQr8DPY9P/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.bct")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/12MZR5OlbskTs5fsX2TqgGLPrnrlfSiIz/view" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/12MZR5OlbskTs5fsX2TqgGLPrnrlfSiIz/view" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.omni")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/1rj1R8i6UXtx1p0r_KkLC97Q6Jw9WPmni/view" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/1rj1R8i6UXtx1p0r_KkLC97Q6Jw9WPmni/view" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.html")}</h1>
                   </a>
-                  <a className='hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out' href="https://drive.google.com/file/d/1AVLCvLr-qYvcEzdVqKgvizOVUxtzA1Lc/view" target="_blank" rel="noopener noreferrer">
+                  <a className='hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out' href="https://drive.google.com/file/d/1AVLCvLr-qYvcEzdVqKgvizOVUxtzA1Lc/view" target="_blank" rel="noopener noreferrer">
                     <h1 className='mb-5 underline cursor-pointer'>{t("about.css")}</h1>
                   </a>
                 </div>

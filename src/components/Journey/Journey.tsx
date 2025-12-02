@@ -50,7 +50,7 @@ function Journey() {
 
                         <div className='w-40 sm:w-100 h-40 sm:h-60 border-orange-500 flex justify-end items-start'>
                             <div data-aos="fade-right" className='flex align-center justify-center gap-2 sm:gap-4'>
-                                <img loading="lazy" className='icons hover:bg-[#f0db4f] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                <img loading="lazy" className='icons p-1 hover:bg-[#f0db4f] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#f0db4f] white:shadow-[0_0_10px_#f0db4f] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                                 <img loading="lazy" className='icons hover:bg-[#f16529] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#f16529] white:shadow-[0_0_10px_#f16529] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                                 <img loading="lazy" className='icons hover:bg-[#31a5d9] bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#31a5d9] white:shadow-[0_0_10px_#31a5d9] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                             </div>
@@ -87,7 +87,7 @@ function Journey() {
 
                     <div className='w-20 sm:w-50 border-red-500 flex flex-col justify-start items-center'>
                         <div className='w-50 h-40 sm:h-60 border-orange-500 flex flex-col justify-start items-center'>
-                            <div data-aos="fade-up" className='h-9 w-9 sm:h-20 sm:w-20 border-3 border-accent hover:bg-accent white:hover:bg-light-blue transition duration-400 ease-in-out white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center'>
+                            <div data-aos="fade-up" className='h-9 w-9 sm:h-20 sm:w-20 border-3 border-accent hover:bg-accent white:hover:bg-light-blue transition duration-300 ease-in-out white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center'>
                                 <School className='sm:h-12 sm:w-12' />
                             </div>
                             <div data-aos="fade-up" className='w-1 h-31 sm:h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>

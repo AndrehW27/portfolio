@@ -76,20 +76,20 @@ function Hero({ theme }: HeroProps) {
           </a>
 
           <ul className="">
-            <li><a href="#journey" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-400 ease-in-out">{t("navbar.journey")}</a></li>
+            <li><a href="#journey" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
           </ul>
 
           <ul className="">
-            <li><a href="#about" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-400 ease-in-out">{t("navbar.about")}</a></li>
+            <li><a href="#about" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
           </ul>
           {/* <ul className="">
-            <li><a href="#journey" className="hover:text-accent mr-4 transition duration-400 ease-in-out">{t("navbar.journey")}</a></li>
+            <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
           </ul> */}
           <ul className="">
-            <li><a href="#projects" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-400 ease-in-out">{t("navbar.projects")}</a></li>
+            <li><a href="#projects" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
           </ul>
           <ul className="">
-            <li><a href="#contact" className="hover:text-accent white:hover:text-light-blue transition duration-400 ease-in-out">{t("navbar.contact")}</a></li>
+            <li><a href="#contact" className="hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
           </ul>
         </div>
       </nav>
@@ -303,7 +303,7 @@ function Hero({ theme }: HeroProps) {
 
             {/* ABOUT BUTTON */}
             {/* <a data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" href="#about">
-              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray  py-2 px-4 rounded mt-10 transition duration-400 ease-in-out">
+              <button className="shadow-[0_0_20px_#7C3AED] white:shadow-[0_0_20px_#6594fc] bg-text white:bg-text-dark text-background white:text-text white:from-light-blue to-dark-gray  py-2 px-4 rounded mt-10 transition duration-300 ease-in-out">
                 {t("home.button")}
               </button>
             </a> */}

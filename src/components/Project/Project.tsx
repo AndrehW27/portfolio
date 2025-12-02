@@ -739,7 +739,7 @@ export default function Projects() {
                         onClick={() => {
                           setShowModalImportant(true);
                         }}
-                        className="pointer hover:text-text hover:bg-red-700/50 text-xs sm:text-lg px-4 py-2 ml-6 rounded-full border border-red-700 text-red-700 transition duration-400 ease-in-out">
+                        className="pointer hover:text-text hover:bg-red-700/50 text-xs sm:text-lg px-4 py-2 ml-6 rounded-full border border-red-700 text-red-700 transition duration-300 ease-in-out">
                           {s.message[0].text}
                       </h1>
                     </div>

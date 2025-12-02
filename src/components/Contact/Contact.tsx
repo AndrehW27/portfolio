@@ -1,5 +1,5 @@
 import './Contact.css'
-import { ChevronUp } from "lucide-react";
+import { ChevronUp, Download } from "lucide-react";
 import wpp from "../../assets/icons/whatsapp.png"
 import trail from "../../assets/icons/trailhead2.png"
 import { useTranslation } from "react-i18next";
@@ -25,23 +25,39 @@ function Contact() {
         <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60' type="text" placeholder='E-mail' /> */}
         <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-1 rounded-3xl mt-4 font-normal w-60 sm:w-140 h-30 sm:h-60' name="" id="message" placeholder='E-mail me here' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
-        {/* BUTTON */}
+        {/* BUTTON SEND*/}
         <a href={`mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
-          <button data-aos="zoom-in" data-aos-offset="200" className='px-4 py-2 rounded-md mt-4 sm:mt-10 sm:text-xl font-bold bg-linear-to-t from-surface to-accent white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] hover:opacity-50 hover:border border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
+          <button data-aos="zoom-in" data-aos-offset="200" className='px-4 py-2 rounded-md mt-4 sm:mt-10 sm:text-xl font-bold bg-background border border-accent box-border cursor-pointer hover:opacity-50 hover:border-text hover:bg-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
             {t("contact.send")}
           </button>
         </a>
 
+        {/* BUTTON DOWNLOAD*/}
+        <a href="/andre_resume.pdf" className='flex absolute bottom-50 sm:bottom-90 border-red-500'>
+          <div >
+            <button data-aos="zoom-in" data-aos-offset="200" className='flex px-4 py-2 rounded-md sm:text-xl font-bold border border-text bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
+              <div>Download CV</div>
+              <div className='ml-4'><Download /></div>
+            </button>
+          </div>
+
+
+
+
+
+        </a>
+
         {/* SOCIAL MEDIA */}
         <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-60 sm:w-100 h-fit flex items-center justify-evenly'>
+
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
-            <div className='w-9 h-9 sm:w-15 sm:h-15 p-1.5 rounded-md shadow-[0_0_10px_#0076b2] hover:bg-[#0076b2]'>
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+            <div className='w-9 h-9 sm:w-15 sm:h-15 p-2 rounded-full shadow-[0_0_10px_#0076b2] hover:bg-[#0076b2]'>
+              <img loading="lazy" className='rounded-full' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
             </div>
           </a>
 
           <a href="https://github.com/AndrehW27" target="_blank" rel="noopener noreferrer">
-            <div className='hover:bg-text/50 white: border border-dark-gray w-9 h-9 sm:w-15 sm:h-15 rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
+            <div className='hover:bg-text/50 white: border border-dark-gray w-9 h-9 sm:w-15 sm:h-15 rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
               <i className="text-3xl sm:text-5xl mr-4text-accent devicon-github-original"></i>
             </div>
           </a>
@@ -49,7 +65,7 @@ function Contact() {
           <a href="https://www.salesforce.com/trailblazer/andrehwillian"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-transparent w-9 h-9 sm:w-15 sm:h-15 p-1 bg-text rounded-md shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
+            className="hover:bg-transparent w-9 h-9 sm:w-15 sm:h-15 p-1.5 bg-text rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
           >
             <img loading="lazy" src={trail} alt="WhatsApp" />
           </a>
@@ -57,15 +73,15 @@ function Contact() {
           <a href="https://wa.me/5511992603675?text=Hello%20André,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-[#29a71a] w-9 h-9 sm:w-15 sm:h-15 p-1.5 rounded-md shadow-[0_0_10px_#29a71a] flex items-center justify-center"
+            className="hover:bg-[#29a71a] w-9 h-9 sm:w-15 sm:h-15 p-2 rounded-full shadow-[0_0_10px_#29a71a] flex items-center justify-center"
           >
-            <img loading="lazy" src={wpp} alt="WhatsApp" />
+            <img loading="lazy" className='rounded-full' src={wpp} alt="WhatsApp" />
           </a>
         </div>
 
         {/* DOWN CHEVRON */}
         <a href="#" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" className="up-and-down absolute bottom-25 sm:bottom-35 z-900">
-          <ChevronUp className='sm:w-10 sm:h-10'/>
+          <ChevronUp className='sm:w-10 sm:h-10' />
         </a>
 
         {/* FOOTER */}
