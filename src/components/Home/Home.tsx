@@ -141,7 +141,7 @@ function Hero({ theme }: HeroProps) {
                 <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-1xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
                 {/* MY SIGNATURE*/}
                 <div className="border-red-500 absolute -top-17 -left-15 sm:-top-60 sm:-left-35 w-100 h-100 sm:w-190 sm:h-190 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${andre})` }}
-                  data-aos="fade-in" data-aos-duration="2000" data-aos-delay="2800"
+                  data-aos="fade-in" data-aos-duration="2000" data-aos-delay="800"
                 ></div>
                 {/* <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="mt-2 sm:mt-4 text-2xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'>‹ </span>{t("home.title")}<span className='text-4xl sm:text-6xl'>‹ </span></h1> */}
                 <h3 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2800" className="typing mt-25 sm:mt-50 text-2xl sm:text-4xl text-text white:text-dark-gray border-r-3 z-702"><span className='text-3xl sm:text-5xl'>‹ </span>{t("home.subtitle")}<span className='text-3xl sm:text-5xl'> ›</span></h3>
@@ -274,8 +274,8 @@ function Hero({ theme }: HeroProps) {
 
             {/* IMG MOBILE */}
 
-            <div className="card-home flex absolute bottom-0 left-[-45px] sm:left-[-80px] sm:hidden border-accent">
-              <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-110 sm:w-190 h-75 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
+            <div className="card-home flex absolute bottom-0 left-[-45px] sm:hidden border-accent">
+              <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-110 sm:w-190 h-70 sm:h-120 clip-hex bg-gradient-to-tr from-background from-[20%] via-surface via-[50%] to-accent to-[120%] white:bg-gradient-to-tr white:from-background white:from-[15%] white:via-light-blue white:via-[50%] white:to-text white:to-[100%] justify-end items-center">
                 <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-90 sm:w-150" src={bg} />
                 <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#111_50%,transparent_70%)] sm:w-120 sm:bg-[linear-gradient(to_left,#111_45%,transparent_100%)] z-200 '>
                   <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-8 sm:top-25 right-4 sm:right-10 border-blue-500 text-sm sm:text-3xl w-35 sm:w-80 white:text-text">{t("home.text")}</h5>
