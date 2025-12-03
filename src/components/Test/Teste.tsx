@@ -1,6 +1,6 @@
 import "./Teste.css";
 import me from "../../assets/Me/me_art_modern-nobg.png";
-import three_d from "../../assets/bg/purple-3D.png";
+// import three_d from "../../assets/bg/purple-3D.png";
 // import bg2 from "../../assets/me_art_modern-nobg.png";
 // import video from "../../assets/videos/wave-dna.mp4";
 // import { ChevronDown } from "lucide-react";
