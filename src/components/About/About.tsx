@@ -143,7 +143,7 @@ function Journey() {
           <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
 
             <div
-              className="border-green-500 absolute h-[100dvh] w-[100dvw] inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+              className="border-green-500 absolute h-[100svh] w-[100dvw] inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
               onClick={() => setShowModal(false)}
             />
 
@@ -197,7 +197,7 @@ function Journey() {
 
             </div>
 
-            {/* <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80dvh]  h-[77dvh] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-6 py-10 animate-zoomIn ">
+            {/* <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80svh]  h-[77svh] sm:h-[77svh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-6 py-10 animate-zoomIn ">
               <button
                 onClick={() => setShowModal(false)}
                 className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"

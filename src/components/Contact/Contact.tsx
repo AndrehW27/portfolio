@@ -24,7 +24,7 @@ function Contact() {
 
   return (
     <>
-      <section id="contact" className="relative h-dvh w-dvw flex flex-col items-center justify-start text-text white:text-text-dark font-bold bord-red-500">
+      <section id="contact" className="relative h-svh w-dvw flex flex-col items-center justify-start text-text white:text-text-dark font-bold bord-red-500">
 
         {/* TITLES */}
         {/* <h1 data-aos="fade-down" data-aos-offset="200" className='text-2xl sm:text-4xl mt-16 sm:mt-25'>{t("contact.title")}</h1> */}
@@ -34,7 +34,7 @@ function Contact() {
         {/* INPUTS */}
         {/* <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-10 font-normal w-60' type="text" placeholder='Name' />
         <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60' type="text" placeholder='E-mail' /> */}
-        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-1 rounded-3xl mt-4 font-normal w-60 sm:w-140 h-30 sm:h-60' name="" id="message" placeholder='E-mail me here' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-1 rounded-2xl mt-4 font-normal w-60 sm:w-140 h-30 sm:h-60' name="" id="message" placeholder='E-mail me here' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
         {/* BUTTON SEND*/}
         {/* <a href={`mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
@@ -49,7 +49,7 @@ function Contact() {
         {/* BUTTON DOWNLOAD*/}
         <a href="/andre_resume.pdf" className='flex absolute bottom-60 sm:bottom-90 border-red-500'>
           <div >
-            <button data-aos="zoom-in" data-aos-offset="200" className='flex px-4 py-2 rounded-md sm:text-xl font-bold border border-text bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"
+            <button data-aos="zoom-in" data-aos-offset="200" className='flex px-4 py-2 rounded-full sm:text-xl font-bold border border-accent bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"
               onClick={handleDownload}>
               <div>Download CV</div>
               <div className='ml-4'><Download /></div>

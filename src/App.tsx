@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 
-// import bgVideo from './assets/videos/waves-slow.mp4';
-// import bgVideoWhite from './assets/videos/white-video.mp4';
+import bgVideo from './assets/videos/waves-slow.mp4';
+import bgVideoWhite from './assets/videos/white-video.mp4';
 const Home = React.lazy(() => import('./components/Home/Home'));
 const Project = React.lazy(() => import('./components/Project/Project'));
 const Journey = React.lazy(() => import('./components/Journey/Journey'));
@@ -40,13 +40,14 @@ function App() {
 
 
   return (
-    <div className="bg-background">
-  
-    {/* <div className={`${theme === 'white' ? 'white' : ''} relative`}>
-      <video key={theme} autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover -z-10">
-        <source src={theme === 'white' ? bgVideoWhite : bgVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
+<div className={`${theme === 'white' ? 'white' : ''} bg-background white:bg-text`}>
+   
+      {/* BACKGROUND WITH VIDEO */}
+      {/* <div className={`${theme === 'white' ? 'white' : ''} relative`}>
+        <video key={theme} autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover -z-10">
+          <source src={theme === 'white' ? bgVideoWhite : bgVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video> */}
 
       <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-2 z-50'>
 

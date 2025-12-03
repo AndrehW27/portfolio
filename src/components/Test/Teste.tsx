@@ -91,7 +91,7 @@ function Teste() {
 
   return (
     <>
-      <section className="relative h-[180dvh] sm:h-[100dvh] w-[100dvw] flex flex-col items-center justify-start overflow-hidden text-text bg-background scroll-hidden border-red-500 mb-20 sm:mb-50">
+      <section className="relative h-[180svh] sm:h-[100svh] w-[100dvw] flex flex-col items-center justify-start overflow-hidden text-text scroll-hidden border-red-500 mb-20 sm:mb-50">
 
         {/* SCROLL GALLERY */}
         <div className="flex flex-col sm:flex-row items-center items:start justify-center gap-6 sm:gap-10 text-sx sm:text-xl w-[100dvw] mt-20 sm:mt-30 sm:mb-20">
@@ -291,8 +291,8 @@ function Teste() {
         <div className=" border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${me})` }}
           data-aos="fade-left" data-aos-duration="2000" data-aos-offset="150"
         ></div>
-        <div className="box border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${three_d})` }}
-        ></div>
+        {/* <div className="box border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${three_d})` }}
+        ></div> */}
 
         {/* GSAP CROUSEL ANIMATIONS */}
         {/* <div className="carousel mt-40 border border-red-500">

@@ -100,7 +100,7 @@ function Hero({ theme }: HeroProps) {
         {/* <div className='absolute bottom-0 right-0 bg-accent w-20 h-20'></div> */}
 
         {/* HERO SECTION */}
-        <section className="relative w-dvw h-dvh flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative w-dvw h-svh flex flex-col items-center justify-center overflow-hidden">
 
           {/* ✅ Dynamic theme-based video */}
           <video
@@ -115,7 +115,7 @@ function Hero({ theme }: HeroProps) {
           />
 
           {/* GSAP CONTAINER ZOOM OUT VIDEO */}
-          <div ref={ContentFade} className="border-red-500 relative z-10 w-dvw sm:w-fit h-dvh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
+          <div ref={ContentFade} className="border-red-500 relative z-10 w-dvw sm:w-fit h-svh flex flex-col items-start justify-start border-accent text-white white:text-dark-gray font-bold">
 
             {/* BALLS */}
             {/* {theme !== "white" &&
@@ -201,7 +201,7 @@ function Hero({ theme }: HeroProps) {
             </div>
 
             {/* STATS DESKTOP */}
-            <div className='absolute bottom-[8dvh] w-full text-xl border-red-500  hidden sm:flex'
+            <div className='absolute bottom-[8svh] w-full text-xl border-red-500  hidden sm:flex'
               data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800">
               <div className='ml-20'>
                 <p className='text-5xl'>40+</p>

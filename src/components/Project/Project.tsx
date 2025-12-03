@@ -646,15 +646,15 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative border-pink-500 h-[100dvh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
+    <section id="projects" className="relative border-pink-500 h-[100svh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
       {/* FAKE SCREENS */}
-      {/* <div className="absolute bottom-20 left-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
-        <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
+      {/* <div className="absolute bottom-20 left-85 bg-cover h-[75svh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
+        <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100svh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
         </div>
       </div>
-      <div className="absolute bottom-20 right-85 bg-cover h-[75dvh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]">
-        <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
+      <div className="absolute bottom-20 right-85 bg-cover h-[75svh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED]">
+        <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100svh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
         </div>
       </div> */}
 
@@ -663,7 +663,7 @@ export default function Projects() {
         data-aos="zoom-in"
         data-aos-offset="400"
         data-aos-duration="3000"
-        className=" border-green-500 w-full sm:w-[80dvw] h-[100dvh] overflow-hidden sm:mb-10 border-blue-500">
+        className=" border-green-500 w-full sm:w-[80dvw] h-[100svh] overflow-hidden sm:mb-10 border-blue-500">
         <div
 
           ref={containerRef}
@@ -677,7 +677,7 @@ export default function Projects() {
             <article
               key={slideIdx}
 
-              className="card  border-orange-500 w-full h-full sm:h-[75dvh] sm:w-[460px] shrink-0 flex flex-col items-center"
+              className="card  border-orange-500 w-full h-full sm:h-[75svh] sm:w-[460px] shrink-0 flex flex-col items-center"
             >
               {/* Title + Icons */}
 
@@ -685,10 +685,10 @@ export default function Projects() {
               {/* Main image */}
               <div
 
-                className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80dvh] w-[77dvw] sm:h-[78dvh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80svh] w-[77dvw] sm:h-[78svh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.images.mobile[0]})` }}>
 
-                <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100dvh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)] sm:bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
+                <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100svh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)] sm:bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
 
 
 
@@ -843,7 +843,7 @@ export default function Projects() {
               <img loading="lazy"
                 src={modalImages.mobile[modalIndex]}
                 alt="modal"
-                className=" w-fit max-h-[80dvh] max-w-[90dvw] object-contain rounded-2xl "
+                className=" w-fit max-h-[80svh] max-w-[90dvw] object-contain rounded-2xl "
               />}
               <button
                 onClick={() => setShowModal(false)}
@@ -896,7 +896,7 @@ export default function Projects() {
                 loading="lazy"
                 src={modalImages.desktop[modalIndex]}
                 alt="modal"
-                className="border-green-500 h-[80dvh] w-fit object-cover rounded-2xl "
+                className="border-green-500 h-[80svh] w-fit object-cover rounded-2xl "
               />}
               <button
                 onClick={() => setShowModal(false)}
@@ -940,7 +940,7 @@ export default function Projects() {
             className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModalDetails2(false)}
           />
-          <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80dvh] w-[77dvw] sm:h-[77dvh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-8 py-10 animate-zoomIn ">
+          <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80svh] w-[77dvw] sm:h-[77svh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-8 py-10 animate-zoomIn ">
             {/* <div className="relative  rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] "> */}
 
 
