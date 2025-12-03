@@ -80,7 +80,7 @@ function Hero({ theme }: HeroProps) {
           </ul>
 
           <ul className="">
-            <li><a href="#about" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
+            <li><a href="#abilities" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
           </ul>
           {/* <ul className="">
             <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>

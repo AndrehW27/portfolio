@@ -648,7 +648,7 @@ export default function Projects() {
   return (
     <section id="projects" className="relative border-pink-500 h-[100svh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
-      <div className="absolute inset-0 bg-[url('./assets/bg/midjourney_nobg.png')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div>
+      <div className="absolute inset-0 bg-[url('./assets/bg/wave5.jpg')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-5 border-red-500"></div>
 
 
       {/* FAKE SCREENS */}

@@ -26,7 +26,7 @@ function Contact() {
     <>
       <section id="contact" className="relative h-svh w-dvw flex flex-col items-center justify-start text-text white:text-text-dark font-bold bord-red-500">
 
-        <div className="absolute inset-0 bg-[url('./assets/bg/midjourney_nobg.png')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div>
+        <div className="absolute inset-0 bg-[url('./assets/bg/wave3.jpg')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div>
 
 
         {/* TITLES */}
