@@ -648,6 +648,9 @@ export default function Projects() {
   return (
     <section id="projects" className="relative border-pink-500 h-[100svh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
+      <div className="absolute inset-0 bg-[url('./assets/bg/midjourney_nobg.png')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div>
+
+
       {/* FAKE SCREENS */}
       {/* <div className="absolute bottom-20 left-85 bg-cover h-[75svh] w-[78dvw] bg-text/20 rounded-3xl shadow-[0_0_10px_#7C3AED] ">
         <div className="absolute bottom-0 left-0 w-full rounded-b-2xl h-[100svh] bg-[linear-gradient(to_top,#111_22%,transparent_70%)]">
@@ -719,7 +722,7 @@ export default function Projects() {
                   <div className="absolute bottom-18 left-30 text-xs text-accent w-60  border-red-500">details</div> */}
 
 
-                  <div className="absolute bottom-6 flex">
+                  <div className="absolute bottom-6 flex ">
                     {s.links[0].hasCode &&
                       <a href={s.links[0].code} target="_blank" rel="noopener noreferrer">
                         <div className="ml-6 text-xs sm:text-base bg-white/99 text-black/80 px-4 py-2 rounded-2xl">{t("project.code")}</div>
@@ -740,7 +743,7 @@ export default function Projects() {
                           setShowModalImportant(true);
                         }}
                         className="pointer hover:text-text hover:bg-red-700/50 text-xs sm:text-lg px-4 py-2 ml-6 rounded-full border border-red-700 text-red-700 transition duration-300 ease-in-out">
-                          {s.message[0].text}
+                        {s.message[0].text}
                       </h1>
                     </div>
                   }
@@ -783,7 +786,7 @@ export default function Projects() {
                 </div>
               </div>
 
-             
+
             </article>
           ))}
 
@@ -839,12 +842,12 @@ export default function Projects() {
 
             <div className="relative">
               {/* Modal image */}
-              {modalImages && 
-              <img loading="lazy"
-                src={modalImages.mobile[modalIndex]}
-                alt="modal"
-                className=" w-fit max-h-[80svh] max-w-[90dvw] object-contain rounded-2xl "
-              />}
+              {modalImages &&
+                <img loading="lazy"
+                  src={modalImages.mobile[modalIndex]}
+                  alt="modal"
+                  className=" w-fit max-h-[80svh] max-w-[90dvw] object-contain rounded-2xl "
+                />}
               <button
                 onClick={() => setShowModal(false)}
                 className="absolute top-[-15px] right-[-15px] bg-white/30 w-8 h-8 sm:w-15 sm:h-15 rounded-full flex justify-center items-center border border-text white:border-text-dark z-100 cursor-pointer"

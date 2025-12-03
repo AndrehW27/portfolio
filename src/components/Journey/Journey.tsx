@@ -31,6 +31,8 @@ function Journey() {
         <>
             <section id="journey" className="relative font-bold text-xs sm:text-xl text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
 
+            <div className="rounded-xl absolute inset-0 bg-[url('./assets/bg/midjourney_nobg.png')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 white:opacity-30 border-red-500"></div>
+
                 {/* <h1 data-aos="fade-down" className=' white:text-dark-gray mt-16 sm:mt-25 text-2xl sm:text-2xl font-bold'>{t("about.aboutme")}</h1> */}
 
                 <div className='relative white:text-dark-gray border-yellow-300  w-[70vw] flex items-center justify-center mt-15 sm:mt-30 mb-30'>
@@ -189,7 +191,7 @@ function Journey() {
                     </div>
                 </div>
 
-                <a href="#about" className="up-and-down absolute bottom-6 sm:bottom-16 z-900" >
+                <a href="#abilities" className="up-and-down absolute bottom-6 sm:bottom-16 z-900" >
                     <ChevronDown className=' sm:w-10 sm:h-10'/>
                 </a>
 

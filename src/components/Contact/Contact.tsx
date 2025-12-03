@@ -26,6 +26,9 @@ function Contact() {
     <>
       <section id="contact" className="relative h-svh w-dvw flex flex-col items-center justify-start text-text white:text-text-dark font-bold bord-red-500">
 
+        <div className="absolute inset-0 bg-[url('./assets/bg/midjourney_nobg.png')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div>
+
+
         {/* TITLES */}
         {/* <h1 data-aos="fade-down" data-aos-offset="200" className='text-2xl sm:text-4xl mt-16 sm:mt-25'>{t("contact.title")}</h1> */}
         <h1 data-aos="fade-down" data-aos-offset="200" className='text-base sm:text-2xl mt-20 sm:mt-30 mb-6 sm:mb-10'>{t("contact.subtitle")}</h1>
@@ -44,15 +47,15 @@ function Contact() {
         </a> */}
 
         {/* EMAIL ICON */}
-        <img src={email} alt="" className='w-20 mt-2 sm:mt-6'/>
+        <img src={email} alt="" className='w-15 sm:w-20 mt-2 sm:mt-6' />
 
         {/* BUTTON DOWNLOAD*/}
         <a href="/andre_resume.pdf" className='flex absolute bottom-60 sm:bottom-90 border-red-500'>
           <div >
-            <button data-aos="zoom-in" data-aos-offset="200" className='flex px-4 py-2 rounded-full sm:text-xl font-bold border border-accent bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"
+            <button data-aos="zoom-in" data-aos-offset="200" className='flex items-center justify-center px-3 py-1 sm:px-5 sm:py-3 rounded-full text-xs sm:text-xl font-bold border border-accent bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"
               onClick={handleDownload}>
-              <div>Download CV</div>
-              <div className='ml-4'><Download /></div>
+              <p>Download CV</p>
+              <div className='ml-2 sm:ml-4'><Download className='w-4 sm:w-8' /></div>
             </button>
           </div>
         </a>
@@ -61,21 +64,21 @@ function Contact() {
         <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-60 sm:w-100 h-fit flex items-center justify-evenly'>
 
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
-            <div className='w-9 h-9 sm:w-15 sm:h-15 p-2 rounded-full shadow-[0_0_10px_#0076b2] hover:bg-[#0076b2]'>
+            <div className='w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 rounded-full shadow-[0_0_10px_#0076b2] hover:bg-[#0076b2]'>
               <img loading="lazy" className='rounded-full' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
             </div>
           </a>
 
           <a href="https://github.com/AndrehW27" target="_blank" rel="noopener noreferrer">
             <div className='hover:bg-text/50 white: border border-dark-gray w-9 h-9 sm:w-15 sm:h-15 rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
-              <i className="text-3xl sm:text-5xl mr-4text-accent devicon-github-original"></i>
+              <i className="text-2xl sm:text-5xl devicon-github-original"></i>
             </div>
           </a>
 
           <a href="https://www.salesforce.com/trailblazer/andrehwillian"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-transparent w-9 h-9 sm:w-15 sm:h-15 p-1.5 bg-text rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
+            className="hover:bg-transparent w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 bg-text rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
           >
             <img loading="lazy" src={trail} alt="WhatsApp" />
           </a>
@@ -83,7 +86,7 @@ function Contact() {
           <a href="https://wa.me/5511992603675?text=Hello%20André,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-[#29a71a] w-9 h-9 sm:w-15 sm:h-15 p-2 rounded-full shadow-[0_0_10px_#29a71a] flex items-center justify-center"
+            className="hover:bg-[#29a71a] w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2  rounded-full shadow-[0_0_10px_#29a71a] flex items-center justify-center"
           >
             <img loading="lazy" className='rounded-full' src={wpp} alt="WhatsApp" />
           </a>

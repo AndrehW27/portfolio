@@ -1,4 +1,4 @@
-import "./Teste.css";
+import "./Abilites.css";
 import me from "../../assets/Me/me_art_modern-nobg.png";
 // import three_d from "../../assets/bg/purple-3D.png";
 // import bg2 from "../../assets/me_art_modern-nobg.png";
@@ -13,7 +13,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { SquareDashedBottomCode, GalleryHorizontalEnd, Keyboard } from "lucide-react";
+import { SquareDashedBottomCode, GalleryHorizontalEnd, Keyboard, ChevronDown } from "lucide-react";
 
 // 💚 This just adds the GSAP link to this pen, don't copy this bit
 // import { GSAPInfoBar } from "https://codepen.io/GreenSock/pen/vYqpyLg.js"
@@ -28,7 +28,7 @@ import { SquareDashedBottomCode, GalleryHorizontalEnd, Keyboard } from "lucide-r
 
 // export default function Teste()
 
-function Teste() {
+function Abilites() {
 
   // GSAP CROUSEL ANIMATIONS  
 
@@ -91,7 +91,9 @@ function Teste() {
 
   return (
     <>
-      <section className="relative h-[180svh] sm:h-[100svh] w-[100dvw] flex flex-col items-center justify-start overflow-hidden text-text scroll-hidden border-red-500 mb-20 sm:mb-50">
+      <section id="abilities" className="relative h-[180svh] sm:h-[100svh] w-[100dvw] flex flex-col items-center justify-start overflow-hidden text-text scroll-hidden border-red-500 mb-20 sm:mb-50">
+
+        <div className="absolute inset-0 bg-[url('./assets/bg/midjourney_nobg.png')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div>
 
         {/* SCROLL GALLERY */}
         <div className="flex flex-col sm:flex-row items-center items:start justify-center gap-6 sm:gap-10 text-sx sm:text-xl w-[100dvw] mt-20 sm:mt-30 sm:mb-20">
@@ -127,11 +129,11 @@ function Teste() {
               </div>
               <p className="">I use the latest  tools and technologies to build functional and scalable products</p>
               <ul className="font-bold list-disc ml-6">
-                <li className="mb-2">Frontend: <span className="rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   bg-[#00a1e0]">react</span>  <span className="rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   bg-red-700">angular</span>  <span className="bg-blue-700 rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">lwc</span></li>
-                <li className="mb-2">Backend: <span className="bg-green-500 rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">node</span>  <span className="bg-red-700 rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">java</span>  <span className="bg-blue-500 rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">apex</span></li>
-                <li className="mb-2">Data: <span className="bg-green-500 rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">mongo</span>  <span className="bg-blue-400 rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">postgre</span>  <span className="bg-blue-500  rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">soql</span></li>
-                <li className="mb-2">Version: <span className="bg-gray-700  rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">github</span>  <span className="bg-gray-900  rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">vercel</span>  <span className="bg-green-400  rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">netlify</span></li>
-                <li className="">Other: <span className="bg-orange-500  rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">aws</span>  <span className="bg-blue-700  rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">docker</span>  <span className="bg-purple-700  rounded-full px-2 pb-1 text-[12px] sm:text-[18px]   ">insomnia</span></li>
+                <li className="mb-2">Frontend: <span className="rounded-full px-2  text-[12px] sm:text-[18px]  bg-[#00a1e0]">react</span>  <span className="rounded-full px-2  text-[12px] sm:text-[18px]   bg-red-700">angular</span>  <span className="bg-blue-700 rounded-full px-2  text-[12px] sm:text-[18px]   ">lwc</span></li>
+                <li className="mb-2">Backend: <span className="bg-green-500 rounded-full px-2  text-[12px] sm:text-[18px]   ">node</span>  <span className="bg-red-700 rounded-full px-2  text-[12px] sm:text-[18px]   ">java</span>  <span className="bg-blue-500 rounded-full px-2  text-[12px] sm:text-[18px]   ">apex</span></li>
+                <li className="mb-2">Data: <span className="bg-green-500 rounded-full px-2  text-[12px] sm:text-[18px]   ">mongo</span>  <span className="bg-blue-400 rounded-full px-2  text-[12px] sm:text-[18px]   ">postgre</span>  <span className="bg-blue-500  rounded-full px-2  text-[12px] sm:text-[18px]   ">soql</span></li>
+                <li className="mb-2">Version: <span className="bg-gray-700  rounded-full px-2  text-[12px] sm:text-[18px]   ">github</span>  <span className="bg-gray-900  rounded-full px-2  text-[12px] sm:text-[18px]   ">vercel</span>  <span className="bg-green-400  rounded-full px-2  text-[12px] sm:text-[18px]   ">netlify</span></li>
+                <li className="">Other: <span className="bg-orange-500  rounded-full px-2  text-[12px] sm:text-[18px]   ">aws</span>  <span className="bg-blue-700  rounded-full px-2  text-[12px] sm:text-[18px]   ">docker</span>  <span className="bg-purple-700  rounded-full px-2  text-[12px] sm:text-[18px]   ">insomnia</span></li>
               </ul>
             </div>
 
@@ -288,7 +290,7 @@ function Teste() {
         </div>
 
         {/* MY PHOTO */}
-        <div className=" border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${me})` }}
+        <div className=" border-red-500 absolute bottom-0 -left-18 sm:left-50 w-85 h-85 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${me})` }}
           data-aos="fade-left" data-aos-duration="2000" data-aos-offset="150"
         ></div>
         {/* <div className="box border-red-500 absolute bottom-0 -left-18 sm:left-50 w-90 h-90 sm:w-160 sm:h-160 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${three_d})` }}
@@ -333,7 +335,9 @@ function Teste() {
         {/* SCROLL GALLERY */}
 
 
-
+        <a href="#projects" className="up-and-down absolute bottom-6 sm:bottom-16 z-900" >
+          <ChevronDown className=' sm:w-10 sm:h-10' />
+        </a>
 
 
 
@@ -342,4 +346,4 @@ function Teste() {
   );
 }
 
-export default Teste;
+export default Abilites;
