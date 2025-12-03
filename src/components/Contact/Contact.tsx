@@ -4,7 +4,7 @@ import wpp from "../../assets/icons/whatsapp.png"
 import trail from "../../assets/icons/trailhead2.png"
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
-import email from "../../assets/icons/email_nobg.png";
+// import email from "../../assets/icons/email_nobg.png";
 
 
 function Contact() {
