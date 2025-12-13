@@ -44,3 +44,13 @@
     text-align: center;
     align-content: center;
 }
+
+/* .box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('./assets/bg/darkwave-bg3.png') center / cover no-repeat;
+  pointer-events: none;
+  border-radius: inherit;
+  z-index: -1;
+} */

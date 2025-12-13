@@ -24,9 +24,10 @@ function Contact() {
 
   return (
     <>
-      <section id="contact" className="relative h-svh w-dvw flex flex-col items-center justify-start text-text white:text-text-dark font-bold bord-red-500">
+      <section id="contact" className="relative h-svh w-dvw flex flex-col items-center justify-start white:bg-text text-text white:text-text-dark font-bold bord-red-500">
 
-        <div className="absolute inset-0 bg-[url('./assets/bg/wave3.jpg')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div>
+        {/* <div className="absolute inset-0 bg-[url('./assets/bg/wave3.jpg')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div> */}
+        <div className="absolute inset-0 h-full w-dvw -z-100 opacity-10 border-red-500"></div>
 
 
         {/* TITLES */}
@@ -37,11 +38,11 @@ function Contact() {
         {/* INPUTS */}
         {/* <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-10 font-normal w-60' type="text" placeholder='Name' />
         <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60' type="text" placeholder='E-mail' /> */}
-        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-80 sm:w-140 h-40 sm:h-60' name="" id="message" placeholder='E-mail me here' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-2 rounded-md mt-4 font-normal w-80 sm:w-140 h-40 sm:h-60' name="" id="message" placeholder={t("contact.area")} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
         {/* BUTTON SEND*/}
         <a href={`mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
-          <button data-aos="zoom-in" data-aos-offset="200" className='px-3 py-1 rounded-md mt-4 sm:mt-10 text-xs sm:text-xl font-bold bg-background border border-accent box-border cursor-pointer hover:opacity-50 hover:border-text hover:bg-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
+          <button data-aos="zoom-in" data-aos-offset="200" className='px-3 py-1 sm:px-5 sm:py-3 rounded-full mt-4 sm:mt-10 text-xs sm:text-xl font-bold bg-transparent border border-accent white:border-light-blue bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
             {t("contact.send")}
           </button>
         </a>
@@ -49,13 +50,13 @@ function Contact() {
         {/* EMAIL ICON */}
         {/* <img src={email} alt="" className='w-15 sm:w-20 mt-2 sm:mt-6' /> */}
 
-        {/* BUTTON DOWNLOAD*/}
+        {/* BUTTON DOWNLOAD RESUME*/}
         <a href="/andre_resume.pdf" className='flex absolute bottom-60 sm:bottom-90 border-red-500'>
           <div >
-            <button data-aos="zoom-in" data-aos-offset="200" className='flex items-center justify-center px-3 py-1 sm:px-5 sm:py-3 rounded-full text-xs sm:text-xl font-bold border border-accent bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"
+            <button data-aos="zoom-in" data-aos-offset="-500" className='flex items-center justify-center px-3 py-1 sm:px-5 sm:py-3 rounded-full text-xs sm:text-xl font-bold border border-accent white:border-light-blue bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"
               onClick={handleDownload}>
-              <p>Download CV</p>
-              <div className='ml-2 sm:ml-4'><Download className='w-4 sm:w-8' /></div>
+              <p>{t("contact.resume")}</p>
+              <div className='ml-2'><Download className='w-4 sm:w-8' /></div>
             </button>
           </div>
         </a>
@@ -70,7 +71,7 @@ function Contact() {
           </a>
 
           <a href="https://github.com/AndrehW27" target="_blank" rel="noopener noreferrer">
-            <div className='hover:bg-text/50 white: border border-dark-gray w-9 h-9 sm:w-15 sm:h-15 rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
+            <div className='hover:bg-text/50 w-9 h-9 sm:w-15 sm:h-15 rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center'>
               <i className="text-2xl sm:text-5xl devicon-github-original"></i>
             </div>
           </a>

@@ -12,11 +12,11 @@ function Journey() {
 
   const { t } = useTranslation();
 
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   return (
     <>
-      <section id="about" className="relative font-bold text-xs text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
+      <section id="about" className="relative font-bold text-xs white:bg-text text-text white:text-text-dark border-accent white:border-light-blue w-dvw flex flex-col items-center justify-start">
 
         {/* MAIN TEXT */}
         <div className='scale relative text-xs sm:text-xl border-green-500 h-140 w-140 sm:h-220 sm:w-220 flex flex-col items-center justify-center text-center mb-35 white:text-text cursor-pointer'>

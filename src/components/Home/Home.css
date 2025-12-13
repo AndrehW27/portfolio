@@ -117,4 +117,29 @@
   transform: perspective(800px) rotateY(0deg);
 }
 
+.font-fira {
+  font-family: 'Fira Code', monospace;
+}
+.font-sekuya {
+  font-family: 'Sekuya', sans-serif;
+}
+.font-jetbrains {
+  font-family: 'JetBrains Mono', monospace;
+}
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+.font-satisfy {
+  font-family: 'Satisfy', cursive;
+}
+.font-caveat {
+  font-family: 'Caveat', cursive;
+}
+.font-changaone {
+  font-family: 'Changa One', cursive;
+}
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
 

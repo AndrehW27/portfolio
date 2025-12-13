@@ -646,9 +646,10 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="relative border-pink-500 h-[100svh] w-dvw text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
+    <section id="projects" className="relative border-pink-500 h-[100svh] w-dvw white:bg-text text-text white:text-text-dark font-bold flex flex-col items-center justify-center">
 
-      <div className="absolute inset-0 bg-[url('./assets/bg/wave5.jpg')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-5 border-red-500"></div>
+      {/* <div className="absolute inset-0 bg-[url('./assets/bg/wave5.jpg')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-5 border-red-500"></div> */}
+      <div className="absolute inset-0 h-full w-dvw -z-100 opacity-5 border-red-500"></div>
 
 
       {/* FAKE SCREENS */}
@@ -680,14 +681,13 @@ export default function Projects() {
             <article
               key={slideIdx}
 
-              className="card  border-orange-500 w-full h-full sm:h-[75svh] sm:w-[460px] shrink-0 flex flex-col items-center"
+              className="card border-orange-500 w-full h-full sm:h-[75svh] sm:w-[460px] shrink-0 flex flex-col items-center"
             >
               {/* Title + Icons */}
 
 
               {/* Main image */}
               <div
-
                 className="border-yellow-500 scale absolute bottom-10 mb-6 h-[80svh] w-[77dvw] sm:h-[78svh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.images.mobile[0]})` }}>
 
@@ -762,17 +762,21 @@ export default function Projects() {
                   >{t("project.details")}
                   </h1>
 
-                  <button
-                    onClick={() => {
-                      setModalImages(s.images);
-                      setModalIndex(0);
-                      setShowModal(true);
-                    }
-                    }
-                    className="absolute top-50 sm:top-65 right-4 sm:right-8 bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue text-accent white:text-light-blue rounded-full flex justify-center items-center"
-                  >
-                    <GiClick className="h-full w-full p-2" />
-                  </button>
+                  <div className="scale-fast absolute top-45 sm:top-75 right-6 sm:right-10 text-accent white:text-light-blue">
+                    <button
+                      onClick={() => {
+                        setModalImages(s.images);
+                        setModalIndex(0);
+                        setShowModal(true);
+                      }
+                      }
+                      className="bg-white/30 w-12 h-12 sm:w-15 sm:h-15 border border-accent white:border-light-blue rounded-full flex justify-center items-center"
+                    >
+                      <GiClick className="h-full w-full p-2" />
+
+                    </button>
+                    <p className="ml-2">click</p>
+                  </div>
 
                   <div className="absolute top-46 sm:top-62 z-9999 rounded-3xl h-75 sm:h-105 w-full"
                     onClick={() => {
@@ -804,7 +808,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="absolute top-1/2 -translate-y- left-6 sm:left-30 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
+        className="absolute top-1/2 -translate-y- left-6 sm:left-30 sm:text-4xl bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ‹
       </button>
@@ -812,7 +816,7 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="absolute top-1/2 -translate-y- right-2 sm:right-30 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
+        className="absolute top-1/2 -translate-y- right-2 sm:right-30 sm:text-4xl bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ›
       </button>
@@ -834,7 +838,7 @@ export default function Projects() {
       {showModal && (
         <div className="flex sm:hidden absolute inset-0 items-center justify-center z-9999">
           <div
-            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+            className="absolute inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
@@ -887,7 +891,7 @@ export default function Projects() {
       {showModal && (
         <div className="hidden sm:flex  absolute inset-0 items-center justify-center z-9999">
           <div
-            className="absolute border-yellow-300 inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+            className="absolute border-yellow-300 inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
@@ -916,14 +920,14 @@ export default function Projects() {
               <>
                 <button
                   onClick={prevModalDesktop}
-                  className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                  className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 sm:text-4xl bg-white/30 w-10 h-10 sm:w-25 sm:h-25 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ‹
                 </button>
 
                 <button
                   onClick={nextModalDesktop}
-                  className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-25 sm:h-25 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                  className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 sm:text-4xl bg-white/30 w-10 h-10 sm:w-25 sm:h-25 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ›
                 </button>
@@ -940,10 +944,10 @@ export default function Projects() {
       {showModalDetails2 && (
         <div className="absolute inset-0 flex items-center justify-center z-9999">
           <div
-            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+            className="absolute inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModalDetails2(false)}
           />
-          <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80svh] w-[77dvw] sm:h-[77svh] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-8 py-10 animate-zoomIn ">
+          <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80svh] w-[77dvw] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-8 py-10 animate-zoomIn ">
             {/* <div className="relative  rounded-3xl max-w-[900px] bg-transparent flex flex-col items-center animate-zoomIn shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_10px_#6594fc] "> */}
 
 
@@ -995,7 +999,7 @@ export default function Projects() {
           <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
 
             <div
-              className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
+              className="absolute inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
               onClick={() => setShowModalImportant(false)}
             />
 
