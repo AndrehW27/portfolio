@@ -14,7 +14,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { SquareDashedBottomCode, GalleryHorizontalEnd, Keyboard, ChevronDown } from "lucide-react";
-import { GiClick } from "react-icons/gi";
+// import { GiClick } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 
 // 💚 This just adds the GSAP link to this pen, don't copy this bit
