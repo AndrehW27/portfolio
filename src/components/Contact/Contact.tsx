@@ -32,7 +32,7 @@ function Contact() {
 
         {/* TITLES */}
         {/* <h1 data-aos="fade-down" data-aos-offset="200" className='text-2xl sm:text-4xl mt-16 sm:mt-25'>{t("contact.title")}</h1> */}
-        <h1 data-aos="fade-down" data-aos-offset="200" className='text-base sm:text-2xl mt-20 sm:mt-30 mb-6 sm:mb-10'>{t("contact.subtitle")}</h1>
+        <h1 data-aos="fade-down" data-aos-offset="200" className='text-base sm:text-2xl mt-20 sm:mt-30 sm:mb-10'>{t("contact.subtitle")}</h1>
 
 
         {/* INPUTS */}

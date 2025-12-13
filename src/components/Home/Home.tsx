@@ -140,15 +140,16 @@ function Hero({ theme }: HeroProps) {
 
               {/* TEXT DESKTOP AND MOBILE*/}
               <div className='relative sm:ml-15 sm:mt-15 flex flex-col items-start justify-start '>
-                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-1xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
+                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-2xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
                 {/* MY SIGNATURE*/}
                 {/* <div className="border-red-500 absolute -top-17 -left-15 sm:-top-60 sm:-left-35 w-100 h-100 sm:w-190 sm:h-190 bg-contain bg-no-repeat bg-center z-701" style={{ backgroundImage: `url(${andre})` }}
                   data-aos="fade-in" data-aos-duration="2000" data-aos-delay="800"
                 ></div> */}
-                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="font-sekuya mt-2 sm:mt-4 text-xl sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'></span>{t("home.title")}<span className='text-4xl sm:text-6xl'></span></h1>
+                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="font-sekuya mt-2 sm:mt-4 text-[22px] sm:text-5xl rounded-full text-accent white:text-light-blue"><span className='text-4xl sm:text-6xl'></span>{t("home.title")}<span className='text-4xl sm:text-6xl'></span></h1>
                 <h3 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2800" className="typing sm:mt-5 text-2xl sm:text-4xl text-text white:text-dark-gray border-r-3 z-702"><span className='text-3xl sm:text-5xl'>‹ </span>{t("home.subtitle")}<span className='text-3xl sm:text-5xl'> ›</span></h3>
 
-                <div className='hidden sm:block text-xs sm:text-xl mt-10 sm:mt-10 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
+                {/*3 FRASES DESKTOP  */}
+                <div className='hidden sm:block text-xl sm:text-xl mt-10 sm:mt-10 w-70 ml-10 sm:ml-0 sm:w-160 border-orange'>
 
                   <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex'>
                     <div className='text-accent white:text-light-blue mr-3 mb-6'>
@@ -227,8 +228,8 @@ function Hero({ theme }: HeroProps) {
 
             </div> */}
 
-            {/* TEXT MOBILE */}
-            <div className='sm:hidden text-xs mt-5 w-70 ml-10 '>
+            {/*3 FRASES DESKTOP  */}
+            <div className='sm:hidden text-sm mt-5 w-80 ml-10 '>
 
               <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex items-center justify-start mb-3 border-accent'>
                 <div className='text-accent white:text-light-blue mr-3 '>
