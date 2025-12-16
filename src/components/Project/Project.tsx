@@ -688,7 +688,7 @@ export default function Projects() {
 
               {/* Main image */}
               <div
-                className="border-yellow-500 scale absolute bottom-10 mb-10 h-[77svh] w-[77dvw] sm:h-[78svh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-yellow-500 scale absolute bottom-10 mb-10 h-[78svh] w-[77dvw] sm:h-[78svh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.images.mobile[0]})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100svh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)] sm:bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">

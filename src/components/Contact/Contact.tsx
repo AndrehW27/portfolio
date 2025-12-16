@@ -65,7 +65,7 @@ function Contact() {
         <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-60 sm:w-100 h-fit flex items-center justify-evenly'>
 
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
-            <div className='w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 rounded-full shadow-[0_0_10px_#0076b2] hover:bg-[#0076b2]'>
+            <div className='w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 rounded-full shadow-[0_0_10px_#0076b2] bg-background hover:bg-[#0076b2]'>
               <img loading="lazy" className='rounded-full' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
             </div>
           </a>
@@ -79,7 +79,7 @@ function Contact() {
           <a href="https://www.salesforce.com/trailblazer/andrehwillian"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-transparent w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 bg-text rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
+            className="hover:bg-transparent w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 bg-background rounded-full shadow-[0_0_10px_#e8e9e9] white:shadow-[0_0_10px_#1f1f1f] flex items-center justify-center"
           >
             <img loading="lazy" src={trail} alt="WhatsApp" />
           </a>
@@ -87,7 +87,7 @@ function Contact() {
           <a href="https://wa.me/5511992603675?text=Hello%20André,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-[#29a71a] w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2  rounded-full shadow-[0_0_10px_#29a71a] flex items-center justify-center"
+            className="hover:bg-[#29a71a] w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 bg-background rounded-full shadow-[0_0_10px_#29a71a] flex items-center justify-center"
           >
             <img loading="lazy" className='rounded-full' src={wpp} alt="WhatsApp" />
           </a>
