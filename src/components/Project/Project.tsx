@@ -688,7 +688,7 @@ export default function Projects() {
 
               {/* Main image */}
               <div
-                className=" border-yellow-500 scale absolute bottom-10 mb-10 h-[75svh] w-[77dvw] sm:h-[78svh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
+                className="border-yellow-500 scale absolute bottom-10 mb-10 h-[77svh] w-[77dvw] sm:h-[78svh] sm:w-[420px] sm:text-text rounded-3xl bg-cover bg-top shadow-[0_0_40px_#7C3AED] white:shadow-[0_0_20px_#6594fc] cursor-pointer"
                 style={{ backgroundImage: `url(${s.images.mobile[0]})` }}>
 
                 <div className="absolute border-black bottom-0 left-0 w-full rounded-b-2xl h-[100svh] bg-[linear-gradient(to_top,#111_27%,transparent_60%)] sm:bg-[linear-gradient(to_top,#111_27%,transparent_60%)]">
@@ -808,7 +808,7 @@ export default function Projects() {
         data-aos="fade-right"
         data-aos-offset="0"
         onClick={prev}
-        className="absolute top-1/2 -translate-y- left-6 sm:left-30 sm:text-4xl bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
+        className="absolute top-1/2 -translate-y- left-2 sm:left-30 sm:text-4xl bg-white/30 w-15 h-15 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ‹
       </button>
@@ -816,7 +816,7 @@ export default function Projects() {
         data-aos="fade-left"
         data-aos-offset="0"
         onClick={next}
-        className="absolute top-1/2 -translate-y- right-2 sm:right-30 sm:text-4xl bg-white/30 w-10 h-10 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
+        className="absolute top-1/2 -translate-y- right-2 sm:right-30 sm:text-4xl bg-white/30 w-15 h-15 sm:w-25 sm:h-25 border border-text white:border-dark-gray rounded-full flex justify-center items-center cursor-pointer"
       >
         ›
       </button>
@@ -838,7 +838,7 @@ export default function Projects() {
       {showModal && (
         <div className="flex sm:hidden absolute inset-0 items-center justify-center z-9999">
           <div
-            className="absolute inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
+            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
@@ -867,14 +867,14 @@ export default function Projects() {
               <>
                 <button
                   onClick={prevModal}
-                  className="absolute left-[-30px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                  className="absolute left-[-40px] sm:left-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-15 h-15 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ‹
                 </button>
 
                 <button
                   onClick={nextModal}
-                  className="absolute right-[-30px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-10 h-10 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
+                  className="absolute right-[-40px] sm:right-[-70px] top-1/2 -translate-y-1/2 bg-white/30 w-15 h-15 sm:w-15 sm:h-15 rounded-full border border-text white:border-text-dark flex justify-center items-center z-100 cursor-pointer"
                 >
                   ›
                 </button>
@@ -891,7 +891,7 @@ export default function Projects() {
       {showModal && (
         <div className="hidden sm:flex  absolute inset-0 items-center justify-center z-9999">
           <div
-            className="absolute border-yellow-300 inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
+            className="absolute border-yellow-300 inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModal(false)}
           />
 
@@ -944,7 +944,7 @@ export default function Projects() {
       {showModalDetails2 && (
         <div className="absolute inset-0 flex items-center justify-center z-9999">
           <div
-            className="absolute inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
+            className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
             onClick={() => setShowModalDetails2(false)}
           />
           <div className="border-blue-500 relative rounded-3xl text-sm max-h-[80svh] w-[77dvw] sm:w-[460px] bg-background white:bg-text flex flex-col items-center justify-start px-8 py-10 animate-zoomIn ">
@@ -999,7 +999,7 @@ export default function Projects() {
           <div className="absolute border-red-500 inset-0 flex items-center justify-center z-9999">
 
             <div
-              className="absolute inset-0 bg-black/70 backdrop-blur-md animate-fadeIn"
+              className="absolute inset-0 bg-black/10 backdrop-blur-md animate-fadeIn"
               onClick={() => setShowModalImportant(false)}
             />
 

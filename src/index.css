@@ -17,10 +17,12 @@
   --color-surface: #1A1625;
   --color-accent: #7C3AED;
   --color-text: #e8e9e9;
+  /* --color-text: #c7ccd4; */
   --color-text-muted: #A3A3B3;
 
   /* WHITE */
-  --color-white-bg: #ebecf0;
+  --color-white-bg: #e8e9e9;
+  /* --color-white-bg: #ebecf0; */
   --color-dark-gray: #1f1f1f;
   --color-light-blue: #415ff5;
   --color-text-dark: #1f1f1f;

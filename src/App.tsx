@@ -67,6 +67,7 @@ function App() {
         }
 
       </div>
+
       <div className='p-1 w-fit h-fit p-sm rounded-full fixed top-1 right-11 sm:right-16  z-50'>
 
         {language === '' &&

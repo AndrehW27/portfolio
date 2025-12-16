@@ -105,14 +105,14 @@ function Journey() {
                         </div>
                         <div className='w-50 h-40 sm:h-60 border-orange-500 flex flex-col justify-start items-center'>
                             <div data-aos="fade-up" className='h-9 w-9 sm:h-20 sm:w-20 border-3 border-accent hover:bg-accent white:hover:bg-light-blue  transition duration-300 ease-in-out white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center'>
-                                <University className='sm:h-12 sm:w-12' />
+                                <Factory className='sm:h-12 sm:w-12' />
                             </div>
                             <div data-aos="fade-up" className='w-1 h-31 sm:h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                             </div>
                         </div>
                         <div className='w-50 h-40 sm:h-60 border-orange-500 flex flex-col justify-start items-center'>
                             <div data-aos="fade-up" className='h-9 w-9 sm:h-20 sm:w-20 border-3 border-accent hover:bg-accent white:hover:bg-light-blue  transition duration-300 ease-in-out white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center'>
-                                <Factory className='sm:h-12 sm:w-12' />
+                                <University className='sm:h-12 sm:w-12' />
                             </div>
                             <div data-aos="fade-up" className='w-1 h-31 sm:h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                             </div>

@@ -138,7 +138,7 @@ function Hero({ theme }: HeroProps) {
               data-aos="fade-in" data-aos-duration="3000" data-aos-offset="-500" data-aos-delay="0">
 
 
-              {/* TEXT DESKTOP AND MOBILE*/}
+              {/* WELCOME DESKTOP AND MOBILE*/}
               <div className='relative sm:ml-15 sm:mt-15 flex flex-col items-start justify-start '>
                 <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="0" className="text-2xl sm:text-4xl mt-15 sm:mt-0">{t("home.welcome")}</h1>
                 {/* MY SIGNATURE*/}
@@ -228,7 +228,7 @@ function Hero({ theme }: HeroProps) {
 
             </div> */}
 
-            {/*3 FRASES DESKTOP  */}
+            {/*3 FRASES MOBILE  */}
             <div className='sm:hidden text-sm mt-5 w-80 ml-10 '>
 
               <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" className='flex items-center justify-start mb-3 border-accent'>
@@ -280,7 +280,7 @@ function Hero({ theme }: HeroProps) {
             <div className="card-home flex absolute bottom-0 left-[-45px] sm:hidden ">
               <div data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2000" className="flex w-110 sm:w-190 h-70 sm:h-120 clip-hex justify-end items-center">
                 <img data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-500" data-aos-delay="2800" className="absolute rounded-3xl bottom-0 left-10 w-90 sm:w-150" src={bg} />
-                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#381f70_25%,transparent_70%)] white:bg-[linear-gradient(to_left,#162c9c_35%,transparent_80%)] z-200 '>
+                <div className='absolute top-0 right-0 w-90 h-full bg-[linear-gradient(to_left,#381f70_25%,transparent_70%)] white:bg-[linear-gradient(to_left,#243fc7_35%,transparent_80%)] z-200 '>
                   <h5 data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-delay="2800" className="absolute top-8 sm:top-25 left-50 border-blue-500 text-sm sm:text-3xl sm:w-80 white:text-text w-33">
                     {t("home.text")}</h5>
                   <div className='absolute top-20 left-50 text-xs white:text-text'
