@@ -226,13 +226,13 @@ function Journey() {
                                     </div>
                                 </div>
                                 <div className='pl-4 w-[86%] h-40 border-yellow-500 flex flex-col justify-start items-start'>
-                                    <div data-aos="fade-left" data-aos-offset="400">
+                                    <div data-aos="fade-left" data-aos-offset="450">
                                         <h1 className='text-accent text-xl white:text-light-blue font-bold'>{t("about.wsu")}</h1>
                                         <p className='text-base'>{t("about.wsu.text")}</p>
                                     </div>
                                     <div className='mt-2 flex gap-3'>
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="" data-aos-offset="400" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src={settings} />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200" data-aos-offset="400" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src={english} />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="" data-aos-offset="370" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src={settings} />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200" data-aos-offset="370" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src={english} />
                                     </div>
                                 </div>
                             </div>
@@ -246,38 +246,38 @@ function Journey() {
                                     </div>
                                 </div>
                                 <div className='pl-4 w-[86%] h-40 border-yellow-500 flex flex-col justify-start items-start'>
-                                    <div data-aos="fade-left" data-aos-offset="420">
+                                    <div data-aos="fade-left" data-aos-offset="450">
                                         <h1 className='text-accent text-xl white:text-light-blue font-bold'>{t("about.gm")}</h1>
                                         <p className='text-base'>{t("about.gm.text")}</p>
                                     </div>
                                     <div className='mt-2 flex gap-3'>
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="" data-aos-offset="350" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200" data-aos-offset="350" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400" data-aos-offset="350" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="" data-aos-offset="370" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200" data-aos-offset="370" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400" data-aos-offset="370" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                                     </div>
                                 </div>
                             </div>
 
                             <div className=' w-full border-red-500 flex'>
                                 <div className='h-40 sm:h-60 border-orange-500 flex flex-col justify-start items-center'>
-                                    <div data-aos="fade-up" data-aos-offset="400" className='h-9 w-9 sm:h-20 sm:w-20 border-3 border-accent hover:bg-accent white:hover:bg-light-blue transition duration-300 ease-in-out white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center'>
+                                    <div data-aos="fade-up" data-aos-offset="450" className='h-9 w-9 sm:h-20 sm:w-20 border-3 border-accent hover:bg-accent white:hover:bg-light-blue transition duration-300 ease-in-out white:border-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] rounded-full flex justify-center items-center'>
                                         <University className='sm:h-12 sm:w-12' />
                                     </div>
-                                    <div data-aos="fade-up" data-aos-offset="370" className='w-1 h-31 sm:h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
+                                    <div data-aos="fade-up" data-aos-offset="420" className='w-1 h-31 sm:h-40 bg-accent white:bg-light-blue shadow-[0_0_30px_#7C3AED] white:shadow-[0_0_30px_#6594fc] transition'>
                                     </div>
                                 </div>
                                 <div className='pl-4 w-[86%] h-40 border-yellow-500 flex flex-col justify-start items-start'>
-                                    <div data-aos="fade-left" data-aos-offset="350">
+                                    <div data-aos="fade-left" data-aos-offset="450">
                                         <h1 className='text-accent text-xl white:text-light-blue font-bold'>{t("about.gen")}</h1>
                                         <p className='text-base'>{t("about.gen.text")}</p>
                                     </div>
                                     <div className='mt-2 flex gap-3'>
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="" data-aos-offset="300" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200" data-aos-offset="300" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400" data-aos-offset="300" className='icons hover:bg-[#2f94f6] bg-text w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600" data-aos-offset="300" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="300" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
-                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000" data-aos-offset="300" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="" data-aos-offset="370" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200" data-aos-offset="370" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400" data-aos-offset="370" className='icons hover:bg-[#2f94f6] bg-text w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600" data-aos-offset="370" loading="lazy" className='icons hover:bg-[#82aee3] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#82aee3] white:shadow-[0_0_10px_#82aee3] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain-wordmark.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="370" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+                                        <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000" data-aos-offset="370" className='icons hover:bg-[#2f94f6] bg-background white:bg-background w-9 h-9 sm:w-20 sm:h-20 shadow-[0_0_10px_#2f94f6] white:shadow-[0_0_10px_#2f94f6] transition' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +291,7 @@ function Journey() {
                                     </div>
                                 </div>
                                 <div className='pl-4 w-[86%] h-40 border-yellow-500 flex flex-col justify-start items-start'>
-                                    <div data-aos="fade-left" data-aos-offset="350">
+                                    <div data-aos="fade-left" data-aos-offset="400">
                                         <h1 className='text-accent text-xl white:text-light-blue font-bold'>{t("about.itau")}</h1>
                                         <p className='text-base'>{t("about.itau.text")}</p>
                                     </div>
@@ -315,7 +315,7 @@ function Journey() {
                                     </div> */}
                                 </div>
                                 <div className='pl-4 w-[86%] h-40 border-yellow-500 flex flex-col justify-start items-start'>
-                                    <div data-aos="fade-left" data-aos-offset="350">
+                                    <div data-aos="fade-left" data-aos-offset="420">
                                         <h1 className='text-accent text-xl white:text-light-blue font-bold'>{t("about.puc")}</h1>
                                         <p className='text-base'>{t("about.puc.text")}</p>
                                     </div>
