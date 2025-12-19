@@ -1,4 +1,4 @@
-import './Journey.css'
+import './Timeline.css'
 
 // import { Database, ServerCog, ShieldCheck, SquareDashedBottomCode, Waypoints, ChevronDown } from "lucide-react";
 
@@ -25,7 +25,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from 'react';
 
 
-function Journey() {
+function Timeline() {
 
     const { t } = useTranslation();
 
@@ -381,4 +381,4 @@ function Journey() {
     )
 }
 
-export default Journey
+export default Timeline
