@@ -3,12 +3,14 @@ import { ChevronDown, Wallpaper, DatabaseBackup, Gauge } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import bg from "../../assets/Me/me-pc2.png";
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import wavesDark from '../../assets/videos/waves-video2.mp4';
 import wavesLight from '../../assets/videos/white-video.mp4';
+import { motion, AnimatePresence } from "framer-motion";
+
 // import andre from "../../assets/Me/im_aw2.png";
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=BBH+Hegarty&family=Caveat:wght@400..700&family=Changa+One:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Satisfy&family=Sekuya&display=swap');
@@ -21,6 +23,8 @@ type HeroProps = {
 function Hero({ theme }: HeroProps) {
 
   const { t } = useTranslation();
+
+  const [showTransition, setShowTransition] = useState(false);
 
   // Decide which video to use
   const videoSrc = theme === "white" ? wavesLight : wavesDark;
@@ -310,12 +314,46 @@ function Hero({ theme }: HeroProps) {
             </a> */}
 
             {/* DOWN CHEVRON */}
-            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-6 sm:bottom-16 up-and-down w-full flex justify-center">
+            <a href="#journey" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" data-aos-delay="2800" className="absolute bottom-6 sm:bottom-16 up-and-down w-full flex justify-center white:text-text"
+              onClick={() => {
+                setShowTransition(true);
+                setTimeout(() => {
+                  setShowTransition(false);
+                }, 1100);
+              }}
+            >
               <ChevronDown className=' sm:w-10 sm:h-10' />
             </a>
-
+            
           </div>
         </section>
+
+        {/* TRANSITION */}
+        <AnimatePresence>
+          {showTransition && (
+            <motion.div
+              key="transition"
+              initial={{ scale: 0.85, opacity: 0, filter: "blur(4px)" }}
+              animate={{ scale: 1, opacity: 0.8, rotate: 360, filter: "blur(0px)" }}
+              exit={{ scale: 1.15, opacity: 0, filter: "blur(6px)" }}
+              // initial={{ scale: 0.85, opacity: 0 }}
+              // animate={{ scale: 1, opacity: 1 }}
+              // exit={{ scale: 1.15, opacity: 0 }}
+              transition={{ duration: 1.1, ease: "easeInOut" }}
+              className="fixed inset-0 w-svw h-svh bg-cover bg-no-repeat bg-center z-9998 flex items-center justify-center
+                bg-[url('assets/bg/vortex.png')]
+                white:bg-[url('assets/bg/figures.png')]
+                "
+            >
+              <div className="w-50 h-50 bg-contain bg-no-repeat bg-center z-9999
+                bg-[url('assets/icons/aw-final.png')]
+                white:bg-[url('assets/icons/aw_light.png')]
+              "
+              ></div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        
       </section>
     </>
   );

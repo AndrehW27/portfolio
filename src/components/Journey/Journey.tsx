@@ -21,11 +21,15 @@ import settings from '../../assets/icons/settings.png';
 import english from '../../assets/icons/eng.png';
 // import perfil from '../../assets/me_art_modern-nobg.png';
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from 'react';
+
 
 function Journey() {
 
     const { t } = useTranslation();
 
+    const [showTransition, setShowTransition] = useState(false);
 
     return (
         <>
@@ -195,7 +199,7 @@ function Journey() {
                     </div>
 
                     {/* MOBILE */}
-                    <div className='flex sm:hidden border-red-500 w-[100dvw]'>
+                    <div className='flex sm:hidden border-red-500 w-[100dvw] mt-5'>
 
                         <div className='w-full sm:w-50 ml-4 border-blue-500 flex flex-col justify-start items-start'>
                             <div className=' w-full border-red-500 flex'>
@@ -336,8 +340,41 @@ function Journey() {
                 </div>
 
                 <a href="#abilities" className="up-and-down absolute bottom-6 sm:bottom-16 z-900" >
-                    <ChevronDown className=' sm:w-10 sm:h-10' />
+                    <ChevronDown className=' sm:w-10 sm:h-10'
+                        onClick={() => {
+                            setShowTransition(true);
+                            setTimeout(() => {
+                                setShowTransition(false);
+                            }, 1100);
+                        }}
+                    />
                 </a>
+
+                {/* TRANSITION */}
+                <AnimatePresence>
+                    {showTransition && (
+                        <motion.div
+                            key="transition"
+                            initial={{ scale: 0.85, opacity: 0, filter: "blur(4px)" }}
+                            animate={{ scale: 1, opacity: 0.8, rotate: 360, filter: "blur(0px)" }}
+                            exit={{ scale: 1.15, opacity: 0, filter: "blur(6px)" }}
+                            // initial={{ scale: 0.85, opacity: 0 }}
+                            // animate={{ scale: 1, opacity: 1 }}
+                            // exit={{ scale: 1.15, opacity: 0 }}
+                            transition={{ duration: 1.1, ease: "easeInOut" }}
+                            className="fixed inset-0 w-svw h-svh bg-cover bg-no-repeat bg-center z-9998 flex items-center justify-center
+                bg-[url('assets/bg/vortex.png')]
+                white:bg-[url('assets/bg/figures.png')]
+                "
+                        >
+                            <div className="w-50 h-50 bg-contain bg-no-repeat bg-center z-9999
+                bg-[url('assets/icons/aw-final.png')]
+                white:bg-[url('assets/icons/aw_light.png')]
+              "
+                            ></div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
 
             </section>
         </>

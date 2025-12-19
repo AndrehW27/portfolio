@@ -5,6 +5,10 @@ import trail from "../../assets/icons/trailhead2.png"
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 // import email from "../../assets/icons/email_nobg.png";
+// import transition from "../../assets/bg/vortex.png";
+// import transitionWhite from "../../assets/bg/crazy-eye.png";
+// import aw from "../../assets/icons/aw-final.png";
+import { motion, AnimatePresence } from "framer-motion";
 
 
 function Contact() {
@@ -12,6 +16,7 @@ function Contact() {
   const { t } = useTranslation();
 
   const [message, setMessage] = useState('');
+  const [showTransition, setShowTransition] = useState(false);
 
 
   const handleDownload = () => {
@@ -42,7 +47,7 @@ function Contact() {
 
         {/* BUTTON SEND*/}
         <a href={`mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
-          <button data-aos="zoom-in" data-aos-offset="200" className='px-3 py-1 sm:px-5 sm:py-3 rounded-full mt-4 sm:mt-10 text-xs sm:text-xl font-bold bg-transparent border border-accent white:border-light-blue bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit">
+          <button data-aos="zoom-in" data-aos-offset="200" className='px-3 py-1 sm:px-5 sm:py-3 rounded-full mt-4 sm:mt-10 text-xs sm:text-xl font-bold bg-transparent border border-accent white:border-light-blue bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"          >
             {t("contact.send")}
           </button>
         </a>
@@ -94,7 +99,14 @@ function Contact() {
         </div>
 
         {/* DOWN CHEVRON */}
-        <a href="#" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" className="up-and-down absolute bottom-25 sm:bottom-35 z-900">
+        <a href="#" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000" className="up-and-down absolute bottom-25 sm:bottom-35 z-900"
+          onClick={() => {
+            setShowTransition(true);
+            setTimeout(() => {
+              setShowTransition(false);
+            }, 1100);
+          }}
+        >
           <ChevronUp className='sm:w-10 sm:h-10' />
         </a>
 
@@ -107,6 +119,32 @@ function Contact() {
           {t("contact.footer3")}
         </h1>
 
+        {/* TRANSITION */}
+        <AnimatePresence>
+          {showTransition && (
+            <motion.div
+              key="transition"
+              initial={{ scale: 0.85, opacity: 0, filter: "blur(4px)" }}
+              animate={{ scale: 1, opacity: 0.8, rotate: 360, filter: "blur(0px)" }}
+              exit={{ scale: 1.15, opacity: 0, filter: "blur(6px)" }}
+              // initial={{ scale: 0.85, opacity: 0 }}
+              // animate={{ scale: 1, opacity: 1 }}
+              // exit={{ scale: 1.15, opacity: 0 }}
+              transition={{ duration: 1.1, ease: "easeInOut" }}
+              className="fixed inset-0 w-svw h-svh bg-cover bg-no-repeat bg-center z-9998 flex items-center justify-center
+                bg-[url('assets/bg/vortex.png')]
+                white:bg-[url('assets/bg/figures.png')]
+                "
+            >
+              <div className="w-50 h-50 bg-contain bg-no-repeat bg-center z-9999
+                bg-[url('assets/icons/aw-final.png')]
+                white:bg-[url('assets/icons/aw_light.png')]
+              "
+              ></div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        
       </section>
     </>
   )

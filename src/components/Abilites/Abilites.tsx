@@ -17,6 +17,9 @@ import { SquareDashedBottomCode, GalleryHorizontalEnd, Keyboard, ChevronDown } f
 // import { GiClick } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 
+import { motion, AnimatePresence } from "framer-motion";
+
+
 // 💚 This just adds the GSAP link to this pen, don't copy this bit
 // import { GSAPInfoBar } from "https://codepen.io/GreenSock/pen/vYqpyLg.js"
 // new GSAPInfoBar({ link: "https://gsap.com/docs/v3/Plugins/ScrollSmoother/" });
@@ -35,6 +38,8 @@ function Abilites() {
   const { t } = useTranslation();
 
   const [showModal, setShowModal] = useState(false);
+
+  const [showTransition, setShowTransition] = useState(false);
 
 
   // GSAP CROUSEL ANIMATIONS  
@@ -98,7 +103,7 @@ function Abilites() {
 
   return (
     <>
-      <section id="abilities" className="relative h-[185svh] sm:h-[100svh] w-[100dvw] flex flex-col items-center justify-start overflow-hidden white:bg-text text-text scroll-hidden border-red-500 mb-20 sm:mb-50">
+      <section id="abilities" className="relative h-[185svh] sm:h-svh w-[100dvw] flex flex-col items-center justify-start overflow-hidden white:bg-text text-text scroll-hidden border-red-500 mb-20 sm:mb-50">
 
         {/* <div className="absolute inset-0 bg-[url('./assets/bg/wave6.jpg')] bg-center bg-cover sm:bg-contain bg-no-repeat h-full w-dvw -z-100 opacity-10 border-red-500"></div> */}
         <div className="absolute inset-0 h-full w-dvw -z-100 opacity-10 border-red-500"></div>
@@ -213,84 +218,84 @@ function Abilites() {
         {/* CAROUSEL */}
         <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100" className=" border-red-500 absolute bottom-20 sm:bottom-50 carousel w-dvw sm:w-310 text-accent white:text-light-blue z-700">
           <div className="border-blue-500 group ">
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#5fa04e] bg-background white:bg-background  shadow-[0_0_12px_#5fa04e] white:shadow-[0_0_12px_#5fa04e]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#1f1f1f] bg-text shadow-[0_0_12px_#1f1f1f] white:shadow-[0_0_12px_#1f1f1f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#f0db4f] bg-background white:bg-background  shadow-[0_0_12px_#f0db4f] white:shadow-[0_0_12px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#4faa41] bg-background white:bg-background  shadow-[0_0_12px_#4faa41] white:shadow-[0_0_12px_#4faa41]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#1f1f1f] bg-text shadow-[0_0_12px_#1f1f1f] white:shadow-[0_0_12px_#1f1f1f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#d32a2d] bg-background white:bg-background  shadow-[0_0_12px_#d32a2d] white:shadow-[0_0_12px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#ea23a4] bg-background white:bg-background  shadow-[0_0_12px_#ea23a4] white:shadow-[0_0_12px_#ea23a4]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#a9bfd1] bg-text shadow-[0_0_12px_#a9bfd1] white:shadow-[0_0_12px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#ff9900] bg-background white:bg-background  shadow-[0_0_12px_#ff9900] white:shadow-[0_0_12px_#ff9900]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
             </div>
           </div>
           <div className="border-blue-500 group ">
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#5fa04e] bg-background white:bg-background  shadow-[0_0_12px_#5fa04e] white:shadow-[0_0_12px_#5fa04e]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#1f1f1f] bg-text shadow-[0_0_12px_#1f1f1f] white:shadow-[0_0_12px_#1f1f1f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#f0db4f] bg-background white:bg-background  shadow-[0_0_12px_#f0db4f] white:shadow-[0_0_12px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#4faa41] bg-background white:bg-background  shadow-[0_0_12px_#4faa41] white:shadow-[0_0_12px_#4faa41]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#1f1f1f] bg-text shadow-[0_0_12px_#1f1f1f] white:shadow-[0_0_12px_#1f1f1f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#d32a2d] bg-background white:bg-background  shadow-[0_0_12px_#d32a2d] white:shadow-[0_0_12px_#d32a2d]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#ea23a4] bg-background white:bg-background  shadow-[0_0_12px_#ea23a4] white:shadow-[0_0_12px_#ea23a4]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
             </div>
-            <div className="card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className="card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#a9bfd1] bg-text shadow-[0_0_12px_#a9bfd1] white:shadow-[0_0_12px_#a9bfd1]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#f0db4f] bg-background white:bg-background  shadow-[0_0_12px_#f0db4f] white:shadow-[0_0_12px_#f0db4f]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
             </div>
-            <div className=" card-carousel grow-0 shrink-0 basis-[5rem] sm:basis-[7rem] sm:w-5rem sm:h-5rem">
+            <div className=" card-carousel grow-0 shrink-0 basis-20 sm:basis-28 sm:w-5rem sm:h-5rem">
               <img loading="lazy" className='icons hover:bg-[#00a1e0] bg-background white:bg-background  shadow-[0_0_12px_#00a1e0] white:shadow-[0_0_12px_#00a1e0]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" />
             </div>
           </div>
@@ -353,8 +358,15 @@ function Abilites() {
         {/* SCROLL GALLERY */}
 
 
-        <a href="#projects" className="up-and-down absolute bottom-6 sm:bottom-16 z-900" >
-          <ChevronDown className=' sm:w-10 sm:h-10' />
+        <a href="#projects" className="up-and-down absolute bottom-6 sm:bottom-16 z-900 white:text-dark-gray" >
+          <ChevronDown className=' sm:w-10 sm:h-10'
+            onClick={() => {
+              setShowTransition(true);
+              setTimeout(() => {
+                setShowTransition(false);
+              }, 1100);
+            }}
+          />
         </a>
 
         {/* MODAL DETAILS */}
@@ -362,8 +374,8 @@ function Abilites() {
           <div className="absolute border-red-500 bottom-0 flex items-center justify-center z-9999">
 
             <div
-              className="absolute border-green-500 h-[100svh] w-[100dvw] inset-0 bg-black/10 backdrop-blur-md border border-red-500 animate-fadeIn"
-              onClick={() => setShowModal(false)}/>
+              className="absolute border-green-500 h-svh w-[100dvw] inset-0 bg-black/10 backdrop-blur-md border border-red-500 animate-fadeIn"
+              onClick={() => setShowModal(false)} />
 
             <div className='scale relative text-xs sm:text-xl border-green-500 h-140 w-140 sm:h-220 sm:w-220 flex flex-col items-center justify-center mt-10 text-center mb-35 white:text-text cursor-pointer'>
 
@@ -427,7 +439,31 @@ function Abilites() {
 
         )}
 
-
+                {/* TRANSITION */}
+        <AnimatePresence>
+          {showTransition && (
+            <motion.div
+              key="transition"
+              initial={{ scale: 0.85, opacity: 0, filter: "blur(4px)" }}
+              animate={{ scale: 1, opacity: 0.8, rotate: 360, filter: "blur(0px)" }}
+              exit={{ scale: 1.15, opacity: 0, filter: "blur(6px)" }}
+              // initial={{ scale: 0.85, opacity: 0 }}
+              // animate={{ scale: 1, opacity: 1 }}
+              // exit={{ scale: 1.15, opacity: 0 }}
+              transition={{ duration: 1.1, ease: "easeInOut" }}
+              className="fixed inset-0 w-svw h-svh bg-cover bg-no-repeat bg-center z-9998 flex items-center justify-center
+                bg-[url('assets/bg/vortex.png')]
+                white:bg-[url('assets/bg/figures.png')]
+                "
+            >
+              <div className="w-50 h-50 bg-contain bg-no-repeat bg-center z-9999
+                bg-[url('assets/icons/aw-final.png')]
+                white:bg-[url('assets/icons/aw_light.png')]
+              "
+              ></div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
       </section>
     </>
