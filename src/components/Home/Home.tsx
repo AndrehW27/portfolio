@@ -89,22 +89,51 @@ function Hero({ theme }: HeroProps) {
             <div className="w-11 h-11 sm:w-16 sm:h-16 fixed left-4 bg-cover bg-center bg-[url('./assets/icons/aw-final.png')] white:bg-[url('./assets/icons/aw_light.png')]"></div>
           </a>
 
-          <ul className="">
+          <ul className=""
+            onClick={() => {
+              setShowTransition(true);
+              setTimeout(() => {
+                setShowTransition(false);
+              }, 1100);
+            }}
+          >
             <li><a href="#journey" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
           </ul>
 
-          <ul className="">
+          <ul className=""
+            onClick={() => {
+              setShowTransition(true);
+              setTimeout(() => {
+                setShowTransition(false);
+              }, 1100);
+            }}
+          >
             <li><a href="#abilities" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.about")}</a></li>
           </ul>
           {/* <ul className="">
             <li><a href="#journey" className="hover:text-accent mr-4 transition duration-300 ease-in-out">{t("navbar.journey")}</a></li>
           </ul> */}
-          <ul className="">
+          <ul className=""
+            onClick={() => {
+              setShowTransition(true);
+              setTimeout(() => {
+                setShowTransition(false);
+              }, 1100);
+            }}>
             <li><a href="#projects" className="hover:text-accent white:hover:text-light-blue mr-4 transition duration-300 ease-in-out">{t("navbar.projects")}</a></li>
           </ul>
-          <ul className="">
+
+          <ul className=""
+            onClick={() => {
+              setShowTransition(true);
+              setTimeout(() => {
+                setShowTransition(false);
+              }, 1100);
+            }}
+          >
             <li><a href="#contact" className="hover:text-accent white:hover:text-light-blue transition duration-300 ease-in-out">{t("navbar.contact")}</a></li>
           </ul>
+
         </div>
       </nav>
 
