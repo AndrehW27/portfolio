@@ -104,7 +104,7 @@ function Contact() {
             setShowTransition(true);
             setTimeout(() => {
               setShowTransition(false);
-            }, 1100);
+            }, 800);
           }}
         >
           <ChevronUp className='sm:w-10 sm:h-10' />
@@ -130,13 +130,13 @@ function Contact() {
               // initial={{ scale: 0.85, opacity: 0 }}
               // animate={{ scale: 1, opacity: 1 }}
               // exit={{ scale: 1.15, opacity: 0 }}
-              transition={{ duration: 1.1, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
               className="fixed inset-0 w-svw h-svh bg-cover bg-no-repeat bg-center z-9998 flex items-center justify-center
                 bg-[url('assets/bg/vortex.png')]
                 white:bg-[url('assets/bg/figures.png')]
                 "
             >
-              <div className="w-50 h-50 bg-contain bg-no-repeat bg-center z-9999
+              <div className="w-30 h-30 bg-contain bg-no-repeat bg-center z-9999
                 bg-[url('assets/icons/aw-final.png')]
                 white:bg-[url('assets/icons/aw_light.png')]
               "
@@ -144,7 +144,7 @@ function Contact() {
             </motion.div>
           )}
         </AnimatePresence>
-        
+
       </section>
     </>
   )

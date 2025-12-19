@@ -78,7 +78,14 @@ function Hero({ theme }: HeroProps) {
       <nav className="text-text text-[10px] sm:text-base font-bold fixed w-dvw top-0 left-0 bg-background white:bg-white-bg z-9990">
         <div className="w-dvw mx-auto px-6 py-4 flex justify-center items-center text-text white:text-dark-gray">
 
-          <a className="w-11 h-11 sm:w-16 sm:h-16 fixed left-4" href="#">
+          <a className="w-11 h-11 sm:w-16 sm:h-16 fixed left-4" href="#"
+            onClick={() => {
+              setShowTransition(true);
+              setTimeout(() => {
+                setShowTransition(false);
+              }, 1100);
+            }}
+          >
             <div className="w-11 h-11 sm:w-16 sm:h-16 fixed left-4 bg-cover bg-center bg-[url('./assets/icons/aw-final.png')] white:bg-[url('./assets/icons/aw_light.png')]"></div>
           </a>
 
@@ -319,12 +326,12 @@ function Hero({ theme }: HeroProps) {
                 setShowTransition(true);
                 setTimeout(() => {
                   setShowTransition(false);
-                }, 1100);
+                }, 800);
               }}
             >
               <ChevronDown className=' sm:w-10 sm:h-10' />
             </a>
-            
+
           </div>
         </section>
 
@@ -339,13 +346,13 @@ function Hero({ theme }: HeroProps) {
               // initial={{ scale: 0.85, opacity: 0 }}
               // animate={{ scale: 1, opacity: 1 }}
               // exit={{ scale: 1.15, opacity: 0 }}
-              transition={{ duration: 1.1, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
               className="fixed inset-0 w-svw h-svh bg-cover bg-no-repeat bg-center z-9998 flex items-center justify-center
                 bg-[url('assets/bg/vortex.png')]
                 white:bg-[url('assets/bg/figures.png')]
                 "
             >
-              <div className="w-50 h-50 bg-contain bg-no-repeat bg-center z-9999
+              <div className="w-30 h-30 bg-contain bg-no-repeat bg-center z-9999
                 bg-[url('assets/icons/aw-final.png')]
                 white:bg-[url('assets/icons/aw_light.png')]
               "
@@ -353,7 +360,7 @@ function Hero({ theme }: HeroProps) {
             </motion.div>
           )}
         </AnimatePresence>
-        
+
       </section>
     </>
   );
