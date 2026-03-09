@@ -215,7 +215,7 @@ function Hero({ theme }: HeroProps) {
 
                 </div>
 
-                <div className='hidden sm:flex gap-6 mt-6'>
+                <div className='hidden sm:flex gap-6 mt-6 mb-6'>
                   {/* <div className='hover:bg-[#61dafb] bg-slate-700 w-9 h-9 sm:w-15 sm:h-15 shadow-[0_0_10px_#61dafb] white:shadow-[0_0_10px_#61dafb] transition flex items-center justify-center'>
                     <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="-500" loading="lazy" className='icons white:bg-text w-9 h-9 sm:w-15 sm:h-15' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                   </div> */}

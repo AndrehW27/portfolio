@@ -37,16 +37,16 @@ function Contact() {
 
         {/* TITLES */}
         {/* <h1 data-aos="fade-down" data-aos-offset="200" className='text-2xl sm:text-4xl mt-16 sm:mt-25'>{t("contact.title")}</h1> */}
-        <h1 data-aos="fade-down" data-aos-offset="200" className='text-base sm:text-2xl mt-20 sm:mt-30 sm:mb-10'>{t("contact.subtitle")}</h1>
+        <h1 data-aos="fade-down" data-aos-offset="200" className='text-base sm:text-2xl mt-20 sm:mt-30 sm:mb-0'>{t("contact.subtitle")}</h1>
 
 
         {/* INPUTS */}
         {/* <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-10 font-normal w-60' type="text" placeholder='Name' />
         <input data-aos="flip-up" data-aos-offset="200" className='border border-accent white:border-light-blue px-3 py-1 rounded-md mt-4 font-normal w-60' type="text" placeholder='E-mail' /> */}
-        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-2 rounded-md mt-4 font-normal w-80 sm:w-140 h-40 sm:h-60' name="" id="message" placeholder={t("contact.area")} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        <textarea data-aos="zoom-in" data-aos-offset="200" className='text-xs sm:text-xl sm:p-5 border border-accent white:border-light-blue px-3 py-2 rounded-md mt-4 font-normal w-80 sm:w-140 h-40 sm:h-40' name="" id="message" placeholder={t("contact.area")} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
         {/* BUTTON SEND*/}
-        <a href={`mailto:andrecarvalhodev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
+        <a href={`mailto:andrewilliandev@gmail.com?subject=Contact from Portfolio&body=${encodeURIComponent(message)}`}>
           <button data-aos="zoom-in" data-aos-offset="200" className='px-3 py-1 sm:px-5 sm:py-3 rounded-full mt-4 sm:mt-10 text-xs sm:text-xl font-bold bg-transparent border border-accent white:border-light-blue bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"          >
             {t("contact.send")}
           </button>
@@ -56,7 +56,7 @@ function Contact() {
         {/* <img src={email} alt="" className='w-15 sm:w-20 mt-2 sm:mt-6' /> */}
 
         {/* BUTTON DOWNLOAD RESUME*/}
-        <a href="/andre_resume.pdf" className='flex absolute bottom-60 sm:bottom-90 border-red-500'>
+        <a href="/andre_resume.pdf" className='flex absolute bottom-60 sm:bottom-80 border-red-500'>
           <div >
             <button data-aos="zoom-in" data-aos-offset="-500" className='flex items-center justify-center px-3 py-1 sm:px-5 sm:py-3 rounded-full text-xs sm:text-xl font-bold border border-accent white:border-light-blue bg-linear-to-t from-surface to-accent hover:from-accent hover:to-surface white:from-text-dark white:to-light-blue white:text-text shadow-[0_0_10px_#7C3AED] white:shadow-[0_0_10px_#415ff5] box-border cursor-pointer hover:opacity-90  hover:border-accent white:hover:border-light-blue transition duration-300 ease-in-out' type="submit"
               onClick={handleDownload}>
@@ -67,7 +67,7 @@ function Contact() {
         </a>
 
         {/* SOCIAL MEDIA */}
-        <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-60 w-60 sm:w-100 h-fit flex items-center justify-evenly'>
+        <div data-aos="zoom-in" data-aos-offset="0" className='absolute bottom-40 sm:bottom-50 w-60 sm:w-100 h-fit flex items-center justify-evenly'>
 
           <a href="https://www.linkedin.com/in/andrecarvalho3/" target="_blank" rel="noopener noreferrer">
             <div className='w-9 h-9 sm:w-15 sm:h-15 p-1.25 sm:p-2 rounded-full shadow-[0_0_10px_#0076b2] bg-background hover:bg-[#0076b2]'>
